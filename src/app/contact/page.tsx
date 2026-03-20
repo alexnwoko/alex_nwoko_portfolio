@@ -176,7 +176,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="https://linkedin.com/in/alexnwoko"
+                href="https://www.linkedin.com/in/alex-nwoko/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-white rounded-xl p-5 border border-beige-300 card-hover group"
@@ -189,7 +189,7 @@ export default function ContactPage() {
                     LinkedIn
                   </p>
                   <p className="text-sm text-coffee group-hover:text-un-blue transition-colors">
-                    linkedin.com/in/alexnwoko
+                    www.linkedin.com/in/alex-nwoko/
                   </p>
                 </div>
               </a>

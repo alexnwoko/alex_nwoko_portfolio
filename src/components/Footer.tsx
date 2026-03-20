@@ -41,7 +41,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs uppercase tracking-widest text-dusty-orange mb-4 font-semibold">Connect</h4>
             <div className="flex flex-col gap-2 text-sm text-beige-300">
-              <a href="https://linkedin.com/in/alexnwoko" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/alex-nwoko/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 LinkedIn
               </a>
               <a href="https://github.com/alex-nwoko" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
