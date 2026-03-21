@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 
 const timeline = [
   {
-    year: '2016–2017',
+    year: '2016–2018',
     role: 'Information Manager — Shelter/NFI & CCCM Clusters',
     org: 'IOM Nigeria',
     location: 'Maiduguri, Nigeria',
-    desc: 'Built the cluster information management system from scratch — dashboards, factsheets, gap analysis mappings — for one of Africa\'s largest humanitarian operations during the Boko Haram crisis.',
+    desc: 'Built the cluster IM system from scratch — dashboards, factsheets, gap analysis — while developing data-driven flood contingency plans, GIS vulnerability mapping, and risk analysis products for one of Africa\'s largest humanitarian operations during the Boko Haram crisis.',
     pillar: 'data',
   },
   {
@@ -28,7 +28,7 @@ const timeline = [
     role: 'IM & CBI Data Officer',
     org: 'IOM Bangladesh',
     location: "Cox's Bazar, Bangladesh",
-    desc: 'Coordinated cross-sectoral data collection and managed information systems for cash-based interventions in the world\'s largest refugee response operation.',
+    desc: 'Designed the Cash-Based Intervention IM System (CBIIMS), supervised the GIS unit, and coordinated communication-with-communities data across 29 camps and 1,100+ radio listening groups in the world\'s largest refugee response.',
     pillar: 'cash',
   },
   {
@@ -48,11 +48,11 @@ const timeline = [
     pillar: 'data',
   },
   {
-    year: '2021',
-    role: 'IM Officer — Agriculture Cluster / Planning & Monitoring',
+    year: '2020–2022',
+    role: 'IM Specialist — Agriculture Cluster / Planning & Monitoring',
     org: 'FAO & UNICEF Ethiopia',
     location: 'Addis Ababa, Ethiopia',
-    desc: 'Developed the UNICEF Ethiopia Information Management Strategy. Served as data consultant for UNICEF\'s humanitarian cash transfer program and the Ethiopia Cash Working Group.',
+    desc: 'Developed the UNICEF Ethiopia IM Strategy, deployed geospatial tools for drought response mapping and community vulnerability assessment, and led the Ethiopia Cash Working Group\'s first inter-agency PDM meta-analysis and financial services provider assessments across Tigray.',
     pillar: 'cash',
   },
   {
@@ -60,7 +60,7 @@ const timeline = [
     role: 'Program Coordinator & Technical Advisor',
     org: 'iMMAP Afghanistan',
     location: 'Kabul, Afghanistan',
-    desc: 'Managed a $9.7M USAID-funded program delivering data analytics, geospatial platforms (ReportHub, HSDC), and IM support for 75+ humanitarian organizations.',
+    desc: 'Led a $9.7M USAID-funded program spanning all four pillars: ReportHub for multi-cluster reporting (75+ orgs), HSDC for multi-hazard geospatial analysis, climate early warning and drought monitoring platforms, anticipatory action frameworks, and Cash & Voucher Working Group IM support.',
     pillar: 'climate',
   },
 ]
@@ -89,16 +89,22 @@ export default function AboutPage() {
             That experience planted a question I&rsquo;ve been trying to answer ever since: <em>What does it take to put the right information in front of the right people before a crisis becomes a catastrophe?</em>
           </p>
           <p>
-            That question took me to Durham University on a Commonwealth Scholarship, where I studied risk and environmental hazards at the Institute of Hazard, Risk and Resilience. My research on social vulnerability indices wasn&rsquo;t just academic — it was built in partnership with the Newcastle City Council Emergency Planning Unit, creating tools they could actually use. That experience taught me something that has shaped every role since: <strong>the most sophisticated analysis in the world is worthless if it doesn&rsquo;t reach the people who need it, in a format they can act on.</strong>
+            That question took me to Durham University on a Commonwealth Scholarship, where I studied risk and environmental hazards at the Institute of Hazard, Risk and Resilience. My research on social vulnerability indices wasn&rsquo;t just academic — it was built in partnership with the Newcastle City Council Emergency Planning Unit, mapping physical and social vulnerability indicators for proactive emergency preparedness. That experience taught me something that has shaped every role since: <strong>the most sophisticated analysis in the world is worthless if it doesn&rsquo;t reach the people who need it, in a format they can act on.</strong>
           </p>
           <p>
-            From Durham, I found my way to Maiduguri — the epicenter of the Boko Haram crisis and one of the largest humanitarian operations in Africa. As the Information Manager for the Shelter/NFI and CCCM Clusters with IOM, I built the cluster&rsquo;s information management system from scratch. That was the beginning of what I now think of as humanitarian systems architecture.
+            From Durham, I carried that conviction into Maiduguri — the epicenter of the Boko Haram crisis. As Information Manager for the Shelter/NFI and CCCM Clusters with IOM, I built the cluster&rsquo;s information management system from scratch while simultaneously developing data-driven flood contingency plans and GIS risk maps that guided rainy-season preparedness. That was the beginning of what I now think of as humanitarian systems architecture — where data analytics, geospatial analysis, and disaster risk reduction converge.
           </p>
           <p>
-            The journey since has taken me across six countries, through some of the world&rsquo;s most complex emergencies — from Cox&rsquo;s Bazar to Geneva to Addis Ababa to Kabul — each role pushing the boundaries of what information management can achieve in crisis contexts.
+            In Cox&rsquo;s Bazar, the world&rsquo;s largest refugee operation, my work expanded into humanitarian cash programming. I designed the Cash-Based Intervention Information Management System (CBIIMS) for IOM — a five-stage workflow covering beneficiary profiling through payment automation — while supervising the GIS unit and coordinating communication-with-communities data across 29 camps and 1,100+ listening groups. It was here I saw firsthand how geospatial tools, cash transfer systems, and information management had to work as an integrated whole.
           </p>
           <p>
-            I&rsquo;m not done building. The humanitarian sector is at an inflection point where AI, geospatial intelligence, and real-time data can fundamentally change how we respond to crises — if we build the right systems and put them in the right hands. That&rsquo;s what I do.
+            In Ethiopia, I developed the UNICEF Information Management Strategy, built geospatial tools mapping drought response coverage and community vulnerabilities, and served as data consultant for the Ethiopia Cash Working Group — leading the first-ever inter-agency post-distribution monitoring meta-analysis and designing financial services provider assessments across Tigray.
+          </p>
+          <p>
+            Afghanistan became the culmination of all four pillars. Leading a $9.7M USAID-funded program, I oversaw the deployment of ReportHub for multi-cluster humanitarian reporting, the Humanitarian Spatial Data Center for multi-hazard geospatial analysis, climate early warning platforms integrating NDVI, precipitation forecasting, and drought monitoring, and anticipatory action frameworks linking climate triggers to pre-agreed response protocols — all while navigating one of the world&rsquo;s most complex operating environments.
+          </p>
+          <p>
+            I&rsquo;m not done building. The humanitarian sector is at an inflection point where AI, geospatial intelligence, and real-time data can fundamentally change how we prepare for and respond to crises — if we build the right systems and put them in the right hands. That&rsquo;s what I do.
           </p>
         </div>
       </section>

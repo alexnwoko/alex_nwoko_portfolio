@@ -74,13 +74,13 @@ const projects = [
     title: 'CBIIMS — Cash-Based Intervention IM System',
     pillar: 'Cash Programming',
     pillarColor: '#8B3A2F',
-    period: '2020',
-    location: 'Ethiopia',
+    period: '2019–2020',
+    location: 'Bangladesh',
     org: 'IOM',
     summary:
       'End-to-end information management system for cash-based interventions: 5-stage workflow from beneficiary profiling through payment automation with risk assessment and accountability layers.',
     challenge:
-      'IOM Ethiopia needed a structured IM system to support process-based CBI delivery ensuring timeliness, accountability, and fraud prevention across Cash-for-Work and MPCG programmes.',
+      'IOM Bangladesh needed a structured IM system to support process-based CBI delivery ensuring timeliness, accountability, and fraud prevention across Cash-for-Work and MPCG programmes in the Cox\'s Bazar refugee response.',
     solution:
       'Designed the CBIIMS — a 5-stage workflow (Profiling → Targeting → Attendance → Payment Automation → Beneficiary Payment) with governance layers for risk assessment and M&E/AAP.',
     impact: [

@@ -197,10 +197,13 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">About</p>
           <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-8">The Journey</h2>
           <p className="text-lg text-coffee-light/80 leading-relaxed mb-6">
-            There&rsquo;s a particular kind of urgency that drives you when you&rsquo;ve seen what happens when decisions are made without evidence. Early in my career, I watched communities suffer not because help wasn&rsquo;t available, but because the information to direct that help simply didn&rsquo;t exist &mdash; or existed in fragments scattered across spreadsheets that no one could piece together in time.
+            My path began at the intersection of geography, risk science, and humanitarian need. A Commonwealth Scholarship at Durham University&rsquo;s Institute of Hazard, Risk and Resilience grounded me in disaster risk reduction and geospatial analysis &mdash; skills I first applied mapping social vulnerability indices with the Newcastle City Council Emergency Planning Unit, then carried into GIS land administration systems in Nigeria.
+          </p>
+          <p className="text-lg text-coffee-light/80 leading-relaxed mb-6">
+            From there, the work deepened across four interconnected domains: building cluster information management systems in the Boko Haram response; developing flood contingency maps and hazard monitoring tools with IOM and FAO in northeast Nigeria; designing cash-based intervention systems and coordinating communication-with-communities data in Cox&rsquo;s Bazar; and ultimately leading a $9.7M USAID-funded program in Afghanistan where I oversaw the deployment of ReportHub, the Humanitarian Spatial Data Center, climate early warning platforms, and anticipatory action frameworks.
           </p>
           <p className="text-lg text-coffee-light/80 leading-relaxed mb-8">
-            That question &mdash; <em>what does it take to put the right information in front of the right people before a crisis becomes a catastrophe?</em> &mdash; has driven me across six countries, from northeast Nigeria to Cox&rsquo;s Bazar to Kabul, building systems that close the gap between data and decisions.
+            Across six countries &mdash; from geospatial drought monitoring to inter-agency cash transfer coordination to disaster risk analysis &mdash; the thread has always been the same: <em>translating complex data into systems that help the right people act before a crisis becomes a catastrophe.</em>
           </p>
           <Link href="/about" className="text-dusty-orange font-medium text-sm hover:underline">
             Read the full story &rarr;
