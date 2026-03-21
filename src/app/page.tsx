@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 /* ───────── Data ───────── */
 const pillars = [
@@ -242,15 +243,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ UN BLUE ACCENT BAR ═══ */}
-      <section className="bg-un-blue py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center text-white">
-          <blockquote className="font-serif text-2xl md:text-3xl leading-relaxed mb-6">
-            &ldquo;The biggest risk in any crisis is not the hazard itself — it&rsquo;s making decisions without evidence.&rdquo;
-          </blockquote>
-          <p className="text-sm text-white/70 uppercase tracking-wider">Alex Nwoko</p>
-        </div>
-      </section>
+      {/* ═══ TESTIMONIAL — iMMAP HQ ═══ */}
+      <Testimonial
+        quote="His ability to synthesize complex data into actionable insights enhanced iMMAP's visibility and credibility among senior stakeholders. He consistently rated as 'exceeding expectations' in formal evaluations."
+        name="Abdon Trowonou"
+        title="Operations Director"
+        org="iMMAP Inc. Headquarters"
+        pillarColor="#009EDB"
+        variant="accent"
+      />
 
       {/* ═══ IMPACT METRICS ═══ */}
       <section className="py-24 bg-beige-200/50">
@@ -264,6 +265,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ═══ TESTIMONIAL ROW ═══ */}
+      <TestimonialRow
+        testimonials={[
+          {
+            quote: 'Alex consistently operates at the intersection of data, digital innovation and humanitarian emergency operational impact. His work reflects not just technical mastery, but innovation with strategic foresight.',
+            name: 'Leslie Parker Odongkara',
+            title: 'Coordinator, Food Security & Agriculture Cluster',
+            org: 'FAO Afghanistan',
+            pillarColor: '#009EDB',
+          },
+          {
+            quote: 'Alex is a hard working and reliable team member, he often goes above and beyond his ToR to meet mission requirements. He has a level of professionalism that leaves his team confident when asking Alex to represent externally.',
+            name: 'Lauren Pearson',
+            title: 'Programme Manager',
+            org: 'IOM Bangladesh',
+            pillarColor: '#8B3A2F',
+          },
+          {
+            quote: 'He proved to be an invaluable member of the team, successfully supporting a team of professionals in developing accurate information management and GIS products, natural risk hazard analysis and multi-vulnerabilities maps.',
+            name: 'Rafaelle Robelin',
+            title: 'Shelter/NFI & CCCM Sector Coordinator',
+            org: 'IOM Nigeria',
+            pillarColor: '#7B4B94',
+          },
+        ]}
+      />
 
       {/* ═══ FEATURED PROJECTS ═══ */}
       <section className="py-24">
@@ -315,6 +343,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ═══ TESTIMONIAL — UNICEF ═══ */}
+      <Testimonial
+        quote="His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming. Alex's work reflects not just technical skill but strategic impact at the highest level."
+        name="Samson Muradzikwa"
+        title="Regional Social Policy Advisor (MENA), Former Chief of Social Policy"
+        org="UNICEF Ethiopia"
+        pillarColor="#8B3A2F"
+      />
 
       {/* ═══ CTA ═══ */}
       <section className="py-24 bg-coffee text-center">

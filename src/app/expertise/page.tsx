@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
   title: 'Expertise — Alex Nwoko',
@@ -98,6 +99,16 @@ export default function ExpertisePage() {
         </p>
       </section>
 
+      {/* Testimonial — top */}
+      <Testimonial
+        quote="His ethical, risk-informed, and forward-thinking approach makes him an invaluable leader in humanitarian geospatial information technologies and emergency response coordination."
+        name="Abdon Trowonou"
+        title="Operations Director"
+        org="iMMAP Inc. Headquarters"
+        pillarColor="#C4703F"
+        variant="accent"
+      />
+
       {/* Pillar Deep Dives */}
       {pillars.map((pillar, i) => (
         <section
@@ -159,6 +170,38 @@ export default function ExpertisePage() {
           </div>
         </section>
       ))}
+
+      {/* What Supervisors Say */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-6 mb-6">
+          <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">What Supervisors Say</p>
+        </div>
+        <TestimonialRow
+          testimonials={[
+            {
+              quote: 'Alex has exceeded expectations as far as CBI is concerned. He has worked tirelessly to ensure a functioning system and trained and supported field staff and finance staff on systems strengthening.',
+              name: 'Lauren Pearson',
+              title: 'Programme Manager',
+              org: 'IOM Bangladesh',
+              pillarColor: '#8B3A2F',
+            },
+            {
+              quote: 'His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming. Alex\'s work reflects not just technical skill but strategic impact at the highest level.',
+              name: 'Samson Muradzikwa',
+              title: 'Regional Social Policy Advisor (MENA)',
+              org: 'UNICEF',
+              pillarColor: '#009EDB',
+            },
+            {
+              quote: 'He has demonstrated the capacities required to take on international IM assignments. Alex has significant technical experience and related contribution to the improvement of IM tools and data collection.',
+              name: 'Michelle Hsu',
+              title: 'Food Security Sector Coordinator',
+              org: 'FAO Nigeria',
+              pillarColor: '#C4703F',
+            },
+          ]}
+        />
+      </section>
     </div>
   )
 }

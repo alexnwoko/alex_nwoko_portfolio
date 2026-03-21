@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 const projects = [
   {
@@ -434,6 +435,48 @@ export default function ProjectsPage() {
             </div>
           )}
         </div>
+      </section>
+
+      {/* Testimonial */}
+      <Testimonial
+        quote="Alex has exceeded expectations as far as CBI is concerned. He has worked tirelessly to ensure a functioning system and trained and supported field staff and finance staff on systems strengthening."
+        name="Lauren Pearson"
+        title="Programme Manager"
+        org="IOM Bangladesh"
+        pillarColor="#8B3A2F"
+        variant="accent"
+      />
+
+      {/* What Colleagues Say */}
+      <section className="mb-16 mt-16">
+        <div className="max-w-4xl mx-auto px-6 mb-6">
+          <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">What Colleagues Say</p>
+        </div>
+        <TestimonialRow
+          testimonials={[
+            {
+              quote: 'His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming.',
+              name: 'Samson Muradzikwa',
+              title: 'Regional Social Policy Advisor (MENA)',
+              org: 'UNICEF',
+              pillarColor: '#009EDB',
+            },
+            {
+              quote: 'His ethical, risk-informed, and forward-thinking approach makes him an invaluable leader in humanitarian geospatial information technologies and emergency response coordination.',
+              name: 'Abdon Trowonou',
+              title: 'Operations Director',
+              org: 'iMMAP Inc. Headquarters',
+              pillarColor: '#C4703F',
+            },
+            {
+              quote: 'He has demonstrated the capacities required to take on international IM assignments. Alex has significant technical experience and related contribution to the improvement of IM tools.',
+              name: 'Michelle Hsu',
+              title: 'Food Security Sector Coordinator',
+              org: 'FAO Nigeria',
+              pillarColor: '#C4703F',
+            },
+          ]}
+        />
       </section>
 
       {/* CTA */}

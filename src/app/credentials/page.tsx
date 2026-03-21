@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Testimonial from '@/components/Testimonial'
 
 export const metadata: Metadata = {
   title: 'Credentials — Alex Nwoko',
@@ -110,6 +111,15 @@ export default function CredentialsPage() {
           ))}
         </div>
       </section>
+
+      {/* Testimonial */}
+      <Testimonial
+        quote="His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming. Alex's work reflects not just technical skill but strategic impact at the highest level."
+        name="Samson Muradzikwa"
+        title="Regional Social Policy Advisor (MENA)"
+        org="UNICEF"
+        pillarColor="#009EDB"
+      />
 
       {/* Technical Skills */}
       <section className="max-w-4xl mx-auto px-6">
