@@ -39,14 +39,60 @@ const memberships = [
   { title: 'Member', org: 'Humanitarian OpenStreetMap Team (HOT)', since: '2017' },
 ]
 
-const certifications = [
-  'Google Data Analytics Professional Certificate',
-  'Google Project Management Professional Certificate',
-  'IBM Data Science Professional Certificate',
-  'ESRI ArcGIS Spatial Analysis',
-  'Tableau Desktop Specialist',
-  'Power BI Data Analyst Associate',
-]
+const certifications: Record<string, { certs: string[]; color: string }> = {
+  'Data Analytics, IM & Cluster Coordination': {
+    color: '#009EDB',
+    certs: [
+      'Data Management & Analysis for Cluster Information Management — UNICEF (2022)',
+      'Response Monitoring and Reporting for a Cluster — UNICEF (2022)',
+      'Humanitarian Needs Assessments for Clusters — UNICEF (2022)',
+      'Global Nutrition Cluster Information Management Level 2 — UNICEF (2022)',
+      'Global Nutrition Cluster Coordination Level 2 — UNICEF (2022)',
+      'Basic Training on Nutrition in Emergencies — UNICEF (2022)',
+      'Health Cluster Coordination — Global Health Cluster (2020)',
+      'Child Protection Information Management System (CPIMS+) — UNICEF Afghanistan (2024)',
+      'IPC Acute Food Insecurity — IPC Global Partners (2025)',
+      'IPC Acute Malnutrition — IPC Global Partners (2025)',
+    ],
+  },
+  'GIS, Remote Sensing & Spatial Data Science': {
+    color: '#7B4B94',
+    certs: [
+      'Spatial Data Science: The New Frontier in Analytics — ESRI (2020)',
+      'Geospatial Information Technology (GIT) in Fragile Contexts — University of Twente / ITC (2020)',
+    ],
+  },
+  'Climate, DRR & Emergency Coordination': {
+    color: '#C4703F',
+    certs: [
+      'Anticipatory Action Simulation Exercise — RedR UK (2024)',
+      'Understanding Risk — GFDRR / World Bank (2023)',
+      'Disaster Displacement — NRC / Platform on Disaster Displacement / UNDRR (2024)',
+      'WASH in Emergencies — DisasterReady (2023)',
+      'Shelter in Emergencies — DisasterReady (2023)',
+      'Cash in Emergencies — DisasterReady (2023)',
+    ],
+  },
+  'Cash & Voucher Assistance': {
+    color: '#8B3A2F',
+    certs: [
+      'Cash and Voucher Assistance — The Fundamentals — CaLP (2019)',
+      'CVA and Social Protection: Linking Humanitarian Cash & Social Protection — CaLP (2019)',
+      'Monitoring and Adapting Cash and Voucher Assistance — CaLP (2019)',
+      'The Remote Cash Course — CaLP Network',
+      'Introduction to Market Analysis — CaLP / IRC (2019)',
+      'A Practical Guide to Market Analysis — CaLP / IRC (2019)',
+      'MEB, Gap Analysis and Calculating the Transfer Value — CALP / Oxfam (2023)',
+    ],
+  },
+  'Project Management': {
+    color: '#3D2B1F',
+    certs: [
+      'Results-Based Project Management (Excellence Award) — PM4DEV (2022)',
+      'Effective Project Management (Excellence Award) — PM4DEV (2022)',
+    ],
+  },
+}
 
 const skills = {
   'Data & Analytics': ['Python', 'R', 'SQL', 'Power BI', 'Tableau', 'Excel/VBA', 'DAX', 'SPSS'],
@@ -100,13 +146,22 @@ export default function CredentialsPage() {
       </section>
 
       {/* Certifications */}
-      <section className="max-w-4xl mx-auto px-6 mb-20 bg-beige-200/50 -mx-6 px-6 py-16 md:-mx-0 md:px-6 rounded-2xl">
-        <h2 className="font-serif text-2xl text-coffee mb-8">Certifications</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {certifications.map((cert) => (
-            <div key={cert} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-beige-300">
-              <span className="text-dusty-orange mt-0.5">&#10003;</span>
-              <span className="text-sm text-coffee-light">{cert}</span>
+      <section className="max-w-4xl mx-auto px-6 mb-20">
+        <h2 className="font-serif text-2xl text-coffee mb-8">Professional Certifications</h2>
+        <div className="space-y-8">
+          {Object.entries(certifications).map(([category, { certs, color }]) => (
+            <div key={category}>
+              <h3 className="text-xs uppercase tracking-wider font-semibold mb-4" style={{ color }}>
+                {category}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {certs.map((cert) => (
+                  <div key={cert} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-beige-300">
+                    <span className="mt-0.5" style={{ color }}>&#10003;</span>
+                    <span className="text-sm text-coffee-light">{cert}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
