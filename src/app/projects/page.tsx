@@ -30,7 +30,7 @@ const projects = [
     evidence: [
       { label: 'Multi-Sectoral Dashboard (ReliefWeb)', url: 'https://reliefweb.int/report/afghanistan/afghanistan-multi-sectoral-dashboard-humanitarian-response-services-december-2024', type: 'link' as const },
       { label: 'iMMAP Afghanistan Programme Page', url: 'https://immap.org/afghanistan/', type: 'link' as const },
-      { label: 'Data Analytics & IM Work Samples', url: '/evidence/data-analytics-im-work-samples.pdf', type: 'pdf' as const },
+      { label: 'Multi-Sectoral Dashboard (Feb 2024)', url: 'https://reliefweb.int/report/afghanistan/afghanistan-multi-sectoral-dashboard-humanitarian-response-services-february-2024', type: 'link' as const },
     ],
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     evidence: [
       { label: 'HSDC Platform', url: 'https://hsdc.immap.org/', type: 'link' as const },
       { label: 'iMMAP: From Data to Action — HSDC Launch', url: 'https://immap.org/news/from-data-to-action-immap-inc-unveils-powerful-tool-for-disaster-response-in-afghanistan/', type: 'link' as const },
-      { label: 'DRR & Climate Work Samples', url: '/evidence/drr-climate-work-samples.pdf', type: 'pdf' as const },
+      { label: 'Risk Landscape: Hazards & Population Exposure', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf' as const },
     ],
   },
   {
@@ -161,7 +161,9 @@ const projects = [
     type: 'Map',
     evidence: [
       { label: 'HSDC Platform — Climate & Hazard Layers', url: 'https://hsdc.immap.org/', type: 'link' as const },
-      { label: 'DRR & Climate Analytics Work Samples', url: '/evidence/drr-climate-work-samples.pdf', type: 'pdf' as const },
+      { label: 'iMMAP-OCHA Climate Outlook Mapping Methodologies', url: '/evidence/immap-ocha-climate-outlook-methodologies.pdf', type: 'pdf' as const },
+      { label: 'Afghanistan Climate Hazard Maps', url: '/evidence/afg-climate-hazard-maps.pdf', type: 'pdf' as const },
+      { label: 'Risk Landscape: Hazards & Population Exposure', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf' as const },
     ],
   },
   {
