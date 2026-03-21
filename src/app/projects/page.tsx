@@ -162,7 +162,6 @@ const projects = [
     evidence: [
       { label: 'HSDC Platform — Climate & Hazard Layers', url: 'https://hsdc.immap.org/', type: 'link' as const },
       { label: 'iMMAP-OCHA Climate Outlook Mapping Methodologies', url: '/evidence/immap-ocha-climate-outlook-methodologies.pdf', type: 'pdf' as const },
-      { label: 'Afghanistan Climate Hazard Maps', url: '/evidence/afg-climate-hazard-maps.pdf', type: 'pdf' as const },
       { label: 'Risk Landscape: Hazards & Population Exposure', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf' as const },
     ],
   },
