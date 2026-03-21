@@ -27,6 +27,11 @@ const projects = [
     tags: ['Platform Design', 'Data Architecture', 'Partner Coordination', 'Power BI', 'KoboToolbox'],
     type: 'Platform',
     liveUrl: 'https://immap.org/afghanistan/',
+    evidence: [
+      { label: 'Multi-Sectoral Dashboard (ReliefWeb)', url: 'https://reliefweb.int/report/afghanistan/afghanistan-multi-sectoral-dashboard-humanitarian-response-services-december-2024', type: 'link' as const },
+      { label: 'iMMAP Afghanistan Programme Page', url: 'https://immap.org/afghanistan/', type: 'link' as const },
+      { label: 'Data Analytics & IM Work Samples', url: '/evidence/data-analytics-im-work-samples.pdf', type: 'pdf' as const },
+    ],
   },
   {
     title: 'Humanitarian Spatial Data Center (HSDC)',
@@ -50,6 +55,11 @@ const projects = [
     tags: ['GeoAI', 'Remote Sensing', 'Risk Analysis', 'Python', 'Google Earth Engine', 'Leaflet.js'],
     type: 'Platform',
     liveUrl: 'https://immap.org/afghanistan/',
+    evidence: [
+      { label: 'HSDC Platform', url: 'https://hsdc.immap.org/', type: 'link' as const },
+      { label: 'iMMAP: From Data to Action — HSDC Launch', url: 'https://immap.org/news/from-data-to-action-immap-inc-unveils-powerful-tool-for-disaster-response-in-afghanistan/', type: 'link' as const },
+      { label: 'DRR & Climate Work Samples', url: '/evidence/drr-climate-work-samples.pdf', type: 'pdf' as const },
+    ],
   },
   {
     title: 'PDM Meta-Analysis Framework',
@@ -73,6 +83,11 @@ const projects = [
     tags: ['Cash Programming', 'Power BI', 'Python', 'KoboToolbox', 'DAX'],
     type: 'Dashboard',
     liveUrl: 'https://app.powerbi.com/view?r=eyJrIjoiZjZkZWFiNTgtZmYyMy00YTY5LWEwNzItNDljNWY3YWJmOWE3IiwidCI6IjE1ODgyNjJkLTIzZmItNDNiNC1iZDZlLWJjZTQ5YzhlNjE4NiIsImMiOjh9',
+    evidence: [
+      { label: 'PDM Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiZjZkZWFiNTgtZmYyMy00YTY5LWEwNzItNDljNWY3YWJmOWE3IiwidCI6IjE1ODgyNjJkLTIzZmItNDNiNC1iZDZlLWJjZTQ5YzhlNjE4NiIsImMiOjh9', type: 'powerbi' as const },
+      { label: 'Ethiopia Cash Working Group (ReliefWeb)', url: 'https://response.reliefweb.int/ethiopia/ethiopia-cash-working-group', type: 'link' as const },
+      { label: 'UNICEF Ethiopia Dashboard', url: '/evidence/unicef-ethiopia-dashboard.pdf', type: 'pdf' as const },
+    ],
   },
   {
     title: 'CBIIMS — Cash-Based Intervention IM System',
@@ -96,6 +111,10 @@ const projects = [
     tags: ['System Design', 'KoboToolbox', 'Cash Programming', 'Process Automation'],
     type: 'Report',
     liveUrl: 'https://response.reliefweb.int/ethiopia/ethiopia-cash-working-group',
+    evidence: [
+      { label: 'CBI Annual Dashboard — Cox\'s Bazar', url: '/evidence/iom-bangladesh-cbi-dashboard.pdf', type: 'pdf' as const },
+      { label: 'CwC Working Group Dashboard', url: '/evidence/iom-bangladesh-cwc-dashboard.pdf', type: 'pdf' as const },
+    ],
   },
   {
     title: 'AISA — Agentic Intersectoral Situational Analysis',
@@ -140,6 +159,10 @@ const projects = [
     ],
     tags: ['Climate Analytics', 'DRR', 'Anticipatory Action', 'Google Earth Engine', 'Python'],
     type: 'Map',
+    evidence: [
+      { label: 'HSDC Platform — Climate & Hazard Layers', url: 'https://hsdc.immap.org/', type: 'link' as const },
+      { label: 'DRR & Climate Analytics Work Samples', url: '/evidence/drr-climate-work-samples.pdf', type: 'pdf' as const },
+    ],
   },
   {
     title: 'COVID-19 Situation Analysis Series',
@@ -162,6 +185,11 @@ const projects = [
     ],
     tags: ['DEEP Platform', 'Secondary Data Analysis', 'AI Classification', 'Report Writing'],
     type: 'Report',
+    evidence: [
+      { label: 'COVID-19 Situation Analysis — Sept 2020 (Sample)', url: '/evidence/bangladesh-covid19-sept2020.pdf', type: 'pdf' as const },
+      { label: 'Full Report Series on ReliefWeb', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-01-december-31-december-2020', type: 'link' as const },
+      { label: 'Sectoral Analysis (May 2020–July 2021)', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-part-one-sectoral-analysis-may', type: 'link' as const },
+    ],
   },
   {
     title: 'Afghanistan IM Capacity Assessment',
@@ -206,6 +234,11 @@ const projects = [
     ],
     tags: ['ArcGIS', 'Flood Analysis', 'Vulnerability Mapping', 'Cartography'],
     type: 'Map',
+    evidence: [
+      { label: 'Flood Vulnerability Map — NE Nigeria', url: '/evidence/nigeria-flood-vulnerability-mapping-2018.pdf', type: 'pdf' as const },
+      { label: 'Shelter/NFI Sector Dashboard', url: '/evidence/iom-nigeria-shelter-dashboard-2018.pdf', type: 'pdf' as const },
+      { label: 'FAO Food Security Sector Dashboard', url: '/evidence/fao-nigeria-sector-dashboard-2018.pdf', type: 'pdf' as const },
+    ],
   },
   {
     title: 'CWG 5W Programmatic Snapshots',
@@ -229,6 +262,10 @@ const projects = [
     tags: ['Power BI', 'CERF', 'Cash Coordination', '5W Reporting'],
     type: 'Dashboard',
     liveUrl: 'https://app.powerbi.com/view?r=eyJrIjoiN2U1NmIyOGUtZjhhNi00OGI3LWIxNDgtMTM1ZGRhZDA1ZWM3IiwidCI6IjE1ODgyNjJkLTIzZmItNDNiNC1iZDZlLWJjZTQ5YzhlNjE4NiIsImMiOjh9',
+    evidence: [
+      { label: '5W Dashboard (Power BI)', url: 'https://app.powerbi.com/view?r=eyJrIjoiN2U1NmIyOGUtZjhhNi00OGI3LWIxNDgtMTM1ZGRhZDA1ZWM3IiwidCI6IjE1ODgyNjJkLTIzZmItNDNiNC1iZDZlLWJjZTQ5YzhlNjE4NiIsImMiOjh9', type: 'powerbi' as const },
+      { label: 'CWG 5W Programmatic Snapshot', url: '/evidence/cwg-5w-programmatic-snapshot-2023.pdf', type: 'pdf' as const },
+    ],
   },
 ]
 
@@ -245,6 +282,7 @@ const typeFilters = ['All', 'Platform', 'Dashboard', 'Map', 'Report', 'Code']
 export default function ProjectsPage() {
   const [activePillar, setActivePillar] = useState('all')
   const [activeType, setActiveType] = useState('All')
+  const [expandedEvidence, setExpandedEvidence] = useState<number | null>(null)
 
   const filtered = projects.filter((p) => {
     const pillarMatch = activePillar === 'all' || p.pillar === activePillar
@@ -402,7 +440,7 @@ export default function ProjectsPage() {
                   </div>
                 </div>
 
-                {/* Tags + Live Link */}
+                {/* Tags + Live Link + Evidence Toggle */}
                 <div className="flex flex-wrap items-center gap-2">
                   {project.tags.map((tag) => (
                     <span
@@ -412,18 +450,90 @@ export default function ProjectsPage() {
                       {tag}
                     </span>
                   ))}
-                  {'liveUrl' in project && project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ml-auto inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-1.5 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-md text-white"
-                      style={{ backgroundColor: project.pillarColor }}
-                    >
-                      View Live &rarr;
-                    </a>
-                  )}
+                  <div className="ml-auto flex items-center gap-2">
+                    {'evidence' in project && project.evidence && (
+                      <button
+                        onClick={() => setExpandedEvidence(expandedEvidence === i ? null : i)}
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-1.5 rounded-full border-2 transition-all hover:-translate-y-0.5"
+                        style={{
+                          borderColor: project.pillarColor,
+                          color: expandedEvidence === i ? '#fff' : project.pillarColor,
+                          backgroundColor: expandedEvidence === i ? project.pillarColor : 'transparent',
+                        }}
+                      >
+                        {expandedEvidence === i ? 'Hide' : 'View'} Evidence
+                      </button>
+                    )}
+                    {'liveUrl' in project && project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-1.5 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-md text-white"
+                        style={{ backgroundColor: project.pillarColor }}
+                      >
+                        View Live &rarr;
+                      </a>
+                    )}
+                  </div>
                 </div>
+
+                {/* Evidence Panel */}
+                {'evidence' in project && project.evidence && expandedEvidence === i && (
+                  <div className="mt-6 pt-6 border-t border-beige-300">
+                    <h4 className="text-xs uppercase tracking-wider font-semibold mb-4" style={{ color: project.pillarColor }}>
+                      Evidence &amp; Published Work
+                    </h4>
+
+                    {/* Power BI Embed */}
+                    {project.evidence.filter((e) => e.type === 'powerbi').length > 0 && (
+                      <div className="mb-6">
+                        {project.evidence.filter((e) => e.type === 'powerbi').map((e) => (
+                          <div key={e.url} className="rounded-xl overflow-hidden border border-beige-300 bg-white">
+                            <iframe
+                              title={e.label}
+                              src={e.url}
+                              className="w-full border-0"
+                              style={{ height: '400px' }}
+                              allowFullScreen
+                            />
+                            <div className="px-4 py-2 bg-beige-100 text-xs text-coffee-muted">
+                              {e.label} — <a href={e.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-dusty-orange">Open full screen</a>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* PDF & Link Evidence */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {project.evidence.filter((e) => e.type !== 'powerbi').map((e) => (
+                        <a
+                          key={e.url}
+                          href={e.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-start gap-3 p-4 rounded-xl border border-beige-300 bg-beige-100/50 hover:bg-white hover:shadow-sm hover:-translate-y-0.5 transition-all group"
+                        >
+                          <span
+                            className="mt-0.5 text-sm flex-shrink-0"
+                            style={{ color: project.pillarColor }}
+                          >
+                            {e.type === 'pdf' ? '\u{1F4C4}' : '\u{1F517}'}
+                          </span>
+                          <div>
+                            <span className="text-sm text-coffee font-medium group-hover:text-dusty-orange transition-colors leading-tight block">
+                              {e.label}
+                            </span>
+                            <span className="text-[10px] text-coffee-muted uppercase tracking-wider mt-1 block">
+                              {e.type === 'pdf' ? 'PDF Document' : 'External Link'}
+                            </span>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </article>
           ))}
