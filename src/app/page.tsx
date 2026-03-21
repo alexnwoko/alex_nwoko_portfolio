@@ -156,14 +156,14 @@ export default function Home() {
             <span className="text-xs text-green-700 font-medium">Open to Opportunities</span>
           </div>
           <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-6 animate-fade-in-up">
-            Humanitarian Systems Architect
+            Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-coffee leading-[1.1] mb-8 animate-fade-in-up delay-100">
-            Building the data infrastructure behind{' '}
+            Building the systems behind{' '}
             <span className="gradient-text">crisis response</span>
           </h1>
           <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up delay-200">
-            I design the platforms, analytical frameworks, and information systems that humanitarian organizations depend on to save lives — across six countries and a decade of complex emergencies.
+            I design data platforms, geospatial intelligence systems, climate early warning tools, and cash programming frameworks that humanitarian organizations depend on to save lives — across six countries and a decade of complex emergencies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
             <Link
@@ -360,7 +360,7 @@ export default function Home() {
             Let&rsquo;s Build Something That Matters
           </h2>
           <p className="text-beige-400 mb-10 leading-relaxed">
-            Whether you&rsquo;re looking for a humanitarian systems architect, a technical advisor for data-driven programming, or a collaborator on the future of crisis information management — I&rsquo;d love to connect.
+            Whether you need a humanitarian data systems architect, a GIS and remote sensing specialist, a climate risk and anticipatory action advisor, or a technical lead for cash transfer programming — I&rsquo;d love to connect.
           </p>
           <Link
             href="/contact"

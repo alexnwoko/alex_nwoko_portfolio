@@ -4,7 +4,7 @@ import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
   title: 'About — Alex Nwoko',
-  description: 'A decade of building humanitarian data systems across six countries.',
+  description: 'A decade of building humanitarian data, geospatial, climate, and cash programming systems across six countries.',
 }
 
 const timeline = [
@@ -80,7 +80,7 @@ export default function AboutPage() {
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">About</p>
         <h1 className="font-serif text-4xl md:text-5xl text-coffee mb-8 leading-tight">
-          A decade of building the data systems behind humanitarian response
+          A decade of building the systems behind humanitarian response
         </h1>
         <div className="prose prose-lg max-w-none text-coffee-light/80 leading-relaxed space-y-6">
           <p>
