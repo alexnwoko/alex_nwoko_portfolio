@@ -297,10 +297,10 @@ export default function Home() {
       <TestimonialRow
         testimonials={[
           {
-            quote: 'Alex consistently operates at the intersection of data, digital innovation and humanitarian emergency operational impact. His work reflects not just technical mastery, but innovation with strategic foresight.',
-            name: 'Leslie Parker Odongkara',
-            title: 'Coordinator, Food Security & Agriculture Cluster',
-            org: 'FAO Afghanistan',
+            quote: 'Alex is an invaluable asset to iMMAP Inc., not only in Afghanistan but on a global scale. His exceptional leadership and problem-solving skills have consistently contributed to the success of the organization\'s mission.',
+            name: 'Belo Mohammed',
+            title: 'Country Representative, Afghanistan',
+            org: 'iMMAP Inc.',
             pillarColor: '#009EDB',
           },
           {
@@ -311,11 +311,38 @@ export default function Home() {
             pillarColor: '#8B3A2F',
           },
           {
-            quote: 'He proved to be an invaluable member of the team, successfully supporting a team of professionals in developing accurate information management and GIS products, natural risk hazard analysis and multi-vulnerabilities maps.',
+            quote: 'Alex is and has been a great value to the Afghanistan team and program. His commitment and dedication have brought the program as a whole to the next level.',
+            name: 'Coen Gorter',
+            title: 'Country Representative, Afghanistan',
+            org: 'iMMAP Inc.',
+            pillarColor: '#009EDB',
+          },
+        ]}
+      />
+
+      {/* ═══ MORE TESTIMONIALS ═══ */}
+      <TestimonialRow
+        testimonials={[
+          {
+            quote: 'He proved to be an invaluable member of the team. Mr. Nwoko is able to work with a high degree of independence and in multicultural environment. He is conscientious and results-oriented.',
             name: 'Rafaelle Robelin',
             title: 'Shelter/NFI & CCCM Sector Coordinator',
             org: 'IOM Nigeria',
             pillarColor: '#7B4B94',
+          },
+          {
+            quote: 'He has demonstrated the capacities required to take on international IM assignments. Alex has significant technical experience and related contribution to the improvement of IM tools.',
+            name: 'Michelle Hsu',
+            title: 'Food Security Sector Coordinator',
+            org: 'FAO Nigeria',
+            pillarColor: '#C4703F',
+          },
+          {
+            quote: 'His ethical, risk-informed, and forward-thinking approach makes him an invaluable leader in humanitarian geospatial information technologies and emergency response coordination.',
+            name: 'Abdon Trowonou',
+            title: 'Operations Director',
+            org: 'iMMAP Inc. Headquarters',
+            pillarColor: '#C4703F',
           },
         ]}
       />

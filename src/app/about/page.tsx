@@ -186,6 +186,16 @@ export default function AboutPage() {
         />
       </section>
 
+      {/* iMMAP Leadership Testimonial */}
+      <Testimonial
+        quote="Alex is an invaluable asset to iMMAP Inc., not only in Afghanistan but on a global scale. His exceptional leadership, dedication, and problem-solving skills have consistently contributed to the success of the organization's mission. Given his capabilities and experience, Alex is well-prepared to take on the role of Country Representative in any iMMAP mission worldwide."
+        name="Belo Mohammed"
+        title="Country Representative, Afghanistan"
+        org="iMMAP Inc."
+        pillarColor="#009EDB"
+        variant="accent"
+      />
+
       {/* More testimonials */}
       <section className="mb-16">
         <TestimonialRow
@@ -198,11 +208,33 @@ export default function AboutPage() {
               pillarColor: '#C4703F',
             },
             {
+              quote: 'Alex is and has been a great value to the Afghanistan team and program. His commitment and dedication to the program have brought the program as a whole to the next level.',
+              name: 'Coen Gorter',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
+            },
+            {
               quote: 'Alex successfully supervised a team of professionals in developing accurate information management and GIS products, natural risk hazard analysis and multi-vulnerabilities maps.',
               name: 'Rafaelle Robelin',
               title: 'Shelter/NFI & CCCM Sector Coordinator',
               org: 'IOM Nigeria',
               pillarColor: '#7B4B94',
+            },
+          ]}
+        />
+      </section>
+
+      {/* Even more testimonials */}
+      <section className="mb-16">
+        <TestimonialRow
+          testimonials={[
+            {
+              quote: 'Alex consistently goes above and beyond the responsibilities outlined in his TORs. Quality of work is always beyond expectation.',
+              name: 'Belo Mohammed',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
             },
             {
               quote: 'Alex is a hard working and reliable team member, he often goes above and beyond his ToR to meet mission requirements. He is a team player and pleasant to work with.',
@@ -210,6 +242,13 @@ export default function AboutPage() {
               title: 'Programme Manager',
               org: 'IOM Bangladesh',
               pillarColor: '#8B3A2F',
+            },
+            {
+              quote: 'Alex possesses natural leadership capabilities. I recommend iMMAP to engage with Alex in a development path towards a senior leadership role.',
+              name: 'Coen Gorter',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
             },
           ]}
         />

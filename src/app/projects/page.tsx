@@ -595,6 +595,13 @@ export default function ProjectsPage() {
         <TestimonialRow
           testimonials={[
             {
+              quote: 'Alex is an invaluable asset to iMMAP Inc., not only in Afghanistan but on a global scale. His exceptional leadership, dedication, and problem-solving skills have consistently contributed to the success of the organization\'s mission.',
+              name: 'Belo Mohammed',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
+            },
+            {
               quote: 'He has demonstrated the capacities required to take on international IM assignments. Alex has significant technical experience and related contribution to the improvement of IM tools.',
               name: 'Michelle Hsu',
               title: 'Food Security Sector Coordinator',
@@ -602,11 +609,33 @@ export default function ProjectsPage() {
               pillarColor: '#C4703F',
             },
             {
+              quote: 'Alex is and has been a great value to the Afghanistan team and program. His commitment and dedication to the program have brought the program as a whole to the next level.',
+              name: 'Coen Gorter',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
+            },
+          ]}
+        />
+      </section>
+
+      {/* Leadership Testimonials */}
+      <section className="mb-16">
+        <TestimonialRow
+          testimonials={[
+            {
               quote: 'Alex successfully supervised a team of professionals in developing accurate information management and GIS products, natural risk hazard analysis and multi-vulnerabilities maps.',
               name: 'Rafaelle Robelin',
               title: 'Shelter/NFI & CCCM Sector Coordinator',
               org: 'IOM Nigeria',
               pillarColor: '#7B4B94',
+            },
+            {
+              quote: 'Alex consistently goes above and beyond the responsibilities outlined in his TORs. Quality of work is always beyond expectation.',
+              name: 'Belo Mohammed',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
             },
             {
               quote: 'Alex is a hard working and reliable team member, he often goes above and beyond his ToR to meet mission requirements. He is a team player and pleasant to work with.',
