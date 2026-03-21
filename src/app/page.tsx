@@ -156,11 +156,11 @@ export default function Home() {
             <span className="text-xs text-green-700 font-medium">Open to Opportunities</span>
           </div>
           <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-6 animate-fade-in-up">
-            Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming
+            Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming &middot; Program Leadership
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-coffee leading-[1.1] mb-8 animate-fade-in-up delay-100">
-            Building the systems behind{' '}
-            <span className="gradient-text">crisis response</span>
+            Building the data systems behind{' '}
+            <span className="gradient-text">disaster risk and humanitarian response</span>
           </h1>
           <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up delay-200">
             I design data platforms, geospatial intelligence systems, climate early warning tools, and cash programming frameworks that humanitarian organizations depend on to save lives — across six countries and a decade of complex emergencies.
