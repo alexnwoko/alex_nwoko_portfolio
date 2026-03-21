@@ -223,18 +223,22 @@ export default function ContactPage() {
             </div>
             <div className="space-y-2">
               {[
-                'Data Analytics & IM Coordination',
-                'GIS, Remote Sensing & Geospatial Analytics',
-                'Climate Risk, Early Warning & Anticipatory Action',
-                'Cash Transfer Programming & Analytics',
-                'Technical advisory, consulting & training',
+                { text: 'Data Analytics, IM & Performance Monitoring', color: '#009EDB' },
+                { text: 'GIS, Remote Sensing & Geospatial Analytics', color: '#7B4B94' },
+                { text: 'Climate Risk, Early Warning & Anticipatory Action', color: '#C4703F' },
+                { text: 'Disaster Risk Reduction & Emergency Coordination', color: '#C4703F' },
+                { text: 'Cash Transfer Programming & Targeting Systems', color: '#8B3A2F' },
+                { text: 'Platform Design & Data Architecture', color: '#009EDB' },
+                { text: 'Technical Program Management & Advisory', color: '#3D2B1F' },
+                { text: 'AI, NLP & Generative AI for Humanitarian Monitoring', color: '#3D2B1F' },
+                { text: 'Speaking, Training & Research Collaboration', color: '#3D2B1F' },
               ].map((item) => (
                 <div
-                  key={item}
+                  key={item.text}
                   className="flex items-center gap-2 text-sm text-coffee-light"
                 >
-                  <span className="text-dusty-orange">&#10003;</span>
-                  {item}
+                  <span style={{ color: item.color }}>&#10003;</span>
+                  {item.text}
                 </div>
               ))}
             </div>
