@@ -23,7 +23,7 @@ const pillars = [
       'Situation analysis and needs assessment coordination',
     ],
     tools: ['Power BI', 'Python', 'KoboToolbox', 'DEEP', 'Tableau', 'Excel/VBA', 'SQL'],
-    impact: 'Supported 75+ organizations across six countries with reporting platforms, analytical frameworks, and coordination mechanisms.',
+    impact: 'Supported 200+ organizations across six countries with reporting platforms, analytical frameworks, and coordination mechanisms.',
   },
   {
     id: 'gis',

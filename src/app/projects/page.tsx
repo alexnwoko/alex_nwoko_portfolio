@@ -12,14 +12,14 @@ const projects = [
     location: 'Afghanistan',
     org: 'iMMAP',
     summary:
-      'Multi-cluster humanitarian reporting platform used by 75+ organizations across Afghanistan to coordinate HRP reporting, monitor response progress, and identify gaps across sectors.',
+      'Multi-cluster humanitarian reporting platform supporting 200+ organizations across Afghanistan to coordinate HRP reporting, monitor response progress, and identify gaps across sectors.',
     challenge:
-      "Afghanistan's humanitarian response involved 75+ organizations reporting to six clusters with inconsistent definitions, fragmented Excel-based workflows, and no unified view of response progress.",
+      "Afghanistan's humanitarian response involved 200+ organizations reporting to multiple clusters with inconsistent definitions, fragmented Excel-based workflows, and no unified view of response progress.",
     solution:
       'Designed a complete reporting ecosystem: harmonized data standards across clusters, built automated data collection and validation pipelines, created role-based dashboards for different user types (cluster coordinators, OCHA, donors), and established feedback loops that improved data quality over time.',
     impact: [
-      '75+ organizations using the platform',
-      '6 clusters harmonized',
+      '200+ organizations supported',
+      'Multi-cluster harmonization',
       'Real-time HRP monitoring',
       'Replaced fragmented Excel reporting',
     ],
