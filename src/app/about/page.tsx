@@ -264,29 +264,121 @@ export default function AboutPage() {
         variant="accent"
       />
 
-      {/* Thought Leadership */}
-      <section className="max-w-4xl mx-auto px-6 mb-20">
-        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Thought Leadership</p>
-        <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-4">Speaking & Presentations</h2>
-        <p className="text-coffee-muted mb-8">
-          Academic and professional presentations on information management, data systems, and humanitarian coordination.
+      {/* ═══ THOUGHT LEADERSHIP — Full-width authority section ═══ */}
+      <section className="bg-coffee text-white py-20 mb-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-3">Thought Leadership</p>
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">Shaping the Practice of Humanitarian Data Systems</h2>
+          <p className="text-beige-400 max-w-3xl mb-12 leading-relaxed">
+            Beyond building systems, I contribute to the global discourse on how data, geospatial intelligence, and disaster risk science should be integrated into humanitarian decision-making — through academic presentations, university speaking engagements, and published analytical work used by UN agencies and humanitarian coordination bodies.
+          </p>
+
+          {/* Authority Metrics */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+            {[
+              { value: '7+', label: 'Published Reports on ReliefWeb' },
+              { value: '200+', label: 'Organizations Using My Systems' },
+              { value: '3', label: 'Live Platforms Operational' },
+              { value: '2', label: 'University Speaking Engagements' },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="font-serif text-3xl md:text-4xl text-dusty-orange mb-1">{stat.value}</div>
+                <div className="text-xs text-beige-400 uppercase tracking-wider">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Featured Presentation */}
+          <div className="rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/10 mb-10">
+            <div className="aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/OUV3tvQB5ZM"
+                title="Information Management in Humanitarian Response Sector — Alex Nwoko"
+                className="w-full h-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-6">
+              <span className="text-[10px] uppercase tracking-widest text-dusty-orange font-semibold mb-2 block">Featured Presentation</span>
+              <h3 className="font-serif text-xl text-white mb-2">Information Management in Humanitarian Response Sector</h3>
+              <p className="text-sm text-beige-400 leading-relaxed">
+                Academic presentation on how information management systems underpin effective humanitarian coordination — from data architecture and interoperability to evidence-driven decision-making in complex emergencies.
+              </p>
+            </div>
+          </div>
+
+          {/* Speaking Engagements */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {/* Durham Invited Speaker */}
+            <div className="rounded-2xl bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-colors">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-[#C4703F]" />
+                <span className="text-[10px] uppercase tracking-widest text-[#C4703F] font-semibold">Invited Speaker</span>
+              </div>
+              <h3 className="font-serif text-lg text-white mb-1">Durham University PGT Careers Event</h3>
+              <p className="text-sm text-beige-400 mb-1">Institute of Hazard, Risk and Resilience (IHRR)</p>
+              <p className="text-xs text-beige-400/60 mb-4">28 November 2023 &middot; Durham, UK</p>
+              <p className="text-sm text-beige-400 leading-relaxed mb-4">
+                Invited by the Department of Geography and IHRR to present on making a difference through humanitarian career pathways. Presented to postgraduate students from three Risk Masters programmes alongside professionals from IBM, AECOM, Marsh, and UK Health Security Agency.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <a href="https://www.durham.ac.uk/research/institutes-and-centres/hazard-risk-resilience/about-us/news/postgraduate-taught-careers-event/" target="_blank" rel="noopener noreferrer" className="text-[11px] px-3 py-1.5 rounded-full border border-[#C4703F]/40 text-[#C4703F] hover:bg-[#C4703F]/10 transition-colors">
+                  Durham University Article
+                </a>
+                <a href="/evidence/durham-pgt-careers-event-programme-2023.pdf" target="_blank" rel="noopener noreferrer" className="text-[11px] px-3 py-1.5 rounded-full border border-[#C4703F]/40 text-[#C4703F] hover:bg-[#C4703F]/10 transition-colors">
+                  Event Programme (PDF)
+                </a>
+              </div>
+            </div>
+
+            {/* Durham Featured Alumni */}
+            <div className="rounded-2xl bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-colors">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-[#7B4B94]" />
+                <span className="text-[10px] uppercase tracking-widest text-[#7B4B94] font-semibold">Featured Alumni</span>
+              </div>
+              <h3 className="font-serif text-lg text-white mb-1">Durham University IHRR Careers Page</h3>
+              <p className="text-sm text-beige-400 mb-1">Institute of Hazard, Risk and Resilience</p>
+              <p className="text-xs text-beige-400/60 mb-4">Official university website</p>
+              <blockquote className="text-sm text-white/90 italic leading-relaxed mb-4 border-l-2 border-[#7B4B94]/50 pl-4">
+                &ldquo;Everything in the humanitarian space is driven by evidence. It all rests on understanding risk and vulnerability: this is where you can flourish.&rdquo;
+              </blockquote>
+              <p className="text-xs text-beige-400/70 mb-4">Quoted as a featured graduate on the university&rsquo;s official careers and employability page.</p>
+              <a href="https://www.durham.ac.uk/departments/academic/geography/postgraduate-study/taught-masters-programmes/jobs-and-careers/" target="_blank" rel="noopener noreferrer" className="text-[11px] px-3 py-1.5 rounded-full border border-[#7B4B94]/40 text-[#7B4B94] hover:bg-[#7B4B94]/10 transition-colors">
+                View on Durham University
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ PUBLISHED WORK — Evidence of impact ═══ */}
+      <section className="max-w-5xl mx-auto px-6 mb-20">
+        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Published Work</p>
+        <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-4">Reports, Dashboards &amp; Platforms</h2>
+        <p className="text-coffee-muted max-w-3xl mb-8">
+          Analytical products published through UN coordination platforms, used by humanitarian country teams and donor agencies for strategic planning and resource allocation.
         </p>
-        <div className="rounded-2xl overflow-hidden border border-beige-300 bg-white">
-          <div className="aspect-video">
-            <iframe
-              src="https://www.youtube.com/embed/OUV3tvQB5ZM"
-              title="Information Management in Humanitarian Response Sector — Alex Nwoko"
-              className="w-full h-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="font-serif text-lg text-coffee mb-2">Information Management in Humanitarian Response Sector</h3>
-            <p className="text-sm text-coffee-muted leading-relaxed">
-              A 21-minute academic presentation exploring the role of information management in humanitarian response — covering data architecture, coordination frameworks, and how IM systems bridge the gap between raw data and life-saving decisions.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            { label: 'COVID-19 Situation Analysis Series', sub: '7 analytical reports — ReliefWeb', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-01-december-31-december-2020', type: 'link', color: '#009EDB' },
+            { label: 'Afghanistan Multi-Sectoral Dashboard', sub: 'HRP response monitoring — ReliefWeb', url: 'https://reliefweb.int/report/afghanistan/afghanistan-multi-sectoral-dashboard-humanitarian-response-services-december-2024', type: 'link', color: '#009EDB' },
+            { label: 'HSDC Platform', sub: 'Live geospatial intelligence platform', url: 'https://hsdc.immap.org/', type: 'link', color: '#7B4B94' },
+            { label: 'Climate Outlook Mapping Methodologies', sub: 'iMMAP-OCHA methodology document', url: '/evidence/immap-ocha-climate-outlook-methodologies.pdf', type: 'pdf', color: '#C4703F' },
+            { label: 'Risk Landscape: Hazards & Exposure', sub: 'Afghanistan population exposure analysis', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf', color: '#C4703F' },
+            { label: 'DRR & Climate Work Samples', sub: 'Climate analytics portfolio', url: '/evidence/drr-climate-work-samples.pdf', type: 'pdf', color: '#C4703F' },
+          ].map((item) => (
+            <a key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 p-4 rounded-xl border border-beige-300 bg-white hover:shadow-md hover:-translate-y-1 transition-all group">
+              <span className="mt-1 w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-white text-xs font-bold" style={{ backgroundColor: item.color }}>
+                {item.type === 'pdf' ? 'PDF' : 'URL'}
+              </span>
+              <div>
+                <span className="text-sm text-coffee font-semibold group-hover:text-dusty-orange transition-colors leading-tight block">{item.label}</span>
+                <span className="text-xs text-coffee-muted mt-1 block">{item.sub}</span>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
