@@ -162,9 +162,36 @@ export default function Home() {
             Building the systems behind{' '}
             <span className="gradient-text">crisis response</span>
           </h1>
-          <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up delay-200">
+          <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up delay-200">
             I design data platforms, geospatial intelligence systems, climate early warning tools, and cash programming frameworks that humanitarian organizations depend on to save lives — across six countries and a decade of complex emergencies.
           </p>
+
+          {/* Core Skill Tags */}
+          <div className="flex flex-wrap justify-center gap-2 mb-10 animate-fade-in-up delay-250 max-w-3xl mx-auto">
+            {[
+              { label: 'Data Analytics & IM', color: '#009EDB' },
+              { label: 'Performance Monitoring', color: '#009EDB' },
+              { label: 'GIS & Remote Sensing', color: '#7B4B94' },
+              { label: 'GeoAI', color: '#7B4B94' },
+              { label: 'Climate Risk Monitoring', color: '#C4703F' },
+              { label: 'Early Warning Systems', color: '#C4703F' },
+              { label: 'Anticipatory Action', color: '#C4703F' },
+              { label: 'Disaster Risk Reduction', color: '#C4703F' },
+              { label: 'Cash Transfer Programming', color: '#8B3A2F' },
+              { label: 'Targeting & PDM', color: '#8B3A2F' },
+              { label: 'Program Management', color: '#3D2B1F' },
+              { label: 'Generative AI & NLP', color: '#3D2B1F' },
+            ].map((tag) => (
+              <span
+                key={tag.label}
+                className="text-[11px] px-3 py-1.5 rounded-full border font-medium"
+                style={{ borderColor: tag.color + '50', color: tag.color }}
+              >
+                {tag.label}
+              </span>
+            ))}
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
             <Link
               href="/projects"
@@ -190,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* ═══ ABOUT PREVIEW ═══ */}
-      <section className="py-24 bg-beige-200/50">
+      <section className="py-14 bg-beige-200/50">
         <div
           ref={aboutFade.ref}
           className={`max-w-4xl mx-auto px-6 transition-all duration-700 ${aboutFade.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
