@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Testimonial from '@/components/Testimonial'
+import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
   title: 'Credentials — Alex Nwoko',
@@ -175,6 +175,35 @@ export default function CredentialsPage() {
         org="UNICEF"
         pillarColor="#009EDB"
       />
+
+      {/* More Testimonials */}
+      <section className="mb-16">
+        <TestimonialRow
+          testimonials={[
+            {
+              quote: 'He proved to be an invaluable member of the team. He can deliver under tight deadlines and possesses a strong work ethic. I very much believe that Mr. Alex Nwoko will be an asset for any team.',
+              name: 'Rafaelle Robelin',
+              title: 'Shelter/NFI & CCCM Sector Coordinator',
+              org: 'IOM Nigeria',
+              pillarColor: '#7B4B94',
+            },
+            {
+              quote: 'Alex is a hard working and reliable team member, he often goes above and beyond his ToR to meet mission requirements. He is a team player and pleasant to work with.',
+              name: 'Lauren Pearson',
+              title: 'Programme Manager',
+              org: 'IOM Bangladesh',
+              pillarColor: '#8B3A2F',
+            },
+            {
+              quote: 'He has demonstrated the capacities required to take on international IM assignments. Alex has significant technical experience and related contribution to the improvement of IM tools.',
+              name: 'Michelle Hsu',
+              title: 'Food Security Sector Coordinator',
+              org: 'FAO Nigeria',
+              pillarColor: '#C4703F',
+            },
+          ]}
+        />
+      </section>
 
       {/* Technical Skills */}
       <section className="max-w-4xl mx-auto px-6">

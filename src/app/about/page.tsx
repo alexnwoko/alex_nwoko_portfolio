@@ -169,18 +169,47 @@ export default function AboutPage() {
               pillarColor: '#8B3A2F',
             },
             {
-              quote: 'His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming. Alex\'s work reflects not just technical skill but strategic impact at the highest level.',
+              quote: 'His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming.',
               name: 'Samson Muradzikwa',
               title: 'Regional Social Policy Advisor (MENA)',
               org: 'UNICEF',
               pillarColor: '#009EDB',
             },
             {
+              quote: 'He proved to be an invaluable member of the team. Mr. Nwoko is able to work with a high degree of independence and in multicultural environment. He is conscientious and results-oriented.',
+              name: 'Rafaelle Robelin',
+              title: 'Shelter/NFI & CCCM Sector Coordinator',
+              org: 'IOM Nigeria',
+              pillarColor: '#7B4B94',
+            },
+          ]}
+        />
+      </section>
+
+      {/* More testimonials */}
+      <section className="mb-16">
+        <TestimonialRow
+          testimonials={[
+            {
               quote: 'He has demonstrated the capacities required to take on international IM assignments. Alex has significant technical experience and related contribution to the improvement of IM tools and data collection.',
               name: 'Michelle Hsu',
               title: 'Food Security Sector Coordinator',
               org: 'FAO Nigeria',
               pillarColor: '#C4703F',
+            },
+            {
+              quote: 'Alex successfully supervised a team of professionals in developing accurate information management and GIS products, natural risk hazard analysis and multi-vulnerabilities maps.',
+              name: 'Rafaelle Robelin',
+              title: 'Shelter/NFI & CCCM Sector Coordinator',
+              org: 'IOM Nigeria',
+              pillarColor: '#7B4B94',
+            },
+            {
+              quote: 'Alex is a hard working and reliable team member, he often goes above and beyond his ToR to meet mission requirements. He is a team player and pleasant to work with.',
+              name: 'Lauren Pearson',
+              title: 'Programme Manager',
+              org: 'IOM Bangladesh',
+              pillarColor: '#8B3A2F',
             },
           ]}
         />
