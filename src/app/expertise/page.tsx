@@ -202,6 +202,35 @@ export default function ExpertisePage() {
           ]}
         />
       </section>
+
+      {/* More Testimonials */}
+      <section className="pb-16">
+        <TestimonialRow
+          testimonials={[
+            {
+              quote: 'Alex consistently operates at the intersection of data, digital innovation and humanitarian emergency operational impact. His work reflects not just technical mastery, but innovation with strategic foresight.',
+              name: 'Leslie Parker Odongkara',
+              title: 'Coordinator, Food Security & Agriculture Cluster',
+              org: 'FAO Afghanistan',
+              pillarColor: '#009EDB',
+            },
+            {
+              quote: 'Alex is an invaluable asset to iMMAP Inc., not only in Afghanistan but on a global scale. His exceptional leadership and problem-solving skills have consistently contributed to the success of the organization\'s mission.',
+              name: 'Belo Mohammed',
+              title: 'Country Representative, Afghanistan',
+              org: 'iMMAP Inc.',
+              pillarColor: '#009EDB',
+            },
+            {
+              quote: 'He proved to be an invaluable member of the team. Mr. Nwoko is able to work with a high degree of independence and in multicultural environment. He is conscientious and results-oriented.',
+              name: 'Rafaelle Robelin',
+              title: 'Shelter/NFI & CCCM Sector Coordinator',
+              org: 'IOM Nigeria',
+              pillarColor: '#7B4B94',
+            },
+          ]}
+        />
+      </section>
     </div>
   )
 }
