@@ -254,6 +254,42 @@ export default function AboutPage() {
         />
       </section>
 
+      {/* Leslie Parker Odongkara Testimonial */}
+      <Testimonial
+        quote="Alex consistently operates at the intersection of data, digital innovation and humanitarian emergency operational impact. His work reflects not just technical mastery, but innovation with strategic foresight. His ability to connect applied analytics with broader questions of equity, vulnerability, and governance sets him apart."
+        name="Leslie Parker Odongkara"
+        title="Coordinator, Food Security & Agriculture Cluster"
+        org="FAO Afghanistan"
+        pillarColor="#009EDB"
+        variant="accent"
+      />
+
+      {/* Thought Leadership */}
+      <section className="max-w-4xl mx-auto px-6 mb-20">
+        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Thought Leadership</p>
+        <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-4">Speaking & Presentations</h2>
+        <p className="text-coffee-muted mb-8">
+          Academic and professional presentations on information management, data systems, and humanitarian coordination.
+        </p>
+        <div className="rounded-2xl overflow-hidden border border-beige-300 bg-white">
+          <div className="aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/OUV3tvQB5ZM"
+              title="Information Management in Humanitarian Response Sector — Alex Nwoko"
+              className="w-full h-full border-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="font-serif text-lg text-coffee mb-2">Information Management in Humanitarian Response Sector</h3>
+            <p className="text-sm text-coffee-muted leading-relaxed">
+              A 21-minute academic presentation exploring the role of information management in humanitarian response — covering data architecture, coordination frameworks, and how IM systems bridge the gap between raw data and life-saving decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="text-center">
         <Link
