@@ -25,6 +25,7 @@ const projects = [
     ],
     tags: ['Platform Design', 'Data Architecture', 'Partner Coordination', 'Power BI', 'KoboToolbox'],
     type: 'Platform',
+    liveUrl: 'https://immap.org/afghanistan/',
   },
   {
     title: 'Humanitarian Spatial Data Center (HSDC)',
@@ -47,6 +48,7 @@ const projects = [
     ],
     tags: ['GeoAI', 'Remote Sensing', 'Risk Analysis', 'Python', 'Google Earth Engine', 'Leaflet.js'],
     type: 'Platform',
+    liveUrl: 'https://immap.org/afghanistan/',
   },
   {
     title: 'PDM Meta-Analysis Framework',
@@ -69,6 +71,7 @@ const projects = [
     ],
     tags: ['Cash Programming', 'Power BI', 'Python', 'KoboToolbox', 'DAX'],
     type: 'Dashboard',
+    liveUrl: 'https://app.powerbi.com/view?r=eyJrIjoiZjZkZWFiNTgtZmYyMy00YTY5LWEwNzItNDljNWY3YWJmOWE3IiwidCI6IjE1ODgyNjJkLTIzZmItNDNiNC1iZDZlLWJjZTQ5YzhlNjE4NiIsImMiOjh9',
   },
   {
     title: 'CBIIMS — Cash-Based Intervention IM System',
@@ -91,6 +94,7 @@ const projects = [
     ],
     tags: ['System Design', 'KoboToolbox', 'Cash Programming', 'Process Automation'],
     type: 'Report',
+    liveUrl: 'https://response.reliefweb.int/ethiopia/ethiopia-cash-working-group',
   },
   {
     title: 'AISA — Agentic Intersectoral Situational Analysis',
@@ -223,6 +227,7 @@ const projects = [
     ],
     tags: ['Power BI', 'CERF', 'Cash Coordination', '5W Reporting'],
     type: 'Dashboard',
+    liveUrl: 'https://app.powerbi.com/view?r=eyJrIjoiN2U1NmIyOGUtZjhhNi00OGI3LWIxNDgtMTM1ZGRhZDA1ZWM3IiwidCI6IjE1ODgyNjJkLTIzZmItNDNiNC1iZDZlLWJjZTQ5YzhlNjE4NiIsImMiOjh9',
   },
 ]
 
@@ -396,8 +401,8 @@ export default function ProjectsPage() {
                   </div>
                 </div>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2">
+                {/* Tags + Live Link */}
+                <div className="flex flex-wrap items-center gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -406,6 +411,17 @@ export default function ProjectsPage() {
                       {tag}
                     </span>
                   ))}
+                  {'liveUrl' in project && project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-auto inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-1.5 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-md text-white"
+                      style={{ backgroundColor: project.pillarColor }}
+                    >
+                      View Live &rarr;
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
