@@ -20,7 +20,7 @@ const pillars = [
       'Power BI & Tableau analytical dashboards with advanced DAX',
       'KoboToolbox form design and data collection systems',
       'Partner coordination and data sharing frameworks',
-      'AI-enabled secondary data analysis (DEEP platform)',
+      'AI-enabled secondary data analysis (deployed DEEP platform)',
       'Situation analysis and needs assessment coordination',
     ],
     tools: ['Power BI', 'Python', 'KoboToolbox', 'DEEP', 'Tableau', 'Excel/VBA', 'SQL'],
@@ -43,7 +43,7 @@ const pillars = [
       'Web-based interactive mapping platforms',
     ],
     tools: ['ArcGIS Pro', 'QGIS', 'Google Earth Engine', 'Python/GeoPandas', 'Leaflet.js', 'Mapbox GL JS', 'PostGIS'],
-    impact: 'Built HSDC — Afghanistan\'s first integrated multi-hazard geospatial analysis and forecasting system.',
+    impact: 'Led the development and deployment of HSDC — Afghanistan\'s first integrated multi-hazard geospatial analysis and forecasting system.',
   },
   {
     id: 'climate',

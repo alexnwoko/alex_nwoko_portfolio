@@ -37,7 +37,7 @@ const timeline = [
     role: 'Project Lead — COVID-19 Situation Analysis',
     org: 'iMMAP Bangladesh',
     location: 'Dhaka, Bangladesh',
-    desc: 'Led a team producing seven comprehensive analysis reports tracking the pandemic\'s cascading impacts using DEEP — an AI-enabled secondary data analysis platform.',
+    desc: 'Led a team producing seven comprehensive analysis reports tracking the pandemic\'s cascading impacts, deploying the DEEP platform for AI-enabled secondary data classification and analysis.',
     pillar: 'data',
   },
   {
@@ -102,7 +102,7 @@ export default function AboutPage() {
             In Ethiopia, those threads deepened further. I developed the UNICEF Information Management Strategy, deployed geospatial tools mapping drought response coverage and community vulnerabilities across conflict-affected regions, and served as data consultant for the Ethiopia Cash Working Group — leading the first-ever inter-agency post-distribution monitoring meta-analysis, designing financial services provider assessments across Tigray, and building the operational dashboards that tracked $3.2M in CERF-funded cash allocations reaching 185,000 beneficiaries.
           </p>
           <p>
-            Afghanistan became the culmination of all four pillars. Leading a $9.7M USAID-funded program, I oversaw the deployment of ReportHub for multi-cluster humanitarian reporting across 200+ organizations, the Humanitarian Spatial Data Center for multi-hazard geospatial analysis integrating earthquake, flood, and drought data, climate early warning platforms powered by NDVI, precipitation forecasting, and drought monitoring, anticipatory action frameworks linking climate triggers to pre-agreed response protocols, and Cash &amp; Voucher Working Group analytics — all while navigating one of the world&rsquo;s most complex operating environments under Taliban governance.
+            Afghanistan became the culmination of all four pillars. Leading a $9.7M USAID-funded program, I led and managed the development and deployment of ReportHub for multi-cluster humanitarian reporting across 200+ organizations, the Humanitarian Spatial Data Center (HSDC) for multi-hazard geospatial analysis integrating earthquake, flood, and drought data, while developing data, evidence generation, and information management strategies for UN agencies and interagency coordination groups — including climate early warning platforms, anticipatory action frameworks, and Cash &amp; Voucher Working Group analytics — all while navigating one of the world&rsquo;s most complex operating environments under Taliban governance.
           </p>
           <p>
             I&rsquo;m not done building. The humanitarian sector is at an inflection point where AI, geospatial intelligence, climate science, and real-time data can fundamentally change how we prepare for and respond to crises — if we build the right systems and put them in the right hands. That&rsquo;s what I do.

@@ -22,6 +22,7 @@ export default function Footer() {
                 { href: '/expertise', label: 'Expertise' },
                 { href: '/projects', label: 'Projects' },
                 { href: '/innovations', label: 'Innovations' },
+                { href: '/founder-journey', label: 'Founder Journey' },
                 { href: '/blog', label: 'Field Notes' },
                 { href: '/credentials', label: 'Credentials' },
                 { href: '/contact', label: 'Contact' },

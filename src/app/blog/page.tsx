@@ -8,6 +8,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'from-humanitarian-data-to-digitising-africas-markets',
+    title: 'From Humanitarian Data Systems to Digitising Africa\'s Market Ecosystems',
+    category: 'Opinion / Founder Reflection',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '12 min',
+    excerpt: 'A decade of building data systems in crisis zones revealed a pattern: the same problems of fragmented information, broken trust, and invisible supply chains that plague humanitarian response also define Africa\'s $2.3 trillion informal economy. That insight sparked a new chapter.',
+    featured: true,
+  },
+  {
     slug: 'why-i-build-systems-not-dashboards',
     title: 'Why I Build Systems, Not Dashboards',
     category: 'Opinion',
@@ -15,7 +25,7 @@ const posts = [
     pillarColor: '#C4703F',
     readTime: '8 min',
     excerpt: 'The humanitarian sector is drowning in dashboards but starving for systems. A dashboard is a view; a system is an ecosystem that changes how organizations make decisions.',
-    featured: true,
+    featured: false,
   },
   {
     slug: 'the-72-hour-problem',
@@ -135,9 +145,10 @@ export default function BlogPage() {
       <section className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {rest.map((post) => (
-            <article
+            <Link
               key={post.slug}
-              className="bg-white rounded-2xl border border-beige-300 p-8 card-hover group"
+              href={`/blog/${post.slug}`}
+              className="bg-white rounded-2xl border border-beige-300 p-8 card-hover group block"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span
@@ -155,7 +166,7 @@ export default function BlogPage() {
               <span className="text-sm text-dusty-orange font-medium">
                 Read more &rarr;
               </span>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

@@ -17,7 +17,7 @@ const projects = [
     challenge:
       "Afghanistan's humanitarian response involved 200+ organizations reporting to multiple clusters with inconsistent definitions, fragmented Excel-based workflows, and no unified view of response progress.",
     solution:
-      'Designed a complete reporting ecosystem: harmonized data standards across clusters, built automated data collection and validation pipelines, created role-based dashboards for different user types (cluster coordinators, OCHA, donors), and established feedback loops that improved data quality over time.',
+      'Led the development and deployment of a complete reporting ecosystem: harmonized data standards across clusters, managed automated data collection and validation pipelines, designed role-based dashboards for different user types (cluster coordinators, OCHA, donors), and established feedback loops that improved data quality over time.',
     impact: [
       '200+ organizations supported',
       'Multi-cluster harmonization',
@@ -45,7 +45,7 @@ const projects = [
     challenge:
       'Humanitarian actors in Afghanistan lacked a centralized geospatial platform that combined multiple hazard layers with population data, accessibility information, and response capacity.',
     solution:
-      'Built an integrated geospatial platform combining satellite imagery, climate data, seismic sensors, and ground-verified information. Developed exposure estimation models, automated alert systems, and web-based mapping interfaces accessible to non-GIS specialists.',
+      'Led the development and deployment of an integrated geospatial platform combining satellite imagery, climate data, seismic sensors, and ground-verified information. Managed the development of exposure estimation models, automated alert systems, and web-based mapping interfaces accessible to non-GIS specialists.',
     impact: [
       'First integrated multi-hazard platform for Afghanistan',
       'Automated exposure estimation',
@@ -177,7 +177,7 @@ const projects = [
     challenge:
       "COVID-19's impact on Bangladesh's vulnerable populations was rapidly evolving, with information scattered across hundreds of sources in multiple languages and formats.",
     solution:
-      'Led a team using the DEEP platform to systematically code and classify thousands of unstructured humanitarian documents. Produced seven thematic reports.',
+      'Led a team deploying the DEEP platform to systematically code and classify thousands of unstructured humanitarian documents. Produced seven thematic reports.',
     impact: [
       '7 analytical reports produced',
       'AI-enabled data classification',
