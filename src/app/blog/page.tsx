@@ -2,19 +2,19 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Field Notes — Alex Nwoko',
+  title: 'My Blog — Alex Nwoko',
   description: 'Reflections, technical deep dives, and opinions from the intersection of humanitarian data, GIS, climate, and cash programming.',
 }
 
 const posts = [
   {
     slug: 'from-humanitarian-data-to-digitising-africas-markets',
-    title: 'From Humanitarian Data Systems to Digitising Africa\'s Market Ecosystems',
-    category: 'Opinion / Founder Reflection',
+    title: 'From Crisis Zones Digital Systems to Market Zones Digital Transition for Africa\'s Informal Economies',
+    category: 'Founder Reflection',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
     readTime: '12 min',
-    excerpt: 'A decade of building data systems in crisis zones revealed a pattern: the same problems of fragmented information, broken trust, and invisible supply chains that plague humanitarian response also define Africa\'s $2.3 trillion informal economy. That insight sparked a new chapter.',
+    excerpt: 'While working abroad over the last decade, I visited Nigeria every few months. Every visit, the same struggle — finding reliable services, navigating markets blind, and watching trust deficits hold back an entire economy from going digital. Then a realisation hit me.',
     featured: true,
   },
   {
@@ -97,6 +97,76 @@ const posts = [
     excerpt: 'AISA and why the next generation of humanitarian information management will use AI agents, not just AI tools.',
     featured: false,
   },
+  {
+    slug: 'voice-is-the-future-of-humanitarian-data',
+    title: 'Voice Is the Future of Humanitarian Data and Evidence Generation',
+    category: 'Opinion / Technical Vision',
+    pillar: 'Data Analytics',
+    pillarColor: '#009EDB',
+    readTime: '10 min',
+    excerpt: 'After a decade of building form-based reporting systems across six countries, voice AI will fundamentally reshape how the humanitarian sector generates evidence. The interface was always the bottleneck.',
+    featured: false,
+  },
+  {
+    slug: 'the-form-is-already-dead',
+    title: 'From Forms to Voice: The Deeper Inclusive Transition',
+    category: 'Opinion / Technical',
+    pillar: 'Data Analytics',
+    pillarColor: '#009EDB',
+    readTime: '9 min',
+    excerpt: 'Every number in our reporting systems started as a human observation that had to survive a form before it became actionable. Voice-to-schema AI ends that entire pipeline.',
+    featured: false,
+  },
+  {
+    slug: 'africa-will-define-voice-ai',
+    title: 'Africa Will Define How the World Uses Voice AI',
+    category: 'Opinion / Founder Reflection',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '9 min',
+    excerpt: 'Africa skipped landlines for mobile. Skipped bank branches for M-Pesa. Next: skipping text-based interfaces for voice-first AI. And this time, the continent won\'t just adopt — it will lead.',
+    featured: false,
+  },
+  {
+    slug: 'voice-powered-decision-intelligence',
+    title: 'From Reporting Platforms to Voice-Powered Decision Intelligence',
+    category: 'Opinion / Technical',
+    pillar: 'Data Analytics',
+    pillarColor: '#009EDB',
+    readTime: '11 min',
+    excerpt: 'A field officer in Kabul told me: "By the time our data reaches Kabul, the situation has already moved." Voice AI combined with agentic AI collapses the pipeline from weeks to seconds.',
+    featured: false,
+  },
+  {
+    slug: 'the-voices-our-data-systems-silence',
+    title: 'The Voices Our Data Systems Were Built to Silence',
+    category: 'Opinion',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '10 min',
+    excerpt: 'Accountability to Affected Populations has been a humanitarian commitment for over a decade. But our data collection tools — forms, checkboxes, pre-coded categories — were never designed to listen.',
+    featured: false,
+  },
+  {
+    slug: 'voice-infrastructure-inequality',
+    title: 'Voice Infrastructure Inequality: The New Digital Divide',
+    category: 'Opinion / Research',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '10 min',
+    excerpt: 'AI scores 80% accuracy in English. Below 55% in Yoruba, spoken by 50 million people. If voice is the future of data, voice infrastructure inequality is the future of data exclusion.',
+    featured: false,
+  },
+  {
+    slug: 'building-voice-native-evidence-systems',
+    title: 'Building Voice-Native Evidence Systems: From Theory to Architecture',
+    category: 'Technical Vision',
+    pillar: 'Data Analytics',
+    pillarColor: '#009EDB',
+    readTime: '9 min',
+    excerpt: 'What does a voice-native humanitarian evidence system actually look like? After building form-based platforms for a decade, here\'s the architecture — and why it changes everything.',
+    featured: false,
+  },
 ]
 
 export default function BlogPage() {
@@ -107,9 +177,9 @@ export default function BlogPage() {
     <div className="pt-24 pb-16">
       {/* Header */}
       <section className="max-w-4xl mx-auto px-6 mb-16">
-        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Field Notes</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">My Blog</p>
         <h1 className="font-serif text-4xl md:text-5xl text-coffee mb-6 leading-tight">
-          Writing from the Field
+          Reflections from My Journey
         </h1>
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
           Reflections, technical deep dives, and opinions from a decade at the intersection of humanitarian data, GIS, climate risk, and cash programming.

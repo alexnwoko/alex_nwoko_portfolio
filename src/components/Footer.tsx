@@ -23,7 +23,7 @@ export default function Footer() {
                 { href: '/projects', label: 'Projects' },
                 { href: '/innovations', label: 'Innovations' },
                 { href: '/founder-journey', label: 'Founder Journey' },
-                { href: '/blog', label: 'Field Notes' },
+                { href: '/blog', label: 'My Blog' },
                 { href: '/credentials', label: 'Credentials' },
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (

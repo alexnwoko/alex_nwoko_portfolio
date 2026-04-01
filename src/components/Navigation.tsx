@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/projects', label: 'Projects' },
   { href: '/innovations', label: 'Innovations' },
   { href: '/founder-journey', label: 'Founder Journey' },
-  { href: '/blog', label: 'Field Notes' },
+  { href: '/blog', label: 'My Blog' },
   { href: '/credentials', label: 'Credentials' },
 ]
 

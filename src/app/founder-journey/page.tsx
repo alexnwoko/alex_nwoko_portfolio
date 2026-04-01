@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Founder Journey — Alex Nwoko',
@@ -38,7 +39,7 @@ export default function FounderJourneyPage() {
             Africa's informal commerce is a $2.3 trillion economy operating almost entirely offline. Street traders, market vendors, service professionals, and micro-entrepreneurs move more capital through person-to-person transactions than most formal financial institutions touch. Yet this entire ecosystem remains invisible to formal data systems, inaccessible to digital platforms, and unprotected by the infrastructure that digitized commerce in other regions.
           </p>
           <p>
-            The irony: the skills that humanitarian data architects use—geospatial intelligence, trust infrastructure, real-time data systems, designing for low-connectivity and low-literacy populations—are exactly what's needed to unlock this market. I built those systems for environments where infrastructure is unreliable, trust is earned not assumed, data is fragmented, and users are offline-first. Those same design principles apply directly to African informal markets.
+            The irony: the skills that humanitarian data architects use—geospatial intelligence, trust infrastructure, real-time data systems, data privacy, data interoperability, and designing for low-connectivity and low-literacy populations—are exactly what's needed to unlock this market. I built those systems for environments where infrastructure is unreliable, trust is earned not assumed, data is fragmented, and users are offline-first. Those same design principles apply directly to African informal markets.
           </p>
           <p>
             But here's the deeper truth: the problem isn't that technology doesn't exist. The problem is that most tech solutions are designed by people who've never been inside an African market. They import Western marketplace models wholesale—models that assume formal addresses, stable internet, digital payment accounts, and standardized pricing. None of that exists in the contexts where 90% of African economic activity happens. When solutions fail in these markets, it's not because Africans don't want to digitize. It's because the products were built for different constraints.
@@ -55,11 +56,13 @@ export default function FounderJourneyPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* VENDOH CARD */}
-          <div className="bg-white rounded-2xl border border-beige-300 p-8 flex flex-col h-full" style={{ borderTopWidth: '4px', borderTopColor: '#FF6B00' }}>
+          <div className="bg-white rounded-2xl border border-beige-300 p-8 flex flex-col h-full" style={{ borderTopWidth: '4px', borderTopColor: '#7B4B94' }}>
             <div className="mb-6">
-              <span className="text-3xl">🎙️</span>
+              <a href="https://www.vendoh.io/" target="_blank" rel="noopener noreferrer">
+                <Image src="/logos/vendoh-logo.png" alt="Vendoh" width={140} height={52} className="object-contain" />
+              </a>
             </div>
-            <h3 className="font-serif text-2xl text-coffee mb-1">Vendoh</h3>
+            <h3 className="font-serif text-2xl text-coffee mb-1"><a href="https://www.vendoh.io/" target="_blank" rel="noopener noreferrer" className="hover:text-dusty-orange transition-colors">Vendoh</a></h3>
             <p className="text-sm text-dusty-orange font-medium mb-6">Voice-First Service Marketplace</p>
             <p className="text-base text-coffee-light/90 leading-relaxed mb-6">
               Africa's first voice-first, AI-native service marketplace. Starting with Nigeria's $2.3B urban service economy where less than 5% of transactions happen on formal platforms. Voice-enabled discovery in Nigerian English and Pidgin, intelligent proximity matching, dual-role flexibility (anyone can be both client and vendor), and escrow-protected payments.
@@ -98,11 +101,13 @@ export default function FounderJourneyPage() {
           </div>
 
           {/* MAKKET CARD */}
-          <div className="bg-white rounded-2xl border border-beige-300 p-8 flex flex-col h-full" style={{ borderTopWidth: '4px', borderTopColor: '#4B6CFF' }}>
+          <div className="bg-white rounded-2xl border border-beige-300 p-8 flex flex-col h-full" style={{ borderTopWidth: '4px', borderTopColor: '#2A9D8F' }}>
             <div className="mb-6">
-              <span className="text-3xl">🛒</span>
+              <a href="https://www.makket.io/" target="_blank" rel="noopener noreferrer">
+                <Image src="/logos/makket-logo.png" alt="MAKKET" width={160} height={52} className="object-contain" />
+              </a>
             </div>
-            <h3 className="font-serif text-2xl text-coffee mb-1">MAKKET</h3>
+            <h3 className="font-serif text-2xl text-coffee mb-1"><a href="https://www.makket.io/" target="_blank" rel="noopener noreferrer" className="hover:text-dusty-orange transition-colors">MAKKET</a></h3>
             <p className="text-sm text-dusty-orange font-medium mb-6">Digitising Nigeria's Physical Markets</p>
             <p className="text-base text-coffee-light/90 leading-relaxed mb-6">
               A mobile-first market-enablement platform connecting buyers with traders across Nigeria's 600+ physical markets. Unlike e-commerce platforms that try to replace markets, MAKKET digitizes discovery, trust, and trade for existing traders—making the invisible geography of African commerce visible and accessible.
@@ -151,7 +156,11 @@ export default function FounderJourneyPage() {
           {/* Insight 1: Trust */}
           <div className="bg-white rounded-2xl border border-beige-300 p-8">
             <div className="flex items-start gap-4 mb-6">
-              <span className="text-3xl">🔐</span>
+              <div className="w-10 h-10 rounded-xl bg-dusty-orange/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-dusty-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                </svg>
+              </div>
               <div>
                 <h3 className="font-serif text-xl text-coffee">Trust is Infrastructure</h3>
               </div>
@@ -164,7 +173,11 @@ export default function FounderJourneyPage() {
           {/* Insight 2: Voice */}
           <div className="bg-white rounded-2xl border border-beige-300 p-8">
             <div className="flex items-start gap-4 mb-6">
-              <span className="text-3xl">🎙️</span>
+              <div className="w-10 h-10 rounded-xl bg-[#7B4B94]/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-[#7B4B94]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
+                </svg>
+              </div>
               <div>
                 <h3 className="font-serif text-xl text-coffee">Voice Before Text</h3>
               </div>
@@ -177,7 +190,12 @@ export default function FounderJourneyPage() {
           {/* Insight 3: Density */}
           <div className="bg-white rounded-2xl border border-beige-300 p-8">
             <div className="flex items-start gap-4 mb-6">
-              <span className="text-3xl">📍</span>
+              <div className="w-10 h-10 rounded-xl bg-[#009EDB]/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-[#009EDB]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+              </div>
               <div>
                 <h3 className="font-serif text-xl text-coffee">Density Before Breadth</h3>
               </div>
@@ -190,7 +208,11 @@ export default function FounderJourneyPage() {
           {/* Insight 4: Constraints */}
           <div className="bg-white rounded-2xl border border-beige-300 p-8">
             <div className="flex items-start gap-4 mb-6">
-              <span className="text-3xl">⚙️</span>
+              <div className="w-10 h-10 rounded-xl bg-[#8B3A2F]/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-[#8B3A2F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" />
+                </svg>
+              </div>
               <div>
                 <h3 className="font-serif text-xl text-coffee">Design for the Constraint</h3>
               </div>
