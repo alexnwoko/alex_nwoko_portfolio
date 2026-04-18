@@ -170,8 +170,16 @@ function getThemeLabel(pillar: string): string {
   }
 }
 
-export default async function Image({ params }: { params: { slug: string } }) {
-  const post = POSTS[params.slug] ?? {
+export default async function Image({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  // Next.js 16: params is a Promise and must be awaited. Without this, the
+  // slug lookup fails silently and every post falls through to the default
+  // (Cross-cutting orange) card.
+  const { slug } = await params
+  const post = POSTS[slug] ?? {
     title: 'Blog Post',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
