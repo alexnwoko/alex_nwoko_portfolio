@@ -414,7 +414,7 @@ export default function Home() {
             Let&rsquo;s Build Something That Matters
           </h2>
           <p className="text-beige-400 mb-10 leading-relaxed">
-            Whether you need a humanitarian data systems architect, a GIS and remote sensing specialist, a climate risk and anticipatory action advisor, or a technical lead for cash transfer programming — I&rsquo;d love to connect.
+            Whether you need a disaster risk and humanitarian data systems architect, a GIS and remote sensing specialist, a climate risk and anticipatory action advisor, or a technical lead for cash transfer programming — I&rsquo;d love to connect.
           </p>
           <Link
             href="/contact"

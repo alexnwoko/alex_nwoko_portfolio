@@ -5,7 +5,7 @@
       "name": "portfolio-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 3000,
+      "autoPort": true,
       "cwd": "/Users/alexnwoko/Documents/Alex Nwoko - Portfolio Website/alex-nwoko-portfolio"
     }
   ]

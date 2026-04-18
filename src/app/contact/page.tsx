@@ -40,7 +40,7 @@ export default function ContactPage() {
           Let&rsquo;s Connect
         </h1>
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
-          Whether you need a humanitarian data systems architect, a GIS and remote sensing
+          Whether you need a disaster risk and humanitarian data systems architect, a GIS and remote sensing
           specialist, a climate risk and anticipatory action advisor, or a technical lead
           for cash transfer programming — I&rsquo;d love to hear from you.
         </p>
