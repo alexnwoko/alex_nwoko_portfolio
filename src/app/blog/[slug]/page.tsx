@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
+import ShareButtons from '@/components/ShareButtons'
 
 interface BlogSection {
   heading?: string
@@ -2003,7 +2004,7 @@ export default async function BlogPostPage({
       </header>
 
       {/* Article Body */}
-      <div className="max-w-3xl mx-auto px-6 mb-16">
+      <div className="max-w-3xl mx-auto px-6 mb-8">
         <div className="font-reading text-lg text-coffee-light/85 leading-relaxed space-y-6">
           {post.sections.map((section, idx) => (
             <div key={idx}>
@@ -2020,6 +2021,11 @@ export default async function BlogPostPage({
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Share buttons — sit just below the article body and above Continue Reading */}
+      <div className="max-w-3xl mx-auto px-6 mb-16">
+        <ShareButtons url={url} title={post.title} />
       </div>
 
       {/* Continue Reading Section */}
