@@ -1820,6 +1820,10 @@ export async function generateMetadata({
   const url = `https://alexnwoko.com/blog/${post.slug}`
   const keywords = getPostKeywords(post)
   const isoDate = toIsoDate(post.date)
+  // Auto-generated OG image (see opengraph-image.tsx in this folder).
+  // Next.js automatically routes this URL to our edge function so each post
+  // gets its own social-share card AND a structured-data image.
+  const ogImageUrl = `${url}/opengraph-image`
 
   return {
     title: post.title,
@@ -1842,12 +1846,21 @@ export async function generateMetadata({
       authors: ['Alex Nwoko'],
       tags: keywords.slice(0, 12),
       locale: 'en_US',
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
       creator: '@alexnwoko',
+      images: [ogImageUrl],
     },
     robots: {
       index: true,
@@ -1890,6 +1903,9 @@ export default async function BlogPostPage({
   const url = `https://alexnwoko.com/blog/${post.slug}`
   const isoDate = toIsoDate(post.date)
   const keywords = getPostKeywords(post)
+  // Auto-generated OG image — also used as the article image for rich results.
+  // This resolves the "Missing field image" warning in Google's Rich Results Test.
+  const ogImageUrl = `${url}/opengraph-image`
   const articleBody = post.sections
     .map((s) => `${s.heading ? s.heading + '. ' : ''}${s.content}`)
     .join('\n\n')
@@ -1911,6 +1927,12 @@ export default async function BlogPostPage({
     articleSection: post.pillar,
     inLanguage: 'en',
     url,
+    image: {
+      '@type': 'ImageObject',
+      url: ogImageUrl,
+      width: 1200,
+      height: 630,
+    },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': url,

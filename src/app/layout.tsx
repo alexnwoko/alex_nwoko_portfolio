@@ -45,12 +45,22 @@ export const metadata: Metadata = {
     siteName: 'Alex Nwoko Portfolio',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: 'https://alexnwoko.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect',
     description:
       'Building the data systems behind disaster risk reduction and humanitarian response across six countries.',
+    images: ['https://alexnwoko.com/opengraph-image'],
+    creator: '@alexnwoko',
   },
   robots: {
     index: true,
