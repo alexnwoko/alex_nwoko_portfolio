@@ -2042,7 +2042,7 @@ Every dollar of climate finance that arrives after the disaster is a dollar that
       'Five organisations running cash transfer programmes in the same country produce five sets of post-distribution monitoring data using five different tools. The simple question — "is our collective cash response working?" — becomes structurally unanswerable. Inter-agency PDM meta-analysis is how you answer it.',
     sections: [
       {
-        content: `In Ethiopia, the Cash Working Group coordinates a multi-purpose cash response that, in 2024 and 2025, reached hundreds of thousands of beneficiaries across multiple regions through a dozen-plus implementing partners. Each partner ran its own post-distribution monitoring. Each one used a slightly different questionnaire, a slightly different sampling strategy, a slightly different definition of "satisfaction" or "adequacy" or "market access."
+        content: `In Ethiopia, the Cash Working Group coordinated an impressive multi-purpose cash response that, in 2022 and 2023, reached tens of thousands of beneficiaries across multiple regions through a dozen-plus implementing partners. But here is the challenge, each cash working group partner had ran their own post-distribution monitoring. Each one used a slightly different questionnaire, a slightly different sampling strategy, a slightly different definition of "satisfaction" or "adequacy" or "market access."
 
 When the Cash Working Group leadership asked the most basic possible question — "is our collective cash programming working?" — the answer was structurally impossible to give. Not because the data didn\'t exist. Because the data existed in twelve incompatible silos that couldn\'t be combined without weeks of harmonisation work that nobody was funded to do.
 
@@ -2073,8 +2073,8 @@ The reasons are technical:
 Aggregate across these incompatibilities and you don\'t get a richer picture. You get noise.`,
       },
       {
-        heading: 'The Seven-Pillar Framework',
-        content: `The framework I\'ve refined for inter-agency PDM meta-analysis organises the analysis into seven pillars. Each pillar is defined narrowly enough that partner PDMs can be mapped to it cleanly, and broadly enough to capture the operationally meaningful dimensions of cash performance.
+        heading: 'An Innovative Seven Pillar Meta-analysis Framework',
+        content: `The framework I\'ve developed for inter-agency PDM meta-analysis in inter-agency multi-purpose cash coordination, organises the meta-analysis into seven pillars. Each pillar is defined narrowly enough that partner PDMs can be mapped to it cleanly, and broadly enough to capture the operationally meaningful dimensions of cash performance.
 
 **Pillar 1 — Programme Delivery and Beneficiary Profile.** Targeting mechanism, registration process, delivery modality, transfer mechanism, timeliness, perceived fairness. This is the operational hygiene layer. If partners are targeting different populations or distributing through different rails, the rest of the analysis has to control for it.
 
@@ -2136,9 +2136,7 @@ The meta-analysis report itself is a side effect of that governance work. The bi
 
 **Evidence for the [Minimum Expenditure Basket](/blog/the-case-for-anticipatory-cash) review.** Real expenditure patterns from harmonised data, capable of feeding the MEB taskforce with empirical evidence rather than partner-by-partner anecdote.
 
-**Donor-quality evidence on collective contribution.** When a donor asks the Cash Working Group "what did your USD 50 million achieve?", the answer is no longer "here are 12 partner reports". It\'s a single integrated finding with confidence bands, methodology disclosure, and reproducible underlying data.
-
-**Inputs to the [Loss and Damage Fund](/blog/disaster-loss-data-climate-adaptation) evidence base.** Harmonised PDM data, properly structured, becomes part of the country\'s disaster impact evidence — exactly what the post-COP30 climate finance architecture is asking for.`,
+**Donor-quality evidence on collective contribution.** When a donor asks the Cash Working Group "what did your USD 50 million achieve?", the answer is no longer "here are 12 partner reports". It\'s a single integrated finding with confidence bands, methodology disclosure, and reproducible underlying data.`,
       },
       {
         heading: 'The Pattern Generalises',
@@ -2148,7 +2146,7 @@ Inter-agency meta-analysis is the bridge. The seven-pillar approach can be adapt
 
 What changes is the substantive question. For cash, it\'s "is the cash transfer system working?" For nutrition, it\'s "is the multi-partner nutrition response moving the IPC needle?" For protection, it\'s "are the inter-agency referral pathways functioning?" The method is general; the question is sector-specific.
 
-The point of meta-analysis is not just better evidence. It\'s the institutional habit of asking system-level questions instead of partner-level ones — and building the data architecture that makes those questions answerable.`,
+The point of meta-analysis is not just better evidence, but to optimise joint approach of responding to development and humanitarian needs and measuring results and gaps, using a whole-of-system thinking. It\'s the institutional habit of asking system-level questions instead of partner-level ones — and building the data architecture that makes those questions answerable.`,
       },
     ],
     relatedSlugs: [
