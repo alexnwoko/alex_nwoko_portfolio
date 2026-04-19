@@ -1956,7 +1956,7 @@ That\'s what I learned in Maiduguri. It\'s what got me from there to where I am 
       'Every dollar spent in advance of a slow-onset disaster is worth roughly five dollars spent after. Cash is the cleanest instrument for moving money before a crisis hits — and the data systems to trigger it now exist.',
     sections: [
       {
-        content: `In Ethiopia in 2024, I was supporting the Cash Working Group as drought was tightening across the Somali, SNNP, and Oromia regions. The forecasts were clear: rainfall deficits were widening, [CHIRPS](https://www.chc.ucsb.edu/data/chirps) data showed below-average precipitation across multiple consecutive seasons, and the Standardised Precipitation Index was crossing thresholds we associated with mid-severity drought.
+        content: `In Ethiopia between 2022 and 2023, I was consulting for UNICEF cash transfer program and the Ethiopia Cash Working Group as drought was tightening across the Somali, SNNP, and Oromia regions. The forecasts were clear: rainfall deficits were widening, [CHIRPS](https://www.chc.ucsb.edu/data/chirps) data showed below-average precipitation across multiple consecutive seasons, and the Standardised Precipitation Index was crossing thresholds we associated with mid-severity drought.
 
 What we did not do, despite the forecasts, was release multi-purpose cash transfers in advance of the worst impacts. The funding mechanisms were post-onset. The humanitarian appeals were post-impact. By the time the CERF-funded MPC programme I monitored reached 185,000 beneficiaries with USD 3.2 million distributed, livelihoods had already been depleted, livestock had been sold at distress prices, and households had taken on debt to bridge the gap.
 
