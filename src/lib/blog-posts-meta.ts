@@ -112,7 +112,7 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '10 min',
     excerpt:
       "The evolution from manual Excel-based IM in Nigeria's NE crisis to AI-powered analytical platforms wasn't planned — it was driven by repeatedly hitting the limits of existing tools.",
-    published: true,
+    published: false,
   },
   {
     slug: 'the-case-for-anticipatory-cash',

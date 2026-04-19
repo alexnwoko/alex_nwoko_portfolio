@@ -22,7 +22,7 @@ const BLOG_SLUGS: string[] = [
   'building-voice-native-evidence-systems',
   // Field reflections + cash + GIS series
   'the-72-hour-problem',
-  'from-maiduguri-to-machine-learning',
+  // 'from-maiduguri-to-machine-learning' — author pulled back from public site
   'the-case-for-anticipatory-cash',
   'measuring-joint-response-for-cash-transfer',
   'geoai-for-humanitarians',

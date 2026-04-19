@@ -36,7 +36,10 @@ export const metadata: Metadata = {
       'Reflections on DRR, humanitarian data systems, climate, and cash programming.',
   },
 }
-const posts = POSTS_META
+// Hide posts with published: false from the public listing. The data
+// remains in POSTS_META so they can be re-published later by flipping the
+// flag — no content needs to be rewritten.
+const posts = POSTS_META.filter((p) => p.published !== false)
 
 export default function BlogPage() {
   const featuredPosts = posts.filter((p) => p.featured)
