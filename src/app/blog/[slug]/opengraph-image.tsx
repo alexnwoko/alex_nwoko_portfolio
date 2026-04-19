@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import { getPostMeta } from '@/lib/blog-posts-meta'
 
 export const runtime = 'edge'
 export const alt = 'Alex Nwoko — Blog Post'
@@ -8,138 +9,24 @@ export const contentType = 'image/png'
 /**
  * Per-post Open Graph image generator.
  *
+ * Reads post metadata from the single source of truth at
+ * src/lib/blog-posts-meta.ts so every post listed on /blog automatically
+ * gets a themed share card — no duplicate POSTS lookup to keep in sync.
+ *
  * Each card adapts to the post's pillar / theme:
  *   - Pillar accent colour drives the top stripe, theme tag, and brand mark
- *   - A standardised theme label (e.g. "DRR", "CASH PROGRAMMING", "IM & DATA
- *     ANALYTICS") is displayed prominently so the topic reads at a glance in
- *     a LinkedIn / Twitter feed
+ *   - A standardised theme label (e.g. "CLIMATE ANALYTICS & DRR", "VOICE AI
+ *     & DATA ANALYTICS", "CASH PROGRAMMING") is displayed prominently so
+ *     the topic reads at a glance in a LinkedIn / Twitter feed
  *
- * Five themes are supported:
- *   1. Climate Analytics & DRR
- *   2. IM & Data Analytics
- *   3. Voice AI & Data Analytics
- *   4. Cash Programming
- *   5. Cross-cutting
- *   (+ GIS & Remote Sensing as a sixth, unused but ready)
+ * Six themes supported:
+ *   1. Climate Analytics & DRR (green)
+ *   2. IM & Data Analytics (deep blue)
+ *   3. Voice AI & Data Analytics (UN bright blue)
+ *   4. Cash Programming (dark red)
+ *   5. Cross-cutting (orange)
+ *   6. GIS & Remote Sensing (purple)
  */
-
-interface PostMeta {
-  title: string
-  pillar: string
-  pillarColor: string
-  category: string
-}
-
-const POSTS: Record<string, PostMeta> = {
-  'from-humanitarian-data-to-digitising-africas-markets': {
-    title: "From Crisis Zones Digital Systems to Market Zones Digital Transition for Africa's Informal Economies",
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    category: 'Founder Reflection',
-  },
-  'why-i-build-systems-not-dashboards': {
-    title: 'Why I Build Systems, Not Dashboards',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    category: 'Opinion',
-  },
-  'future-of-humanitarian-im-is-agentic': {
-    title: 'The Future of Humanitarian IM is Agentic',
-    pillar: 'Data Analytics',
-    pillarColor: '#009EDB',
-    category: 'Opinion / Technical',
-  },
-  'voice-is-the-future-of-humanitarian-data': {
-    title: 'Voice Is the Future of Humanitarian Data and Evidence Generation',
-    pillar: 'Data Analytics',
-    pillarColor: '#009EDB',
-    category: 'Opinion / Technical Vision',
-  },
-  'the-form-is-already-dead': {
-    title: 'From Forms to Voice: The Deeper Inclusive Transition',
-    pillar: 'Data Analytics',
-    pillarColor: '#009EDB',
-    category: 'Opinion / Technical',
-  },
-  'africa-will-define-voice-ai': {
-    title: 'Africa Will Define How the World Uses Voice AI',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    category: 'Opinion / Founder Reflection',
-  },
-  'voice-powered-decision-intelligence': {
-    title: 'From Reporting Platforms to Voice-Powered Decision Intelligence',
-    pillar: 'Data Analytics',
-    pillarColor: '#009EDB',
-    category: 'Opinion / Technical',
-  },
-  'the-voices-our-data-systems-silence': {
-    title: 'The Voices Our Data Systems Were Built to Silence',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    category: 'Opinion',
-  },
-  'voice-infrastructure-inequality': {
-    title: 'Voice Infrastructure Inequality: The New Digital Divide',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    category: 'Opinion / Research',
-  },
-  'building-voice-native-evidence-systems': {
-    title: 'Building Voice-Native Evidence Systems: From Theory to Architecture',
-    pillar: 'Data Analytics',
-    pillarColor: '#009EDB',
-    category: 'Technical Vision',
-  },
-  'disaster-loss-data-climate-adaptation': {
-    title: 'Why Disaster Loss Data Matters More Than Ever for Climate Adaptation',
-    pillar: 'Climate Analytics & DRR',
-    pillarColor: '#2E7D32',
-    category: 'Opinion / Cornerstone',
-  },
-  'building-systems-governments-can-own': {
-    title: 'Building Disaster Data Systems That Governments Can Own',
-    pillar: 'Data Analytics & IM',
-    pillarColor: '#1565C0',
-    category: 'Opinion / Field Reflection',
-  },
-  'desinventar-to-delta-resilience': {
-    title: 'The Evolution of National Disaster Tracking: From DesInventar to DELTA Resilience',
-    pillar: 'Climate Analytics & DRR',
-    pillarColor: '#2E7D32',
-    category: 'Observer Technical Deep Dive',
-  },
-  'g-drsf-statisticians-disaster-managers': {
-    title: 'The Global Disaster-Related Statistics Framework',
-    pillar: 'Climate Analytics & DRR',
-    pillarColor: '#2E7D32',
-    category: 'Cornerstone / Policy Explainer',
-  },
-  'delta-resilience-early-warning-anticipatory-action': {
-    title: 'From Forecast to Action: Operationalising Early Warning and Anticipatory Action with DELTA Resilience',
-    pillar: 'Climate Analytics & DRR',
-    pillarColor: '#2E7D32',
-    category: 'Technical Deep Dive / Opinion',
-  },
-  'data-ecosystem-maturity-assessment-guide': {
-    title: 'The Data Ecosystem Maturity Assessment: A Practitioner\'s Guide',
-    pillar: 'Data Analytics & IM',
-    pillarColor: '#1565C0',
-    category: 'Tutorial / Technical Deep Dive',
-  },
-  'lessons-six-countries': {
-    title: 'Lessons from Building Humanitarian Data Platforms Across Multiple Crisis Contexts',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    category: 'Field Reflection / Career Narrative',
-  },
-  'politics-of-humanitarian-data-infrastructure': {
-    title: 'The Politics of Humanitarian Data Infrastructure: Who Owns the System When Everyone Walks Away?',
-    pillar: 'Data Analytics & IM',
-    pillarColor: '#1565C0',
-    category: 'Opinion / Field Reflection',
-  },
-}
 
 const BRAND = {
   beige: '#F5EFE6',
@@ -148,8 +35,8 @@ const BRAND = {
 }
 
 /**
- * Standardised theme label per pillar — what's displayed prominently on the
- * OG card. Keeps the labels short and recognisable in a busy social feed.
+ * Standardised theme label per pillar — what's printed prominently on the
+ * card. Short and recognisable in a busy social feed.
  */
 function getThemeLabel(pillar: string): string {
   switch (pillar) {
@@ -175,13 +62,15 @@ export default async function Image({
 }: {
   params: Promise<{ slug: string }>
 }) {
-  // Next.js 16: params is a Promise and must be awaited. Without this, the
-  // slug lookup fails silently and every post falls through to the default
-  // (Cross-cutting orange) card.
+  // Next.js 16: params is a Promise and must be awaited.
   const { slug } = await params
-  const post = POSTS[slug] ?? {
+
+  // Lookup metadata in the shared catalogue. If the slug isn't known,
+  // fall back to a neutral placeholder card so social previews never
+  // 500 — but this should never fire for any post listed on /blog.
+  const post = getPostMeta(slug) ?? {
     title: 'Blog Post',
-    pillar: 'Cross-cutting',
+    pillar: 'Cross-cutting' as const,
     pillarColor: '#C4703F',
     category: 'Article',
   }
@@ -210,8 +99,7 @@ export default async function Image({
           }}
         />
 
-        {/* Subtle tinted band along the right edge — gives the pillar a presence
-            without overwhelming the content */}
+        {/* Subtle right-edge stripe — gives the pillar colour presence */}
         <div
           style={{
             display: 'flex',
@@ -266,7 +154,6 @@ export default async function Image({
             flex: 1,
           }}
         >
-          {/* Theme tag — prominent, color-coded by pillar */}
           <div
             style={{
               display: 'flex',
@@ -284,7 +171,6 @@ export default async function Image({
             {themeLabel}
           </div>
 
-          {/* Post title — auto-shrinks for very long titles */}
           <div
             style={{
               display: 'flex',
