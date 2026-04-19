@@ -1782,6 +1782,587 @@ The humanitarian data drought is not a future risk. It is a present reality. The
       'data-ecosystem-maturity-assessment-guide',
     ],
   },
+
+  'the-72-hour-problem': {
+    slug: 'the-72-hour-problem',
+    title: 'The 72-Hour Problem',
+    category: 'Field Reflection',
+    pillar: 'Data Analytics',
+    pillarColor: '#009EDB',
+    readTime: '7 min',
+    date: 'April 2026',
+    excerpt:
+      'The first 72 hours of a sudden-onset disaster are an information black hole. Good IM isn\'t about perfect data — it\'s about being useful under imperfect conditions. Here\'s what I\'ve learned designing for that window.',
+    sections: [
+      {
+        content: `On a Sunday afternoon in October 2023, a magnitude 6.3 earthquake struck Herat province in Afghanistan. By Monday morning, our [Humanitarian Spatial Data Center](https://www.undrr.org/) team in Kabul was being asked the questions we always get in the first 24 hours of a sudden-onset disaster — and which we never have full answers to.
+
+How many villages are affected? Which roads are passable? Where are the field hospitals? How many people have been displaced? Which communities had vulnerable populations to begin with?
+
+The honest answer to most of those questions, on the morning after a disaster, is: we don't fully know yet. Field teams are still moving. Phone lines are still down in places. Damage assessments are days away from being completed. Population baselines are months out of date.
+
+This is the 72-hour problem. The window when decisions matter most is also the window when information is most incomplete. And the temptation, for everyone in the room, is to wait for better data before acting.
+
+After ten years of doing this work — Bangladesh after a cyclone, Ethiopia during a drought escalation, Afghanistan after multiple earthquakes — I've come to a hard conclusion: good information management in the first 72 hours is not about delivering perfect data. It's about being useful under conditions where perfect data is structurally impossible.`,
+      },
+      {
+        heading: 'Why the First 72 Hours Are Different',
+        content: `Standard humanitarian information management is built for steady-state coordination. A monthly 5W reporting cycle. Quarterly multi-sector needs assessments. Annual Humanitarian Needs Overview cycles. Each of those products assumes time to clean data, validate sources, and reconcile contradictions.
+
+A sudden-onset event collapses that timeline. The Inter-Cluster Coordination Team meets within hours of the event. Resource mobilisation appeals go out within days. Donor commitments are negotiated based on whatever evidence exists at the moment.
+
+Decisions made in this window have outsized consequences. Pre-positioning supplies in the wrong district means relief takes 36 extra hours to arrive. Activating a flash appeal with the wrong affected-population estimate locks the response into a budget envelope that may not fit reality. Failing to flag a vulnerable group early means they get coded out of the response architecture for months.
+
+And yet the data systems we build are mostly designed for the steady state, not for the surge.`,
+      },
+      {
+        heading: 'What Doesn\'t Work',
+        content: `**Waiting for clean data.** I've watched senior IM officers refuse to publish a hazard map until every administrative boundary code was verified. By the time the map went out, the response decisions it was meant to inform had already been made — based on someone\'s WhatsApp screenshot of a sketch on a notebook page.
+
+**Insisting on the standard reporting template.** Partner organisations in the first 48 hours can\'t fill out a 60-field 5W. They\'re mobilising staff, opening field offices, sourcing fuel. Asking them to populate every disaggregation cell guarantees you get a blank or a fabrication.
+
+**Producing the perfect product.** A 40-page situation analysis published on day five is operationally less valuable than a 1-page snapshot published on day one. The decision-maker has already made the day-one decision.
+
+**Ignoring open-source signals.** [GDACS](https://www.gdacs.org/) alerts, USGS shake maps, [GloFAS](https://www.globalfloods.eu/) discharge forecasts, satellite imagery from Sentinel and MODIS, even social-media geolocation — these are imperfect, but they exist within hours of an event. Treating them as too crude for "official" products means you publish nothing while the world burns.`,
+      },
+      {
+        heading: 'What Works: Pre-Positioned Information Architecture',
+        content: `The shift in my thinking, over many sudden-onset events, was this: the first 72 hours don\'t reward better real-time data collection. They reward pre-positioned information architecture that can be flexed to a specific event.
+
+**Baseline layers, ready to go.** Population estimates by admin-3 (with [WorldPop](https://www.worldpop.org/) and Microsoft building footprints as the foundation). Health facility locations. School locations. Roads with passability classification. Pre-event vulnerability indices. None of these need to be collected after the disaster — they can sit in a sovereign database and be intersected with the event footprint within an hour of the alert.
+
+**Standardised event-impact templates.** A one-pager with a fixed structure: hazard summary, affected administrative units, exposure estimates from baseline layers, immediate humanitarian implications, known partner presence. Designed to be filled in at 80% confidence, not 100%.
+
+**A go-to data triangulation protocol.** GDACS for the initial alert. USGS or WMO for technical hazard parameters. Open-source remote sensing for damage extent. Pre-positioned partner contact lists for ground-truthing. The protocol exists before the event so the first hour isn\'t spent inventing it.
+
+**Decision-rights agreements signed in advance.** Who can approve publication of a flash analytical product without full data validation? In Afghanistan, we had a written protocol that the Country Technical Advisor (me) could approve a 72-hour rapid analysis with a "preliminary, subject to revision" disclaimer. That single protocol unlocked products that would otherwise have sat for days awaiting sign-off.`,
+      },
+      {
+        heading: 'The 80% Principle',
+        content: `Here is the principle I now apply: 80% confidence in 4 hours beats 100% confidence in 4 days.
+
+This isn\'t a license to be sloppy. It\'s a recognition that humanitarian decisions are made under uncertainty whether or not you publish data, and that a transparent estimate with a confidence band is more useful than silence.
+
+Every rapid product I publish carries the same disclaimer: preliminary estimate based on [sources X, Y, Z], confidence level [low/medium/high], to be revised within [N] hours as field reports arrive. That disclaimer protects the IM unit\'s credibility AND empowers decision-makers to act on the best evidence available.
+
+In Afghanistan, after the Herat earthquake, this approach let us publish an initial affected-population estimate within 18 hours that was within 12% of the final verified figure five days later. That early estimate informed the first round of cluster activation, partner deployment, and donor briefings. Was it perfect? No. Was it useful? Materially.`,
+      },
+      {
+        heading: 'What I Now Do Before Every Posting',
+        content: `When I arrive in a new country office, the first 72-hour audit I run is structural, not operational. I ask:
+
+- What baseline layers exist and how current are they?
+- Where are they hosted? Can the IM team access them under emergency conditions?
+- What is the standard structure of a rapid analytical product? Is it pre-templated?
+- Who can approve publication without standard validation?
+- What are the data triangulation defaults?
+- How do field reports flow into the analytical pipeline?
+
+If any of those questions don\'t have a clear answer, I work on them before the next event — not after. Because the next event is always coming, and the 72 hours after it arrive whether the architecture is ready or not.
+
+The goal of humanitarian information management isn\'t perfect data. It\'s decision-support that arrives in time to matter. Build for that, and the rest follows.`,
+      },
+    ],
+    relatedSlugs: [
+      'lessons-six-countries',
+      'building-systems-governments-can-own',
+      'the-im-coordination-trap',
+    ],
+  },
+
+  'from-maiduguri-to-machine-learning': {
+    slug: 'from-maiduguri-to-machine-learning',
+    title: 'From Maiduguri to Machine Learning',
+    category: 'Career Narrative',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '10 min',
+    date: 'April 2026',
+    excerpt:
+      'My career arc — from emailing Excel files over 2G in Maiduguri to architecting AI-enabled platforms — was never planned. It was driven by repeatedly hitting the limits of existing tools and asking what should come next.',
+    sections: [
+      {
+        content: `In 2017, in Maiduguri, I was building 5W tracking products for the Food Security Sector in Excel. Partners would email me their monthly distribution reports — sometimes as attachments, sometimes as photos of printed pages, occasionally as WhatsApp text messages — and I would consolidate everything by hand into a master workbook. The dashboard, such as it was, was a series of pivot tables I refreshed every Wednesday.
+
+That sounds primitive in retrospect, and it was. But it worked. The workbook reached the cluster lead, the OCHA office, the donor desk, and ultimately the Federal Ministry of Humanitarian Affairs. People made decisions from it. 1.4 million people received food assistance through programmes informed in part by what that Excel file said about coverage gaps.
+
+What changed me wasn\'t the tool. It was the moment I realised the tool was the bottleneck. There was a question I couldn\'t answer in Excel — about the spatial distribution of cash interventions across Borno, Yobe, and Adamawa — that I could have answered in QGIS in 20 minutes. But I didn\'t know QGIS yet. So I left it unanswered.
+
+That gap, between the question and the tool, has defined every step of my career since.`,
+      },
+      {
+        heading: 'The Arc',
+        content: `Looking back, my career has moved through five distinct technical eras, each driven by a question my previous toolkit couldn\'t answer.
+
+**Era 1 — Excel and email (Maiduguri, 2017).** Manual aggregation of partner submissions. Worked because everyone had Excel. Failed because: no spatial intelligence, no real-time updates, no version control, no audit trail.
+
+**Era 2 — KoboToolbox and QGIS (Maiduguri / Cox\'s Bazar, 2018-2019).** Mobile data collection replaced paper. Spatial analysis replaced distance estimation. Suddenly I could overlay partner coverage on flood vulnerability maps and see the gap. I produced the Shelter/NFI Sector\'s rainy-season contingency plan for Borno using flood vulnerability mapping that wouldn\'t have been possible the year before.
+
+**Era 3 — Power BI and PostgreSQL (Ethiopia / Afghanistan, 2020-2024).** Dashboards became products in their own right. Live, interactive, queryable. Power BI on top of a PostgreSQL backend let me build the [Cash Working Group dashboard suite](/blog/data-ecosystem-maturity-assessment-guide) tracking 521,000 beneficiaries across 20 implementing partners with USD 6.78 million distributed. I also rebuilt the data pipeline at UNICEF Ethiopia after auditing the existing system and finding 40% missing location fields.
+
+**Era 4 — AI-enabled analysis (Bangladesh / Afghanistan, 2020-2025).** The [DEEP platform](https://www.thedeep.io/) for AI-assisted document classification. AI-enabled features inside Power BI for trend detection. Google Earth Engine for semi-automated raster analysis. The COVID-19 secondary data analysis I led in Bangladesh processed hundreds of documents into structured indicators in days rather than weeks.
+
+**Era 5 — Agentic and voice-first (now).** Building toward systems that don\'t wait for human prompts. Agents that monitor, classify, and synthesise. Voice as the primary input layer. This is where I am now — both in my [innovation work on Vendoh and MAKKET](/founder-journey) and in my conviction about [where humanitarian IM is heading](/blog/future-of-humanitarian-im-is-agentic).`,
+      },
+      {
+        heading: 'The Constants Underneath the Tool Changes',
+        content: `Five technical eras. Five different stacks. But the core principles never changed.
+
+**Design for the worst network you\'ll encounter.** Excel survived in Maiduguri because everyone had it offline. Power BI in Ethiopia worked because we built it on top of a hybrid cloud-and-local architecture. The next-generation tools have to work the same way: in environments where the connection drops when the generator runs out of fuel.
+
+**Govern before you collect.** Every dashboard I built that survived past project close did so because the data governance was sorted before the technology. Who owns the data? Who validates it? Who publishes it? When I built the unified analytical framework for the Ethiopia Cash and Market Feasibility Assessment — 372 household surveys, 44 market assessments, 36 government interviews across 7 woredas — it worked because the seven analytical pillars were agreed upfront.
+
+**Train trainers, not users.** The biggest mistake I made early on was thinking that handing a partner a Power BI link was the same as enabling them to use it. When I led an Afghanistan-wide data literacy needs assessment across the IM community, the partners told us the same thing — they wanted practical, hands-on capacity building, not generic workshops. The Train-of-Trainers model is the only thing I\'ve seen produce lasting capacity.
+
+**The reporting product is a coordination artifact, not a technical output.** A dashboard that the cluster lead trusts is worth more than a dashboard that\'s technically superior but politically isolated. The information management work is at least as much about institutional relationships as it is about software.`,
+      },
+      {
+        heading: 'The Maiduguri Lesson That Still Drives Me',
+        content: `That moment in Maiduguri — looking at a question Excel couldn\'t answer — taught me a habit I\'ve kept ever since.
+
+When I hit the limit of a tool, my first response is no longer to work harder within it. My first response is to ask: what tool would solve this in 20 minutes instead of 4 hours? And then I learn that tool. QGIS in 2018. Power BI in 2020. PostgreSQL in 2022. Google Earth Engine in 2023. Now agentic frameworks and voice-AI integration.
+
+The pattern isn\'t about chasing new technology. It\'s about refusing to let the tool define the question. Humanitarian decision-makers face questions every week that the existing tooling can\'t answer in time. Someone has to learn the next tool fast enough to answer them.
+
+That\'s how I\'ve ended up with a stack that spans Python and PostgreSQL and Power BI and Google Earth Engine and DEEP and now AI agents — not because I planned to, but because the questions kept getting bigger and the tools kept needing to grow.`,
+      },
+      {
+        heading: 'What I Tell People Starting Out',
+        content: `When humanitarian IM officers early in their careers ask me what to learn next, I tell them the same thing every time: don\'t learn tools. Learn questions.
+
+Spend a week with the cluster coordinator and write down every question they ask that the current dashboard can\'t answer. Then go figure out what tool answers it. Maybe it\'s a Power BI feature you haven\'t learned. Maybe it\'s a QGIS plug-in. Maybe it\'s a Python script. Whatever the tool, it\'s the question that gives the learning shape.
+
+The technology will keep changing. Excel will stay alive in some corners. Power BI will be eclipsed. Voice and agentic AI will replace dashboards entirely within the decade. But the discipline of letting the operational question dictate the technical learning — that\'s the only career-long compounder I know.
+
+That\'s what I learned in Maiduguri. It\'s what got me from there to where I am now. And it\'s what will keep working long after the current tools are gone.`,
+      },
+    ],
+    relatedSlugs: [
+      'lessons-six-countries',
+      'voice-is-the-future-of-humanitarian-data',
+      'future-of-humanitarian-im-is-agentic',
+    ],
+  },
+
+  'the-case-for-anticipatory-cash': {
+    slug: 'the-case-for-anticipatory-cash',
+    title: 'The Case for Anticipatory Cash',
+    category: 'Opinion',
+    pillar: 'Climate & Cash',
+    pillarColor: '#8B3A2F',
+    readTime: '8 min',
+    date: 'April 2026',
+    excerpt:
+      'Every dollar spent in advance of a slow-onset disaster is worth roughly five dollars spent after. Cash is the cleanest instrument for moving money before a crisis hits — and the data systems to trigger it now exist.',
+    sections: [
+      {
+        content: `In Ethiopia in 2024, I was supporting the Cash Working Group as drought was tightening across the Somali, SNNP, and Oromia regions. The forecasts were clear: rainfall deficits were widening, [CHIRPS](https://www.chc.ucsb.edu/data/chirps) data showed below-average precipitation across multiple consecutive seasons, and the Standardised Precipitation Index was crossing thresholds we associated with mid-severity drought.
+
+What we did not do, despite the forecasts, was release multi-purpose cash transfers in advance of the worst impacts. The funding mechanisms were post-onset. The humanitarian appeals were post-impact. By the time the CERF-funded MPC programme I monitored reached 185,000 beneficiaries with USD 3.2 million distributed, livelihoods had already been depleted, livestock had been sold at distress prices, and households had taken on debt to bridge the gap.
+
+The economic literature on this is clear: anticipatory cash, deployed weeks before peak impact, costs a fraction of post-onset cash and produces materially better outcomes. The [World Food Programme estimates](https://www.wfp.org/anticipatory-actions) that anticipatory action can save up to USD 5 for every USD 1 invested. The [Anticipation Hub](https://www.anticipation-hub.org/about/what-is-anticipatory-action) documents case after case where pre-positioned cash transfers prevented the cascading losses that post-onset response had to mop up.
+
+So why isn\'t anticipatory cash the default mode of humanitarian response for slow-onset disasters? The answer is institutional, not technical. The technology to forecast and trigger has existed for years. What\'s missing is the data architecture to authorise.`,
+      },
+      {
+        heading: 'Why Cash Is the Right Instrument',
+        content: `Cash is uniquely suited to anticipatory action for three reasons that other modalities can\'t match.
+
+**Fungibility.** A household receiving USD 50 in advance of a drought\'s peak impact can use it to buy fertiliser to extend the planting season, repair a borehole, send a child to relatives in a less-affected area, or stockpile staple foods. The same USD 50 in food rations can do exactly one of those things. The flexibility of cash is what makes it preventive — recipients deploy it against the specific risk their household faces.
+
+**Speed.** Mobile money rails — [M-Pesa](https://en.wikipedia.org/wiki/M-Pesa), [SafeBoda](https://safeboda.com/), regional bank transfers — can move funds in hours once the trigger fires. Procurement, shipping, and distribution of in-kind aid takes weeks. When the forecast tells you a flood will hit in 14 days, only cash can get to households in time to enable preventive action.
+
+**Dignity.** Anticipatory cash treats recipients as economic actors making decisions about their own household risk. In-kind anticipatory aid, by contrast, is the humanitarian system telling people what they need before the disaster has even arrived. The accountability literature is unambiguous on which approach earns more trust.`,
+      },
+      {
+        heading: 'The Data Systems Are Ready',
+        content: `Here is what changed in the last five years: the technical components of an anticipatory cash trigger are all in place.
+
+**Hazard forecasts.** [CHIRPS](https://www.chc.ucsb.edu/data/chirps) for rainfall, [GloFAS](https://www.globalfloods.eu/) for river discharge, NDVI and Vegetation Health Index for crop stress, sea-surface temperature for cyclone formation. These data streams are continuous, open, and global.
+
+**Impact baselines.** [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience) — the next-generation national disaster loss tracking system co-developed by UNDRR, UNDP, and WMO — provides the historical impact records that turn a hazard forecast into an impact-based trigger. The forecast tells you the rainfall deficit will hit a specific threshold. The DELTA loss records tell you that the last three times the deficit hit that threshold in this district, it displaced X thousand people, destroyed Y hectares of crops, and pushed Z health facilities into overwhelm.
+
+**Vulnerability layers.** Pre-positioned vulnerability indices, like the [social vulnerability index I built for Newcastle City Council](/expertise) during my MSc, identify the populations most at risk before the event. In Afghanistan, my team produced national flood, drought, avalanche, landslide, and extreme-temperature risk mapping at 4 km resolution that identified 223 of 401 districts in extreme to abnormally dry conditions.
+
+**Disbursement infrastructure.** Mobile money, agent banking, and cash-in-hand mechanisms now reach the majority of vulnerable populations in most operating contexts. The CERF-funded MPC programme in Ethiopia disbursed USD 3.2 million across three regions through four implementing partners — the rails exist.
+
+The pieces are all there. The data tells us when to act, who is at risk, and how to move the money. What\'s missing is the institutional decision to trigger before the event rather than after.`,
+      },
+      {
+        heading: 'The Institutional Friction',
+        content: `**The donor problem.** Most humanitarian funding mechanisms require evidence of impact before disbursement. CERF Rapid Response works post-onset. Country-based Pooled Funds work post-onset. Bilateral appeals are launched in response to declared emergencies. The architecture is reactive by design, and asking it to be anticipatory requires re-engineering risk appetites that have been calcified for decades.
+
+**The trigger problem.** A pre-agreed trigger — "cash releases when CHIRPS rainfall deficit exceeds 1.5 standard deviations AND IPC food security classification reaches Phase 3 AND historical DELTA loss records indicate displacement greater than 5,000 in this zone" — requires negotiation between donors, implementing partners, governments, and forecasters. The negotiation takes months. The drought doesn\'t wait.
+
+**The verification problem.** Donor accountability frameworks were built around proving impact post-disbursement. Anticipatory cash is by definition disbursed before the impact materialises. Demonstrating value-for-money requires comparing what happened to a counterfactual where the cash wasn\'t released. That\'s methodologically harder than standard impact evaluation, and donor evaluation departments are still building the muscle.
+
+**The political problem.** Releasing money for a disaster that hasn\'t yet happened looks, to a sceptical observer, like premature spending. If the forecast turns out wrong, the post-mortem is brutal. If the forecast was right and the cash prevented the worst impacts, there\'s no headline because nothing visible happened. The political incentives reward post-onset response over pre-onset prevention.
+
+None of these are technical problems. All of them are solvable. But they require humanitarian leadership willing to take the institutional risk that the system structurally discourages.`,
+      },
+      {
+        heading: 'What a Mature Anticipatory Cash System Looks Like',
+        content: `Drawing on the Bangladesh shock-responsive cash work that informed USD 45.5 million in transfers reaching 2.5 million vulnerable people, on the Ethiopia CWG architecture, and on the [DELTA Resilience](/blog/delta-resilience-early-warning-anticipatory-action) framework I\'ve been writing about — here is what a mature anticipatory cash system requires.
+
+**Pre-agreed triggers, pre-positioned funding, pre-vetted implementing partners.** All three have to be in place before the event. Negotiating any of them in the 14-day window between forecast and impact guarantees the cash arrives late.
+
+**A multi-source forecast architecture with a clear decision protocol.** Not one forecast, several. Not a single threshold, an ensemble. A protocol that specifies what combination of signals fires the trigger, with named decision authority for the release.
+
+**A grievance and accountability mechanism designed for the speed of disbursement.** Anticipatory cash means people receive transfers before the disaster materialises. Some of them will not understand why. The communication and complaints architecture has to be ready before the funds move.
+
+**An impact verification framework built on counterfactuals.** Standard PDM doesn\'t cut it for anticipatory action. The evaluation has to compare what happened to a plausible alternative where the trigger didn\'t fire. That requires comparison groups, agreed methodology, and donor acceptance of the inherent uncertainty.
+
+**An institutional learning loop.** Every trigger, fired or unfired, generates evidence about the system. False positives, false negatives, lead-time accuracy, beneficiary outcomes — all of these feed back into the next iteration of the trigger. Building that loop is harder than building any individual component.`,
+      },
+      {
+        heading: 'The Window Is Open',
+        content: `The COP30 [Loss and Damage Fund](https://www.undrr.org/building-risk-knowledge/disaster-data) and the Belém Adaptation Indicators have created the policy demand for anticipatory action evidence. DELTA Resilience and the [G-DRSF](/blog/g-drsf-statisticians-disaster-managers) have created the data architecture. Mobile money has created the disbursement rails. The forecasting science has matured. The case-study evidence is overwhelming.
+
+What remains is institutional courage — donors willing to release funds before the disaster declares itself, governments willing to authorise pre-event transfers, implementing partners willing to be evaluated on counterfactual outcomes.
+
+Every dollar of climate finance that arrives after the disaster is a dollar that could have prevented the disaster\'s worst consequences if it had arrived two weeks earlier. The data systems exist to make that timing possible. The question is whether we\'ll use them.`,
+      },
+    ],
+    relatedSlugs: [
+      'delta-resilience-early-warning-anticipatory-action',
+      'measuring-joint-response-for-cash-transfer',
+      'disaster-loss-data-climate-adaptation',
+    ],
+  },
+
+  'measuring-joint-response-for-cash-transfer': {
+    slug: 'measuring-joint-response-for-cash-transfer',
+    title: 'Measuring Joint Response for Cash Transfer Programmes — A New Way of Using Humanitarian Meta-Data',
+    category: 'Technical Deep Dive',
+    pillar: 'Cash Programming',
+    pillarColor: '#8B3A2F',
+    readTime: '11 min',
+    date: 'April 2026',
+    excerpt:
+      'Five organisations running cash transfer programmes in the same country produce five sets of post-distribution monitoring data using five different tools. The simple question — "is our collective cash response working?" — becomes structurally unanswerable. Inter-agency PDM meta-analysis is how you answer it.',
+    sections: [
+      {
+        content: `In Ethiopia, the Cash Working Group coordinates a multi-purpose cash response that, in 2024 and 2025, reached hundreds of thousands of beneficiaries across multiple regions through a dozen-plus implementing partners. Each partner ran its own post-distribution monitoring. Each one used a slightly different questionnaire, a slightly different sampling strategy, a slightly different definition of "satisfaction" or "adequacy" or "market access."
+
+When the Cash Working Group leadership asked the most basic possible question — "is our collective cash programming working?" — the answer was structurally impossible to give. Not because the data didn\'t exist. Because the data existed in twelve incompatible silos that couldn\'t be combined without weeks of harmonisation work that nobody was funded to do.
+
+This is the central problem in inter-agency cash coordination. Every individual partner produces good evidence about its own programme. The system as a whole produces no evidence about itself. And the donors, the government, and the affected populations all need answers about the system, not just the parts.
+
+I\'ve been doing inter-agency PDM meta-analysis work across cash coordination contexts for years now — most extensively in Afghanistan and Ethiopia. Across every one of those engagements, the same lesson keeps surfacing: meta-analysis isn\'t a statistics exercise. It\'s a governance intervention disguised as one.`,
+      },
+      {
+        heading: 'Why Individual PDMs Don\'t Add Up',
+        content: `Take five partner PDMs from a typical inter-agency cash response.
+
+Partner A surveys 400 beneficiaries with a 35-question instrument focused on transfer adequacy. Partner B surveys 1,200 with an 80-question instrument that includes detailed expenditure tracking. Partner C runs phone surveys only. Partner D uses face-to-face. Partner E weights its sample by household size; the others don\'t.
+
+Each survey is internally valid. Each one tells you something true about its partner\'s programme. None of them, individually or summed, tells you whether the inter-agency response is working.
+
+The reasons are technical:
+
+**Different denominators.** "Beneficiary" means different things across partners — sometimes the head of household, sometimes everyone in the household, sometimes the registered recipient.
+
+**Different question wording.** "Did the transfer meet your basic needs?" yields different answers than "Was the transfer amount sufficient?" Both questions appear, in different forms, across partner instruments.
+
+**Different scale anchors.** A 5-point Likert satisfaction scale isn\'t arithmetically comparable to a 4-point scale, and direct dichotomous yes/no answers can\'t be averaged with either.
+
+**Different sampling frames.** Partner A samples randomly within distribution lists. Partner B samples by geography. Partner C samples by enumerator convenience.
+
+**Different recall windows.** "In the last 30 days" vs "since the most recent distribution" produce structurally different responses about the same underlying behaviour.
+
+Aggregate across these incompatibilities and you don\'t get a richer picture. You get noise.`,
+      },
+      {
+        heading: 'The Seven-Pillar Framework',
+        content: `The framework I\'ve refined for inter-agency PDM meta-analysis organises the analysis into seven pillars. Each pillar is defined narrowly enough that partner PDMs can be mapped to it cleanly, and broadly enough to capture the operationally meaningful dimensions of cash performance.
+
+**Pillar 1 — Programme Delivery and Beneficiary Profile.** Targeting mechanism, registration process, delivery modality, transfer mechanism, timeliness, perceived fairness. This is the operational hygiene layer. If partners are targeting different populations or distributing through different rails, the rest of the analysis has to control for it.
+
+**Pillar 2 — Satisfaction and Adequacy.** Satisfaction with transfer value, modality, and overall assistance, with explanatory feedback. This is where harmonisation work pays off most — Likert scales can be normalised to a common 0-100 index when you have the original variance structure.
+
+**Pillar 3 — Cash Utilisation and Markets.** Expenditure patterns, ability to meet basic needs, market access, price dynamics, constraints to cash use. The pillar that connects PDM data to the [Minimum Expenditure Basket](https://www.calpnetwork.org/themes/minimum-expenditure-basket/) review process.
+
+**Pillar 4 — Outcomes and Perceived Impact.** Beneficiary-reported outcomes on food security, dietary diversity, coping strategies, debt, health expenditures, education expenditures, shelter access, WASH access, livelihood recovery, household well-being. This is the layer where the question "is the cash actually changing lives?" gets answered.
+
+**Pillar 5 — Equity, Protection, and Safeguarding.** Disaggregated analysis by sex, age, disability, displacement status, and vulnerability characteristics. Protection risks. SEA and SH considerations. This pillar is structurally hard because most partner PDMs disaggregate inconsistently or not at all.
+
+**Pillar 6 — Accountability and Participation.** Information access, complaints and response mechanisms, trust in the assistance, community engagement. The pillar most often skipped in standard PDM, and most consequential for programme legitimacy.
+
+**Pillar 7 — Cross-Analysis and Learning.** Comparative analysis across partners and regions. Identification of patterns, divergences, good practices, and systemic constraints. This is where the meta-analysis adds value the individual PDMs can\'t.`,
+      },
+      {
+        heading: 'The Real Work Is Harmonisation',
+        content: `When I scope an inter-agency meta-analysis, I budget roughly 40% of the total effort for harmonisation. People who haven\'t done this work assume the time goes to analysis. It doesn\'t. The analysis is the easy part.
+
+Harmonisation means:
+
+**Variable mapping.** For every question in every partner PDM, identify which framework pillar it belongs to and which canonical indicator it operationalises. Build a master codebook that maps partner-specific variables to harmonised analytical variables.
+
+**Standardisation of coding.** Recode partner-specific response options into a common scheme. Yes/No becomes 1/0. Likert becomes 0-100 normalised. Categorical becomes a defined ontology with stable labels.
+
+**Geographic reconciliation.** Partner PDMs use partner-specific geographic codes. Map everything to OCHA Common Operational Datasets and admin-2 (woreda) p-codes. This single step takes a week of focused work and is the highest-impact intervention in data quality.
+
+**Temporal alignment.** PDMs from different distribution rounds, different fiscal periods, different recall windows have to be aligned to a comparable analytical timeframe.
+
+**Quality screening.** Records where mortality exceeds affected population. Records with impossible values (households of 47 people, transfer amounts of negative numbers). Duplicates across partner submissions. The cleaning is less interesting than the analysis but determines whether the analysis can stand.
+
+**Reproducibility scripts.** Every harmonisation step gets coded as a reproducible Python or R script with version control. The next analyst inheriting the dataset has to be able to re-run the pipeline end-to-end.
+
+When harmonisation is done well, the analytical layer becomes almost mechanical. When it\'s done poorly, no amount of analytical sophistication recovers the data.`,
+      },
+      {
+        heading: 'Meta-Analysis as Governance',
+        content: `The technical work above describes the visible product. The hidden product is governance.
+
+Inter-agency PDM meta-analysis only works when partners agree to:
+
+- Share their raw PDM datasets (not just summary findings)
+- Adopt a harmonised reporting calendar so the data arrives in a usable window
+- Use a shared codebook for at least the framework\'s core indicators
+- Acknowledge comparative findings even when their own programme doesn\'t score well
+- Fund the harmonisation work as a recurring coordination cost, not a one-off
+
+Each of those agreements is a governance commitment. In every Cash Working Group I\'ve supported, securing them required formal coordination-body endorsement, partner-level technical review meetings, donor-level briefings on the limits of what comparative analysis can show, and clear written boundaries on what is and isn\'t in scope.
+
+The meta-analysis report itself is a side effect of that governance work. The bigger product is the agreement to do it again next quarter, with a slightly tighter framework, slightly cleaner partner data, and slightly more decision-support value to the Cash Working Group as a body.`,
+      },
+      {
+        heading: 'What This Approach Unlocks',
+        content: `When inter-agency cash meta-analysis is operationalised properly, three things become possible that single-partner PDM can\'t deliver.
+
+**System-level performance benchmarking.** Cross-partner comparison on harmonised indicators. Which partners are achieving higher satisfaction rates with smaller transfer values, and what can the rest learn? Which geographies show systematically lower outcomes, and is that a partner effect or a context effect?
+
+**Equity audits at the response level.** Disaggregated outcomes by sex, age, disability, and displacement status across the entire response. Where individual partners may be reaching equity targets, the system as a whole may be missing them — or vice versa.
+
+**Evidence for the [Minimum Expenditure Basket](/blog/the-case-for-anticipatory-cash) review.** Real expenditure patterns from harmonised data, capable of feeding the MEB taskforce with empirical evidence rather than partner-by-partner anecdote.
+
+**Donor-quality evidence on collective contribution.** When a donor asks the Cash Working Group "what did your USD 50 million achieve?", the answer is no longer "here are 12 partner reports". It\'s a single integrated finding with confidence bands, methodology disclosure, and reproducible underlying data.
+
+**Inputs to the [Loss and Damage Fund](/blog/disaster-loss-data-climate-adaptation) evidence base.** Harmonised PDM data, properly structured, becomes part of the country\'s disaster impact evidence — exactly what the post-COP30 climate finance architecture is asking for.`,
+      },
+      {
+        heading: 'The Pattern Generalises',
+        content: `This isn\'t a cash-specific problem. Any sector running multi-partner programming with partner-specific monitoring has the same fragmentation. Health, education, protection, WASH, food security — every cluster generates more individual partner data than aggregate response data.
+
+Inter-agency meta-analysis is the bridge. The seven-pillar approach can be adapted to any sector by swapping the pillar definitions for sector-specific outcome dimensions. The harmonisation discipline stays the same. The governance work stays the same. The reproducible analytical pipeline stays the same.
+
+What changes is the substantive question. For cash, it\'s "is the cash transfer system working?" For nutrition, it\'s "is the multi-partner nutrition response moving the IPC needle?" For protection, it\'s "are the inter-agency referral pathways functioning?" The method is general; the question is sector-specific.
+
+The point of meta-analysis is not just better evidence. It\'s the institutional habit of asking system-level questions instead of partner-level ones — and building the data architecture that makes those questions answerable.`,
+      },
+    ],
+    relatedSlugs: [
+      'the-case-for-anticipatory-cash',
+      'data-ecosystem-maturity-assessment-guide',
+      'lessons-six-countries',
+    ],
+  },
+
+  'geoai-for-humanitarians': {
+    slug: 'geoai-for-humanitarians',
+    title: 'GeoAI for Humanitarians: Getting Started',
+    category: 'Tutorial',
+    pillar: 'GIS',
+    pillarColor: '#7B4B94',
+    readTime: '8 min',
+    date: 'April 2026',
+    excerpt:
+      'GeoAI is overhyped to outsiders and undertapped by the IM officers who would benefit most. After leading national hazard mapping in Afghanistan and rebuilding GIS workflows in Ethiopia, here\'s a practical guide for humanitarian practitioners ready to start.',
+    sections: [
+      {
+        content: `Most humanitarian information management officers I work with have decent GIS skills. They can produce a partner-presence map in QGIS, build a flood vulnerability layer, run zonal statistics. What very few of them have is hands-on confidence with GeoAI — the application of machine learning techniques to geospatial data.
+
+The hesitation is understandable. GeoAI sounds intimidating. Conference talks describe deep learning models trained on terabytes of satellite imagery to predict everything from crop yields to refugee flows. The barrier-to-entry signal is overwhelming.
+
+In practice, most operational humanitarian GeoAI work is much simpler than the conference talks suggest. It\'s standard machine learning techniques applied to standard geospatial data, using tools that are mostly free and increasingly approachable. After supervising national flood, drought, avalanche, landslide, and extreme-temperature risk mapping at 4 km resolution in Afghanistan, and after rebuilding the GIS workflow at UNICEF Ethiopia and FAO Nigeria, I\'m confident this is a tractable skill set for any IM officer who wants to add it.
+
+This is the practical guide I wish I\'d had when I started.`,
+      },
+      {
+        heading: 'What GeoAI Actually Is (and Isn\'t)',
+        content: `GeoAI is the application of machine learning to data that has a spatial dimension. That\'s the whole definition.
+
+It\'s not magic. It doesn\'t predict the future. It doesn\'t replace judgment. What it does is automate pattern recognition at a scale that manual analysis can\'t reach — and then surface those patterns as analytical inputs that a human practitioner uses to make decisions.
+
+Three operational categories cover most humanitarian use cases:
+
+**Classification.** "Is this satellite pixel forest, agriculture, or built-up?" "Is this household at high, medium, or low risk?" Classification problems are where most GeoAI gets used in humanitarian contexts.
+
+**Regression and prediction.** "How much will the NDVI in this zone drop given current rainfall trends?" "How many people are likely displaced based on the destruction signature in this Sentinel-1 image?" Estimating continuous values from spatial inputs.
+
+**Detection and segmentation.** "Where in this image are the buildings, and which ones are damaged?" "What is the boundary of the flood inundation in this scene?" Pulling specific features out of imagery automatically.
+
+If your humanitarian question fits one of those three categories and has a spatial dimension, GeoAI is in scope. If it doesn\'t, no model will help you.`,
+      },
+      {
+        heading: 'The Tool Stack That Actually Matters',
+        content: `Forget the cutting-edge research stacks for now. The tools below cover 90% of humanitarian GeoAI use cases.
+
+**[Google Earth Engine](https://earthengine.google.com/).** This is the gateway. Free for non-commercial use, browser-based JavaScript or Python API, and the entire planetary archive of MODIS, Landsat, Sentinel, CHIRPS, and more is at your fingertips with one-line queries. My drought analysis in Afghanistan that identified 223 of 401 districts in extreme to abnormally dry conditions used Earth Engine for VHI/VCI/TCI computation at national scale. A workflow that would have required days of raster downloads and processing took an hour.
+
+**[QGIS](https://qgis.org/).** Open-source, infinitely extensible. The QGIS-Python integration via PyQGIS lets you script anything. The processing toolbox includes most standard GIS operations. The Semi-Automatic Classification Plugin handles supervised classification of satellite imagery. Combined with QGIS, you can do most humanitarian GeoAI without writing a single deep-learning model.
+
+**Python (Pandas, GeoPandas, Rasterio, scikit-learn).** When you need to script ETL pipelines, run a classification or regression model, or build a reproducible workflow, this is the stack. GeoPandas makes spatial data feel like dataframes. Rasterio handles satellite imagery natively. Scikit-learn covers classical machine learning end-to-end.
+
+**[Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/).** The newer option, similar in spirit to Earth Engine but with stronger Python integration and access to additional datasets like the Microsoft global building footprints. Worth knowing about even if Earth Engine remains your daily driver.
+
+**[WorldPop](https://www.worldpop.org/).** Population estimates at 100 m resolution, globally. The single most useful baseline layer for humanitarian exposure analysis, and the dataset I cite most often when scoping a new operation.
+
+That\'s the working stack. Master those five and you can do most operational humanitarian GeoAI.`,
+      },
+      {
+        heading: 'Three Use Cases to Start With',
+        content: `**Use case 1: Drought monitoring with NDVI and CHIRPS.** This is the canonical starter project. Pull NDVI from MODIS for the last 12 months. Pull CHIRPS rainfall for the same period. Compare both against the long-term mean for the area of operations. Generate a monthly anomaly map. Add a Vegetation Health Index layer that combines vegetation stress with temperature anomaly.
+
+In Afghanistan, this workflow — extended with Sentinel-1 SAR backscatter for flood detection and ASTER DEM for avalanche risk modelling — became the [iMMAP-OCHA Disaster Risk and Climate Outlook Mapping Methodology](/expertise) reference. Once you have it running for one country, replicating it for another takes hours, not weeks.
+
+**Use case 2: Flood extent mapping with Sentinel-1 SAR.** SAR penetrates clouds, which makes it the only operational option for flood mapping in monsoon contexts. The classification logic is straightforward: water has very low backscatter compared to dry surfaces, so flooded areas show up as dark pixels in a SAR image. The hard part is distinguishing real water from shadows, urban reflections, and pre-existing water bodies — which is where simple thresholding gives way to supervised classification with a small training dataset.
+
+I used variants of this workflow for flood vulnerability mapping in Borno, Yobe, and Adamawa during the rainy-season contingency planning at FAO Nigeria, and integrated GloFAS forecasts on top to produce the early-warning maps that fed the Shelter/NFI sector\'s preparedness plan.
+
+**Use case 3: Building footprint extraction for displacement tracking.** The Microsoft global building footprints dataset has changed how rapid displacement assessment works. Combine it with pre-event and post-event satellite imagery, and you can detect new construction (informal settlements, displaced-population shelters) or destruction (conflict damage, disaster impact) at scale. The classification challenge — what counts as a "new building" vs noise — is non-trivial but tractable with simple change-detection workflows.`,
+      },
+      {
+        heading: 'Where to Start: A Two-Week Plan',
+        content: `Here\'s the project I tell IM officers to commit two weeks to as their entry into operational GeoAI.
+
+**Week 1, Days 1–3.** Open a Google Earth Engine account. Run the introductory tutorials. Download the Earth Engine Python API (geemap is a friendly wrapper). Pick a country you know well — your current operating context.
+
+**Week 1, Days 4–7.** Compute monthly NDVI mean for the last 24 months for your country. Compare to the 2015–2024 baseline. Generate an anomaly map. Export the result as a GeoTIFF.
+
+**Week 2, Days 1–3.** Bring the GeoTIFF into QGIS. Overlay it with admin-2 boundaries from OCHA Common Operational Datasets. Compute zonal statistics — mean NDVI anomaly per district. Identify the top-10 most-stressed districts.
+
+**Week 2, Days 4–5.** Cross-reference the stressed districts with WorldPop population estimates. Generate a "population in vegetation-stressed districts" estimate.
+
+**Week 2, Days 6–7.** Write up a one-page methodological note explaining what you did, what the data sources are, what the limitations are, and what the analysis tells you about your operational context.
+
+You\'re not going to publish this. You\'re going to learn from it. By the end of two weeks, you\'ll have run an end-to-end GeoAI workflow that mirrors a real humanitarian product. Every subsequent project gets easier.`,
+      },
+      {
+        heading: 'The Pitfalls Nobody Warns You About',
+        content: `**Model accuracy is not the same as operational utility.** A classifier that\'s 95% accurate on a held-out test set can be operationally useless if the 5% errors cluster in your most consequential decisions. Always validate against ground truth from the actual operational context, not just statistical metrics.
+
+**Resolution matters more than algorithm.** A simple model on 10 m Sentinel data outperforms a sophisticated model on 250 m MODIS data for most local operational questions. Get the resolution right before getting the algorithm right.
+
+**Uncertainty quantification is harder than prediction.** Producing an estimate is the easy part. Producing an honest confidence band around the estimate is what makes the product trustworthy. Most humanitarian GeoAI products skip this step. They shouldn\'t.
+
+**Validation has a shelf life.** A model trained on 2022 imagery may not generalise to 2026 conditions. Land cover changes. Building patterns shift. The displacement signature in a SAR image looks different when the underlying landscape has been transformed by drought. Re-validate periodically.
+
+**Open data has political constraints.** In some operating contexts, satellite imagery analysis is sensitive. Coordinate with the country office, the cluster lead, and (where appropriate) national authorities before publishing detailed spatial products. The technical work and the political work are inseparable.`,
+      },
+      {
+        heading: 'GeoAI Augments Judgment, Doesn\'t Replace It',
+        content: `The most common mistake I see in humanitarian GeoAI is treating model output as the answer rather than as input to the answer.
+
+A classified flood-extent map is not a needs assessment. It\'s a starting point for a needs assessment. The difference matters. Operational decisions are made by people, informed by evidence, accountable to affected populations. GeoAI extends what evidence is possible to assemble; it doesn\'t replace the judgment that turns evidence into decisions.
+
+The IM officers who get the most out of GeoAI are the ones who treat it as another tool in the analytical kit, not as a magic answer machine. Combine the GeoAI output with field reports, partner consultations, baseline household surveys, and operational context — and you have a picture you couldn\'t have built any other way.
+
+That\'s the skill set worth building. Start with two weeks. Pick a country. Run the workflow. The rest follows.`,
+      },
+    ],
+    relatedSlugs: [
+      'delta-resilience-early-warning-anticipatory-action',
+      'lessons-six-countries',
+      'building-systems-governments-can-own',
+    ],
+  },
+
+  'the-im-coordination-trap': {
+    slug: 'the-im-coordination-trap',
+    title: 'The IM Coordination Trap',
+    category: 'Opinion',
+    pillar: 'Data Analytics',
+    pillarColor: '#009EDB',
+    readTime: '8 min',
+    date: 'April 2026',
+    excerpt:
+      'The biggest barriers to good information management in humanitarian response are not technical — they\'re political. Data sharing agreements that never get signed, institutional distrust that no dashboard can fix, and donor-imposed reporting cycles that don\'t match field reality. Technology is the easy part.',
+    sections: [
+      {
+        content: `In Afghanistan, I once spent three months building what I believed was the perfect 5W reporting platform. It had standardised templates, dropdown-controlled p-codes, automated deduplication, real-time validation, role-based access controls, and a dashboard layer that turned partner submissions into instant cluster-level coverage maps. The technical work was sound. The architecture was rigorous. The product was beautiful.
+
+It almost failed.
+
+It didn\'t fail for technical reasons. It failed — almost — because three of the largest implementing partners in the country didn\'t want to submit their data through a centralised platform. They had political concerns about data ownership. They had legal concerns about beneficiary protection. They had institutional concerns about a single agency (mine) becoming the de facto information broker for the response. None of those concerns showed up in any technical specification. All of them threatened to make the platform irrelevant.
+
+We rescued the system not by improving the software but by negotiating a written data governance protocol that addressed every one of those concerns. Tiered access. Pseudonymisation rules. A formal escalation pathway for disputes. A clear written commitment that the platform was the cluster\'s, not the implementing organisation\'s. After that, the holdout partners came on board. ReportHub processed over 259 partner reports per month covering services to 2.28 million beneficiaries across 1,853 locations.
+
+The lesson, after a decade of building IM systems across six countries, is one I have to keep relearning: the technology is the easy part.`,
+      },
+      {
+        heading: 'The Trap',
+        content: `The IM coordination trap is the assumption that better technology solves coordination problems. It rarely does. Coordination problems are political, not technical, and they require political solutions.
+
+Three flavours of the trap show up consistently across operations.
+
+**Trap 1: The Data-Sharing Agreement That Never Gets Signed.** A consortium identifies the need for shared monitoring. The technical team builds the platform. The partners agree in principle. Then the data-sharing agreement goes through legal review. Six months later, the agreement is still in draft. The platform is online but empty. Eventually it\'s shelved as "not adopted by partners" — when the actual problem was that nobody owned the agreement\'s political negotiation.
+
+**Trap 2: The Cluster Lead vs Partner Trust Deficit.** A cluster lead commissions a dashboard to track partner performance. Partners interpret this — sometimes correctly — as a surveillance instrument. They report selectively or not at all. The dashboard becomes a monument to coverage gaps that exist in the data because partners are protecting themselves, not because the gaps exist in reality.
+
+**Trap 3: The Donor-Imposed Reporting Cycle That Doesn\'t Match Field Reality.** A major donor specifies a quarterly reporting cycle with 200 indicators. Partner field teams spend three weeks of every quarter filling out reports rather than delivering programmes. The data is collected, aggregated, and reported up. Nobody downstream uses it. The reporting exists because the funding requires it, not because anyone needed the information.
+
+In each case, the technology can be perfect and the coordination still fails. The failure is upstream of the technology.`,
+      },
+      {
+        heading: 'Why the Trap Is So Persistent',
+        content: `Information managers are hired for technical skills. The job ad asks for Power BI, GIS, SQL, Python. The interview tests dashboard design and data architecture. Promotions reward visible technical product.
+
+But the job actually requires political negotiation. Securing partner buy-in for data submission. Brokering data-sharing agreements. Defending the IM unit\'s neutrality when the cluster lead asks for partner-comparison products that risk making partners look bad. Pushing back on donor reporting requirements that don\'t serve operational needs.
+
+None of those skills are in the job ad. None of them get tested in the interview. None of them produce visible technical artifacts. So they are systematically underweighted in how IM officers spend their time.
+
+The result is an IM cadre that\'s technically over-skilled and politically under-prepared. We build excellent platforms in environments where the political ground is unstable, and we\'re surprised when the platforms don\'t take hold.
+
+When I ran a country-wide IM capacity audit in Afghanistan across over 60 humanitarian organisations, the pattern was clear: most agencies had IM focal persons, but the weakest capacity was at the coordination level — not at the individual analyst level. The gap wasn\'t technical skill. It was the institutional muscle to coordinate analytical work across organisations — the political work that no amount of individual training fixes.`,
+      },
+      {
+        heading: 'The Afghanistan Suspension as Case Study',
+        content: `The clearest example I have of the IM coordination trap was the [Afghanistan platform suspension in 2025](/blog/politics-of-humanitarian-data-infrastructure). The platform — a nationwide humanitarian reporting system serving over 115 partner organisations — was technically excellent. Its architecture was modern, its uptime was high, its data quality was rigorous, its training programme was comprehensive.
+
+It went dark overnight when its sole donor froze funding.
+
+The technology had no defence. The institutional architecture had no defence. The partners who depended on the platform had no advance notice and no alternative. The lead UN coordination agency distanced itself from the implementing organisation rather than fighting for the shared infrastructure. Every actor retreated into self-preservation. Nobody owned continuity, so nobody fought for it.
+
+This is the IM coordination trap at its most consequential. The technical work was good. The political architecture — diversified funding, mandatory contingency protocols, formal continuity agreements, sovereign data governance — was missing. When the political ground shifted, the technology went with it.
+
+The lesson generalises beyond Afghanistan. Any humanitarian data system that depends on a single donor, a single implementing partner, or a single political configuration is a system with a single point of failure. And the failure mode isn\'t technical — it\'s institutional.`,
+      },
+      {
+        heading: 'What Gets You Out of the Trap',
+        content: `The escape from the coordination trap isn\'t better software. It\'s the boring institutional work that IM officers are not trained to do but that determines whether the software ever gets used.
+
+**Negotiate the data governance before you build the platform.** Who owns the data? Who validates it? Who publishes it? What happens when partners disagree about a finding? Who can suspend a partner from the system? Get the answers in writing before a single line of code is written. The Afghanistan IM Capacity Assessment exercise I led demonstrated, painfully, that platforms built without this groundwork hit walls within months.
+
+**Map the political stakeholders before you map the data sources.** For every dataset you want to consume, identify the political actor who controls access. Get explicit, written, time-bounded permissions before assuming the data will flow. The [data ecosystem maturity assessment framework](/blog/data-ecosystem-maturity-assessment-guide) bakes this in as Dimension 1 (Actors and Roles) for exactly this reason.
+
+**Design the platform around the coordination mechanism, not the cluster lead.** Cluster leads change. Coordination mechanisms persist. Build the platform as a shared asset of the coordination architecture, with governance that survives leadership turnover. The cash working group I supported in Ethiopia continues to work because the analytical framework belongs to the coordination mechanism, not to any single agency.
+
+**Build escalation pathways.** When two partners disagree on a finding, what happens? When a donor asks for a product the partners don\'t support, what happens? When a government counterpart objects to a publication, what happens? Pre-agreed escalation pathways prevent every dispute from becoming an existential crisis.
+
+**Ration the information products.** Not every question needs a dashboard. Not every report needs to be quarterly. Cut the reporting burden to what\'s actually used. Less is more, almost always.
+
+**Diversify funding from the start.** No coordination platform should depend on a single donor. The reserve mechanism, multi-donor pooled fund, or cost-sharing agreement has to exist on day one. Bolt-on diversification after a funding crisis is too late.`,
+      },
+      {
+        heading: 'The Promotion Path That Doesn\'t Exist',
+        content: `Here\'s the structural fix the IM cadre needs but doesn\'t have: a promotion path that rewards political and institutional work as much as it rewards technical work.
+
+Right now, an IM officer who builds a beautiful platform gets visibility, recognition, and the next assignment. An IM officer who spends three months negotiating a data governance MoU gets… nothing visible. The MoU is invisible until it\'s tested, at which point its value is enormous, but the IM officer who built it has long since moved on.
+
+This is the same problem the foreign service has with prevention vs response. We reward visible heroics in crisis. We don\'t reward the patient institutional work that prevents the crisis. And then we\'re surprised when the system optimises for what it rewards.
+
+The fix is structural. Performance frameworks for IM officers should explicitly evaluate political and institutional outcomes — data-sharing agreements signed, partner trust scores, coordination platform survival past project close, donor diversification metrics. Until those metrics exist, the IM cadre will keep falling into the coordination trap, and the platforms will keep dying when the political ground shifts.
+
+The technology really is the easy part. We just keep being surprised by it.`,
+      },
+    ],
+    relatedSlugs: [
+      'politics-of-humanitarian-data-infrastructure',
+      'building-systems-governments-can-own',
+      'lessons-six-countries',
+    ],
+  },
 }
 
 export function generateStaticParams() {

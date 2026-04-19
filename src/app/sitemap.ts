@@ -20,6 +20,13 @@ const BLOG_SLUGS: string[] = [
   'the-voices-our-data-systems-silence',
   'voice-infrastructure-inequality',
   'building-voice-native-evidence-systems',
+  // Field reflections + cash + GIS series
+  'the-72-hour-problem',
+  'from-maiduguri-to-machine-learning',
+  'the-case-for-anticipatory-cash',
+  'measuring-joint-response-for-cash-transfer',
+  'geoai-for-humanitarians',
+  'the-im-coordination-trap',
   // DRR series
   'disaster-loss-data-climate-adaptation',
   'building-systems-governments-can-own',

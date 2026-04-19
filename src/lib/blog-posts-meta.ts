@@ -101,7 +101,7 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '7 min',
     excerpt:
       "The first 72 hours of a sudden-onset disaster are an information black hole. Good IM isn't about perfect data — it's about being useful under imperfect conditions.",
-    published: false,
+    published: true,
   },
   {
     slug: 'from-maiduguri-to-machine-learning',
@@ -112,7 +112,7 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '10 min',
     excerpt:
       "The evolution from manual Excel-based IM in Nigeria's NE crisis to AI-powered analytical platforms wasn't planned — it was driven by repeatedly hitting the limits of existing tools.",
-    published: false,
+    published: true,
   },
   {
     slug: 'the-case-for-anticipatory-cash',
@@ -123,18 +123,18 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '8 min',
     excerpt:
       'We can predict most slow-onset disasters weeks in advance but still wait for them to happen before responding. Every dollar spent before a flood is worth five dollars spent after.',
-    published: false,
+    published: true,
   },
   {
-    slug: 'what-1559-households-taught-me',
-    title: 'What 1,559 Households Taught Me About Measuring Cash Impact',
+    slug: 'measuring-joint-response-for-cash-transfer',
+    title: 'Measuring Joint Response for Cash Transfer Programmes — A New Way of Using Humanitarian Meta-Data',
     category: 'Technical Deep Dive',
     pillar: 'Cash Programming',
     pillarColor: '#8B3A2F',
-    readTime: '10 min',
+    readTime: '11 min',
     excerpt:
-      "The Ethiopia PDM Meta-Analysis was the first attempt to unify post-distribution monitoring data from five organizations into a single analytical framework. Here's what we learned.",
-    published: false,
+      "Five organisations running cash transfer programmes in the same country produce five sets of post-distribution monitoring data using five different tools. The simple question — \"is our collective cash response working?\" — becomes structurally unanswerable. Inter-agency PDM meta-analysis is how you answer it.",
+    published: true,
   },
   {
     slug: 'geoai-for-humanitarians',
@@ -145,7 +145,7 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '8 min',
     excerpt:
       "GeoAI has enormous potential for humanitarian operations, but most IM officers don't know where to start. This is a practical guide.",
-    published: false,
+    published: true,
   },
   {
     slug: 'the-im-coordination-trap',
@@ -153,10 +153,10 @@ export const POSTS_META: BlogPostMeta[] = [
     category: 'Opinion',
     pillar: 'Data Analytics',
     pillarColor: '#009EDB',
-    readTime: '7 min',
+    readTime: '8 min',
     excerpt:
       "The biggest barriers to good information management in humanitarian response are not technical — they're political. Data sharing agreements and institutional distrust kill more IM initiatives than bad technology.",
-    published: false,
+    published: true,
   },
   {
     slug: 'future-of-humanitarian-im-is-agentic',
