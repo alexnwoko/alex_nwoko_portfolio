@@ -2284,7 +2284,7 @@ It almost failed.
 
 It didn\'t fail for technical reasons. It failed — almost — because three of the largest implementing partners in the country didn\'t want to submit their data through a centralised platform. They had political concerns about data ownership. They had legal concerns about beneficiary protection. They had institutional concerns about a single agency (mine) becoming the de facto information broker for the response. None of those concerns showed up in any technical specification. All of them threatened to make the platform irrelevant.
 
-We rescued the system not by improving the software but by negotiating a written data governance protocol that addressed every one of those concerns. Tiered access. Pseudonymisation rules. A formal escalation pathway for disputes. A clear written commitment that the platform was the cluster\'s, not the implementing organisation\'s. After that, the holdout partners came on board. ReportHub processed over 259 partner reports per month covering services to 2.28 million beneficiaries across 1,853 locations.
+We rescued the system not by improving the software but by negotiating trust and through agreeing on verbal and non-written data governance protocol across 8 clusters that addressed every one of those concerns. Tiered access. Pseudonymisation rules. A formal escalation pathway for disputes. A clear commitment from funding partners that the platform was the cluster\'s, not the implementing organisation\'s. After that, the holdout partners came on board. ReportHub processed over 259 partner reports per month covering services to 2.28 million beneficiaries across 1,853 locations.
 
 The lesson, after a decade of building IM systems across six countries, is one I have to keep relearning: the technology is the easy part.`,
       },
@@ -2298,7 +2298,7 @@ Three flavours of the trap show up consistently across operations.
 
 **Trap 2: The Cluster Lead vs Partner Trust Deficit.** A cluster lead commissions a dashboard to track partner performance. Partners interpret this — sometimes correctly — as a surveillance instrument. They report selectively or not at all. The dashboard becomes a monument to coverage gaps that exist in the data because partners are protecting themselves, not because the gaps exist in reality.
 
-**Trap 3: The Donor-Imposed Reporting Cycle That Doesn\'t Match Field Reality.** A major donor specifies a quarterly reporting cycle with 200 indicators. Partner field teams spend three weeks of every quarter filling out reports rather than delivering programmes. The data is collected, aggregated, and reported up. Nobody downstream uses it. The reporting exists because the funding requires it, not because anyone needed the information.
+**Trap 3: The Donor-Imposed Reporting Cycle That Doesn\'t Match Field Reality.** A major donor specifies a quarterly reporting cycle with 20 indicators. Partner field teams spend three weeks of every quarter filling out reports rather than delivering programmes. The data is collected, aggregated, and reported up. Nobody downstream uses it. The reporting exists because the funding requires it, not because anyone needed the information.
 
 In each case, the technology can be perfect and the coordination still fails. The failure is upstream of the technology.`,
       },
@@ -2347,8 +2347,6 @@ The lesson generalises beyond Afghanistan. Any humanitarian data system that dep
         content: `Here\'s the structural fix the IM cadre needs but doesn\'t have: a promotion path that rewards political and institutional work as much as it rewards technical work.
 
 Right now, an IM officer who builds a beautiful platform gets visibility, recognition, and the next assignment. An IM officer who spends three months negotiating a data governance MoU gets… nothing visible. The MoU is invisible until it\'s tested, at which point its value is enormous, but the IM officer who built it has long since moved on.
-
-This is the same problem the foreign service has with prevention vs response. We reward visible heroics in crisis. We don\'t reward the patient institutional work that prevents the crisis. And then we\'re surprised when the system optimises for what it rewards.
 
 The fix is structural. Performance frameworks for IM officers should explicitly evaluate political and institutional outcomes — data-sharing agreements signed, partner trust scores, coordination platform survival past project close, donor diversification metrics. Until those metrics exist, the IM cadre will keep falling into the coordination trap, and the platforms will keep dying when the political ground shifts.
 
