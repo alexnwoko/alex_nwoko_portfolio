@@ -1785,7 +1785,7 @@ The humanitarian data drought is not a future risk. It is a present reality. The
 
   'the-72-hour-problem': {
     slug: 'the-72-hour-problem',
-    title: 'The 72-Hour Problem',
+    title: 'The 72-Hour Post Disaster Problem',
     category: 'Field Reflection',
     pillar: 'Data Analytics',
     pillarColor: '#009EDB',

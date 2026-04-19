@@ -94,7 +94,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'the-72-hour-problem',
-    title: 'The 72-Hour Problem',
+    title: 'The 72-Hour Post Disaster Problem',
     category: 'Field Reflection',
     pillar: 'Data Analytics',
     pillarColor: '#009EDB',
