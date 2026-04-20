@@ -1421,9 +1421,9 @@ And governance reforms only succeed when the people who collect the data and the
     ],
     sections: [
       {
-        content: `I was in a room designing anticipatory action triggers for a humanitarian response. We had good climate forecasts — CHIRPS rainfall anomaly data, NDVI vegetation stress indicators, WFP food price monitoring. We knew a drought was developing in several provinces. We had a general sense that it would be bad.
+        content: `I was in my office attempting a pilot design for drought anticipatory action triggers for a humanitarian response in Afghanistan. From the GIS team, I had access to good climate forecasts — CHIRPS rainfall anomaly data, NDVI vegetation stress indicators, food price monitoring report extract. We knew a drought was developing in several provinces. We had a general sense that it would be bad.
 
-What we did not have was structured historical loss data that could tell us: "The last three times rainfall deficit exceeded this threshold, it displaced approximately X thousand people, destroyed Y hectares of wheat, and overwhelmed Z health facilities in these specific districts." We were designing triggers in the dark — calibrating thresholds based on expert judgment and proxy data rather than empirical impact records.
+What I did not have was the "structured historical loss data" that could tell us: "The last three times rainfall deficit exceeded this threshold, it displaced approximately X thousand people, destroyed Y hectares of wheat, and cascading cholera outbreak from drought overwhelmed Z health facilities in these specific districts." I was designing triggers in the dark — calibrating thresholds based on expert judgment and proxy data rather than empirical impact records.
 
 That experience crystallised a conviction: early warning without historical loss context is a forecast without meaning. A meteorological forecast tells you what is coming. Historical loss data tells you what it will do when it arrives. The combination — forecast plus impact profile — is what makes anticipatory action evidence-based rather than speculative. And [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience) is the first national disaster data system designed to provide that missing link at scale.`,
       },
