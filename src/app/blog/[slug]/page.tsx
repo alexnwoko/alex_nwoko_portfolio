@@ -109,9 +109,12 @@ function renderBlock(block: string, key: number): ReactNode {
     const boldText = leadingBoldMatch[1]
     const spacer = leadingBoldMatch[2] ?? ''
     const rest = leadingBoldMatch[3] ?? ''
+    // parseInline runs on the bold lead-in text too, so any markdown
+    // links inside the bold (e.g. `**The [Loss and Damage Fund](url)**`)
+    // render as proper hyperlinks instead of leaking literal `[brackets]`.
     return (
       <p key={key}>
-        <strong className="text-coffee font-semibold">{boldText}</strong>
+        <strong className="text-coffee font-semibold">{parseInline(boldText)}</strong>
         {spacer}
         {parseInline(rest)}
       </p>
@@ -1047,10 +1050,10 @@ The result is predictable. One of the most common challenges among reporting cou
 Meanwhile, humanitarian data capacity itself is shrinking. The [State of Open Humanitarian Data 2026](https://centre.humdata.org/) revealed that crisis data availability has fallen from 74% to 68% across 22 humanitarian operations. OCHA, UNHCR, and IOM have all experienced significant reductions in data staff. The proxy system is degrading at the same time as the demand for the real thing has never been higher.`,
       },
       {
-        heading: 'Three Convergent Pressures',
-        content: `The importance of disaster loss data has not changed. It has always mattered. What has changed is that three global policy processes now simultaneously demand it, and the consequences of not having it are financial.
+        heading: 'Two Convergent Pressures',
+        content: `The importance of disaster loss data has not changed. It has always mattered. What has changed is that two global policy processes now simultaneously demand it, and the consequences of not having it are financial.
 
-**The [Loss and Damage Fund](https://www.undrr.org/building-risk-knowledge/disaster-data)** has $768 million in pledges against $580 billion in estimated need. Its first COP30 call for proposals made one thing clear: evidence-based loss data is the prerequisite for accessing finance. Communities like those around Cox's Bazar cannot access this funding without structured proof of what they have lost. **The [Belém Adaptation Indicators](https://www.undrr.org/building-risk-knowledge/disaster-data),** the 59 indicators adopted at COP30, require countries to demonstrate that disaster impacts are actually declining across sectors. You cannot demonstrate declining impact without historical loss baselines. **The [Sendai Framework Endgame](https://sendaimonitor.undrr.org/)** enters its final five-year implementation window in 2026, with the "Beyond the Numbers" acceleration strategy demanding disaggregated, validated, internationally comparable data. The 38 Sendai indicators feed directly into 12 SDG indicators across targets 1.5, 11.5, 11.b, and 13.1.
+**The [Loss and Damage Fund](https://www.undrr.org/building-risk-knowledge/disaster-data)** has $768 million in pledges against $580 billion in estimated need. Its first COP30 call for proposals made one thing clear: evidence-based loss data is the prerequisite for accessing finance. Communities like those around Cox's Bazar cannot access this funding without structured proof of what they have lost. **The [Sendai Framework Endgame](https://sendaimonitor.undrr.org/)** enters its final five-year implementation window in 2026, with the "Beyond the Numbers" acceleration strategy demanding disaggregated, validated, internationally comparable data. The 38 Sendai indicators feed directly into 12 SDG indicators across targets 1.5, 11.5, 11.b, and 13.1.
 
 Each process independently requires granular disaster loss data. Together, they create an unprecedented demand signal, and an unprecedented penalty for countries that cannot respond.`,
       },
