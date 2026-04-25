@@ -28,6 +28,7 @@ const BLOG_SLUGS: string[] = [
   'geoai-for-humanitarians',
   'the-im-coordination-trap',
   // DRR series
+  'invisible-disasters-invisible-funding',
   'disaster-loss-data-climate-adaptation',
   'building-systems-governments-can-own',
   'desinventar-to-delta-resilience',

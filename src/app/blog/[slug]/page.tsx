@@ -2362,6 +2362,128 @@ The technology really is the easy part. We just keep being surprised by it.`,
       'lessons-six-countries',
     ],
   },
+
+  'invisible-disasters-invisible-funding': {
+    slug: 'invisible-disasters-invisible-funding',
+    title: 'Invisible Disasters, Invisible Funding: When Disaster Data Decides Who Gets Climate Finance',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'April 2026',
+    excerpt:
+      "Every year, millions experience flash floods, prolonged drought, and slow-onset hazards that never reach the world's primary disaster databases. Their losses are real, recurring, and devastating. Because they don't show up in the data, they rarely show up in the funding either.",
+    keywords: [
+      'disaster loss data',
+      'climate finance',
+      'EM-DAT',
+      'CRED',
+      'Loss and Damage Fund',
+      'DELTA Resilience',
+      'extensive risk',
+      'intensive risk',
+      'African disaster reporting',
+      'Sendai Framework',
+      'Green Climate Fund',
+      'Adaptation Fund',
+      'anticipatory action',
+      'parametric insurance',
+      'African Risk Capacity',
+      'CCRIF',
+      'G-DRSF',
+      'COP28',
+      'COP30',
+      'climate finance evidence',
+    ],
+    sections: [
+      {
+        content: `What gets counted gets funded. What gets missed stays vulnerable.
+
+In its [2025 Disasters in Numbers report](https://www.cred.be/publications), the [Centre for Research on the Epidemiology of Disasters (CRED)](https://www.cred.be/) recorded that natural hazards killed 16,607 people, affected 110.2 million more, and caused US$169.7 billion in economic losses in 2025. These are sobering numbers, and they deserve the attention they are getting.
+
+But the more consequential story may be in the disasters those numbers never captured. Every year, millions of people experience flash floods, local storms, urban flooding, prolonged drought, and slow-onset heat events that never reach the world\'s primary disaster databases. Their losses are smaller in any single event but cumulatively devastating. They wear out household savings, strip away livelihoods, and quietly erode community resilience year after year.
+
+And because these losses do not show up in the data, they rarely show up in the funding either. That is the gap this post examines.`,
+      },
+      {
+        heading: 'The Data Gap Shaping Climate Finance',
+        content: `Climate finance is one of the fastest growing areas of international cooperation. The [Loss and Damage Fund](https://unfccc.int/topics/adaptation-and-resilience/groups-committees/loss-and-damage-fund-fldd) operationalised at COP28, the [Green Climate Fund](https://www.greenclimate.fund/), the [Adaptation Fund](https://www.adaptation-fund.org/), and anticipatory action mechanisms all share one feature. They depend on disaster risk evidence to decide where money goes, to whom, and under what conditions.
+
+Most of that evidence flows from a small number of global datasets. [EM-DAT](https://www.emdat.be/), maintained by CRED, is the most widely cited. It underpins academic research, humanitarian appeals, donor analyses, and the evidence base for major climate finance allocations.
+
+This is not a criticism of EM-DAT. It is a respected and transparent resource, and crucially, CRED flags its own limits. In the 2025 Disasters in Numbers report, CRED itself notes that "these estimates should be considered conservative with respect to what is truly lost," and that "economic losses in poorer and developing contexts are poorly reported." That candour deserves credit. It also confirms the problem.
+
+If the single most cited disaster dataset openly concedes that poorer contexts are under-reported, and that same dataset anchors decisions about where billions in climate finance flow, then the blind spots in the data become blind spots in the funding.`,
+      },
+      {
+        heading: 'How Missing Data Decides Who Gets Protected',
+        content: `To be included in [EM-DAT](https://www.emdat.be/), a disaster must meet at least one of four criteria: 10 or more people reported killed, 100 or more people reported affected, a call for international assistance, or a declaration of a state of emergency. These thresholds were designed for analytical consistency, not for completeness. They work well for large, visible, and politically recognised events. They work poorly for everything else.
+
+Three structural issues follow from this design.
+
+First, the numerical thresholds are arbitrary. A community losing 8 lives to a flash flood, or 95 households displaced by a recurring storm, simply does not register. There is nothing in the methodology that distinguishes between "did not happen" and "did not cross the reporting line."
+
+Second, the political triggers are political. A call for international assistance or a formal state of emergency is a government decision shaped by capacity, diplomacy, and domestic considerations. As peer-reviewed reviews of the database note, these triggers reflect "mainly political decisions" rather than actual disaster impacts.
+
+Third, even the events that do make it in are often incomplete. Recent analyses of the database find that roughly a third of records do not contain the number of people affected, and a fifth do not record deaths. Economic losses are the least reliably recorded field of all, especially in low and middle income contexts.
+
+None of this means EM-DAT should be discarded. It means EM-DAT should be recognised for what it is: a strong dataset for intensive, well-reported, politically acknowledged disasters. The problem is not that it fails at its design purpose. The problem is that it has been asked to carry far more decision weight than its design was ever meant to support.`,
+      },
+      {
+        heading: 'Unseen Disasters, Unfunded Communities',
+        content: `[UNDRR distinguishes between two kinds of disaster risk](https://www.undrr.org/terminology). Intensive risk describes large, infrequent events such as major earthquakes, category 5 storms, and catastrophic floods. These dominate global headlines and global datasets. Extensive risk describes the opposite: low severity, high frequency events, mostly linked to localised hazards such as flash floods, urban flooding, localised storms, landslides, and slow-onset drought and heat.
+
+Extensive risk events rarely breach EM-DAT\'s thresholds. Yet their cumulative toll is extraordinary. Analyses drawing on [UNDRR\'s Global Assessment Report series](https://www.undrr.org/gar) find that small and recurrent disasters cause only about 14% of disaster mortality but drive more than 40% of total economic losses in low and middle income countries.
+
+These are the losses that quietly wear out household savings, school buildings, clinic roofs, farm income, and community cohesion.
+
+The 2025 data tells the same story in a single striking ratio. According to the 2025 Disasters in Numbers report, Africa accounted for 18.6% of global disaster deaths and 13.7% of people affected, but just 0.7% of reported economic losses (US$1.2 billion). The Americas, in contrast, accounted for 8.2% of global deaths but 65.2% of losses. African disasters are not cheap. African disaster losses are simply not being counted.
+
+This is the invisible majority: populations exposed to regular, grinding hazards whose losses rarely appear in any global dataset. And because those losses are invisible, the communities that carry them are persistently under-represented in the risk evidence that shapes climate finance.`,
+      },
+      {
+        heading: 'Invisible Losses, Invisible Finance: When Disaster Data Decides Who Gets Support',
+        content: `If disaster data is incomplete, the climate finance architecture that relies on it inherits the same gaps. This is not a theoretical problem. It plays out across at least four real-world mechanisms.
+
+**The Loss and Damage Fund.** The [Loss and Damage Fund](https://unfccc.int/topics/adaptation-and-resilience/groups-committees/loss-and-damage-fund-fldd), operationalised at COP28, is designed to support communities already experiencing climate-driven harm. Allocation will inevitably draw on historical loss evidence, whether at aggregate or country level. If extensive risk losses are systematically under-reported, the countries most in need of Loss and Damage finance may also be the least equipped to substantiate their claims. The fund risks reproducing the same geography of visibility we see in EM-DAT.
+
+**Adaptation and resilience finance.** The [Green Climate Fund](https://www.greenclimate.fund/) and the [Adaptation Fund](https://www.adaptation-fund.org/) both require risk and vulnerability evidence in project proposals. When that evidence is drawn from datasets that privilege intensive risk, the resulting projects are more likely to target low-frequency, high-severity events. Extensive-risk communities, whose disaster experience is chronic rather than catastrophic, find themselves outside the evidence base needed to attract funding.
+
+**Anticipatory action and parametric insurance.** Anticipatory action is built on the principle of acting before a hazard arrives, using forecasts and pre-agreed triggers to release funds, pre-position supplies, or evacuate populations. As the [Anticipation Hub](https://www.anticipation-hub.org/) notes, anticipatory action does not happen in isolation; it is interwoven with disaster risk reduction, climate adaptation, social protection, and humanitarian response, all of which depend on the same underlying disaster data. Both forecast skill and trigger design depend on historical disaster records that document where, how often, and how severely past events have unfolded. Where extensive risk events are missing from the record, models underestimate frequency, triggers are calibrated too high, and pre-arranged finance fails to fire for the very communities anticipatory action was designed to protect.
+
+Parametric insurance pools such as the [African Risk Capacity](https://www.africanriskcapacity.org/) and the [Caribbean Catastrophe Risk Insurance Facility](https://www.ccrif.org/) use hazard parameters such as rainfall, windspeed, or ground shaking, rather than measured losses, to issue rapid payouts. Pricing, payout thresholds, and basis-risk modelling all depend on long historical hazard and impact records. When extensive-risk events are absent from those records, the resulting products underprice slow-onset and recurrent risk, and underpay the communities that experience it most frequently.
+
+**Sendai Framework monitoring.** [Sendai Framework Targets C and D](https://sendaimonitor.undrr.org/), which track disaster-related economic loss and damage to critical infrastructure, cannot be monitored credibly without sub-national, disaggregated data. Under-reporting in national submissions compounds global under-counting, leaving the international community with an incomplete picture of where progress is real and where it is stalling.
+
+Taken together, these four mechanisms reveal the same pattern. Disaster data is not neutral infrastructure. It is a filter that decides whose suffering is visible, whose losses are credible, and whose claims on global finance are fundable.`,
+      },
+      {
+        heading: 'Missing from the Data, Missing from the Funding',
+        content: `If the problem is a design choice, the solution is also a design choice. A new generation of disaster-tracking systems is beginning to emerge, built specifically to see what EM-DAT was never designed to capture.
+
+The most significant is UNDRR\'s [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience), the Disaster and Hazardous Events, Losses and Damages Tracking and Analysis system. DELTA replaces the legacy DesInventar Sendai platform with a no-threshold, subnational, and disaggregated approach. It records events down to the local level, and disaggregates losses by geography, sector, sex, age, and disability. Critically, it is country-owned and interoperable, so national governments retain control over their own data while still contributing to global risk knowledge.
+
+DELTA sits inside a wider policy architecture. The [Global Disaster-Related Statistics Framework](https://www.unsdglearn.org/courses/disaster-related-statistics-framework/), co-developed by UNDRR and the UN Statistical Commission, provides the international standard that makes national disaster data comparable and policy-useable. Together, these tools offer the first serious chance to close the visibility gap that has defined global disaster tracking for decades.
+
+But tools alone will not close that gap. Three shifts are needed.
+
+Donors and multilateral funds must invest in national disaster-tracking systems as core climate finance infrastructure, not as back-office statistics. Climate finance application processes must explicitly accept and reward disaggregated, extensive-risk evidence, not just intensive-risk baselines. And global datasets must be read as starting points, not final authorities, on what has actually happened to the communities they describe.`,
+      },
+      {
+        heading: 'Counting Disasters Differently',
+        content: `The 2025 disaster numbers will make headlines, as they should. But the deeper story sits just outside the frame, in the floods that were never reported, the droughts that quietly hollowed out livelihoods, and the communities whose losses were real but uncounted.
+
+Climate finance cannot reach people it cannot see. As the Loss and Damage Fund matures, and as DELTA Resilience rolls out across regions, we have a rare chance to align how we measure disasters with how we fund recovery and resilience.
+
+What gets counted gets funded. What gets missed stays vulnerable. Our job now is to count differently.`,
+      },
+    ],
+    relatedSlugs: [
+      'disaster-loss-data-climate-adaptation',
+      'desinventar-to-delta-resilience',
+      'g-drsf-statisticians-disaster-managers',
+    ],
+  },
 }
 
 export function generateStaticParams() {

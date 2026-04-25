@@ -71,6 +71,17 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
+    slug: 'invisible-disasters-invisible-funding',
+    title: 'Invisible Disasters, Invisible Funding: When Disaster Data Decides Who Gets Climate Finance',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    excerpt:
+      "Every year, millions experience flash floods, prolonged drought, and slow-onset hazards that never reach the world's primary disaster databases. Their losses are real, recurring, and devastating. Because they don't show up in the data, they rarely show up in the funding either.",
+    published: true,
+  },
+  {
     slug: 'from-humanitarian-data-to-digitising-africas-markets',
     title: "From Crisis Zones Digital Systems to Market Zones Digital Transition for Africa's Informal Economies",
     category: 'Founder Reflection',
