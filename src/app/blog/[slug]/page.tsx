@@ -2399,7 +2399,7 @@ The technology really is the easy part. We just keep being surprised by it.`,
       {
         content: `What gets counted gets funded. What gets missed stays vulnerable.
 
-In its [2025 Disasters in Numbers report](https://www.cred.be/publications), the [Centre for Research on the Epidemiology of Disasters (CRED)](https://www.cred.be/) recorded that natural hazards killed 16,607 people, affected 110.2 million more, and caused US$169.7 billion in economic losses in 2025. These are sobering numbers, and they deserve the attention they are getting.
+In its [2025 Disasters in Numbers report](https://files.emdat.be/reports/2025_EMDAT_report.pdf), the [Centre for Research on the Epidemiology of Disasters (CRED)](https://www.cred.be/) recorded that natural hazards killed 16,607 people, affected 110.2 million more, and caused US$169.7 billion in economic losses in 2025. These are sobering numbers, and they deserve the attention they are getting.
 
 But the more consequential story may be in the disasters those numbers never captured. Every year, millions of people experience flash floods, local storms, urban flooding, prolonged drought, and slow-onset heat events that never reach the world\'s primary disaster databases. Their losses are smaller in any single event but cumulatively devastating. They wear out household savings, strip away livelihoods, and quietly erode community resilience year after year.
 
