@@ -46,6 +46,7 @@ export interface BlogPostMeta {
  * the blog listing (featured posts are pulled to the top automatically).
  */
 export const POSTS_META: BlogPostMeta[] = [
+
   {
     slug: 'disaster-loss-data-climate-adaptation',
     title: 'Why Disaster Loss Data Matters More Than Ever for Climate Adaptation',
@@ -82,28 +83,6 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
-    slug: 'from-humanitarian-data-to-digitising-africas-markets',
-    title: "From Crisis Zones Digital Systems to Market Zones Digital Transition for Africa's Informal Economies",
-    category: 'Founder Reflection',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '12 min',
-    excerpt:
-      "While working abroad over the last decade, I visited Nigeria every few months. Every visit, the same struggle — finding reliable services, navigating markets blind, and watching trust deficits hold back an entire economy from going digital. Then a realisation hit me.",
-    published: true,
-  },
-  {
-    slug: 'why-i-build-systems-not-dashboards',
-    title: 'Why I Build Systems, Not Dashboards',
-    category: 'Opinion',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '8 min',
-    excerpt:
-      'The humanitarian sector is drowning in dashboards but starving for systems. A dashboard is a view; a system is an ecosystem that changes how organizations make decisions.',
-    published: true,
-  },
-  {
     slug: 'the-72-hour-problem',
     title: 'The 72-Hour Post Disaster Problem',
     category: 'Field Reflection',
@@ -113,17 +92,6 @@ export const POSTS_META: BlogPostMeta[] = [
     excerpt:
       "The first 72 hours of a sudden-onset disaster are an information black hole. Good IM isn't about perfect data — it's about being useful under imperfect conditions.",
     published: true,
-  },
-  {
-    slug: 'from-maiduguri-to-machine-learning',
-    title: 'From Maiduguri to Machine Learning',
-    category: 'Career Narrative',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '10 min',
-    excerpt:
-      "The evolution from manual Excel-based IM in Nigeria's NE crisis to AI-powered analytical platforms wasn't planned — it was driven by repeatedly hitting the limits of existing tools.",
-    published: false,
   },
   {
     slug: 'the-case-for-anticipatory-cash',
@@ -203,17 +171,6 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
-    slug: 'africa-will-define-voice-ai',
-    title: 'Africa Will Define How the World Uses Voice AI',
-    category: 'Opinion / Founder Reflection',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '9 min',
-    excerpt:
-      "Africa skipped landlines for mobile. Skipped bank branches for M-Pesa. Next: skipping text-based interfaces for voice-first AI. And this time, the continent won't just adopt — it will lead.",
-    published: true,
-  },
-  {
     slug: 'voice-powered-decision-intelligence',
     title: 'From Reporting Platforms to Voice-Powered Decision Intelligence',
     category: 'Opinion / Technical',
@@ -222,28 +179,6 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '11 min',
     excerpt:
       'A field officer in Kabul told me: "By the time our data reaches Kabul, the situation has already moved." Voice AI combined with agentic AI collapses the pipeline from weeks to seconds.',
-    published: true,
-  },
-  {
-    slug: 'the-voices-our-data-systems-silence',
-    title: 'The Voices Our Data Systems Were Built to Silence',
-    category: 'Opinion',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '10 min',
-    excerpt:
-      'Accountability to Affected Populations has been a humanitarian commitment for over a decade. But our data collection tools — forms, checkboxes, pre-coded categories — were never designed to listen.',
-    published: true,
-  },
-  {
-    slug: 'voice-infrastructure-inequality',
-    title: 'Voice Infrastructure Inequality: The New Digital Divide',
-    category: 'Opinion / Research',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '10 min',
-    excerpt:
-      'AI scores 80% accuracy in English. Below 55% in Yoruba, spoken by 50 million people. If voice is the future of data, voice infrastructure inequality is the future of data exclusion.',
     published: true,
   },
   {
@@ -302,17 +237,6 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
-    slug: 'lessons-six-countries',
-    title: 'Lessons from Building Humanitarian Data Platforms Across Multiple Crisis Contexts',
-    category: 'Field Reflection / Career Narrative',
-    pillar: 'Cross-cutting',
-    pillarColor: '#C4703F',
-    readTime: '8 min',
-    excerpt:
-      'Multiple countries. Seven data platforms. A decade of work. Six principles emerged across all of them — and none are about technology.',
-    published: true,
-  },
-  {
     slug: 'politics-of-humanitarian-data-infrastructure',
     title: 'The Politics of Humanitarian Data Infrastructure: Who Owns the System When Everyone Walks Away?',
     category: 'Opinion / Field Reflection',
@@ -321,6 +245,83 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '8 min',
     excerpt:
       'The email I sent at 11am to 115 organisations announced the platform was suspended immediately. Afghanistan in 2025 was a stress test that revealed a system-wide architectural flaw: nobody owns continuity.',
+    published: true,
+  },
+  {
+    slug: 'from-humanitarian-data-to-digitising-africas-markets',
+    title: "From Crisis Zones Digital Systems to Market Zones Digital Transition for Africa's Informal Economies",
+    category: 'Founder Reflection',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '12 min',
+    excerpt:
+      "While working abroad over the last decade, I visited Nigeria every few months. Every visit, the same struggle — finding reliable services, navigating markets blind, and watching trust deficits hold back an entire economy from going digital. Then a realisation hit me.",
+    published: true,
+  },
+  {
+    slug: 'why-i-build-systems-not-dashboards',
+    title: 'Why I Build Systems, Not Dashboards',
+    category: 'Opinion',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '8 min',
+    excerpt:
+      'The humanitarian sector is drowning in dashboards but starving for systems. A dashboard is a view; a system is an ecosystem that changes how organizations make decisions.',
+    published: true,
+  },
+  {
+    slug: 'from-maiduguri-to-machine-learning',
+    title: 'From Maiduguri to Machine Learning',
+    category: 'Career Narrative',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '10 min',
+    excerpt:
+      "The evolution from manual Excel-based IM in Nigeria's NE crisis to AI-powered analytical platforms wasn't planned — it was driven by repeatedly hitting the limits of existing tools.",
+    published: false,
+  },
+  {
+    slug: 'africa-will-define-voice-ai',
+    title: 'Africa Will Define How the World Uses Voice AI',
+    category: 'Opinion / Founder Reflection',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '9 min',
+    excerpt:
+      "Africa skipped landlines for mobile. Skipped bank branches for M-Pesa. Next: skipping text-based interfaces for voice-first AI. And this time, the continent won't just adopt — it will lead.",
+    published: true,
+  },
+  {
+    slug: 'the-voices-our-data-systems-silence',
+    title: 'The Voices Our Data Systems Were Built to Silence',
+    category: 'Opinion',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '10 min',
+    excerpt:
+      'Accountability to Affected Populations has been a humanitarian commitment for over a decade. But our data collection tools — forms, checkboxes, pre-coded categories — were never designed to listen.',
+    published: true,
+  },
+  {
+    slug: 'voice-infrastructure-inequality',
+    title: 'Voice Infrastructure Inequality: The New Digital Divide',
+    category: 'Opinion / Research',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '10 min',
+    excerpt:
+      'AI scores 80% accuracy in English. Below 55% in Yoruba, spoken by 50 million people. If voice is the future of data, voice infrastructure inequality is the future of data exclusion.',
+    published: true,
+  },
+  {
+    slug: 'lessons-six-countries',
+    title: 'Lessons from Building Humanitarian Data Platforms Across Multiple Crisis Contexts',
+    category: 'Field Reflection / Career Narrative',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '8 min',
+    excerpt:
+      'Multiple countries. Seven data platforms. A decade of work. Six principles emerged across all of them — and none are about technology.',
     published: true,
   },
 ]

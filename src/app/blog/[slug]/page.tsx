@@ -1164,7 +1164,7 @@ If I cannot answer with names — specific people in specific institutions with 
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
     readTime: '8 min',
-    date: 'April 2026',
+    date: 'February 2026',
     excerpt:
       'The transition from DesInventar to DELTA Resilience is not a software upgrade. It is an architectural paradigm shift — from a standalone record-keeping tool to a sovereign, interoperable, AI-ready data ecosystem. Understanding how and why this evolution happened matters for every country navigating the transition.',
     keywords: [
@@ -1403,7 +1403,7 @@ And governance reforms only succeed when the people who collect the data and the
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
     readTime: '8 min',
-    date: 'April 2026',
+    date: 'February 2026',
     excerpt:
       'A meteorological forecast tells you what is coming. Historical loss data tells you what it will do when it arrives. The combination — forecast plus impact profile — is what makes anticipatory action evidence-based rather than speculative. DELTA Resilience is the first national disaster data system designed to provide that missing link at scale.',
     keywords: [
