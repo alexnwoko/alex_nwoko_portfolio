@@ -26,10 +26,10 @@ const education = [
     note: 'Commonwealth Scholar. Research on social vulnerability indices in partnership with Newcastle City Council Emergency Planning Unit.',
   },
   {
-    degree: 'BSc Geography & Meteorology',
-    institution: 'Imo State University, Nigeria',
-    period: '2012',
-    note: 'First Class Honours. Research on urban flood risk assessment.',
+    degree: 'BSc Geography and Planning',
+    institution: 'Abia State University · Faculty of Environmental Studies, Abia State, Nigeria',
+    period: 'Oct 2008 – Sept 2012',
+    note: 'Majors: Geographic Information Systems (GIS), Remote Sensing, Environmental Risk, Land Use Planning, Health Geography. Dissertation research on urban flood risk assessment.',
   },
 ]
 
