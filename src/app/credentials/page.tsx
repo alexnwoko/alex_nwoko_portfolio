@@ -73,11 +73,21 @@ const education = [
 const memberships = [
   { title: 'Fellow', org: 'Royal Geographical Society (FRGS)', since: '2016' },
   { title: 'Member', org: 'American Association of Geographers (AAG)', since: '2015' },
-  { title: 'Member', org: 'Humanitarian OpenStreetMap Team (HOT)', since: '2017' },
   { title: 'Member', org: 'Canadian Association of Geographers (CAG)', since: '2020' },
 ]
 
 const certifications: Record<string, { certs: string[]; color: string }> = {
+  'Climate, DRR & Emergency Coordination': {
+    color: '#C4703F',
+    certs: [
+      'Anticipatory Action Simulation Exercise — RedR UK (2024)',
+      'Understanding Risk — GFDRR / World Bank (2023)',
+      'Disaster Displacement — NRC / Platform on Disaster Displacement / UNDRR (2024)',
+      'WASH in Emergencies — DisasterReady (2023)',
+      'Shelter in Emergencies — DisasterReady (2023)',
+      'Cash in Emergencies — DisasterReady (2023)',
+    ],
+  },
   'Data Analytics, IM & Cluster Coordination': {
     color: '#009EDB',
     certs: [
@@ -98,17 +108,6 @@ const certifications: Record<string, { certs: string[]; color: string }> = {
     certs: [
       'Spatial Data Science: The New Frontier in Analytics — ESRI (2020)',
       'Geospatial Information Technology (GIT) in Fragile Contexts — University of Twente / ITC (2020)',
-    ],
-  },
-  'Climate, DRR & Emergency Coordination': {
-    color: '#C4703F',
-    certs: [
-      'Anticipatory Action Simulation Exercise — RedR UK (2024)',
-      'Understanding Risk — GFDRR / World Bank (2023)',
-      'Disaster Displacement — NRC / Platform on Disaster Displacement / UNDRR (2024)',
-      'WASH in Emergencies — DisasterReady (2023)',
-      'Shelter in Emergencies — DisasterReady (2023)',
-      'Cash in Emergencies — DisasterReady (2023)',
     ],
   },
   'Cash & Voucher Assistance': {
