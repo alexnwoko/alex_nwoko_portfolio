@@ -1,5 +1,42 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
+
+/**
+ * Tiny inline-link renderer for the institution field. Recognises markdown
+ * link syntax `[text](url)` (pattern.exec here is the standard JS RegExp
+ * method, not shell exec) and returns a mix of plain text and external
+ * anchors. Lets institution strings carry the occasional link (e.g. a
+ * research institute homepage) without changing the data schema.
+ */
+function renderInstitution(text: string): ReactNode[] {
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g
+  const out: ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+  let key = 0
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      out.push(text.slice(lastIndex, match.index))
+    }
+    out.push(
+      <a
+        key={key++}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-darkred underline underline-offset-2"
+      >
+        {match[1]}
+      </a>
+    )
+    lastIndex = pattern.lastIndex
+  }
+  if (lastIndex < text.length) {
+    out.push(text.slice(lastIndex))
+  }
+  return out.length > 0 ? out : [text]
+}
 
 export const metadata: Metadata = {
   title: 'Credentials — Alex Nwoko',
@@ -21,7 +58,7 @@ const education = [
   },
   {
     degree: 'MSc Risk and Environmental Hazards',
-    institution: 'Durham University · Institute of Hazard, Risk and Resilience, Durham, United Kingdom',
+    institution: 'Durham University · [Institute of Hazard, Risk and Resilience](https://www.durham.ac.uk/research/institutes-and-centres/hazard-risk-resilience/), Durham, United Kingdom',
     period: 'Oct 2015 – Sept 2016',
     note: 'Commonwealth Scholar (2015). Majors: Disaster Risk Analysis, Vulnerability Assessment, Emergency Planning, GIS, Remote Sensing. Dissertation research on social vulnerability to extreme temperature exposure in partnership with Newcastle City Council Emergency Planning Unit.',
   },
@@ -125,7 +162,7 @@ export default function CredentialsPage() {
                 <h3 className="font-serif text-lg text-coffee">{edu.degree}</h3>
                 <span className="text-xs text-coffee-muted bg-beige-200 px-3 py-1 rounded-full">{edu.period}</span>
               </div>
-              <p className="text-sm text-dusty-orange font-medium mb-2">{edu.institution}</p>
+              <p className="text-sm text-dusty-orange font-medium mb-2">{renderInstitution(edu.institution)}</p>
               <p className="text-sm text-coffee-muted">{edu.note}</p>
             </div>
           ))}
