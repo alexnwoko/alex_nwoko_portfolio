@@ -21,9 +21,9 @@ const education = [
   },
   {
     degree: 'MSc Risk and Environmental Hazards',
-    institution: 'Durham University, UK',
-    period: '2015',
-    note: 'Commonwealth Scholar. Research on social vulnerability indices in partnership with Newcastle City Council Emergency Planning Unit.',
+    institution: 'Durham University · Institute of Hazard, Risk and Resilience, Durham, United Kingdom',
+    period: 'Oct 2015 – Sept 2016',
+    note: 'Commonwealth Scholar (2015). Majors: Disaster Risk Analysis, Vulnerability Assessment, Emergency Planning, GIS, Remote Sensing. Dissertation research on social vulnerability to extreme temperature exposure in partnership with Newcastle City Council Emergency Planning Unit.',
   },
   {
     degree: 'BSc Geography and Planning',
@@ -37,6 +37,7 @@ const memberships = [
   { title: 'Fellow', org: 'Royal Geographical Society (FRGS)', since: '2016' },
   { title: 'Member', org: 'American Association of Geographers (AAG)', since: '2015' },
   { title: 'Member', org: 'Humanitarian OpenStreetMap Team (HOT)', since: '2017' },
+  { title: 'Member', org: 'Canadian Association of Geographers (CAG)', since: '2020' },
 ]
 
 const certifications: Record<string, { certs: string[]; color: string }> = {
