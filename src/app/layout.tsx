@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Analytics from '@/components/Analytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://alexnwoko.com'),
@@ -144,6 +145,7 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
