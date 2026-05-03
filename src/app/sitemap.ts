@@ -42,14 +42,20 @@ const BLOG_SLUGS: string[] = [
 /**
  * Static top-level pages with their relative SEO importance.
  * Higher priority + more frequent change-freq = stronger crawl signal.
+ *
+ * The five core positioning pages (about / expertise / projects /
+ * innovations / founder-journey) are pinned at priority 1.0 with weekly
+ * change-frequency. They're the surfaces a recruiter, journalist, or
+ * consulting prospect lands on first — Google should treat them as
+ * peers of the homepage in crawl frequency.
  */
 const STATIC_PAGES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
   { path: '', priority: 1.0, changeFrequency: 'weekly' },
-  { path: '/about', priority: 0.9, changeFrequency: 'monthly' },
-  { path: '/expertise', priority: 0.9, changeFrequency: 'monthly' },
-  { path: '/projects', priority: 0.9, changeFrequency: 'monthly' },
-  { path: '/innovations', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/founder-journey', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/about', priority: 1.0, changeFrequency: 'weekly' },
+  { path: '/expertise', priority: 1.0, changeFrequency: 'weekly' },
+  { path: '/projects', priority: 1.0, changeFrequency: 'weekly' },
+  { path: '/innovations', priority: 1.0, changeFrequency: 'weekly' },
+  { path: '/founder-journey', priority: 1.0, changeFrequency: 'weekly' },
   { path: '/blog', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/credentials', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'yearly' },
