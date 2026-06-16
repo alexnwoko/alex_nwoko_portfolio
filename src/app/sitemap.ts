@@ -37,6 +37,19 @@ const BLOG_SLUGS: string[] = [
   'data-ecosystem-maturity-assessment-guide',
   'lessons-six-countries',
   'politics-of-humanitarian-data-infrastructure',
+  // COP31 series
+  'road-to-antalya-ncqg',
+  'loss-and-damage-fund-make-or-break-year',
+  'delta-grade-data-currency-of-climate-finance',
+  'from-early-warning-to-early-money',
+  'belem-adaptation-indicators-data-test',
+  'cop31-data-making-the-case',
+  // Disaster Data Diplomacy series
+  'disaster-data-diplomacy',
+  'disaster-data-diplomacy-in-fragility',
+  // Data poverty & equity (2-part series)
+  'protected-into-invisibility-part-1',
+  'data-poverty-fragility-data-equity-part-2',
 ]
 
 /**

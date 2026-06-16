@@ -2484,6 +2484,763 @@ What gets counted gets funded. What gets missed stays vulnerable. Our job now is
       'g-drsf-statisticians-disaster-managers',
     ],
   },
+
+  'road-to-antalya-ncqg': {
+    slug: 'road-to-antalya-ncqg',
+    title: 'The Road to Antalya: Turning the NCQG Into Real-World Climate Finance',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '9 min',
+    date: 'April 2026',
+    excerpt:
+      "A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test, and the credibility of USD 300 billion a year will be decided not by negotiators but by the boring, technical, deeply political business of measurement.",
+    keywords: [
+      'NCQG', 'New Collective Quantified Goal', 'COP31', 'COP30', 'Antalya',
+      'climate finance', 'Loss and Damage Fund', 'Article 9',
+      'grant-equivalent', 'mobilisation', 'adaptation finance', 'transparency',
+      'MRV', 'recipient-country data systems', 'climate diplomacy',
+    ],
+    sections: [
+      {
+        content: `*A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test.*
+
+When the gavel came down in Baku in November 2024, the headline number was USD 300 billion a year by 2035. It was hailed as a tripling of the old USD 100 billion goal and dismissed, almost in the same breath, as a fraction of what developing countries had asked for. Both readings were correct. But the number was never the hard part. The hard part is what the word "mobilise" hides. Who pays, in what form, on what terms, and how anyone will know whether it actually arrived in a household in Cox's Bazar or the Sahel.
+
+That is the question the [New Collective Quantified Goal (NCQG)](https://unfccc.int/NCQG) now carries onto the road to Antalya. [COP30 in Belém](https://www.carbonbrief.org/cop30-key-outcomes-agreed-at-the-un-climate-talks-in-belem/) handed COP31 a goal that has been agreed but not operationalised. A destination, in other words, with no agreed map. The credibility of the NCQG will not be settled by the size of the headline figure. It will be settled by the boring, technical, deeply political business of measurement. And measurement is where I have spent my career.`,
+      },
+      {
+        heading: 'The Number Everyone Argues About, and the One That Matters',
+        content: `Let me be precise about what was actually decided, because the public conversation keeps collapsing two different things.
+
+The NCQG, [adopted at COP29](https://www.wri.org/insights/cop29-outcomes-next-steps), sets a goal for developed countries to take the lead in mobilising at least USD 300 billion per year by 2035 for developing-country climate action. Around that core sits a wider, non-binding aspiration (the "Baku-to-Belém Roadmap to 1.3T") to scale finance from all sources to USD 1.3 trillion per year by the same date. The USD 100 billion that everyone still quotes is the *expiring* 2009 pledge, finally met (late, and contested) around 2022. It is the floor we are leaving, not the floor we are standing on.
+
+The trouble is that USD 300 billion is a mobilisation target, and mobilisation is one of the most elastic words in climate diplomacy. A grant is mobilised finance. So is a market-rate loan that a country must repay with interest. So, with enough accounting creativity, is a guarantee that de-risks a private investment that might have happened anyway. When the unit of account is that flexible, the number stops being a measure of support and becomes a measure of reporting technique.
+
+This is not a new challenge. It is the same one I have watched play out at national level for a decade, just with more zeros. What gets counted gets claimed, and the way we count shapes our shared sense of how much progress has been made.`,
+      },
+      {
+        heading: 'Grants, Loans, and the Quiet Arithmetic of Debt',
+        content: `At [COP30](https://odi.org/en/insights/cop30-whats-the-verdict/), the fault line that mattered most was composition. The Least Developed Countries and the African Group pushed for the goal, and especially any "tripling" of adaptation finance, to be anchored in grant-based and highly concessional finance. Developed countries resisted being pinned to public money alone, preferring language that lets loans, private capital, and mobilised investment count toward the target. The result, as [analysts noted](https://debtjustice.org.uk/blog/how-did-cop30-stand-up-against-debt-and-climate-justice-demands), reaffirmed obligations in principle while deferring the mechanics.
+
+Why does this matter for a disaster-data specialist? Because the composition question is, at bottom, a counting question with a human edge. If a country facing recurrent floods receives its "climate finance" as loans, the money that arrives to build a seawall today becomes a debt-service line that crowds out the health budget tomorrow. We have already seen climate-vulnerable states spending more on debt repayment than on climate adaptation. A finance goal met largely through loans, even as it adds to a country's debt burden, can be recorded as success while leaving the recipient little better off. That is why the composition of the goal matters so much, and why so many delegations are working hard to get it right.
+
+The honest version of the NCQG would track grant-equivalent value, not face value. That is the actual concessionality of each dollar, net of what gets repaid. That is a methodological choice, and methodological choices are never neutral. They decide whose accounting looks generous and whose vulnerability looks addressed.`,
+      },
+      {
+        heading: 'You Cannot Manage What You Refuse to Measure',
+        content: `This is where the NCQG meets the discipline I know best.
+
+The goal comes with a measurement, reporting and transparency obligation, and COP30's [two-year work programme on climate finance](https://www.i4ce.org/en/climate-finance-cop30-progress-pitfalls-persistent-challenges-path-ahead/), covering Article 9.1 and the wider architecture of Article 9, is, in effect, a mandate to figure out how we will know whether the goal is being met. That sounds procedural. In practice, it is where much of the real work lies.
+
+Consider what tracking USD 300 billion honestly would require. You need a shared definition of what counts as climate finance, so that the same dollar is not double-counted by a donor and a multilateral bank. You need to separate new and additional money from rebadged development aid. You need to distinguish committed from disbursed, and disbursed from actually-reaching-the-ground. And there is the part the climate-finance community consistently underweights: you need recipient-side data good enough to verify that the money did what it claimed to do.
+
+I have built the recipient side of that ledger. In Afghanistan I mapped over thirty distinct disaster-data sources and negotiated the data-sharing agreements to bring them into a single [Humanitarian Spatial Data Centre](/projects) that supported risk-informed humanitarian response planning. The lesson was unambiguous. A financial flow is only as verifiable as the national system that receives it, which is why I keep returning to the argument that we have to [build data systems governments can actually own](/blog/building-systems-governments-can-own). Donor-side transparency dashboards are necessary but they are half a bridge. If the country on the other end cannot disaggregate where the money landed, by district, by sector, by who was actually reached, then "climate finance delivered" remains an assertion, not a fact.
+
+This is why I read the NCQG transparency debate as continuous with the disaster-loss debate I have written about [before](/blog/invisible-disasters-invisible-funding). The same blind spots that keep extensive-risk losses out of global datasets will keep climate-finance outcomes unverifiable in exactly the same places. The geography of invisible losses and the geography of unaccountable finance are the same geography.`,
+      },
+      {
+        heading: 'The Ministerial Dialogue Problem: Predictability You Can Bank',
+        content: `One genuine advance in the NCQG package is the mandated biennial high-level ministerial dialogue on climate finance, with COP30 adding a [ministerial round table](https://www.cities-and-regions.org/cop30-outcomes-on-climate-finance-and-loss-damage/) on the goal's implementation. The intent is right. Pull finance out of the technical sub-rooms and force it onto ministers' desks on a predictable cycle.
+
+But a dialogue is only as useful as what it is allowed to produce. If the round table yields communiqués and "reflections," it becomes another venue for restating positions. If it yields verifiable, forward-looking pledges, multi-year commitments a finance ministry in a vulnerable country can actually build a budget around, it changes the planning horizon of climate action.
+
+Predictability is itself a form of finance. A national disaster management authority that knows what is coming over three years can pre-position, can design [anticipatory triggers](/blog/the-case-for-anticipatory-cash), can commit to multi-year resilience programmes. One that lurches from pledge to pledge cannot plan past the next emergency. The single most valuable thing COP31 in Antalya could extract from the ministerial process is not a bigger number. It is a more *predictable* one, on a published schedule, against which delivery can be tracked.`,
+      },
+      {
+        heading: 'Broadening the Base Without Erasing the Principle',
+        content: `The NCQG also reopened the oldest argument in the convention. Who counts as a contributor. Developed countries want the donor base broadened to include large emerging economies and the private sector. Developing countries see in that move an attempt to dilute the historical-responsibility principle baked into the UNFCCC since 1992.
+
+I think both instincts contain something true, and the way through is, again, a measurement question rather than a moral standoff. Private capital is indispensable to reach USD 1.3 trillion. No plausible volume of public grants gets there alone. But private finance follows bankable risk, and bankable risk follows good data. Mobilising private investment into adaptation in the places that need it most is not primarily a pledging problem. It is an evidence problem. Insurers, blended-finance vehicles, and resilience bonds all price off historical hazard and loss records. Where those records are thin, which is precisely where vulnerability is highest, capital either stays away or prices in a penalty the poorest can least afford.
+
+So broadening the base, done honestly, has a precondition that rarely makes the cover decision. Invest in the recipient-country data systems that let private and emerging-economy finance see the risk clearly enough to move. Otherwise "the private sector will fill the gap" is a sentence that describes capital flowing to the already-visible and away from the already-overlooked.`,
+      },
+      {
+        heading: 'What I Will Be Watching in Antalya',
+        content: `When negotiators reconvene in [Antalya in November 2026](https://unfccc.int/cop31/the-road-to-antalya), with Australia steering the negotiations and the Pacific shaping the pre-COP, I will not be reading the communiqué for the size of the number. I will be reading it for four things, all of them about measurement.
+
+First, whether the two-year finance work programme produces a shared accounting methodology that tracks grant-equivalent value and separates new money from rebadged aid. Second, whether the ministerial process starts yielding multi-year, scheduled, verifiable pledges rather than restated ambition. Third, whether the transparency architecture finally treats recipient-country data systems as core finance infrastructure, not back-office statistics. And fourth, whether adaptation, chronically starved relative to mitigation, gets a tracked, ring-fenced share rather than a hopeful adjective.
+
+The NCQG is, for now, a promise about quantity. The work between Belém and Antalya is to turn it into a promise about *verifiable delivery*. That conversion runs straight through the unglamorous machinery of definitions, baselines, and disaggregated national data, the machinery I have spent ten years building in places where it did not exist.
+
+A number agreed in a plenary hall is an aspiration. A number you can track, by country, by sector, by who was actually reached, is a commitment. The road from Baku through Belém to Antalya is the road from the first to the second. We should judge COP31 by how far down that road it travels.
+
+What gets counted gets funded. On the NCQG, we have finally agreed how much. We have not yet agreed how to count. That is the work of Antalya.`,
+      },
+    ],
+    relatedSlugs: [
+      'loss-and-damage-fund-make-or-break-year',
+      'delta-grade-data-currency-of-climate-finance',
+      'cop31-data-making-the-case',
+    ],
+  },
+
+  'loss-and-damage-fund-make-or-break-year': {
+    slug: 'loss-and-damage-fund-make-or-break-year',
+    title: "From Pledge to Payout: A Defining Year for the Loss and Damage Fund",
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'April 2026',
+    excerpt:
+      "A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real. With the first call for funding requests now open, the year between Belém and Antalya is when the Fund either delivers, or doesn't.",
+    keywords: [
+      'Loss and Damage Fund', 'FRLD', 'COP30', 'COP31', 'Antalya', 'Belém',
+      'climate finance', 'Warsaw International Mechanism', 'Santiago Network',
+      'Barbados Implementation Modalities', 'World Bank', 'direct access',
+      'DELTA Resilience', 'G-DRSF', 'replenishment', 'climate justice',
+    ],
+    sections: [
+      {
+        content: `*A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real, and the road to Antalya is where it either does or doesn't.*
+
+In 2022, when the world finally agreed to create a fund for loss and damage, I watched the reaction ripple through the humanitarian data community with a wariness that surprised people outside it. We had seen this film before. A mechanism is announced. The announcement is the achievement. Then the slow years begin: the board seats, the hosting arrangements, the eligibility criteria. And somewhere in that machinery the original promise, that money would reach a fishing community whose coastline has already gone, quietly recedes.
+
+Three years on, the [Fund for Responding to Loss and Damage (FRLD)](https://unfccc.int/fund-for-responding-to-loss-and-damage) is no longer an announcement. It has a board, a trustee, a host country, and, as of COP30, an open call for its first funding requests. That is real progress, and I want to give it its due. But the FRLD is now entering the phase where good intentions meet operational reality, and that phase is unforgiving. The road from Belém to [Antalya](https://unfccc.int/cop31/the-road-to-antalya) is the year the Fund stops being an architecture and starts being a payout, or doesn't.`,
+      },
+      {
+        heading: 'What Belém Actually Delivered',
+        content: `Let me start with the genuine advances, because cynicism is cheap and the people who built this deserve an accurate ledger.
+
+[COP30 in Belém](https://www.lossanddamagecollaboration.org/resources/what-happened-on-loss-and-at-cop-30) stabilised the loss-and-damage architecture around three load-bearing pillars: the Warsaw International Mechanism (WIM) as the policy umbrella, the Santiago Network as the technical-assistance delivery arm, and the FRLD as the financing instrument. More concretely, on the first day of the conference the Fund launched its call for funding requests for the start-up phase, the [Barbados Implementation Modalities (BIM)](https://www.lossanddamagecollaboration.org/resources/rapid-reaction-launch-of-the-call-for-funding-requests-to-the-fund-for-responding-to-loss-and-damage). Around USD 250 million is allocated to this first window, with developing countries invited to submit requests for projects in the USD 5 to 20 million range.
+
+That is the moment a fund becomes a fund: when a ministry in Tuvalu or Malawi can actually fill in an application. After years of structural debate, the FRLD finally has a front door.
+
+But the proportions deserve honesty. Total pledges to the Fund stand at roughly [USD 750 million](https://compass.climatepolicyinitiative.org/themes/commitments-and-ambition/loss-and-damage). The [UNDRR-cited estimate](https://www.undp.org/geneva/blog/next-chapter-loss-and-damage-after-cop30-building-systems-countries-and-communities-need) of climate-related loss and damage facing developing countries is on the order of USD 580 billion a year by 2030. The Fund's entire capitalisation is roughly one part in eight hundred of a single year's need. That gap is not a criticism of the Fund, which is a genuine achievement won through years of patient negotiation, but a measure of the distance still to travel. Everything that follows has to be read against that ratio.`,
+      },
+      {
+        heading: 'The Replenishment Problem Nobody Wants to Name',
+        content: `The politics of the FRLD are dominated by a word that sounds technical and is in fact existential: replenishment.
+
+The Fund was capitalised through voluntary pledges. Voluntary is the operative term. There is no agreed formula tying contributions to historical emissions, no assessed-contribution model of the kind that funds other multilateral institutions, and no trigger that automatically tops the Fund up as it disburses. Each replenishment cycle is therefore a fresh negotiation, vulnerable to the political weather of donor capitals: an election, a budget squeeze, a change of government, none of which has anything to do with whether a cyclone made landfall.
+
+This is the structural fragility at the heart of loss-and-damage finance. A community whose losses are *irreversible*, land lost to the sea, a glacier-fed river gone, a heritage erased, needs a funding source that is *predictable*, because there is no rebuilding cycle to wait for. This means the most irreversible category of climate harm is, for now, supported by one of the least predictable forms of finance. That mismatch is not an oversight. It is the compromise that allowed the Fund to exist at all, and recognising it openly is simply the first step to strengthening it. I would welcome a conversation at Antalya about more automatic, needs-linked replenishment, building on the voluntary pledges that have carried the Fund this far.`,
+      },
+      {
+        heading: 'The World Bank Question',
+        content: `The second sensitivity is institutional. The World Bank serves as the FRLD's [interim trustee and the host of its secretariat](https://unfccc.int/fund-for-responding-to-loss-and-damage) for an initial four-year period, while the Fund's Board is hosted by the Republic of the Philippines. This arrangement was hard-won and remains contested.
+
+The case for the World Bank is speed and fiduciary infrastructure. It can move money under recognised safeguards without building an institution from scratch. The case against is everything developing countries have learned from decades of dealing with it: high overheads, conditionalities, slow direct-access accreditation, and a governance structure weighted toward the very countries whose historical emissions created the need for the Fund in the first place. There is a deep discomfort in housing a fund premised on climate justice inside an institution many recipients experience as the opposite.
+
+The interim period exists precisely so this can be revisited. The four-year clock and the agreed performance conditions mean COP31 and COP32 sit squarely inside the window where the question of transition to an independent secretariat becomes live. I do not think the answer is ideological. It is operational. Does the hosting arrangement let money reach vulnerable communities quickly and with low transaction cost, including through direct access rather than only through intermediaries? If the World Bank arrangement delivers fast, low-friction, [country-owned](/blog/building-systems-governments-can-own) disbursement, the case for disruption weakens. If it reproduces the slow, intermediary-heavy patterns recipients know too well, the case for independence becomes overwhelming. Either way, the test is delivery speed to the last mile, and that is measurable.`,
+      },
+      {
+        heading: 'Eligibility: The Quiet Place Where Justice Is Decided',
+        content: `Now to the part of the debate I care about most, because it is where my work and this fund collide.
+
+Every fund must decide who is eligible and on what evidence. For loss and damage, that decision is morally loaded and technically treacherous. Define eligibility too narrowly, limiting it to sudden, attributable, headline catastrophes, and you exclude the slow-onset, recurrent, grinding harms that do the most cumulative damage to the poorest. Define it loosely and you invite the accusation that the Fund cannot demonstrate that money tracked to need.
+
+Both horns of that dilemma are, underneath, a data problem. To access the Fund, a country has to substantiate its loss and damage. Substantiation means records: disaggregated, sub-national, credible records of what was lost, where, to whom, and how often. And here is the cruel asymmetry I have written about [before](/blog/invisible-disasters-invisible-funding): the countries with the greatest loss-and-damage exposure are frequently the countries with the weakest loss-and-damage data systems. The places most in need of the Fund are the least equipped to prove it.
+
+I have lived inside this asymmetry. The legacy systems many disaster-prone countries still run, built for retrospective record-keeping, were never designed to generate the high-resolution, internationally comparable evidence a global fund demands. This is exactly the gap that [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience), the Disaster and Hazardous Events, Losses and Damages tracking system replacing DesInventar, and the [Global Disaster-Related Statistics Framework (G-DRSF)](https://www.undrr.org/global-disaster-related-statistics-framework-faqs) were built to close: no-threshold recording, sub-national disaggregation by sex, age and disability, and statistical standards that make a national loss record legible to an international board.
+
+The implication for the FRLD is direct and, to me, urgent. Investment in national loss-and-damage data systems is not a parallel technical agenda. It is part of the Fund's own delivery infrastructure. A fund that disburses against evidence, while doing nothing to help the most vulnerable countries generate that evidence, will systematically route money toward the better-documented and away from the genuinely-most-harmed. It will reproduce, in the disbursement of justice finance, the same visibility bias that distorts every other climate-finance channel.`,
+      },
+      {
+        heading: 'The Santiago Network: Bridge or Bottleneck',
+        content: `This is precisely why the [Santiago Network for Loss and Damage](https://www.adaptationcommunity.net/news/on-the-road-to-cop30-zooming-in-on-updates-on-loss-and-damage/) matters more than its modest profile suggests. Its mandate is technical assistance, helping countries identify needs, build capacity, and prepare for direct access to the Fund. With more than twenty requests for assistance already lodged, it is becoming the on-ramp between a country's situation and the Fund's front door.
+
+Whether it becomes a bridge or a bottleneck depends on speed and substance. If the Santiago Network helps a vulnerable country stand up the loss-tracking and proposal-development capacity it needs to make a fundable, well-evidenced claim, beginning with the kind of [data ecosystem maturity assessment](/blog/data-ecosystem-maturity-assessment-guide) that tells you what a country can actually report, it closes the gap between pledge and need. If it becomes another slow accreditation gauntlet, it widens it. The COP31 review of the Network's performance should be judged by one question. Is it measurably shrinking the distance between the communities facing irreversible harm and the money meant to reach them?`,
+      },
+      {
+        heading: 'What Antalya Has to Prove',
+        content: `I am, on balance, more hopeful about the FRLD than my opening wariness might suggest, but my hope is conditional and it is entirely about execution. By the time delegates gather in [Antalya](https://unfccc.int/cop31/the-road-to-antalya) in November 2026, the Fund will have something it has never had before: a track record. The first BIM funding requests will have been received and, ideally, the first approvals made. We will finally be able to ask empirical questions instead of structural ones.
+
+How long did it take from request to disbursement? What share went through direct access versus intermediaries? Did money reach slow-onset and recurrent harms, or only the photogenic catastrophes? And did the countries with the weakest data systems get help to compete, or were they quietly screened out by the evidence bar?
+
+Those are measurement questions, and I will measure them. Because what ultimately defines a fund is not the pledge but the payout: its speed, its destination, and whether it reaches the people whose losses can never be undone.
+
+A pledge is the beginning of a promise. A payout is that promise kept, reaching a community that has already lost what cannot be recovered. The work between Belém and Antalya is to carry the Fund from the first to the second, and that journey, from commitment to delivery, is the most important one it can make.`,
+      },
+    ],
+    relatedSlugs: [
+      'road-to-antalya-ncqg',
+      'delta-grade-data-currency-of-climate-finance',
+      'invisible-disasters-invisible-funding',
+    ],
+  },
+
+  'delta-grade-data-currency-of-climate-finance': {
+    slug: 'delta-grade-data-currency-of-climate-finance',
+    title: 'DELTA-Grade Data: The Emerging Currency of Climate Finance on the Road to COP31',
+    category: 'Technical Deep Dive / Opinion',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'May 2026',
+    excerpt:
+      "Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere, because data sovereignty has become climate sovereignty.",
+    keywords: [
+      'DELTA Resilience', 'DesInventar', 'G-DRSF', 'climate finance', 'COP31',
+      'NCQG', 'Loss and Damage Fund', 'Green Climate Fund', 'Adaptation Fund',
+      'data sovereignty', 'risk knowledge', 'disaster loss data',
+      'maturity assessment', 'UNDRR Strategic Framework',
+    ],
+    sections: [
+      {
+        content: `*Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere.*
+
+A few years ago I sat across from a national disaster manager who had just been asked, by a major climate fund, to substantiate his country's flood losses over the previous decade. He had the losses. His communities had lived them. What he did not have was a record that could survive an international reviewer. No sub-national disaggregation, no consistent hazard classification, no continuous baseline. The events were real. The evidence was not fundable. He was, in the most literal sense, asset-rich and data-poor, and in the emerging climate-finance economy that combination is fatal.
+
+I have thought about that meeting often as the COP cycle has turned finance from aspiration into machinery. The [NCQG](https://unfccc.int/NCQG), the [Loss and Damage Fund](https://unfccc.int/fund-for-responding-to-loss-and-damage), the Green Climate Fund, the Adaptation Fund. Every one of them allocates against risk and loss evidence. Much of the conversation, understandably, centres on the *supply* of climate finance: the pledges, the trillions, the donor base. I want to draw attention to something discussed less often: the *demand-side capability* a country needs to absorb it well. On the road to Antalya, I want to make an argument that sounds technical and is actually about justice. High-fidelity disaster data has become the hard currency of climate finance, and the transition to [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience) is how vulnerable countries mint it.`,
+      },
+      {
+        heading: 'The Quiet Repricing of Risk Knowledge',
+        content: `Something has shifted in the last few years that I do not think the policy conversation has fully metabolised. We have moved, in the words of the [UNDRR Strategic Framework](https://www.undrr.org/about-undrr/strategic-framework), from passive, retrospective loss recording toward the active generation of risk knowledge, and risk knowledge is now the catalytic input to climate finance, not a back-office statistic.
+
+The reason is structural. As the number of funding windows multiplies, so does the demand for evidence, and the reviewers behind each window have grown more sophisticated. They want disaggregation. They want methodologies aligned to recognised standards. They want continuity, so that a 2027 claim can be read against a 2008 baseline. In a resource-scarce environment (and despite the trillion-dollar headlines, the money reaching any single vulnerable country is scarce), the differentiator between countries is no longer whether they have suffered. It is whether they can *demonstrate* that suffering in a form the system will accept.
+
+That is a repricing of risk knowledge, and it has a brutal corollary. The same loss, documented to DELTA-grade standards in one country and recorded in a dusty spreadsheet in another, will attract finance in the first and be invisible in the second. Data fidelity has become a sorting mechanism. I do not think this is how anyone intended climate justice to work. But intentions do not allocate money. Methodologies do.`,
+      },
+      {
+        heading: 'What "DELTA-Grade" Actually Means',
+        content: `When I say DELTA-grade, I mean something specific, drawn from the architecture of the system that is now replacing the legacy [DesInventar Sendai](/blog/desinventar-to-delta-resilience) platform across the world.
+
+[DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience) (Disaster and Hazardous Events, Losses and Damages Tracking and Analysis) was co-developed by UNDRR with partners across the UN system to do four things its predecessor could not. It records without thresholds, so the small, recurrent, extensive-risk events that never crossed the old reporting lines finally enter the ledger. It disaggregates losses sub-nationally and by sex, age and disability, so a national figure can be resolved down to the district and the demographic. It is sovereign and country-owned, so governments retain control of their own data rather than surrendering it to an external host. And it is API-ready and interoperable, designed, as I explored in a recent [migration roadmap](/blog/desinventar-to-delta-resilience), to be "human-first but AI-ready," able to exchange data with national statistical offices, meteorological services, and the global frameworks at once.
+
+Underneath sits the standardisation that makes the whole thing legible internationally. The [Global Disaster-Related Statistics Framework (G-DRSF)](https://www.undrr.org/global-disaster-related-statistics-framework-faqs), endorsed by the UN Statistical Commission, gives disaster managers and statisticians a [shared vocabulary and shared standards](/blog/g-drsf-statisticians-disaster-managers). Aligned hazard classifications. Consistent impact indicators. A common definition of what counts as a loss.
+
+The phrase I keep returning to from this work is "one report, two purposes." Data entered once to meet the Sendai Framework's indicators feeds directly into a set of SDG indicators as well: captured once, disaggregated once, used across every global framework a country must report to. That efficiency is not just administrative tidiness. It is what turns a national data system from a compliance burden into a finance-generating asset.`,
+      },
+      {
+        heading: 'The Garbage-In Problem at Trillion-Dollar Scale',
+        content: `Here is the part that should worry anyone celebrating the size of the NCQG. A finance goal scaled to USD 1.3 trillion, allocated against evidence that is itself unreliable, does not produce 1.3 trillion dollars of well-targeted resilience. It produces 1.3 trillion dollars chasing whatever the data happens to show, and if the data systematically under-counts the poorest, the money systematically misses them. Scaling finance without scaling data fidelity simply industrialises the existing bias.
+
+This is why I keep returning to one practical point. A maturity assessment is not a delay; it is the investment that ensures the system you build is the system that survives. Before a country migrates to DELTA, it needs an [honest diagnosis](/blog/data-ecosystem-maturity-assessment-guide) across four dimensions I have used repeatedly in the field. Data governance (are the legal mandates and the NDMA-NSO relationship in place to treat data as a public good?). Technical infrastructure (can the hosting and APIs handle high-frequency, increasingly automated data requests?). Data quality and standards (is the historical baseline complete enough to anchor reporting?). And human capacity (can national experts run the system, or will it depend forever on external contractors?).
+
+Skip that diagnosis and you risk a familiar outcome in my field. A polished platform that produces low-fidelity data, which can be harder to work with than no platform at all, because it lends unreliable numbers a credible appearance. I have seen well-funded systems quietly fall out of use a couple of years after the consultants left, because the question of whether the institution could own them was never fully answered. At the trillion-dollar scale of climate finance, weak underlying data is not a small technical issue. It risks steering the largest pool of climate money ever assembled away from where it is most needed.`,
+      },
+      {
+        heading: 'Data Sovereignty Is the Real Stake',
+        content: `There is a deeper reason I care about getting this right, and it goes beyond fundability.
+
+For decades, the disaster data of the Global South has lived on someone else's servers, in someone else's schema, governed by someone else's terms. The legacy model normalised a quiet dependency: countries generated the losses, external actors held the records, and the analytical authority, the power to say what a country's risk *is*, sat outside the country. DELTA's sovereign, country-owned design is a direct challenge to that arrangement. It says the national disaster management authority, not an external host, [holds and governs its own risk knowledge](/blog/building-systems-governments-can-own).
+
+That matters enormously for climate negotiations. A country that owns DELTA-grade data walks into a finance conversation as an author of its own risk narrative, able to substantiate its claims on its own terms. A country still dependent on external datasets walks in as a subject of someone else's analysis, negotiating over numbers it cannot fully control. The transition to DELTA is, in this sense, a transfer of analytical power back to the countries that bear the risk. On the road to Antalya, I would frame it bluntly. Data sovereignty is climate sovereignty. The capacity to count your own losses is the capacity to claim your own finance.`,
+      },
+      {
+        heading: 'What This Means for the Road to Antalya',
+        content: `So when finance is debated in [Antalya](https://unfccc.int/cop31/the-road-to-antalya) this November, I will be listening for whether the negotiations treat data systems as what they have become (core finance infrastructure) or continue to treat them as "capacity building," a category that, in practice, is too often left under-resourced.
+
+The asks are not exotic. Donors and the climate funds should finance national loss-and-damage data systems, including the DELTA migration and the maturity assessments that precede it, as a first-order investment, because every dollar of that infrastructure unlocks many dollars of well-targeted finance downstream. Fund application processes should explicitly recognise and reward disaggregated, extensive-risk evidence rather than privileging the intensive, headline events that legacy datasets over-represent. And the technical-assistance channels, the Santiago Network among them, should make data-system readiness an explicit deliverable, not an afterthought.
+
+I keep coming back to the disaster manager across that table. His country's losses were real. What he lacked was the currency to convert them into support. The whole promise of the DELTA transition is that no future version of him should ever again be told that his community's suffering does not meet the evidentiary standard, not because the suffering wasn't real, but because the system to record it was never built.
+
+In the climate-finance economy taking shape between Belém and Antalya, evidence is the hard currency. DELTA-grade data is how vulnerable countries mint it. The choice in front of every disaster-prone nation is not whether to migrate. It is whether to arrive at the next decade of climate finance as an author or as a subject. I know which side of that table I am trying to move people toward.
+
+What gets counted gets funded. The countries learning to count themselves, to their own standard, on their own systems, are the ones who will be in the room when the money moves.`,
+      },
+    ],
+    relatedSlugs: [
+      'desinventar-to-delta-resilience',
+      'g-drsf-statisticians-disaster-managers',
+      'invisible-disasters-invisible-funding',
+    ],
+  },
+
+  'from-early-warning-to-early-money': {
+    slug: 'from-early-warning-to-early-money',
+    title: 'From Early Warning to Early Action: Why Anticipatory Finance Belongs at the Heart of COP31',
+    category: 'Technical Deep Dive / Opinion',
+    pillar: 'Climate & Cash',
+    pillarColor: '#8B3A2F',
+    readTime: '9 min',
+    date: 'April 2026',
+    excerpt:
+      "We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive, and whether the trigger fires for the communities the forecast keeps missing.",
+    keywords: [
+      'anticipatory action', 'early warning', 'Early Warnings for All', 'EW4All',
+      'forecast-based financing', 'COP31', 'NCQG', 'Loss and Damage Fund',
+      'CHIRPS', 'NDVI', 'CERF', 'Anticipation Hub', 'climate finance',
+      'GloFAS', 'humanitarian finance', 'pre-arranged finance',
+    ],
+    sections: [
+      {
+        content: `*We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive, and whether the trigger fires for the communities the forecast keeps missing.*
+
+In the 2024 winterisation season in Afghanistan, my team produced a set of maps that, on their face, looked unremarkable: snow cover, snow depth, precipitation and temperature, each compared against prior years. To a casual reader they were just shaded rasters. To the clusters preparing for a hard winter, they were a decision: where to pre-position, before the first households were cut off. That is the entire logic of anticipatory action in one product. You act on the forecast, not on the funeral. The hazard had not happened yet. The point was to move while it still hadn't.
+
+As attention turns to [Antalya](https://unfccc.int/cop31/the-road-to-antalya), much of the climate-finance conversation understandably centres on the *volume* of finance. I would gently add a second question that tends to get less airtime: its *timing*. In disasters, when money arrives can matter as much as how much, because acting early often changes the entire course of a crisis.`,
+      },
+      {
+        heading: 'The Economics We Cite, and Still Find Hard to Act On',
+        content: `The case for acting early is, by now, almost a cliché in the resilience world: every dollar spent before a shock is worth several spent after. The [evidence base](https://www.anticipation-hub.org/) for anticipatory action (pre-positioning supplies, releasing cash, evacuating, reinforcing) consistently shows it reduces suffering and cost relative to waiting for the disaster to certify itself. I have written [before](/blog/the-case-for-anticipatory-cash) that anticipatory cash is one of the highest-leverage instruments we have. Predictable, dignified, and fast.
+
+And yet the dominant model of climate and humanitarian finance remains reactive. Money flows after the flood crests, after the harvest fails, after the displacement. We have built an entire architecture optimised to respond to disasters we could have seen coming weeks out. The reason is not ignorance of the economics. It is that pre-arranged, trigger-based finance requires three things that are genuinely hard to assemble at once: a credible forecast, a pre-agreed trigger, and money that is already committed to move when the trigger fires. Get any one of them wrong and the system either fails to fire or fires into the void.
+
+COP31 is where this stops being a humanitarian side-conversation and becomes central to the finance debate, because the [NCQG](https://unfccc.int/NCQG), the Loss and Damage Fund, and the [Early Warnings for All (EW4All)](https://www.un.org/en/climatechange/early-warnings-for-all) initiative all converge on the same operational question. Can the system act in advance?`,
+      },
+      {
+        heading: 'The Trigger Is a Data Decision in Disguise',
+        content: `Here is the part that most finance discussions skip, and the part I cannot stop thinking about.
+
+A trigger, the pre-agreed threshold that releases anticipatory finance, is built from historical data. You set it by looking at the record: how often a hazard of a given magnitude has occurred, and what it did when it did. Rainfall thresholds, river-discharge levels, vegetation-stress indices like the [NDVI and VHI](https://www.undrr.org/understanding-disaster-risk) products I ran monthly in Afghanistan, [SPI](https://library.wmo.int/records/item/39629-standardized-precipitation-index-user-guide) drought indicators, all of them are calibrated against what the data says is normal and what counts as alarming.
+
+Which means the trigger inherits every bias in the underlying record. And as I have argued repeatedly, the underlying record systematically under-counts the small, recurrent, [extensive-risk events](/blog/invisible-disasters-invisible-funding) that grind down the poorest communities. When those events are missing from the historical baseline, the model underestimates how often the hazard actually occurs. The trigger gets calibrated too high. And the pre-arranged finance, designed precisely to protect vulnerable communities, fails to fire for the very people it was meant to reach, because on paper their disaster never quite qualifies.
+
+I have watched the converse work, too. In Ethiopia, the [cash programming I supported](/projects) leaned on climate-risk-informed targeting precisely because we had built the analytical layer to see the shock developing, combining minimum-expenditure-basket data, market assessments, and hazard indicators so the Cash Working Group could position ahead of the crisis rather than chase it. One delivered [CERF](https://cerf.un.org/) multi-purpose cash operation reached roughly 185,000 people, with the overwhelming majority reporting livelihood improvements. That worked because the data was good enough to justify acting early. The lesson generalises and it is uncomfortable: anticipatory action is only as equitable as the data its triggers are built on. Improve the forecast without improving the loss record, and you simply automate the existing blind spots faster.`,
+      },
+      {
+        heading: 'EW4All Is a Finance Problem Wearing a Technology Badge',
+        content: `The [Early Warnings for All](https://www.un.org/en/climatechange/early-warnings-for-all) initiative, the UN's drive to cover every person on Earth with multi-hazard early warning, is one of the most important things happening in my field, and it will feature prominently on the road to Antalya. But I want to push against how it is often framed, because the framing shapes the funding.
+
+EW4All is usually presented as a technology and infrastructure programme: more sensors, better forecasts, faster dissemination. All necessary. But a warning that no one can act on is not protection. It is information. The pillar that consistently lags is the one that turns the warning into a response: the pre-arranged finance and the institutional readiness to spend it. I saw this directly: in Afghanistan, the forecasts and the bilingual Dari/Pashto warning products were the *easy* part. The hard part was wiring them to clusters and to money, so that a warning triggered a pre-agreed action rather than a meeting.
+
+So my argument for COP31 is that early warning and anticipatory finance are [the same system](/blog/delta-resilience-early-warning-anticipatory-action), and they have to be funded as one. A warning without committed, fast-moving money is a smoke alarm in a building with no exits. The disaster funds being operationalised, including the FRLD's faster-disbursing windows, should be explicitly designed to support pre-arranged, trigger-based release, not only post-event reconstruction. The "last mile" of EW4All is not a transmission tower. It is a budget line that moves before the hazard does.`,
+      },
+      {
+        heading: 'Slow-Onset Disasters Are the Strongest Case and the Worst Served',
+        content: `There is a particular category that exposes the failure most sharply: slow-onset hazards. Drought. Heat. Creeping food insecurity. These are the disasters we can predict furthest in advance, sometimes months, and they are precisely the ones our reactive systems serve worst, because there is no single dramatic moment that triggers the cameras and the cheques.
+
+My clearest memory of this is the 2020 desert locust upsurge in the Horn of Africa, the worst in a generation. Working IM for the FAO-led Agriculture Cluster in Ethiopia during the second swarm wave, the analytical task was to integrate swarm-tracking, vegetation and precipitation data with food-security projections so the response could get ahead of the damage to agro-pastoral livelihoods. The hazard was forecastable. The breeding areas were mappable. The window to act before the swarms matured was real. Whether that window got used came down, every time, to whether finance could move on a forecast rather than a body count.
+
+Slow-onset disasters are the strongest possible argument for anticipatory finance: long lead times, clear indicators, enormous avoidable losses. And they are chronically under-served, because they do not fit the reactive funding cycle. If COP31 wants a concrete test of whether it is serious about anticipatory action, it is this. Does the finance architecture reward acting on a drought forecast in month one, or does it still wait for the famine to be declared in month nine?`,
+      },
+      {
+        heading: 'What I Want From Antalya',
+        content: `I am not asking COP31 to discover anticipatory action. The [Anticipation Hub](https://www.anticipation-hub.org/), the forecast-based financing community, and a decade of pilots have already proven it works. I am asking the finance negotiations to stop treating it as a niche humanitarian technique and start treating it as a design principle for climate money.
+
+Concretely, three things. First, the climate and loss-and-damage funds should build in pre-arranged, trigger-based disbursement windows: money that is committed in advance to release on a forecast, with the speed that anticipatory action requires. Second, EW4All financing should be evaluated on the whole chain, all the way to the committed money and institutional readiness at the end of it, not just the forecasting hardware at the front. And third, the one closest to my own work: investment in the historical loss data that triggers are calibrated against, because a trigger built on a biased record protects the already-visible and abandons the already-overlooked.
+
+We can see most of these disasters coming, and have been able to for some time. The unfinished work is not prediction. It is the plumbing that lets money move at the speed of a forecast rather than the speed of the disaster itself. On the road to Antalya, I will be watching the anticipatory-action agenda for one thing. When the warning fires, does support actually move, and does it reach the people the data most often leaves out?
+
+A forecast tells you what is coming. Anticipatory finance decides whether knowing makes any difference. The whole point of seeing the disaster early is to spend before it arrives. Everything else is just a very well-documented response.`,
+      },
+    ],
+    relatedSlugs: [
+      'delta-resilience-early-warning-anticipatory-action',
+      'the-case-for-anticipatory-cash',
+      'road-to-antalya-ncqg',
+    ],
+  },
+
+  'belem-adaptation-indicators-data-test': {
+    slug: 'belem-adaptation-indicators-data-test',
+    title: 'Measuring What Works: Helping the Belém Adaptation Indicators Live Up to Their Promise',
+    category: 'Technical Deep Dive / Opinion',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '9 min',
+    date: 'May 2026',
+    excerpt:
+      "COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers, or the indicators become one more standard the vulnerable are judged against and cannot meet.",
+    keywords: [
+      'Belém Adaptation Indicators', 'Global Goal on Adaptation', 'GGA',
+      'COP30', 'COP31', 'UAE-Belém', 'adaptation finance', 'DELTA Resilience',
+      'G-DRSF', 'disaggregation', 'national data systems',
+      'data ecosystem maturity', 'NCQG', 'one report two purposes',
+    ],
+    sections: [
+      {
+        content: `*COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers, or the indicators become one more standard the vulnerable are judged against and cannot meet.*
+
+For most of my career, adaptation has had a measurement problem that mitigation does not. A tonne of carbon avoided is a tonne, anywhere on Earth. But "a community made more resilient" resists that kind of clean accounting. Resilience is local, multi-dimensional, and slow. You can build a seawall and still lose the village to a hazard you didn't model. You can run a flawless early warning system and still measure your success only by the disaster that didn't happen, the hardest thing in the world to count. For years, this is why adaptation lost the funding argument to mitigation. It could not put a defensible number on the board.
+
+[COP30 in Belém](https://www.carbonbrief.org/cop30-key-outcomes-agreed-at-the-un-climate-talks-in-belem/) tried to fix that. After two years of the UAE-Belém work programme, parties adopted a set of indicators, roughly sixty, now widely called the [Belém Adaptation Indicators](https://www.cities-and-regions.org/cop30-outcomes-on-climate-finance-and-loss-damage/), to track progress toward the Global Goal on Adaptation (GGA). On paper this is a genuine milestone. For the first time, the world has an agreed way to ask whether adaptation is actually happening. But I read it through the lens of a decade spent inside national data systems, and what I see is less a finish line than a starting gun. Because an indicator is only as real as a country's ability to report it, and on that, most of the conversation has been silent.`,
+      },
+      {
+        heading: 'An Indicator Is a Promise to Measure',
+        content: `There is a comfortable assumption buried in every framework of indicators. That once you have defined what to measure, the measuring will follow. I have spent ten years discovering how false that assumption is.
+
+When I rebuilt a cash-transfer data pipeline in Ethiopia, I found roughly forty per cent of records were missing location fields, not because anyone was careless, but because the system had never been designed to capture them. In Afghanistan, before any analysis was possible, I had to map more than thirty separate disaster-data sources held by different agencies and negotiate the agreements to bring them together, because they had never been built to talk to each other. The lesson, repeated in every country I have worked in, is that the gap between defining an indicator and reporting it reliably is enormous, and it is widest exactly where vulnerability is highest.
+
+So when sixty adaptation indicators are adopted in a plenary hall, my first question is not "are they the right indicators?" It is "who can actually produce them?" A country with a mature, disaggregated, interoperable data system will report against the Belém indicators and use them to substantiate its claims on adaptation finance. A country still running fragmented spreadsheets and paper records will face a new global standard it has no infrastructure to meet, and risk being judged as under-performing when the truth is that it is under-instrumented. The indicator framework, like every framework before it, quietly assumes a data capability that the most vulnerable countries do not yet have.`,
+      },
+      {
+        heading: 'The Disaggregation That Decides Everything',
+        content: `The Belém indicators inherit a requirement that runs through all the modern frameworks I work with, and it is the requirement I care about most. Disaggregation. An adaptation result averaged across a whole country tells you almost nothing useful. The question that matters is always *who*. Which districts, which households, which women, which people with disabilities, which displaced populations. National averages are where inequality goes to hide.
+
+This is precisely the design principle behind the newer generation of disaster-data systems I have recently begun working with. [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience), [replacing the legacy DesInventar platform](/blog/desinventar-to-delta-resilience), records losses sub-nationally and disaggregates by sex, age and disability. The [Global Disaster-Related Statistics Framework (G-DRSF)](https://www.undrr.org/global-disaster-related-statistics-framework-faqs), endorsed by the UN Statistical Commission, gives disaster managers and statisticians the [shared standards](/blog/g-drsf-statisticians-disaster-managers) that make such disaggregated data comparable across borders. These are not adaptation tools per se, but they are the data backbone that any credible adaptation measurement has to stand on. You cannot report a disaggregated adaptation indicator on top of a disaster data system that only records national totals.
+
+There is an efficiency here that the adaptation community should seize rather than reinvent. The frameworks are converging. Data captured once, to G-DRSF standards, can feed the Sendai Framework, a set of SDG indicators, and now the GGA indicators, the "one report, several purposes" logic I have argued for elsewhere. The worst outcome from Belém would be a parallel adaptation-reporting bureaucracy, disconnected from the disaster-loss and statistical systems countries are already being asked to build. The best outcome is coherence: one disaggregated national data architecture serving every framework at once. That is not a technical nicety. It is the difference between a reporting burden that buries already-stretched national offices and an asset that pays them back across every obligation they carry.`,
+      },
+      {
+        heading: 'Diagnose Before You Measure',
+        content: `If COP31 is serious about the Belém indicators, the most useful thing it could fund is not more indicators. It is readiness, an honest diagnosis of whether countries can actually report what they have just committed to report.
+
+I have argued before that a [maturity assessment is not a delay](/blog/data-ecosystem-maturity-assessment-guide). It is the investment that ensures the system you build is the system that survives. Before a country can credibly report against sixty adaptation indicators, someone has to ask the unglamorous questions across the dimensions that actually determine success. Is there a legal mandate and a working relationship between the disaster management authority and the national statistical office, or do they still operate on different planets? Does the technical infrastructure exist to host and exchange the data? Is the historical baseline complete enough to show change over time? And are there national experts who can run the system, or will it collapse the moment external consultants leave?
+
+I have watched well-funded data systems die two years after launch because nobody asked those questions first. Introduce an indicator framework into an institution that cannot yet support it, and you risk the appearance of measurement rather than the real thing, which can mask gaps instead of revealing them. The road from Belém to Antalya is a chance to assess and strengthen national readiness, so that when countries report against the GGA, the numbers carry real weight.`,
+      },
+      {
+        heading: 'The Adaptation Finance Loop',
+        content: `This all connects back to the hardest number at COP30: the call to at least triple adaptation finance by 2035, embedded within the NCQG. It was rightly celebrated and rightly [questioned](https://www.eco-business.com/news/analysis-why-cop30s-tripling-adaptation-finance-target-is-less-ambitious-than-it-seems/). Tripling from a low and loosely defined base is less than it sounds, and "adaptation finance" remains slippery enough that tracking it honestly is its own challenge.
+
+But notice the loop. Adaptation finance is supposed to flow toward measured adaptation need and demonstrated adaptation results. The Belém indicators are the instrument for measuring both. So the credibility of the finance target depends on the credibility of the indicators, which depends on the data systems underneath them. A tripling of adaptation finance allocated against weak or biased adaptation data does not produce three times the resilience in the right places. It produces three times the money chasing whatever the data happens to show, and if the data under-represents the most vulnerable, the money follows the data away from them.
+
+This is the same argument I keep making about every climate fund, and the Belém indicators make it concrete. Measurement is not the bureaucratic afterthought to finance. Measurement is what decides whether finance lands where the need is or where the documentation is. Those are not the same place, and the gap between them is exactly where stronger national data systems are supposed to go.`,
+      },
+      {
+        heading: 'What COP31 Should Carry to Antalya',
+        content: `I want the adaptation conversation in [Antalya](https://unfccc.int/cop31/the-road-to-antalya) to grow up past the moment of adopting indicators and into the much harder work of making them reportable. That means treating national data-system readiness as a funded, first-order component of the adaptation agenda, not an assumption. It means deliberately wiring the Belém indicators into the disaster-loss and statistical systems countries are already building, through DELTA and the G-DRSF, so adaptation reporting is coherent rather than parallel. And it means insisting on disaggregation as non-negotiable, because an adaptation indicator that cannot tell you *who* was protected cannot tell you whether adaptation is reaching [the people who need it](/blog/the-voices-our-data-systems-silence).
+
+We finally have a way to measure adaptation. That is real, and the people who negotiated it deserve credit. But a ruler is not the same as the ability to use it, and most of the world has just been handed a ruler without being asked whether they have anything to measure with. The work between Belém and Antalya is to close that gap, to make sure the Belém indicators measure adaptation as it is actually lived in the most exposed districts of the most exposed countries, and not just adaptation as it can be documented by those already equipped to document it.
+
+What gets counted gets funded. We have decided what to count. Now we have to make sure everyone can count it, because an indicator the vulnerable cannot report is just one more standard they will be measured against and found wanting.`,
+      },
+    ],
+    relatedSlugs: [
+      'desinventar-to-delta-resilience',
+      'g-drsf-statisticians-disaster-managers',
+      'disaster-loss-data-climate-adaptation',
+    ],
+  },
+
+  'cop31-data-making-the-case': {
+    slug: 'cop31-data-making-the-case',
+    title: 'COP31 and Data: Making the Case From the Field',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'May 2026',
+    excerpt:
+      "The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down, and why data is now the gatekeeper of climate justice.",
+    keywords: [
+      'COP31', 'Antalya', 'climate finance', 'Cox\'s Bazar', 'visibility trap',
+      'EM-DAT', 'DELTA Resilience', 'Loss and Damage Fund', 'humanitarian data',
+      'Afghanistan HSDC', 'Ethiopia cash', 'extensive risk',
+      'data sovereignty', 'data infrastructure', 'climate justice',
+    ],
+    sections: [
+      {
+        content: `*The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down.*
+
+In Cox's Bazar, in the footprint of the world's largest refugee settlement, I helped run a cash-for-work programme that paid people to plant trees and stabilise slopes. The Rohingya influx had stripped the surrounding hills for fuel and shelter, and the host communities, Bangladeshi villages that had absorbed nearly a million people almost overnight, were living with the consequences. Eroding slopes, failing land, monsoon and cyclone risk pressing in from the Bay of Bengal. We partnered with local disaster management committees, set up the beneficiary targeting and the payment cycles, and wired the field monitoring back to the seasonal contingency planning for the camps.
+
+The programme worked. But the conversation that stayed with me was about something we were *not* funding. The host communities had their own climate losses. Coastal erosion, salinity, storm damage accumulating year after year. Those losses were, in the language of the global system, undocumented. No threshold crossed, no international appeal triggered, no line in any database that a climate fund would recognise. The damage was real. The people were real. The evidence, by the standards of the architecture that moves money, did not exist. And so neither did the funding.
+
+I have carried that asymmetry through every role since, and it is the reason I want to make a specific argument as the world moves toward [COP31 in Antalya](https://unfccc.int/cop31/the-road-to-antalya). The decisive climate-finance fight of this cycle is not really about the size of the pledges. It is about who can prove their losses. Data is not the back office of climate finance. Data is the gatekeeper. And I have spent ten years watching it decide who gets through.`,
+      },
+      {
+        heading: 'What I Learned Negotiating for Numbers',
+        content: `When people hear "humanitarian data," they picture dashboards. The reality, in every country I have worked in, is closer to diplomacy.
+
+In Afghanistan after 2021, before I could build anything, I had to find the data. It existed, held by the national disaster authority, by UN clusters, by line ministries, by meteorological services, in more than thirty separate places, in incompatible formats, governed by mutual suspicion. The technical work of integrating it into a single [Humanitarian Spatial Data Centre](/projects), built to support risk-informed humanitarian response planning, was the easy part. The hard part was negotiating the [data-sharing agreements](/blog/the-im-coordination-trap) that made the integration legal and trusted, and then producing the outputs in Dari and Pashto so the national authority could actually use them for its own loss reporting. We ended up running a platform that drew on those sources to serve more than two hundred partners. But the foundation was not code. It was trust, painstakingly assembled, that the data would be handled as a shared public good rather than extracted and taken away.
+
+In Ethiopia, the lesson was about quality. I inherited a cash dataset where roughly forty per cent of records had no usable location. You cannot target a climate-shock-responsive programme on data that cannot tell you where people are. So I rebuilt the pipeline from the point of entry, validation rules, controlled fields, quality checks, not as a technical indulgence but because every downstream decision about who received support depended on it. When the Cash Working Group later positioned ahead of drought, releasing one CERF operation that reached around 185,000 people with most reporting improved livelihoods, it was that boring, invisible groundwork that made acting early defensible.
+
+These are not war stories for their own sake. They are the texture of what "evidence-based climate finance" actually requires on the ground, and it is nothing like the clean abstraction the term implies in a negotiating text.`,
+      },
+      {
+        heading: 'The Visibility Trap',
+        content: `Step back from the field and the pattern becomes a structural injustice, and it is the heart of my case for COP31.
+
+Almost every climate fund disburses against risk and loss evidence. The [Loss and Damage Fund](https://unfccc.int/fund-for-responding-to-loss-and-damage), the Green Climate Fund, the Adaptation Fund, the anticipatory-finance mechanisms, all of them, reasonably, want proof. But the proof flows from datasets that were never designed to see everyone. The most-cited global disaster database, [EM-DAT](https://www.emdat.be/), only records events that cross thresholds (ten dead, a hundred affected, an international appeal, a state of emergency) and even [acknowledges itself](/blog/invisible-disasters-invisible-funding) that economic losses in poorer contexts are badly under-reported. The result is a single, devastating statistic I keep returning to: in the 2025 global disaster figures, Africa accounted for nearly nineteen per cent of disaster deaths but well under one per cent of recorded economic losses. African disasters are not cheap. African losses are simply not counted.
+
+This is the visibility trap, and it closes in two stages. First, the small, recurrent, slow-onset hazards that wear down the poorest communities never enter the record. Then, because they are not in the record, the communities that suffer them cannot substantiate a claim on the funds designed to help them. Invisibility in the data becomes invisibility in the finance. The places with the greatest need end up with the weakest evidence, and the architecture, running exactly as designed, routes money toward the well-documented and away from the overlooked.
+
+My host communities in Cox's Bazar were caught in the first stage of that trap. Multiply them by every under-instrumented district on Earth and you have the quiet, structural reason climate finance keeps missing the people it is most meant for.`,
+      },
+      {
+        heading: 'Making a Case for Data in Antalya',
+        content: `If I had the floor at [Antalya](https://unfccc.int/cop31/the-road-to-antalya), I would make the case the way I have made it in field offices for a decade. Not as a plea for sympathy, but as an argument about plumbing.
+
+Treat national disaster-data systems as climate-finance infrastructure, and fund them as such. Every dollar invested in a country's ability to record and substantiate its own losses unlocks many dollars of finance that can actually find their target, and protects against the far larger waste of money flowing to where the documentation is rather than where the need is. Build the DELTA migrations and, before them, the honest maturity assessments that decide whether a system will survive its own launch. Wire the funds' application processes to recognise disaggregated, extensive-risk evidence, so the grinding, recurrent losses count and not only the photogenic catastrophes. And make the technical-assistance channels, the Santiago Network among them, deliver data-system readiness as a named outcome, so the countries furthest behind are helped to compete rather than quietly disqualified.
+
+None of this is glamorous. None of it will lead a communiqué. It is exactly the kind of unspectacular, foundational work that determines whether everything above it functions, which is precisely why it gets under-funded, and precisely why I keep insisting on it.
+
+I think often about the host families in Cox's Bazar, planting trees on slopes they were trying to hold together, carrying climate losses that no system had bothered to write down. The tragedy was never that the world lacked compassion for them. It was that the world had no record of them, and in a finance architecture that runs on evidence, to be unrecorded is to be unfundable, no matter how real your suffering.
+
+That is the case for data at COP31. Not data for its own sake. Data as the precondition for justice. The most important argument in Antalya will be about who gets to be visible enough to be helped, and we already know, from a decade of field experience, that visibility is something we build, deliberately, system by system, or fail to build and call it fate.
+
+What gets counted gets funded. What gets missed stays vulnerable. Making the case for data is making the case for the people the data has always left out.`,
+      },
+    ],
+    relatedSlugs: [
+      'invisible-disasters-invisible-funding',
+      'road-to-antalya-ncqg',
+      'building-systems-governments-can-own',
+    ],
+  },
+
+  'disaster-data-diplomacy': {
+    slug: 'disaster-data-diplomacy',
+    title: 'Disaster and Humanitarian Data Diplomacy: Negotiating the Numbers Behind Communities in Need',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Data Analytics & IM',
+    pillarColor: '#1565C0',
+    readTime: '10 min',
+    date: 'April 2026',
+    excerpt:
+      "In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean, to the host government, to affected communities, to a watching world, is often the harder, and more consequential, work.",
+    keywords: [
+      'humanitarian data diplomacy', 'humanitarian principles', 'JIAF',
+      'People in Need', 'data responsibility', 'do no harm', 'IASC',
+      'host government relations', 'attention economy', 'mosaic effect',
+      'data protection', 'OCHA', 'ICRC', 'CDA Collaborative',
+    ],
+    sections: [
+      {
+        content: `*In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean is often the harder, and more consequential, work.*
+
+Some of the most consequential decisions I have made in a decade of humanitarian data work were never about data at all. They were about a sentence. Whether a needs figure should be published this week or held. Whether a map should show a settlement at village resolution or stop at the district line. Whether a dataset disaggregated by group would help target assistance or quietly hand someone a targeting list of a different kind. These are not technical questions. They are diplomatic ones, and they are decided in rooms where the spreadsheet is the least important thing present.
+
+We talk about humanitarian data as though it were a thermometer. You take the reading, you report the number, the number is the truth. In reality, every figure that leaves a crisis has passed through a series of negotiations. With the host government, over what the data implies about its competence and control. With affected communities, over whether being counted will protect them or expose them. And with the wider world, over how much attention the numbers should attract and at what cost. I have come to think of this as disaster data diplomacy, and it is the part of the job that almost never appears in a methodology note.`,
+      },
+      {
+        heading: 'What Even Counts as a Disaster',
+        content: `The diplomacy starts before a single record is entered, with a question that sounds academic and is anything but. What are we going to call this, and what are we going to count?
+
+In the aftermath of a sudden emergency, multiple actors arrive with multiple datasets and multiple definitions. One agency's "affected population" is another's "people in need." A government's official figure and a cluster's assessment can differ by an order of magnitude, and neither is simply lying. They are measuring different things, for different purposes, with different thresholds. My job, repeatedly, has been to sit in the middle of that and negotiate a shared picture that everyone can live with, knowing that whichever numbers we settle on will travel far beyond the room and do work none of us fully control.
+
+This is why the [humanitarian principles](https://www.unocha.org/humanitarian-principles) of neutrality and impartiality are so much harder in practice than on paper. The moment you decide which data sources are credible, you have made a political choice about whose account of the disaster counts. In one operation, the most complete records sat with the national authority but carried the authority's framing. In another, the more independent picture came from open-source satellite analysis but lacked the ground truth only local responders had. Choosing between them, or more often, reconciling them, is not a neutral act of data cleaning. It is a negotiation over whose version of events becomes the official one.`,
+      },
+      {
+        heading: '"Who Is In Need" Is the Most Political Question We Ask',
+        content: `If there is a single number that concentrates all of these tensions, it is the People in Need figure, the count at the centre of every humanitarian appeal and intersectoral analysis. I have argued elsewhere that [what gets counted decides who gets funded](/blog/invisible-disasters-invisible-funding). The People in Need figure is where that logic becomes a live negotiation.
+
+On its face it is a technical product, built through severity scoring and intersectoral frameworks like the [JIAF](https://www.jiaf.info/). In practice it is one of the most politically loaded numbers in the entire response. A high figure can be read as an indictment of the government in place, evidence that it has failed to protect or provide for its own people. A low figure can starve a response of the resources real communities urgently need. I have sat in the analysis sessions where those two pressures meet, and the honest truth is that the methodology, however rigorous, never fully escapes them.
+
+What I learned is that you cannot resolve this by pretending the politics away. You manage it by being scrupulous about method and transparent about uncertainty, so that the number can withstand scrutiny from any direction. When a government challenges a needs figure as exaggerated, your defence is not indignation. It is a defensible methodology, clear assumptions, and disaggregation that shows your work. The credibility of the number is what protects it, and protecting the number is, in the end, how you protect the people it represents. Get the method right and you can hold the line in the negotiation. Get it wrong and the figure becomes just another contested claim, easy to dismiss and easy to ignore.`,
+      },
+      {
+        heading: 'Not De-Marketing the Government in the Chair',
+        content: `Here is the part that is hardest to convey, and the part I think about most carefully. Effective humanitarian data work in someone else's country requires you to communicate need without turning that communication into a verdict on the administration in place at the time.
+
+This is not about flattering anyone. It is about a practical reality. Response happens with the consent and cooperation of the host authorities, and a government that experiences every dataset as a political attack will, sooner or later, restrict the very data flows the response depends on. I have worked in contexts where the line between "documenting a humanitarian situation" and "embarrassing the state" was thin, contested, and watched closely. Cross that line carelessly and you do not win an argument. You lose access, and the people who pay for that loss are the affected communities, not the analysts.
+
+So a great deal of the diplomacy is about framing without distortion. The same flood losses can be presented as "the scale of the disaster overwhelmed local capacity," which is true and protective of the partnership, or as "the government failed to prepare," which may also be arguable but ends the conversation. In Afghanistan, part of why we produced disaster and needs products bilingually, in Dari and Pashto, and shared open data directly with the national disaster authority, was precisely this. Data offered to a counterpart as a [shared instrument it can use](/blog/building-systems-governments-can-own) is data that strengthens cooperation, while the same data deployed as an external judgement invites the shutters to come down. The aim was never to soften the truth. It was to keep the channel open through which the truth could keep flowing.
+
+There is a real ethical tension here, and I do not want to flatten it. There are moments when the data does implicate those in power, and concealment would itself be a harm. The skill, and it is a skill I am still refining, is knowing the difference between protective framing that keeps a response alive and self-censorship that betrays the people you serve. That judgement cannot be outsourced to a guideline. It is the diplomacy.`,
+      },
+      {
+        heading: 'Do No Harm Is a Data Discipline, Not a Slogan',
+        content: `The second negotiation is with the vulnerable people in the data themselves, and here the stakes are not reputational. They are physical.
+
+[Do no harm](https://www.cdacollaborative.org/) is one of the oldest commitments in humanitarian work, and in the data age it has become, quietly, a technical discipline. Every decision about how granular to make a dataset is a decision about exposure. Disaggregating by ethnicity, religion, displacement status, or gender can make assistance far better targeted, and can also, in the wrong hands, become a map of where a persecuted group lives. The same categories that let us [hear the people our systems were built to silence](/blog/the-voices-our-data-systems-silence) can, mishandled, expose them. Geolocating a settlement to help deliver aid can also help someone find it who means harm. The same precision that makes data useful makes it dangerous, and the line between the two depends entirely on context.
+
+I have made these trade-offs in practice. In one displacement response, the political constraints on data sharing were such that the protective move was to lean on open-source remote sensing rather than collect and hold sensitive personal records that could not be adequately secured. In others, the protective move was the opposite: collect carefully, but aggregate before release, publishing at a resolution coarse enough to protect individuals while still steering the response. There is a well-understood "mosaic effect" in this work, where several innocuous datasets combine to re-identify the very people each was anonymised to protect, and guarding against it is now part of the basic craft. The field has matured here, with the [ICRC's Handbook on Data Protection in Humanitarian Action](https://www.icrc.org/en/data-protection-humanitarian-action-handbook) and OCHA's [data responsibility guidance](https://centre.humdata.org/) giving practitioners real standards to work to. But standards inform judgement. They do not replace it. No guideline can tell you, for this group, in this place, this week, exactly how much to show.
+
+The hardest version of this is the conflict between visibility and protection. Vivid, specific, human data drives attention and funding. It also concentrates risk on identifiable people. Every time I have chosen to blur, aggregate, or withhold, I have been trading some measure of advocacy power for some measure of safety, and I have not always found that trade comfortable. But the principle has to hold. The people in the dataset never consented to become evidence, and their safety cannot be spent to strengthen an argument, however good the cause.`,
+      },
+      {
+        heading: 'The Attention Economy of Suffering',
+        content: `The third negotiation is with the world, and it is the one we are least honest about.
+
+Humanitarian communication runs on attention, and attention runs on emotion. The starkest number, the most affecting image, the single devastating statistic. These are what cut through a saturated news cycle and move donors. There is nothing inherently wrong with that. People who need help deserve to be seen, and dry, hedged, perfectly responsible data has never once unlocked an emergency appeal on its own. Part of doing this work well is knowing how to make suffering legible to people far away who have the power to respond.
+
+But the attention economy has its own gravity, and it pulls against both of the negotiations above. The framing that generates the most global concern is often the one most likely to antagonise the host government or to expose the most vulnerable. The story that funds the response can be the story that complicates it. So the practitioner sits at a three-way junction, balancing impactful communication that draws the world's attention and resources, against the diplomatic relationships that keep the operation running, against the safety of the people whose situation is being communicated. There is rarely a clean answer. There is only a defensible one, arrived at deliberately rather than by accident or reflex.
+
+What I have tried to hold onto is that all three obligations are real, and none can be allowed to silently win. Communicate too cautiously and you fail the people who need the world's attention to survive. Communicate too aggressively and you may lose the access, or endanger the very people, the attention was meant to help. The discipline is to keep all three in view at once and to make the trade-off consciously, knowing what you are trading and why.`,
+      },
+      {
+        heading: 'The Craft No One Trains You For',
+        content: `None of this appears in a data science curriculum. You learn it in the room, usually by getting the balance slightly wrong and watching what happens. A number that travelled further than intended, a map that showed a little too much, a framing that closed a door you needed open. Over time it stops feeling like a series of compromises to the data and starts feeling like the actual work, the part that determines whether all the careful collection and analysis ever does any good.
+
+I have come to believe that disaster data diplomacy is a core humanitarian competency, as important as the statistics and the systems, and far less taught. We train people to build the dataset. We rarely train them to negotiate what it is allowed to mean, to whom, and at what risk. Yet that negotiation is where data either serves vulnerable people or quietly fails them.
+
+The numbers, in the end, are the easy part. Anyone with the right tools can count. The real skill is knowing what the count is for, whose hands it will pass through, and what it might do when it gets there. A disaster figure is never just a fact. It is a fact with consequences, and somebody has to take responsibility for them before it is ever released. For a long time now, in a lot of difficult rooms, that somebody has been me. The work was never really about the data. It was about the diplomacy the data demanded.`,
+      },
+    ],
+    relatedSlugs: [
+      'disaster-data-diplomacy-in-fragility',
+      'the-im-coordination-trap',
+      'politics-of-humanitarian-data-infrastructure',
+    ],
+  },
+
+  'disaster-data-diplomacy-in-fragility': {
+    slug: 'disaster-data-diplomacy-in-fragility',
+    title: 'Holding Data Carefully: Disaster Data Diplomacy in Fragile and Conflict Contexts',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Data Analytics & IM',
+    pillarColor: '#1565C0',
+    readTime: '11 min',
+    date: 'May 2026',
+    excerpt:
+      "In a stable country, negotiating disaster data is hard. In a fragile one, where the government may be unrecognised, the conflict still live, and the population itself a contested fact, the same negotiation can decide who is reached, who is exposed, and who is simply erased.",
+    keywords: [
+      'fragile contexts', 'conflict-affected', 'de facto authorities',
+      'humanitarian data', 'data responsibility', 'ICRC',
+      'do no harm', 'data minimisation', 'mosaic effect',
+      'Afghanistan', 'displacement classification',
+      'humanitarian principles', 'access', 'neutrality',
+    ],
+    sections: [
+      {
+        content: `*In a stable country, negotiating disaster data is hard. In a fragile one, where the government may be unrecognised, the conflict still live, and the population itself a contested fact, the same negotiation can decide who is reached, who is exposed, and who is simply erased. This is the version of the job that keeps me up at night.*
+
+There is a version of humanitarian data work that looks like a profession. Clean intake forms, validated pipelines, a dashboard that updates on schedule. Then there is the version I have spent most of my career doing, where the government holding the data is one the world has chosen not to recognise, where the conflict that caused the disaster has not ended, and where the simple act of recording who was harmed can place them in further danger. The methods are the same. The stakes are not even in the same universe.
+
+I have [written before about disaster data diplomacy](/blog/the-im-coordination-trap), the constant negotiation over what to count, who to call "in need," and what can safely be said out loud. But that framing assumes a baseline of stability, a recognised authority, a functioning settlement between state and citizen, that simply does not exist in the places where humanitarian need is most acute. In fragile and conflict-affected contexts, every one of those negotiations gets harder, sharper, and more dangerous. The data has nowhere safe to land. And the practitioner in the middle is no longer balancing competing interests so much as trying to keep a fragile structure from collapsing onto the people it was meant to shelter.`,
+      },
+      {
+        heading: "The Counterpart Problem: Negotiating With Authorities the World Won't Name",
+        content: `In a stable country, you negotiate disaster data with a government that has a recognised mandate, an international seat, and an interest in being seen to respond. In a fragile context, the entity that actually controls territory, holds the records, and grants or denies your access may be one that donors, the UN system, and your own organisation cannot formally recognise. The disaster does not pause for that ambiguity. People still need counting, and the only counterpart in the room may be one you are not supposed to legitimise.
+
+This is the defining dilemma of working in places under de facto authorities, and there is no clean way through it. Refuse all engagement and you lose access to the data, the territory, and ultimately the people. Engage too openly and you risk legitimising an unrecognised authority, breaching donor conditions, or becoming a channel for the political validation that authority craves. I have lived inside this tension. After 2021 in Afghanistan, the humanitarian community had to keep delivering and keep counting in a context where the authorities controlling the country were not recognised and were subject to sanctions, while millions of people remained in desperate need. The data work did not stop. It simply became a continuous negotiation over what could be shared with whom, what counted as technical cooperation versus political endorsement, and how to keep information flowing to those who needed it without handing anyone a propaganda victory.
+
+The instrument I have learned to rely on most here is narrowness. You engage on the specific, technical, humanitarian task and refuse to let the engagement expand into anything that looks like recognition. Data shared to help a line ministry warn its own population of a flood is a different act from data shared to help an unrecognised authority claim international standing, even when it is the same data and the same official. Holding that distinction, in practice, under pressure, when both readings are available to anyone watching, is the diplomacy. It is exhausting, it is contested, and getting it wrong in either direction has real costs. Lost access on one side, complicity on the other.`,
+      },
+      {
+        heading: 'When the Population Itself Is Contested',
+        content: `In stable settings, the argument is usually about how many people are in need. In conflict, the argument is often about whether a population should be acknowledged to exist at all.
+
+Displacement is the clearest example. Whether a group is described as refugees, internally displaced, migrants, or by some carefully negotiated phrase that avoids all three is rarely a neutral classification. It carries legal obligations, political claims, and a host government's anxieties about permanence and responsibility. I have worked in responses where the terminology for the displaced population was itself the product of long negotiation, because the host state resisted any language that implied a lasting presence or a recognised legal status. The people were unmistakably there, in their hundreds of thousands. What they could be called, and therefore what they could be counted as, was contested ground.
+
+This matters because counting confers a kind of existence. A population that appears in the data becomes real to the response, to donors, to the systems that allocate help. A population that is defined out of the data, through a classification dispute or a deliberate omission, can be rendered invisible while remaining entirely present. In conflict, that erasure is sometimes the point. Parties to a conflict have clear interests in whose suffering is documented and whose is not, in which displacements are visible and which are denied. The humanitarian data practitioner who insists on counting a contested population is not performing a technical task. They are taking a position, whether they intend to or not, and they had better understand that going in.`,
+      },
+      {
+        heading: 'Do No Harm Becomes Do Not Get People Killed',
+        content: `In a stable context, the do-no-harm conversation is about privacy, dignity, and the risk that data exposes vulnerable people to discrimination or exploitation. In an active conflict, the same conversation is about whether your dataset becomes a targeting list.
+
+This is the part of the work that has weighed on me most. When there are armed parties with an interest in knowing where a particular community, ethnic group, or displaced population is concentrated, the disaggregated data that makes assistance precise becomes the data that makes atrocity efficient. Geolocation that helps a convoy find a settlement can help something far worse find it too. Records of who belongs to which group, collected with the best intentions to ensure no one is excluded, can become the most dangerous documents in the country if they fall into the wrong hands or are compelled out of yours. The [ICRC's Handbook on Data Protection in Humanitarian Action](https://www.icrc.org/en/data-protection-humanitarian-action-handbook) and OCHA's [data responsibility guidance](https://centre.humdata.org/) exist precisely because the sector has learned, sometimes tragically, how real this is.
+
+The practical consequence is that in fragile and conflict settings, the protective default inverts. In a stable country you collect richly and protect carefully. In a conflict you often collect deliberately less, because data you do not hold cannot be stolen, subpoenaed, or coerced from you. I have made the choice to rely on open-source and remote-sensing analysis rather than collect and store sensitive personal records that I could not guarantee to keep safe, accepting a less granular picture as the price of not creating a hazard. Aggregation before release stops being good practice and becomes a safety control. The "mosaic effect," where separate harmless datasets combine to re-identify the people each was meant to protect, stops being a theoretical risk and becomes an operational threat model. You start thinking less like a statistician and more like someone responsible for the physical safety of everyone in your files, because that is exactly what you are.`,
+      },
+      {
+        heading: 'Communicating a Crisis Without Fuelling One',
+        content: `The third negotiation, the one with the watching world, is also transformed by fragility. Humanitarian communication still runs on attention, and attention still requires the stark figure and the affecting image. But in a conflict, the framing that mobilises the most international concern can also inflame the conflict, endanger access, or be seized by one party as a weapon against another.
+
+Numbers are never inert in a war. A casualty figure, a displacement total, an account of who did what to whom, can become evidence, accusation, and recruitment material all at once. A government or armed group that experiences your data as taking sides will respond accordingly. By closing access, by restricting movement, by treating humanitarian actors as combatants in an information war. So the communication that would be straightforwardly responsible in a stable disaster, name the scale, show the faces, drive the funding, has to be weighed against the risk that vivid documentation becomes fuel. I have sat with the discomfort of knowing that the most powerful way to tell a story was also the most likely to get the channel shut or to put identifiable people in the path of retaliation, and having to choose the quieter, safer telling instead.
+
+This is where the principle of neutrality stops being an abstraction and becomes a survival strategy for the operation and the people in it. It is not that the suffering should be hidden. It is that in a contested environment, how it is communicated determines whether the response survives to keep reaching people, and whether the people in the data survive the attention. The discipline is to make need legible enough to mobilise help, without making it a contribution to the very conflict generating the need. There is no formula for that line. There is only judgement, exercised case by case, with incomplete information and real consequences either way.`,
+      },
+      {
+        heading: 'Why the Hardest Places Have the Worst Data, and Why That Compounds',
+        content: `All of this produces a bitter structural result that I keep running into. The contexts where data diplomacy is hardest, fragile, conflict-affected, governed by unrecognised or contested authorities, are exactly the contexts that end up with the thinnest, most fragmented, least trusted data. And that data poverty is not a coincidence. It is the direct product of the very difficulties I have described.
+
+Where authorities are unrecognised, the formal data-sharing architecture that connects national systems to global ones is broken or suspended. Where conflict is live, collection is dangerous, partial, and constantly disrupted. Where populations are contested, whole categories of people are defined out of the statistics. Where do-no-harm requires collecting less, the record is deliberately sparse. Each protective and political necessity, individually justified, leaves the same mark. A weaker evidence base for the places that need help the most. And because so much of the global humanitarian and climate finance architecture allocates against evidence, [thin data becomes thin funding](/blog/invisible-disasters-invisible-funding). The hardest places to count become the hardest places to fund, on top of being the hardest places to live.
+
+I do not have a tidy solution to offer, and I would be wary of any that is presented as simple. What I have is a conviction that this compounding penalty has to be named, because the systems that allocate global attention and resources tend to treat missing data as missing need, when in fragile contexts it is very often the opposite. The need is greatest precisely where it is hardest to document. Building data systems that can function under fragility, that are designed for contested authority, insecure collection, and protective minimalism rather than assuming the stable conditions that rarely apply, is some of the most important and least glamorous work in this field. It is work I am still learning how to do.`,
+      },
+      {
+        heading: "The Work That Doesn't Make the Report",
+        content: `None of the negotiations I have described appear in a situation report. The report shows the number. It does not show the week of careful conversation about whether the number could be published without getting someone hurt, or whether engaging the only available counterpart crossed a line, or whether the map should exist at all. In stable contexts that hidden work is significant. In fragile and conflict-affected ones it is the whole job, and the visible data products are merely what is left after every dangerous edge has been negotiated away.
+
+I have come to believe that the ability to do this, to handle data responsibly where there is no recognised authority to hold it, no settled peace to protect it, and no safe assumption that being counted will help rather than harm, is among the most demanding competencies in humanitarian work. It is rarely taught, rarely credited, and almost never visible in the clean outputs it produces. But it is the difference between data that serves people in the worst places on earth and data that quietly betrays them.
+
+The numbers are still the easy part. In fragility, knowing what a number might do, to a government, to a community, to a single identifiable person, before you ever let it out, is not a technical skill at all. It is a form of responsibility you carry alone, in rooms with no good options, on behalf of people who will never see the negotiation that kept them safe. That, far more than any system or statistic, is the work.`,
+      },
+    ],
+    relatedSlugs: [
+      'disaster-data-diplomacy',
+      'politics-of-humanitarian-data-infrastructure',
+      'invisible-disasters-invisible-funding',
+    ],
+  },
+
+  'protected-into-invisibility-part-1': {
+    slug: 'protected-into-invisibility-part-1',
+    title: 'Protected Into Invisibility: Data Poverty and Fragility',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '7 min',
+    date: 'April 2026',
+    excerpt:
+      "We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data, some of it the unintended cost of our own caution, have quietly turned a promise of inclusion into a machinery of exclusion. Part 1 of 2: the trap, how it compounds, and the uncomfortable role our own protective instincts play in it.",
+    keywords: [
+      'leave no one behind', 'inclusive data', 'data minimisation',
+      'civil registration', 'CRVS', 'data responsibility', 'fragility',
+      'surveillance gap', 'data marginalisation', 'CARE Principles',
+      'displacement', 'invisible populations', 'data equity',
+    ],
+    sections: [
+      {
+        content: `*We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data, some of it the unintended cost of our own caution, have quietly turned a promise of inclusion into a machinery of exclusion. This is part one: the trap, how it compounds, and the uncomfortable role our own protective instincts play in it.*
+
+In Afghanistan, my team built a [drought severity map](/projects) to support the response to a deepening agricultural crisis. It did its job well. District by district, it showed where conditions had tipped toward famine, where harvests had failed, where the need for agricultural, nutrition, food, WASH, and health support was most acute. We could point to the worst-hit areas with real confidence. What we could not do was name a single person inside them. Behind the shaded polygons were families living through famine-like conditions, the people who were supposed to receive that agricultural, nutritional, food, water, and healthcare assistance, and there was no individual beneficiary record of who they were, where exactly they lived, or what they had already lost. The map could tell us, with authority, where the catastrophe was. It could not tell us who, by name, was caught in it. And in a system that allocates assistance against evidence, a person no record can resolve sits dangerously close to a person who does not count.
+
+That gap has stayed with me because it exposes a paradox at the centre of modern humanitarian and development work. The global community has made "[leave no one behind](https://www.data4sdgs.org/initiatives/inclusive-data-charter)" the moral spine of the 2030 Agenda. And yet leaving no one behind begins with a precondition we are still failing to meet. Everyone has to be counted. The people most at risk of being left behind are, with bitter regularity, exactly the people our data systems never saw in the first place. We built a promise of inclusion on top of an evidence base structured around exclusion, and then expressed surprise when the same people kept getting missed.`,
+      },
+      {
+        heading: 'The Scale of the Unseen',
+        content: `This is not a marginal problem affecting a few edge cases. It is foundational, and the numbers are staggering once you go looking for them.
+
+Around [800 million people](https://blogs.worldbank.org/en/digital-development/global-progress-in-identification--3-findings-from-the-latest-da) still lack any official proof of legal identity, down from over a billion a decade ago but still a population larger than most continents. More than [110 low and middle-income countries](https://oecd-development-matters.org/2019/12/06/counting-the-invisible-three-priorities-for-strengthening-statistical-capacities-in-the-sdg-era/) lack functional civil registration and vital statistics systems, the unglamorous infrastructure that records births and deaths. The poorest fifth of the global population accounts for [more than half of all unregistered births](https://oecd-development-matters.org/2019/12/06/counting-the-invisible-three-priorities-for-strengthening-statistical-capacities-in-the-sdg-era/). A child never registered at birth begins life statistically invisible, and that invisibility compounds across a lifetime: no documented identity, no claim on services, no entry in the datasets that decide where schools, clinics, and emergency relief are sent.
+
+The result is that national averages, the figures that dominate policy, routinely [mask the people furthest behind](https://www.cgdev.org/blog/leave-no-one-behind-data-disaggregation-needs-catch). Aggregate progress on poverty or school enrolment can conceal stagnation or decline for the hardest-to-reach groups, because those groups are precisely the ones underrepresented in the data that produces the average. Migrants are [largely absent from official global statistics](https://reliefweb.int/report/world/leave-no-migrant-behind-2030-agenda-and-data-disaggregation). Stateless populations are, almost by definition, erased from the records of the states that deny them. The people we most need to see are the people our instruments are worst at seeing.`,
+      },
+      {
+        heading: 'How the Trap Compounds',
+        content: `What makes this so hard to escape is that it is not a single gap. It is a feedback loop that deepens with every turn, and I have watched it turn.
+
+It starts with absence. A community is not registered, not surveyed, not connected to the systems that generate data, whether because it is remote, poor, displaced, marginalised, or some compounding combination of all four. Because it is absent from the data, it is absent from planning. Services are not sited there, programmes are not designed for it, funding formulas pass it over, because the evidence that would justify investment does not exist. Because investment passes it over, the community grows more marginalised, more remote from the formal systems, and therefore even harder to count next time. Each cycle, the gap widens. The under-counted become the under-served become the more-invisible. Decades of this produce communities that have been failed so consistently they have effectively dropped out of the official picture of their own countries.
+
+Fragility accelerates every stage of this loop. In conflict-affected and fragile contexts, the registration systems are broken or were never built, collection is dangerous and partial, populations move and scatter, and whole groups may be deliberately excluded from official statistics by authorities with an interest in their invisibility. I have written before about how the hardest places to operate end up with the [thinnest, least trusted data](/blog/politics-of-humanitarian-data-infrastructure), and this is the development-scale version of that same injustice. The places with the deepest, most entrenched need are the places where the evidence of that need is weakest, and the global architecture, which allocates attention and resources against evidence, reads weak evidence as weak need. It is the same dynamic I traced in disaster finance in [Invisible Disasters, Invisible Funding](/blog/invisible-disasters-invisible-funding): missing data is treated as missing problem. In fragile contexts, it is usually the opposite.`,
+      },
+      {
+        heading: "The Part We Don't Like to Admit",
+        content: `Here is the uncomfortable turn, and the reason I wanted to write this rather than another tidy lament about capacity gaps. Some of this invisibility is the unintended consequence of our own caution.
+
+The humanitarian and development sectors have spent the last decade, rightly, building a serious ethic of [data responsibility](https://interagencystandingcommittee.org/operational-response/iasc-operational-guidance-data-responsibility-humanitarian-action): do no harm, minimise what you collect, protect what you hold, never let a dataset become a weapon against the people it describes. I believe in all of it. I have made the protective call myself, choosing to collect less in dangerous contexts precisely because data you do not hold cannot be stolen or coerced from you. That instinct has prevented real harm, and I would defend it again tomorrow.
+
+But every protective choice has a shadow, and we have been slow to look at it honestly. Data minimised is also data missing. Granularity withheld to protect a vulnerable group is also granularity unavailable to advocate for that group, to fund services for it, to prove it was left behind. There is a growing body of work on what scholars have called the [surveillance gap, the harms of extreme privacy and data marginalisation](https://socialchangenyu.com/review/the-surveillance-gap-the-harms-of-extreme-privacy-and-data-marginalization/), and it names something practitioners feel but rarely say. That being unseen is not safety. For the already-marginalised, absence from the data is frequently just another form of exclusion, this one with our fingerprints on it. It is the same pattern I have described in [voice infrastructure inequality](/blog/voice-infrastructure-inequality), where the populations our technologies serve worst are the ones already furthest from the table. We worried, correctly, about the harm of being counted in the wrong way. We attended far less to the harm of not being counted at all.
+
+This is sharpened by the fact that much of our data-protection apparatus was designed in and for the global North, around individual privacy in high-capacity, rights-protecting states. Applied bluntly to populations whose problem is not over-surveillance but non-existence in the record, those frameworks can push the most vulnerable further into the dark. A privacy regime that makes it harder to count an undocumented migrant, a displaced minority, or an informal settlement does not always protect those people. Sometimes it simply guarantees they will remain unfunded and unreached, protected into invisibility. The road to that outcome is genuinely paved with good intentions, which is exactly what makes it so hard to challenge.`,
+      },
+      {
+        heading: 'Where This Leaves Us',
+        content: `So we are left with a hard picture. The people we have pledged hardest to reach are the people our systems are structured to miss; fragility deepens the gap at every turn; and some of the missing data is the unintended price of protective choices we made for genuinely good reasons and never went back to weigh. Naming that is not an argument for abandoning data responsibility. It is an argument for finishing it, for completing a half-built ethic that learned how to protect people from the harm of being counted badly but never learned to protect them from the harm of not being counted at all.
+
+That is the problem. I do not think the answer is to swing back toward collecting everything about everyone, and I am wary of anyone who frames this as a simple choice between visibility and protection. There is a better path, one that treats representation as a right while keeping people safe, and it has a name. I propose data equity as the way to address these unintended consequences of data protection, and that is the subject of [part two](/blog/data-poverty-fragility-data-equity-part-2). What data equity actually means, why it is not the opposite of data protection, and what pushing for it looks like in practice.
+
+What gets counted gets funded. What gets missed stays vulnerable. In part one I have tried to show how the missing got missed. In part two, I want to argue we can do something about it.`,
+      },
+    ],
+    relatedSlugs: [
+      'data-poverty-fragility-data-equity-part-2',
+      'invisible-disasters-invisible-funding',
+      'voice-infrastructure-inequality',
+    ],
+  },
+
+  'data-poverty-fragility-data-equity-part-2': {
+    slug: 'data-poverty-fragility-data-equity-part-2',
+    title: 'From Data Poverty and Fragility to the Long Road to Data Equity',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '7 min',
+    date: 'May 2026',
+    excerpt:
+      "Data equity is not the opposite of data protection. It is the harder, more relational work that lets people be both seen and safe, on their own terms. Part 2 of 2, on what pushing for it actually requires.",
+    keywords: [
+      'data equity', 'CARE Principles', 'Inclusive Data Charter',
+      'Indigenous data governance', 'data sovereignty', 'representation',
+      'civil registration', 'data responsibility', 'leave no one behind',
+      'data minimisation', 'inclusive statistics', 'fragility',
+    ],
+    sections: [
+      {
+        content: `*In part one I argued that the people we pledge hardest to reach are the ones our data systems are built to miss, and that some of that invisibility is the unintended cost of our own protective caution. This is the answer I promised: data equity, why it is not the opposite of data protection, and what pushing for it actually requires.*
+
+In [part one](/blog/protected-into-invisibility-part-1), I described a [drought severity map](/projects) my team built in Afghanistan that could show, district by district, where famine-like conditions and the need for agricultural, nutrition, food, WASH, and health assistance were most acute, but could not name a single one of the people inside those locations who were meant to receive it. I used that gap to trace a wider trap. A compounding cycle in which the under-counted become the under-served become the more-invisible, accelerated by fragility, and deepened, uncomfortably, by the very data-protection instincts we adopted to keep people safe. I closed by proposing data equity as the way to address those unintended consequences. This is what I meant.`,
+      },
+      {
+        heading: 'Data Equity Is Not the Opposite of Data Protection',
+        content: `So is there a balance? I think there is, but only if we stop framing this as a straight trade-off between visibility and protection, because that framing is the trap. The choice is not "expose people" versus "protect people into oblivion." The choice is whether we are willing to do the harder, more relational work that lets people be both seen and safe. That work has a name now, and it is data equity.
+
+Data equity starts from a different premise than data minimisation. It treats representation as a right, not a risk to be managed downward. The [Inclusive Data Charter](https://www.data4sdgs.org/initiatives/inclusive-data-charter) frames it well. The goal is data that is genuinely representative of those usually marginalised, collected for all people regardless of location, ethnicity, gender, age, disability, or status. The point is not to collect more for its own sake, and certainly not to surveil. It is to deliberately close the representation gap that decades of passive and active exclusion have produced, and to do so on terms the represented communities actually control.
+
+That last clause is where the balance lives. The reason granularity feels dangerous is that, historically, it has been extracted from communities and used on them, without their consent or benefit. The answer to that is not less data about the marginalised. It is a different relationship to it. This is precisely what the [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/care), Collective benefit, Authority to control, Responsibility, and Ethics, were built to articulate. That the people in the data should hold meaningful authority over how it is collected, governed, and used. Pair CARE-style governance with the technical discipline of data responsibility and you get something better than minimisation. You get data that is granular enough to make people visible to the systems that serve them, and governed tightly enough that the visibility does not become exposure. Seen and safe, on their own terms, rather than absent and abandoned in the name of protection.`,
+      },
+      {
+        heading: 'What Pushing for Data Equity Actually Looks Like',
+        content: `I am wary of essays that diagnose a deep structural problem and then resolve it with three bullet points, so let me be honest about scale. Nothing here is quick, and some of it runs against the grain of how the sector is funded. But the direction is clear, and it is actionable.
+
+It means treating the foundational systems, civil registration, legal identity, inclusive national statistics, as core development infrastructure deserving sustained investment, not as technical afterthoughts. A child registered at birth is a child the system can never again pretend not to see. It means building data systems designed for the conditions that actually prevail in fragile and marginalised contexts, contested authority, insecure collection, low trust, rather than systems that assume the stable conditions of the places that designed them. It means funding disaggregation deliberately, because the groups who are left behind are invisible in any aggregate, and an average will never reveal them. It means shifting governance toward the communities in the data, so that being counted becomes something done with people rather than to them, which is also, not coincidentally, what makes granularity safe enough to be worth having, and which echoes the case I made in [The Voices Our Data Systems Were Built to Silence](/blog/the-voices-our-data-systems-silence) and in [building systems governments can own](/blog/building-systems-governments-can-own). And it means the institutions that allocate global resources learning to read missing data as a warning sign rather than an all-clear, because in the places that matter most, the silence in the dataset is the loudest signal there is.
+
+None of this dissolves the tension I sat inside throughout part one. Protection and visibility will always pull against each other, and the balance is genuinely hard to strike, especially when there are real people in front of you. But the current equilibrium is not neutral. It tilts, decade after decade, toward the invisibility of the already-excluded, and it does so partly through choices we made for good reasons and never revisited. Data equity is the attempt to retune that balance deliberately, with the people most affected holding the dial, rather than letting it settle by default in the place that leaves them out.`,
+      },
+      {
+        heading: 'The Promise We Can Still Keep',
+        content: `I still think about the families behind that severity map, the ones the data could place inside a shaded district but never name. We have spent years promising people like them that no one will be left behind. The quiet, difficult truth is that the promise cannot be kept by goodwill or funding alone. It can only be kept if we are willing to see people, carefully, accountably, and with their consent, because a person no system can see is a person every system will eventually fail.
+
+Data equity is not a software feature or a single reform. It is a decision to finish the ethic we started. To keep everything we learned about protecting people from the harm of being counted badly, and add to it an equal commitment to protecting them from the harm of not being counted at all. Leaving no one behind was always, underneath the slogan, a data problem. It is long past time we treated it like one.
+
+And here is the revelation in that, the part I wish we said aloud more often. The barrier was never our compassion. We have never lacked the will to include people. We have lacked the means to see them. "Leave no one behind" asks us to carry everyone forward while staying quiet on the humbler act everything else depends on, which is seeing them in the first place. To be counted, carefully and on your own terms, is the first form of being valued by a system. It is the moment a person stops being an abstraction and becomes someone a clinic, a cash transfer, or a convoy can actually be sent toward. So the promise is not waiting on a greater conscience or a larger cheque. It is waiting on a choice we are fully able to make. To build the systems that let the unseen become visible, safely, and to treat that visibility as the foundation of the dignity we keep pledging. The people we have promised not to leave behind are not lost. They are uncounted. And what is uncounted can still be counted safely, and with dignity, the moment we decide it must be.`,
+      },
+    ],
+    relatedSlugs: [
+      'protected-into-invisibility-part-1',
+      'the-voices-our-data-systems-silence',
+      'building-systems-governments-can-own',
+    ],
+  },
 }
 
 export function generateStaticParams() {
