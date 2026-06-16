@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
-import Image from 'next/image'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 /**
@@ -144,27 +143,12 @@ const skills = {
 export default function CredentialsPage() {
   return (
     <div className="pt-24 pb-16">
-      {/* Header — paired with portrait to humanise the formal credentials wall */}
+      {/* Header */}
       <section className="max-w-4xl mx-auto px-6 mb-16">
-        <div className="flex flex-col-reverse md:flex-row md:items-center gap-8 md:gap-12">
-          <div className="flex-1">
-            <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Credentials</p>
-            <h1 className="font-serif text-4xl md:text-5xl text-coffee mb-6 leading-tight">
-              Education, Skills &amp; Affiliations
-            </h1>
-          </div>
-          <div className="flex-shrink-0 self-start md:self-center">
-            <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full ring-4 ring-dusty-orange/25 shadow-lg overflow-hidden">
-              <Image
-                src="/images/alex-nwoko-casual.jpg"
-                alt="Alex Nwoko"
-                fill
-                sizes="(max-width: 640px) 144px, 176px"
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
+        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Credentials</p>
+        <h1 className="font-serif text-4xl md:text-5xl text-coffee mb-6 leading-tight">
+          Education, Skills &amp; Affiliations
+        </h1>
       </section>
 
       {/* Education */}
