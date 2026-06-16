@@ -77,11 +77,11 @@ const pillarColors: Record<string, string> = {
 export default function AboutPage() {
   return (
     <div className="pt-24 pb-16">
-      {/* Meet the Architect — Vendoh-style intro card paired with long-form narrative */}
+      {/* Meet Alex Nwoko — intro card paired with long-form narrative */}
       <section className="max-w-6xl mx-auto px-6 mb-12 text-center">
-        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Meet the Architect</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Meet Alex Nwoko</p>
         <h1 className="font-serif text-4xl md:text-5xl text-coffee leading-tight">
-          A decade of building the systems behind humanitarian response
+          A decade of building the systems behind disaster risk &amp; humanitarian response
         </h1>
       </section>
 
@@ -90,11 +90,11 @@ export default function AboutPage() {
           {/* Left — dark profile card */}
           <aside className="md:col-span-5">
             <div className="bg-coffee text-white rounded-3xl p-8 text-center md:sticky md:top-28">
-              {/* Portrait */}
+              {/* Portrait — professional headshot (white shirt) */}
               <div className="relative w-36 h-36 sm:w-44 sm:h-44 mx-auto mb-6 rounded-full ring-4 ring-white/15 overflow-hidden">
                 <Image
-                  src="/images/alex-nwoko-casual.jpg"
-                  alt="Alex Nwoko"
+                  src="/images/alex-nwoko-headshot.jpg"
+                  alt="Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect"
                   fill
                   sizes="(max-width: 640px) 144px, 176px"
                   className="object-cover"
