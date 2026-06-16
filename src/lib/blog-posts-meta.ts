@@ -139,7 +139,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'cop31-data-making-the-case',
-    title: 'COP31 and Data: A View From the Field',
+    title: 'COP31 and Data: Making the Case From the Field',
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -150,7 +150,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'disaster-data-diplomacy',
-    title: 'Disaster and Humanitarian Data Diplomacy: The Quiet Work Behind the Numbers',
+    title: 'Disaster and Humanitarian Data Diplomacy: Negotiating the Numbers Behind Communities in Need',
     category: 'Opinion / Cornerstone',
     pillar: 'Data Analytics & IM',
     pillarColor: '#1565C0',
@@ -414,7 +414,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'protected-into-invisibility-part-1',
-    title: 'Counted with Care: Rethinking Data Poverty in Fragile Contexts',
+    title: 'Protected Into Invisibility: Data Poverty and Fragility',
     category: 'Opinion / Cornerstone',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
@@ -425,7 +425,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'data-poverty-fragility-data-equity-part-2',
-    title: 'From Data Poverty to Data Equity: A Way Forward',
+    title: 'From Data Poverty and Fragility to the Long Road to Data Equity',
     category: 'Opinion / Cornerstone',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
