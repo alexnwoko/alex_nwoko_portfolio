@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
@@ -151,6 +152,19 @@ export default function Home() {
         }} />
 
         <div className="relative max-w-4xl mx-auto px-6 text-center pt-20">
+          {/* Professional headshot — primary identifier above the fold */}
+          <div className="flex justify-center mb-8 animate-fade-in-up">
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full ring-4 ring-dusty-orange/25 shadow-xl overflow-hidden">
+              <Image
+                src="/images/alex-nwoko-headshot.jpg"
+                alt="Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect"
+                fill
+                sizes="(max-width: 640px) 112px, 128px"
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
           <div className="flex items-center justify-center gap-2 mb-6 animate-fade-in-up">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             <span className="text-xs text-green-700 font-medium">Open to Opportunities</span>
