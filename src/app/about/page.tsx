@@ -119,8 +119,11 @@ export default function AboutPage() {
                   'Disaster Risk',
                   'Geospatial Intelligence',
                   'Information Management',
+                  'Data & Evidence Generation',
                   'Climate Analytics',
                   'Cash Programming',
+                  'Emergency Coordination',
+                  'Project Management',
                 ].map((skill) => (
                   <span
                     key={skill}

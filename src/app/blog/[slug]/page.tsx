@@ -652,7 +652,7 @@ After a decade of building platforms that run on forms, and working within the l
 
   'africa-will-define-voice-ai': {
     slug: 'africa-will-define-voice-ai',
-    title: 'Africa Will Define How the World Uses Voice AI',
+    title: 'Africa Will Define How Africa Uses Voice AI',
     category: 'Opinion / Founder Reflection',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',

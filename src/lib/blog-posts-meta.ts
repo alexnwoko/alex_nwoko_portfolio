@@ -83,6 +83,94 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
+    slug: 'road-to-antalya-ncqg',
+    title: 'The Road to Antalya: Can the NCQG Survive Contact With the Real World?',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '9 min',
+    excerpt:
+      "A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test — and the credibility of USD 300 billion a year will be decided not by negotiators but by the boring, technical, deeply political business of measurement.",
+    published: true,
+  },
+  {
+    slug: 'loss-and-damage-fund-make-or-break-year',
+    title: "From Pledge to Payout: The Loss and Damage Fund's Make-or-Break Year",
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    excerpt:
+      "A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real. With the first call for funding requests now open, the year between Belém and Antalya is when the Fund either delivers — or doesn't.",
+    published: true,
+  },
+  {
+    slug: 'delta-grade-data-currency-of-climate-finance',
+    title: 'DELTA-Grade or Left Behind: Why Disaster Data Is the Hard Currency of COP31',
+    category: 'Technical Deep Dive / Opinion',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    excerpt:
+      "Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere — because data sovereignty has become climate sovereignty.",
+    published: true,
+  },
+  {
+    slug: 'from-early-warning-to-early-money',
+    title: 'From Early Warning to Early Money: Anticipatory Action on the Road to COP31',
+    category: 'Technical Deep Dive / Opinion',
+    pillar: 'Climate & Cash',
+    pillarColor: '#8B3A2F',
+    readTime: '9 min',
+    excerpt:
+      "We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive — and whether the trigger fires for the communities the forecast keeps missing. Anticipatory action is only as equitable as the data its triggers are built on.",
+    published: true,
+  },
+  {
+    slug: 'belem-adaptation-indicators-data-test',
+    title: 'Measuring What Survives: The Belém Adaptation Indicators and the Data Test COP31 Must Pass',
+    category: 'Technical Deep Dive / Opinion',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '9 min',
+    excerpt:
+      "COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers — or the indicators become one more standard the vulnerable are judged against and cannot meet.",
+    published: true,
+  },
+  {
+    slug: 'cop31-data-making-the-case',
+    title: 'COP31 and Data: Making the Case From the Field',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    excerpt:
+      "The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down — and why data is now the gatekeeper of climate justice.",
+    published: true,
+  },
+  {
+    slug: 'disaster-data-diplomacy',
+    title: 'Disaster and Humanitarian Data Diplomacy: Negotiating the Numbers Behind Communities in Need',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Data Analytics & IM',
+    pillarColor: '#1565C0',
+    readTime: '10 min',
+    excerpt:
+      "In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean — to the host government, to affected communities, to a watching world — is often the harder, and more consequential, work.",
+    published: true,
+  },
+  {
+    slug: 'disaster-data-diplomacy-in-fragility',
+    title: 'When the Data Has Nowhere Safe to Land: Disaster Data Diplomacy in Fragile and Conflict Contexts',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Data Analytics & IM',
+    pillarColor: '#1565C0',
+    readTime: '11 min',
+    excerpt:
+      "In a stable country, negotiating disaster data is hard. In a fragile one — where the government may be unrecognised, the conflict still live, and the population itself a contested fact — the same negotiation can decide who is reached, who is exposed, and who is simply erased.",
+    published: true,
+  },
+  {
     slug: 'the-72-hour-problem',
     title: 'The 72-Hour Post Disaster Problem',
     category: 'Field Reflection',
@@ -282,7 +370,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'africa-will-define-voice-ai',
-    title: 'Africa Will Define How the World Uses Voice AI',
+    title: 'Africa Will Define How Africa Uses Voice AI',
     category: 'Opinion / Founder Reflection',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
@@ -322,6 +410,28 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '8 min',
     excerpt:
       'Multiple countries. Seven data platforms. A decade of work. Six principles emerged across all of them — and none are about technology.',
+    published: true,
+  },
+  {
+    slug: 'protected-into-invisibility-part-1',
+    title: 'Protected Into Invisibility: Data Poverty and Fragility',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '7 min',
+    excerpt:
+      "We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data — some of it the unintended cost of our own protective caution — have quietly turned a promise of inclusion into a machinery of exclusion. Part 1 of 2.",
+    published: true,
+  },
+  {
+    slug: 'data-poverty-fragility-data-equity-part-2',
+    title: 'From Data Poverty and Fragility to the Long Road to Data Equity',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Cross-cutting',
+    pillarColor: '#C4703F',
+    readTime: '7 min',
+    excerpt:
+      "Data equity is not the opposite of data protection. It is the harder, more relational work that lets people be both seen and safe — on their own terms. Part 2 of 2, on what pushing for it actually requires.",
     published: true,
   },
 ]
