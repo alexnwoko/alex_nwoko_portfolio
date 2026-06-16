@@ -84,7 +84,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'road-to-antalya-ncqg',
-    title: 'The Road to Antalya: Can the NCQG Survive Contact With the Real World?',
+    title: 'The Road to Antalya: Turning the NCQG Into Real-World Climate Finance',
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -95,7 +95,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'loss-and-damage-fund-make-or-break-year',
-    title: "From Pledge to Payout: The Loss and Damage Fund's Make-or-Break Year",
+    title: "From Pledge to Payout: A Defining Year for the Loss and Damage Fund",
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -106,7 +106,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'delta-grade-data-currency-of-climate-finance',
-    title: 'DELTA-Grade or Left Behind: Why Disaster Data Is the Hard Currency of COP31',
+    title: 'DELTA-Grade Data: The Emerging Currency of Climate Finance on the Road to COP31',
     category: 'Technical Deep Dive / Opinion',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -117,7 +117,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'from-early-warning-to-early-money',
-    title: 'From Early Warning to Early Money: Anticipatory Action on the Road to COP31',
+    title: 'From Early Warning to Early Action: Why Anticipatory Finance Belongs at the Heart of COP31',
     category: 'Technical Deep Dive / Opinion',
     pillar: 'Climate & Cash',
     pillarColor: '#8B3A2F',
@@ -128,7 +128,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'belem-adaptation-indicators-data-test',
-    title: 'Measuring What Survives: The Belém Adaptation Indicators and the Data Test COP31 Must Pass',
+    title: 'Measuring What Works: Helping the Belém Adaptation Indicators Live Up to Their Promise',
     category: 'Technical Deep Dive / Opinion',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -139,7 +139,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'cop31-data-making-the-case',
-    title: 'COP31 and Data: Making the Case From the Field',
+    title: 'COP31 and Data: A View From the Field',
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -150,7 +150,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'disaster-data-diplomacy',
-    title: 'Disaster and Humanitarian Data Diplomacy: Negotiating the Numbers Behind Communities in Need',
+    title: 'Disaster and Humanitarian Data Diplomacy: The Quiet Work Behind the Numbers',
     category: 'Opinion / Cornerstone',
     pillar: 'Data Analytics & IM',
     pillarColor: '#1565C0',
@@ -161,7 +161,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'disaster-data-diplomacy-in-fragility',
-    title: 'When the Data Has Nowhere Safe to Land: Disaster Data Diplomacy in Fragile and Conflict Contexts',
+    title: 'Holding Data Carefully: Disaster Data Diplomacy in Fragile and Conflict Contexts',
     category: 'Opinion / Cornerstone',
     pillar: 'Data Analytics & IM',
     pillarColor: '#1565C0',
@@ -414,7 +414,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'protected-into-invisibility-part-1',
-    title: 'Protected Into Invisibility: Data Poverty and Fragility',
+    title: 'Counted with Care: Rethinking Data Poverty in Fragile Contexts',
     category: 'Opinion / Cornerstone',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
@@ -425,7 +425,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'data-poverty-fragility-data-equity-part-2',
-    title: 'From Data Poverty and Fragility to the Long Road to Data Equity',
+    title: 'From Data Poverty to Data Equity: A Way Forward',
     category: 'Opinion / Cornerstone',
     pillar: 'Cross-cutting',
     pillarColor: '#C4703F',
