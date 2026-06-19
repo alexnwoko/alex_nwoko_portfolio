@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import { TOPICS } from '@/lib/topics'
 
 export default function Footer() {
   return (
     <footer className="bg-coffee text-beige-200 py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
             <h3 className="font-serif text-2xl text-white mb-4">Alex Nwoko</h3>
@@ -33,6 +34,26 @@ export default function Footer() {
                   className="text-sm text-beige-300 hover:text-white transition-colors"
                 >
                   {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Topics */}
+          <div>
+            <h4 className="text-xs uppercase tracking-widest text-dusty-orange mb-4 font-semibold">
+              <Link href="/topics" className="hover:text-white transition-colors">
+                Topics
+              </Link>
+            </h4>
+            <div className="flex flex-col gap-2">
+              {TOPICS.map((t) => (
+                <Link
+                  key={t.slug}
+                  href={`/topics/${t.slug}`}
+                  className="text-sm text-beige-300 hover:text-white transition-colors"
+                >
+                  {t.shortLabel}
                 </Link>
               ))}
             </div>

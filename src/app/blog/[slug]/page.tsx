@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 import ShareButtons from '@/components/ShareButtons'
+import { getTopicsForPost } from '@/lib/topics'
 
 interface BlogSection {
   heading?: string
@@ -3374,9 +3375,38 @@ export default async function BlogPostPage({
 
   const wordCount = articleBody.split(/\s+/).filter(Boolean).length
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
+  // Topic clusters this post belongs to — used for stronger semantic linkage
+  // in the BlogPosting schema and to drive the BreadcrumbList that points
+  // back at the primary topic hub (if any).
+  const postTopics = getTopicsForPost(post.slug)
+  const primaryTopic = postTopics[0]
+
+  // BlogPosting + BreadcrumbList emitted together in a JSON-LD @graph so a
+  // single <script> tag carries both. Article-level signals (headline,
+  // body, keywords, image, author, publisher) sit alongside breadcrumb
+  // navigation for richer crawler context.
+  const breadcrumbItems = [
+    { '@type': 'ListItem' as const, position: 1, name: 'Home', item: 'https://alexnwoko.com' },
+    { '@type': 'ListItem' as const, position: 2, name: 'Blog', item: 'https://alexnwoko.com/blog' },
+    ...(primaryTopic
+      ? [{
+          '@type': 'ListItem' as const,
+          position: 3,
+          name: primaryTopic.shortLabel,
+          item: `https://alexnwoko.com/topics/${primaryTopic.slug}`,
+        }]
+      : []),
+    {
+      '@type': 'ListItem' as const,
+      position: primaryTopic ? 4 : 3,
+      name: post.title,
+      item: url,
+    },
+  ]
+
+  const blogPostingNode = {
     '@type': 'BlogPosting',
+    '@id': `${url}#article`,
     headline: post.title,
     description: post.excerpt,
     articleBody,
@@ -3387,6 +3417,14 @@ export default async function BlogPostPage({
     articleSection: post.pillar,
     inLanguage: 'en',
     url,
+    isPartOf: { '@id': 'https://alexnwoko.com/#website' },
+    about: postTopics.length
+      ? postTopics.map((t) => ({
+          '@type': 'Thing',
+          name: t.shortLabel,
+          url: `https://alexnwoko.com/topics/${t.slug}`,
+        }))
+      : undefined,
     image: {
       '@type': 'ImageObject',
       url: ogImageUrl,
@@ -3399,6 +3437,7 @@ export default async function BlogPostPage({
     },
     author: {
       '@type': 'Person',
+      '@id': 'https://alexnwoko.com/#person',
       name: 'Alex Nwoko',
       url: 'https://alexnwoko.com',
       jobTitle: 'Disaster Risk and Humanitarian Data Systems Architect',
@@ -3409,9 +3448,21 @@ export default async function BlogPostPage({
     },
     publisher: {
       '@type': 'Person',
+      '@id': 'https://alexnwoko.com/#person',
       name: 'Alex Nwoko',
       url: 'https://alexnwoko.com',
     },
+  }
+
+  const breadcrumbNode = {
+    '@type': 'BreadcrumbList',
+    '@id': `${url}#breadcrumb`,
+    itemListElement: breadcrumbItems,
+  }
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [blogPostingNode, breadcrumbNode],
   }
 
   // Replace `</` with `<\/` to prevent any chance of breaking out of the
@@ -3481,6 +3532,28 @@ export default async function BlogPostPage({
           ))}
         </div>
       </div>
+
+      {/* Topic chips — link to the topic hubs this post belongs to.
+          Strong internal-link signal for SEO; also gives readers an
+          orientation into the rest of the corpus. */}
+      {postTopics.length > 0 && (
+        <div className="max-w-3xl mx-auto px-6 mb-10">
+          <p className="text-xs uppercase tracking-widest text-coffee-muted font-semibold mb-3">
+            Topics
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {postTopics.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/topics/${t.slug}`}
+                className="text-xs font-medium px-3 py-1.5 rounded-full border border-beige-300 bg-beige-100 text-coffee hover:bg-dusty-orange hover:text-white hover:border-dusty-orange transition-colors"
+              >
+                {t.shortLabel}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Share buttons — sit just below the article body and above Continue Reading */}
       <div className="max-w-3xl mx-auto px-6 mb-16">
