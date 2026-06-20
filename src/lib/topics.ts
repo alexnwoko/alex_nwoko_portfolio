@@ -164,27 +164,30 @@ export const TOPICS: Topic[] = [
   },
   {
     slug: 'early-warning',
-    title: 'Early Warning and Anticipatory Action: Turning Forecasts into Money in Motion',
+    title: 'Early Warning and Anticipatory Action: Reaching the Vulnerable Before the Hazard Does',
     shortLabel: 'Early Warning',
     tagline:
-      'Essays on Early Warnings for All, anticipatory action, impact-based forecasting, the 72-hour problem, and the data backbone that has to exist for a trigger to actually fire.',
+      'Essays on Early Warnings for All, anticipatory action, impact-based forecasting, the 72-hour problem, and what has to exist for a forecast to become help that reaches the people most exposed in time.',
     metaDescription:
-      'How early warning systems become early action: anticipatory finance, impact-based forecasting, DELTA Resilience triggers, and the 72-hour post-disaster information gap.',
+      'How early warnings become protection that reaches vulnerable people in time: anticipatory action, impact-based forecasting, targeting, DELTA Resilience triggers, and the 72-hour information gap.',
     keywords: [
       'early warning systems',
       'Early Warnings for All',
       'anticipatory action',
+      'anticipatory assistance',
       'anticipatory finance',
       'impact-based forecasting',
       'anticipatory cash',
       'forecast-based financing',
+      'targeting vulnerable populations',
+      'last mile early warning',
       '72-hour rule',
       'DELTA Resilience',
       'humanitarian forecasting',
     ],
     intro: [
-      'A forecast is only an investment when the money attached to it can move before the hazard arrives. That is the gap the Early Warnings for All initiative is trying to close, and it is where most of the operational work I have done over the last few years sits: building the impact data behind triggers, the disbursement protocols behind anticipatory cash, and the post-event information systems that try to make the first 72 hours less of a black hole.',
-      'These posts gather what I have learned about why early warning so often fails to become early action, and what the next generation of systems has to look like to change that.',
+      'A forecast is only as useful as the protection it sets in motion before the hazard arrives. Whether that protection is anticipatory cash, food, water, evacuation support, or shelter, the test is the same: did it reach the people most exposed, in time, and on terms they could use? That is the gap the Early Warnings for All initiative is trying to close, and it is where most of the operational work I have done over the last few years sits: building the impact data behind triggers, the targeting systems that decide who is reached, and the post-event information systems that try to make the first 72 hours less of a black hole.',
+      'These posts gather what I have learned about why early warning so often fails to become early action for the people who need it most, and what the next generation of systems has to look like to change that.',
     ],
     postSlugs: [
       'delta-resilience-early-warning-anticipatory-action',
