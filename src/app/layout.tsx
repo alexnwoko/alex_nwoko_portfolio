@@ -3,6 +3,7 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Analytics from '@/components/Analytics'
+import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://alexnwoko.com'),
@@ -126,8 +127,6 @@ const SITE_JSON_LD = {
   ],
 }
 
-const SITE_JSON_LD_STRING = JSON.stringify(SITE_JSON_LD).replace(/<\//g, '<\\/')
-
 export default function RootLayout({
   children,
 }: {
@@ -136,13 +135,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: SITE_JSON_LD_STRING }}
-        />
+        {/* Favicon / icon links are auto-emitted by Next.js from the
+            convention files at src/app/{favicon.ico,icon.svg,apple-icon.png}.
+            No manual <link> tags needed. */}
+        <JsonLd data={SITE_JSON_LD} />
       </head>
       <body className="bg-beige-100 text-coffee-light antialiased">
         <Navigation />
