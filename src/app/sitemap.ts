@@ -112,6 +112,7 @@ const TOPIC_SLUGS: string[] = [
   'disaster-risk-data',
   'early-warning',
   'humanitarian-data',
+  'cash-programming',
   'information-management',
 ]
 

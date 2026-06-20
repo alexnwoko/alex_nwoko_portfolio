@@ -277,6 +277,73 @@ export const TOPICS: Topic[] = [
     ],
   },
   {
+    slug: 'cash-programming',
+    title: 'Humanitarian Cash Transfer Programming: Data, Monitoring, and the Joint Response Underneath',
+    shortLabel: 'Cash Programming',
+    tagline:
+      'Essays on cash transfer information systems, multipurpose cash, joint cash programming at country level, agentic cash operations, and inter-agency post-distribution monitoring meta-analysis.',
+    metaDescription:
+      'Humanitarian cash transfer programming from the data side: cash information systems, multipurpose cash (MPCA), joint cash design, agentic CTP, and inter-agency PDM meta-analysis.',
+    keywords: [
+      'humanitarian cash transfer programming',
+      'CTP',
+      'cash transfer monitoring',
+      'multipurpose cash assistance',
+      'MPCA',
+      'inter-agency PDM',
+      'post-distribution monitoring',
+      'joint cash transfer programming',
+      'cash working group',
+      'agentic cash programming',
+      'anticipatory cash',
+      'cash transfer information systems',
+      'CALP Network',
+      'Minimum Expenditure Basket',
+      'CashCap',
+    ],
+    intro: [
+      'Cash has become the closest thing humanitarian assistance has to a default. The scale has outrun the systems we use to coordinate, measure, and improve it. Most countries now run parallel cash programmes across five or six agencies whose data was never designed to combine, and the system-level question (is our collective cash response actually working?) too often goes unanswered.',
+      'This topic gathers the essays I have written on the data architecture behind that work: monitoring cash at scale, doing inter-agency post-distribution monitoring meta-analysis so the collective response becomes evaluable, and the agentic transition that is starting to change what a cash team actually spends its week on.',
+      'It is also where some of my upcoming writing will go: on agentic cash transfer programming, multipurpose cash, and joint cash design at country level. Consider it a living hub.',
+    ],
+    postSlugs: [
+      'measuring-joint-response-for-cash-transfer',
+      'the-case-for-anticipatory-cash',
+    ],
+    faqs: [
+      {
+        question: 'What is humanitarian cash transfer programming?',
+        answer:
+          'Humanitarian cash transfer programming (CTP) is the delivery of cash or vouchers to crisis-affected households as a form of assistance, allowing recipients to meet their own priority needs rather than receiving in-kind goods. Over the last decade it has grown from a niche modality to one of the most-evaluated and highest-impact forms of humanitarian aid, now accounting for around a fifth of total international humanitarian spending.',
+      },
+      {
+        question: 'What is multipurpose cash assistance (MPCA)?',
+        answer:
+          'MPCA is a single, unrestricted cash transfer calibrated to the local Minimum Expenditure Basket (MEB) and designed to cover multiple basic needs (food, shelter, water, health, education) in one payment. It replaces sector-by-sector parallel transfers with one consolidated household-level grant, reducing duplication, lowering operational cost, and giving recipients full agency over how the money is spent.',
+      },
+      {
+        question: 'What is inter-agency post-distribution monitoring meta-analysis?',
+        answer:
+          'It is a method for measuring the collective performance of a country\'s cash response when multiple organisations are running parallel programmes with different tools, transfer values, and reporting cycles. The meta-analysis works from the metadata up: harmonising sampling frames, instruments, and indicators across agencies so the system-level question (is our cash response working as a whole?) becomes answerable. It is the discipline behind treating cash as joint infrastructure rather than as a collection of agency projects.',
+      },
+      {
+        question: 'What is agentic cash transfer programming?',
+        answer:
+          'Agentic CTP is the use of AI agents (not just AI tools) to carry out the operational chain of a cash programme: eligibility checks against beneficiary registers, targeting against vulnerability data, payment reconciliation, automated PDM call rounds, and grievance triage. The shift mirrors the broader agentic IM transition: cash teams stop spending their week pushing data between tools and start supervising agents that do that work continuously in the background.',
+      },
+      {
+        question: 'What is joint cash transfer programming?',
+        answer:
+          'Joint cash programming is the design of a country-level cash response as one shared operation across organisations, rather than as parallel agency programmes that happen to coexist. In practice it requires a shared targeting framework, harmonised transfer values, a single PDM instrument, common payment infrastructure where possible, and a coordination mechanism (typically the Cash Working Group) with the mandate to enforce them. The joint design is what makes inter-agency PDM meta-analysis meaningful in the first place.',
+      },
+      {
+        question: 'How should humanitarian cash transfer programming be monitored?',
+        answer:
+          'Cash is monitored at two layers. At the project level, through Post-Distribution Monitoring (PDM): a household survey usually run three to four weeks after transfer that measures receipt, usage, market access, satisfaction, and unintended harm. At the system level, through inter-agency PDM meta-analysis: combining the metadata across agencies\' separate PDMs to produce a coherent picture of collective response performance. The two layers answer different questions, and a serious cash operation needs both.',
+      },
+    ],
+  },
+  {
     slug: 'information-management',
     title: 'Information Management: Coordination, Continuity, and the Politics Underneath',
     shortLabel: 'Information Management',

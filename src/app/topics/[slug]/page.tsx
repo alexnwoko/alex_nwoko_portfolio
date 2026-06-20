@@ -46,6 +46,7 @@ const PILLAR_ACCENT: Record<string, string> = {
   'disaster-risk-data': '#2E7D32',
   'early-warning': '#8B3A2F',
   'humanitarian-data': '#C4703F',
+  'cash-programming': '#8B3A2F',
   'information-management': '#1565C0',
 }
 
