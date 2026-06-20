@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Innovative Projects — Alex Nwoko',
   description:
     'Systems and platforms I am actively designing to advance humanitarian data, coordination, and efficiency — AISA, Climate Anticipation Centre, ReportCentre, ReliefCash.',
+  alternates: { canonical: 'https://alexnwoko.com/innovations' },
 }
 
 const innovations = [

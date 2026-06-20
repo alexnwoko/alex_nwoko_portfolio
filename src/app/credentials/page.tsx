@@ -41,6 +41,7 @@ function renderInstitution(text: string): ReactNode[] {
 export const metadata: Metadata = {
   title: 'Credentials — Alex Nwoko',
   description: 'Education, professional memberships, certifications, and technical skills.',
+  alternates: { canonical: 'https://alexnwoko.com/credentials' },
 }
 
 const education = [

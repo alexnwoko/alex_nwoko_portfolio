@@ -4,6 +4,7 @@ import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 export const metadata: Metadata = {
   title: 'Expertise — Alex Nwoko',
   description: 'Four pillars of humanitarian practice: Data Analytics, GIS, Climate Analytics & DRR, and Cash Transfer Programming.',
+  alternates: { canonical: 'https://alexnwoko.com/expertise' },
 }
 
 const pillars = [

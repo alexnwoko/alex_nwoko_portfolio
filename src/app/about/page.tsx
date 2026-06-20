@@ -6,6 +6,7 @@ import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 export const metadata: Metadata = {
   title: 'About — Alex Nwoko',
   description: 'A decade of building humanitarian data, geospatial, climate, and cash programming systems across six countries.',
+  alternates: { canonical: 'https://alexnwoko.com/about' },
 }
 
 const timeline = [

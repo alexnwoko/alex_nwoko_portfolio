@@ -5,6 +5,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Founder Journey — Alex Nwoko',
   description: 'From humanitarian systems architect to tech founder building platforms that digitize Africa\'s informal economies. The story of Vendoh and MAKKET.',
+  alternates: { canonical: 'https://alexnwoko.com/founder-journey' },
 }
 
 export default function FounderJourneyPage() {
