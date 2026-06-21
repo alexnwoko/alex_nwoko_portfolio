@@ -55,7 +55,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '8 min',
     excerpt:
-      "In Cox's Bazar, host communities pushed back against reforestation — not because they opposed it, but because their own climate losses to coastal erosion and cyclones were undocumented and therefore unfundable. Disaster loss data is now the evidentiary backbone of the entire climate adaptation architecture.",
+      "In Cox's Bazar, host communities pushed back against reforestation, not because they opposed it, but because their own climate losses to coastal erosion and cyclones were undocumented and therefore unfundable. Disaster loss data is now the evidentiary backbone of the entire climate adaptation architecture.",
     featured: true,
     published: true,
   },
@@ -67,7 +67,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '8 min',
     excerpt:
-      'A meteorological forecast tells you what is coming. Historical loss data tells you what it will do when it arrives. DELTA Resilience is the first national disaster data system designed to provide that missing link at scale — turning early warnings into impact-based, evidence-driven anticipatory action.',
+      'A meteorological forecast tells you what is coming. Historical loss data tells you what it will do when it arrives. DELTA Resilience is the first national disaster data system designed to provide that missing link at scale, turning early warnings into impact-based, evidence-driven anticipatory action.',
     featured: true,
     published: true,
   },
@@ -90,7 +90,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '9 min',
     excerpt:
-      "A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test — and the credibility of USD 300 billion a year will be decided not by negotiators but by the boring, technical, deeply political business of measurement.",
+      "A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test, and the credibility of USD 300 billion a year will be decided not by negotiators but by the boring, technical, deeply political business of measurement.",
     published: true,
   },
   {
@@ -101,7 +101,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '10 min',
     excerpt:
-      "A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real. With the first call for funding requests now open, the year between Belém and Antalya is when the Fund either delivers — or doesn't.",
+      "A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real. With the first call for funding requests now open, the year between Belém and Antalya is when the Fund either delivers, or doesn't.",
     published: true,
   },
   {
@@ -112,7 +112,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '10 min',
     excerpt:
-      "Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere — because data sovereignty has become climate sovereignty.",
+      "Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere, because data sovereignty has become climate sovereignty.",
     published: true,
   },
   {
@@ -123,7 +123,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#8B3A2F',
     readTime: '9 min',
     excerpt:
-      "We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive — and whether the trigger fires for the communities the forecast keeps missing. Anticipatory action is only as equitable as the data its triggers are built on.",
+      "We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive, and whether the trigger fires for the communities the forecast keeps missing. Anticipatory action is only as equitable as the data its triggers are built on.",
     published: true,
   },
   {
@@ -134,7 +134,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '9 min',
     excerpt:
-      "COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers — or the indicators become one more standard the vulnerable are judged against and cannot meet.",
+      "COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers, or the indicators become one more standard the vulnerable are judged against and cannot meet.",
     published: true,
   },
   {
@@ -145,7 +145,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '10 min',
     excerpt:
-      "The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down — and why data is now the gatekeeper of climate justice.",
+      "The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down, and why data is now the gatekeeper of climate justice.",
     published: true,
   },
   {
@@ -156,7 +156,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#1565C0',
     readTime: '10 min',
     excerpt:
-      "In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean — to the host government, to affected communities, to a watching world — is often the harder, and more consequential, work.",
+      "In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean, to the host government, to affected communities, to a watching world, is often the harder, and more consequential, work.",
     published: true,
   },
   {
@@ -167,7 +167,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#1565C0',
     readTime: '11 min',
     excerpt:
-      "In a stable country, negotiating disaster data is hard. In a fragile one — where the government may be unrecognised, the conflict still live, and the population itself a contested fact — the same negotiation can decide who is reached, who is exposed, and who is simply erased.",
+      "In a stable country, negotiating disaster data is hard. In a fragile one, where the government may be unrecognised, the conflict still live, and the population itself a contested fact, the same negotiation can decide who is reached, who is exposed, and who is simply erased.",
     published: true,
   },
   {
@@ -178,7 +178,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#009EDB',
     readTime: '7 min',
     excerpt:
-      "The first 72 hours of a sudden-onset disaster are an information black hole. Good IM isn't about perfect data — it's about being useful under imperfect conditions.",
+      "The first 72 hours of a sudden-onset disaster are an information black hole. Good IM isn't about perfect data, it's about being useful under imperfect conditions.",
     published: true,
   },
   {
@@ -194,13 +194,13 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'measuring-joint-response-for-cash-transfer',
-    title: 'Measuring Joint Response for Cash Transfer Programmes — A New Way of Using Humanitarian Meta-Data',
+    title: 'Measuring Joint Response for Cash Transfer Programmes, A New Way of Using Humanitarian Meta-Data',
     category: 'Technical Deep Dive',
     pillar: 'Cash Programming',
     pillarColor: '#8B3A2F',
     readTime: '11 min',
     excerpt:
-      "Five organisations running cash transfer programmes in the same country produce five sets of post-distribution monitoring data using five different tools. The simple question — \"is our collective cash response working?\" — becomes structurally unanswerable. Inter-agency PDM meta-analysis is how you answer it.",
+      "Five organisations running cash transfer programmes in the same country produce five sets of post-distribution monitoring data using five different tools. The simple question, \"is our collective cash response working?\", becomes structurally unanswerable. Inter-agency PDM meta-analysis is how you answer it.",
     published: true,
   },
   {
@@ -222,7 +222,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#009EDB',
     readTime: '8 min',
     excerpt:
-      "The biggest barriers to good information management in humanitarian response are not technical — they're political. Data sharing agreements and institutional distrust kill more IM initiatives than bad technology.",
+      "The biggest barriers to good information management in humanitarian response are not technical, they're political. Data sharing agreements and institutional distrust kill more IM initiatives than bad technology.",
     published: true,
   },
   {
@@ -277,7 +277,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#009EDB',
     readTime: '9 min',
     excerpt:
-      "What does a voice-native humanitarian evidence system actually look like? After building form-based platforms for a decade, here's the architecture — and why it changes everything.",
+      "What does a voice-native humanitarian evidence system actually look like? After building form-based platforms for a decade, here's the architecture, and why it changes everything.",
     published: true,
   },
   {
@@ -288,7 +288,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#1565C0',
     readTime: '10 min',
     excerpt:
-      "A flood vulnerability analysis I designed died quietly two years after I left. The hardest lesson from a decade of building these platforms isn't technical — it's institutional.",
+      "A flood vulnerability analysis I designed died quietly two years after I left. The hardest lesson from a decade of building these platforms isn't technical, it's institutional.",
     published: true,
   },
   {
@@ -299,7 +299,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#2E7D32',
     readTime: '8 min',
     excerpt:
-      'Not a software upgrade — an architectural paradigm shift from a standalone record-keeping tool to a sovereign, interoperable, AI-ready data ecosystem. Why and how the world outgrew DesInventar.',
+      'Not a software upgrade, an architectural shift from a standalone record-keeping tool to a sovereign, interoperable, AI-ready data ecosystem. Why and how the world outgrew DesInventar.',
     published: true,
   },
   {
@@ -343,7 +343,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '12 min',
     excerpt:
-      "While working abroad over the last decade, I visited Nigeria every few months. Every visit, the same struggle — finding reliable services, navigating markets blind, and watching trust deficits hold back an entire economy from going digital. Then a realisation hit me.",
+      "While working abroad over the last decade, I visited Nigeria every few months. Every visit, the same struggle, finding reliable services, navigating markets blind, and watching trust deficits hold back an entire economy from going digital. Then a realisation hit me.",
     published: true,
   },
   {
@@ -365,7 +365,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '10 min',
     excerpt:
-      "The evolution from manual Excel-based IM in Nigeria's NE crisis to AI-powered analytical platforms wasn't planned — it was driven by repeatedly hitting the limits of existing tools.",
+      "The evolution from manual Excel-based IM in Nigeria's NE crisis to AI-powered analytical platforms wasn't planned, it was driven by repeatedly hitting the limits of existing tools.",
     published: false,
   },
   {
@@ -376,7 +376,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '9 min',
     excerpt:
-      "Africa skipped landlines for mobile. Skipped bank branches for M-Pesa. Next: skipping text-based interfaces for voice-first AI. And this time, the continent won't just adopt — it will lead.",
+      "Africa skipped landlines for mobile. Skipped bank branches for M-Pesa. Next: skipping text-based interfaces for voice-first AI. And this time, the continent won't just adopt, it will lead.",
     published: true,
   },
   {
@@ -387,7 +387,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '10 min',
     excerpt:
-      'Accountability to Affected Populations has been a humanitarian commitment for over a decade. But our data collection tools — forms, checkboxes, pre-coded categories — were never designed to listen.',
+      'Accountability to Affected Populations has been a humanitarian commitment for over a decade. But our data collection tools, forms, checkboxes, pre-coded categories, were never designed to listen.',
     published: true,
   },
   {
@@ -409,7 +409,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '8 min',
     excerpt:
-      'Multiple countries. Seven data platforms. A decade of work. Six principles emerged across all of them — and none are about technology.',
+      'Multiple countries. Seven data platforms. A decade of work. Six principles emerged across all of them, and none are about technology.',
     published: true,
   },
   {
@@ -420,7 +420,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '7 min',
     excerpt:
-      "We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data — some of it the unintended cost of our own protective caution — have quietly turned a promise of inclusion into a machinery of exclusion. Part 1 of 2.",
+      "We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data, some of it the unintended cost of our own protective caution, have quietly turned a promise of inclusion into a machinery of exclusion. Part 1 of 2.",
     published: true,
   },
   {
@@ -431,7 +431,7 @@ export const POSTS_META: BlogPostMeta[] = [
     pillarColor: '#C4703F',
     readTime: '7 min',
     excerpt:
-      "Data equity is not the opposite of data protection. It is the harder, more relational work that lets people be both seen and safe — on their own terms. Part 2 of 2, on what pushing for it actually requires.",
+      "Data equity is not the opposite of data protection. It is the harder, more relational work that lets people be both seen and safe, on their own terms. Part 2 of 2, on what pushing for it actually requires.",
     published: true,
   },
 ]
