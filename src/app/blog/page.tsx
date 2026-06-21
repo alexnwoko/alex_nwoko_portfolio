@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { POSTS_META } from '@/lib/blog-posts-meta'
 
 export const metadata: Metadata = {
-  title: 'My Blog — Alex Nwoko',
+  title: 'My Blog, Alex Nwoko',
   description:
-    'Reflections, technical deep dives, and opinion pieces on disaster risk reduction, DELTA Resilience, Sendai Framework, humanitarian data systems, GIS, climate analytics, anticipatory action, and cash programming — drawn from a decade of building data infrastructure across six countries.',
+    'Reflections, technical deep dives, and opinion pieces on disaster risk reduction, DELTA Resilience, Sendai Framework, humanitarian data systems, GIS, climate analytics, anticipatory action, and cash programming, drawn from a decade of building data infrastructure across six countries.',
   keywords: [
     'disaster risk reduction blog',
     'humanitarian data blog',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://alexnwoko.com/blog' },
   openGraph: {
-    title: 'My Blog — Alex Nwoko',
+    title: 'My Blog, Alex Nwoko',
     description:
       'Reflections, technical deep dives, and opinions on DRR, humanitarian data systems, climate, and cash programming.',
     url: 'https://alexnwoko.com/blog',
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'My Blog — Alex Nwoko',
+    title: 'My Blog, Alex Nwoko',
     description:
       'Reflections on DRR, humanitarian data systems, climate, and cash programming.',
   },
 }
 // Hide posts with published: false from the public listing. The data
 // remains in POSTS_META so they can be re-published later by flipping the
-// flag — no content needs to be rewritten.
+// flag, no content needs to be rewritten.
 const posts = POSTS_META.filter((p) => p.published !== false)
 
 export default function BlogPage() {

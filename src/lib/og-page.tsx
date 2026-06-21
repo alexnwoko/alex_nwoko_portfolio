@@ -69,7 +69,7 @@ export async function buildPageOgImage(opts: PageOgOptions): Promise<ImageRespon
           position: 'relative',
         }}
       >
-        {/* Top stripe — multi-color (rainbow) for multi-pillar pages,
+        {/* Top stripe, multi-color (rainbow) for multi-pillar pages,
             single accent otherwise */}
         {multiPillar ? (
           <div style={{ display: 'flex', height: '12px', width: '100%' }}>
@@ -91,7 +91,7 @@ export async function buildPageOgImage(opts: PageOgOptions): Promise<ImageRespon
           />
         )}
 
-        {/* Subtle right-edge accent (single-accent pages only — gives the
+        {/* Subtle right-edge accent (single-accent pages only, gives the
             page a colour presence without overwhelming the layout) */}
         {!multiPillar && (
           <div
@@ -107,7 +107,7 @@ export async function buildPageOgImage(opts: PageOgOptions): Promise<ImageRespon
           />
         )}
 
-        {/* Header — site identity + eyebrow + URL */}
+        {/* Header, site identity + eyebrow + URL */}
         <div
           style={{
             display: 'flex',
@@ -159,7 +159,7 @@ export async function buildPageOgImage(opts: PageOgOptions): Promise<ImageRespon
           </div>
         </div>
 
-        {/* Body — large page name + subtitle */}
+        {/* Body, large page name + subtitle */}
         <div
           style={{
             display: 'flex',
@@ -196,7 +196,7 @@ export async function buildPageOgImage(opts: PageOgOptions): Promise<ImageRespon
             {pageSubtitle}
           </div>
 
-          {/* Multi-pillar tag row — only for pages spanning all pillars */}
+          {/* Multi-pillar tag row, only for pages spanning all pillars */}
           {multiPillar && (
             <div
               style={{
@@ -228,7 +228,7 @@ export async function buildPageOgImage(opts: PageOgOptions): Promise<ImageRespon
           )}
         </div>
 
-        {/* Footer — role + brand mark */}
+        {/* Footer, role + brand mark */}
         <div
           style={{
             display: 'flex',

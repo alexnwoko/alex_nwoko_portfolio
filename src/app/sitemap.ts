@@ -6,7 +6,7 @@ import type { MetadataRoute } from 'next'
  * Two-tier structure:
  *   - Static pages (with curated priority + change-frequency)
  *   - Blog posts (priority 0.8, monthly, real publication date)
- *   - Topic pillar pages (priority 0.9, weekly — strong topical hubs)
+ *   - Topic pillar pages (priority 0.9, weekly, strong topical hubs)
  *
  * Post publication dates are stored locally as a slug -> ISO map so we can
  * emit a meaningful `lastmod` without importing the full post tree.
@@ -72,7 +72,7 @@ const POST_PUBLISHED_AT: Record<string, string> = {
   'geoai-for-humanitarians': '2024-11-30',
   'building-systems-governments-can-own': '2025-03-08',
   'politics-of-humanitarian-data-infrastructure': '2025-04-02',
-  // Voice AI series — 2025
+  // Voice AI series, 2025
   'voice-is-the-future-of-humanitarian-data': '2025-05-12',
   'the-form-is-already-dead': '2025-05-20',
   'africa-will-define-voice-ai': '2025-06-04',
@@ -82,14 +82,14 @@ const POST_PUBLISHED_AT: Record<string, string> = {
   'building-voice-native-evidence-systems': '2025-08-05',
   // Agentic IM
   'future-of-humanitarian-im-is-agentic': '2025-09-12',
-  // DRR series — late 2025 / early 2026
+  // DRR series, late 2025 / early 2026
   'disaster-loss-data-climate-adaptation': '2025-10-08',
   'invisible-disasters-invisible-funding': '2025-11-04',
   'desinventar-to-delta-resilience': '2025-12-02',
   'g-drsf-statisticians-disaster-managers': '2026-01-15',
   'delta-resilience-early-warning-anticipatory-action': '2026-02-10',
   'data-ecosystem-maturity-assessment-guide': '2026-03-03',
-  // COP31 + Disaster Data Diplomacy + Data Equity batch — April/May 2026
+  // COP31 + Disaster Data Diplomacy + Data Equity batch, April/May 2026
   'road-to-antalya-ncqg': '2026-04-06',
   'loss-and-damage-fund-make-or-break-year': '2026-04-14',
   'delta-grade-data-currency-of-climate-finance': '2026-04-22',
@@ -103,7 +103,7 @@ const POST_PUBLISHED_AT: Record<string, string> = {
 }
 
 /**
- * Topic pillar pages — high-priority hubs that aggregate the corpus by
+ * Topic pillar pages, high-priority hubs that aggregate the corpus by
  * theme. Strong internal-linking targets for SEO and clean landing pages
  * for AI-engine citations.
  */
@@ -123,7 +123,7 @@ const TOPIC_SLUGS: string[] = [
  * The five core positioning pages (about / expertise / projects /
  * innovations / founder-journey) are pinned at priority 1.0 with weekly
  * change-frequency. They're the surfaces a recruiter, journalist, or
- * consulting prospect lands on first — Google should treat them as
+ * consulting prospect lands on first, Google should treat them as
  * peers of the homepage in crawl frequency.
  */
 const STATIC_PAGES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [

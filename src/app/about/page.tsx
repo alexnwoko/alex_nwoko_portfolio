@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
-  title: 'About — Alex Nwoko',
+  title: 'About, Alex Nwoko',
   description: 'A decade of building humanitarian data, geospatial, climate, and cash programming systems across six countries.',
   alternates: { canonical: 'https://alexnwoko.com/about' },
 }
@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 const timeline = [
   {
     year: '2016–2018',
-    role: 'Information Manager — Shelter/NFI & CCCM Clusters',
+    role: 'Information Manager, Shelter/NFI & CCCM Clusters',
     org: 'IOM Nigeria',
     location: 'Maiduguri, Nigeria',
-    desc: 'Built the cluster IM system from scratch — dashboards, factsheets, gap analysis — while developing data-driven flood contingency plans, GIS vulnerability mapping, and risk analysis products for one of Africa\'s largest humanitarian operations during the Boko Haram crisis.',
+    desc: 'Built the cluster IM system from scratch, dashboards, factsheets, gap analysis, while developing data-driven flood contingency plans, GIS vulnerability mapping, and risk analysis products for one of Africa\'s largest humanitarian operations during the Boko Haram crisis.',
     pillar: 'data',
   },
   {
     year: '2018',
-    role: 'Information Management Officer — Food Security Sector',
+    role: 'Information Management Officer, Food Security Sector',
     org: 'FAO Nigeria',
     location: 'Maiduguri, Nigeria',
     desc: 'Managed sector-wide reporting and partner coordination data for the food security response in northeast Nigeria, supporting gap analysis and response monitoring.',
@@ -36,7 +36,7 @@ const timeline = [
   },
   {
     year: '2020',
-    role: 'Project Lead — COVID-19 Situation Analysis',
+    role: 'Project Lead, COVID-19 Situation Analysis',
     org: 'iMMAP Bangladesh',
     location: 'Dhaka, Bangladesh',
     desc: 'Led a team producing seven comprehensive analysis reports tracking the pandemic\'s cascading impacts, deploying the DEEP platform for AI-enabled secondary data classification and analysis.',
@@ -52,7 +52,7 @@ const timeline = [
   },
   {
     year: '2020–2022',
-    role: 'IM Specialist — Agriculture Cluster / Planning & Monitoring',
+    role: 'IM Specialist, Agriculture Cluster / Planning & Monitoring',
     org: 'FAO & UNICEF Ethiopia',
     location: 'Addis Ababa, Ethiopia',
     desc: 'Developed the UNICEF Ethiopia IM Strategy, deployed geospatial tools for drought response mapping and community vulnerability assessment, and led the Ethiopia Cash Working Group\'s first inter-agency PDM meta-analysis and financial services provider assessments across Tigray.',
@@ -78,7 +78,7 @@ const pillarColors: Record<string, string> = {
 export default function AboutPage() {
   return (
     <div className="pt-24 pb-16">
-      {/* Meet Alex Nwoko — intro card paired with long-form narrative */}
+      {/* Meet Alex Nwoko, intro card paired with long-form narrative */}
       <section className="max-w-6xl mx-auto px-6 mb-12 text-center">
         <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Meet Alex Nwoko</p>
         <h1 className="font-serif text-4xl md:text-5xl text-coffee leading-tight">
@@ -88,14 +88,14 @@ export default function AboutPage() {
 
       <section className="max-w-6xl mx-auto px-6 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
-          {/* Left — dark profile card */}
+          {/* Left, dark profile card */}
           <aside className="md:col-span-5">
             <div className="bg-coffee text-white rounded-3xl p-8 text-center md:sticky md:top-28">
-              {/* Portrait — professional headshot (white shirt) */}
+              {/* Portrait, professional headshot (white shirt) */}
               <div className="relative w-36 h-36 sm:w-44 sm:h-44 mx-auto mb-6 rounded-full ring-4 ring-white/15 overflow-hidden">
                 <Image
                   src="/images/alex-nwoko-headshot.jpg"
-                  alt="Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect"
+                  alt="Alex Nwoko, Disaster Risk and Humanitarian Data Systems Architect"
                   fill
                   sizes="(max-width: 640px) 144px, 176px"
                   className="object-cover"
@@ -150,39 +150,39 @@ export default function AboutPage() {
             </div>
           </aside>
 
-          {/* Right — long-form narrative */}
+          {/* Right, long-form narrative */}
           <div className="md:col-span-7">
             <div className="prose prose-lg max-w-none text-coffee-light/80 leading-relaxed space-y-6">
               <p>
-                There&rsquo;s a particular kind of urgency that drives you when you&rsquo;ve seen what happens when decisions are made without evidence. Early in my career, I watched communities suffer not because help wasn&rsquo;t available, but because the information to direct that help simply didn&rsquo;t exist — or existed in fragments scattered across spreadsheets that no one could piece together in time. I watched flood waters rise in displacement camps where no one had mapped the risk zones. I watched cash transfers reach the wrong households because targeting data lived in disconnected silos. I watched satellite imagery that could have predicted a drought sit unused while responders planned with outdated reports.
+                There&rsquo;s a particular kind of urgency that drives you when you&rsquo;ve seen what happens when decisions are made without evidence. Early in my career, I watched communities suffer not because help wasn&rsquo;t available, but because the information to direct that help simply didn&rsquo;t exist, or existed in fragments scattered across spreadsheets that no one could piece together in time. I watched flood waters rise in displacement camps where no one had mapped the risk zones. I watched cash transfers reach the wrong households because targeting data lived in disconnected silos. I watched satellite imagery that could have predicted a drought sit unused while responders planned with outdated reports.
               </p>
               <p>
                 That experience planted a question I&rsquo;ve been trying to answer ever since: <em>What does it take to put the right information in front of the right people before a crisis becomes a catastrophe?</em>
               </p>
               <p>
-                That question took me to Durham University on a Commonwealth Scholarship, where I studied risk and environmental hazards at the Institute of Hazard, Risk and Resilience. My research on social vulnerability indices wasn&rsquo;t just academic — it was built in partnership with the Newcastle City Council Emergency Planning Unit, mapping physical and social vulnerability indicators for proactive emergency preparedness. That experience taught me something that has shaped every role since: <strong>the most sophisticated analysis in the world is worthless if it doesn&rsquo;t reach the people who need it, in a format they can act on.</strong>
+                That question took me to Durham University on a Commonwealth Scholarship, where I studied risk and environmental hazards at the Institute of Hazard, Risk and Resilience. My research on social vulnerability indices wasn&rsquo;t just academic, it was built in partnership with the Newcastle City Council Emergency Planning Unit, mapping physical and social vulnerability indicators for proactive emergency preparedness. That experience taught me something that has shaped every role since: <strong>the most sophisticated analysis in the world is worthless if it doesn&rsquo;t reach the people who need it, in a format they can act on.</strong>
               </p>
               <p>
-                From Durham, I carried that conviction into Maiduguri — the epicenter of the Boko Haram crisis and one of the largest humanitarian operations in Africa. As Information Manager for the Shelter/NFI and CCCM Clusters with IOM, I built the cluster&rsquo;s information management system from scratch — but I also saw that data dashboards alone weren&rsquo;t enough. Displacement camps flooded every rainy season, and no one had the spatial risk analysis to anticipate it. So I built data-driven flood contingency plans and GIS vulnerability maps that changed how clusters prepared for seasonal hazards. That was the beginning of what I now think of as humanitarian systems architecture — where data analytics, geospatial analysis, and disaster risk reduction have to work together.
+                From Durham, I carried that conviction into Maiduguri, the epicenter of the Boko Haram crisis and one of the largest humanitarian operations in Africa. As Information Manager for the Shelter/NFI and CCCM Clusters with IOM, I built the cluster&rsquo;s information management system from scratch, but I also saw that data dashboards alone weren&rsquo;t enough. Displacement camps flooded every rainy season, and no one had the spatial risk analysis to anticipate it. So I built data-driven flood contingency plans and GIS vulnerability maps that changed how clusters prepared for seasonal hazards. That was the beginning of what I now think of as humanitarian systems architecture, where data analytics, geospatial analysis, and disaster risk reduction have to work together.
               </p>
               <p>
-                In Cox&rsquo;s Bazar, the world&rsquo;s largest refugee operation, I saw the same fragmentation in a different form. Cash-based interventions were growing rapidly, but the information systems behind them couldn&rsquo;t keep pace — beneficiary targeting was disconnected from payment processing, and post-distribution monitoring was an afterthought. I designed the Cash-Based Intervention Information Management System (CBIIMS) for IOM — a five-stage workflow from beneficiary profiling through payment automation — while supervising the GIS unit producing maps for 29 camps and coordinating communication-with-communities data across 1,100+ radio listening groups. It was here I understood that geospatial tools, cash transfer systems, and humanitarian reporting aren&rsquo;t separate disciplines — they&rsquo;re parts of one integrated challenge.
+                In Cox&rsquo;s Bazar, the world&rsquo;s largest refugee operation, I saw the same fragmentation in a different form. Cash-based interventions were growing rapidly, but the information systems behind them couldn&rsquo;t keep pace, beneficiary targeting was disconnected from payment processing, and post-distribution monitoring was an afterthought. I designed the Cash-Based Intervention Information Management System (CBIIMS) for IOM, a five-stage workflow from beneficiary profiling through payment automation, while supervising the GIS unit producing maps for 29 camps and coordinating communication-with-communities data across 1,100+ radio listening groups. It was here I understood that geospatial tools, cash transfer systems, and humanitarian reporting aren&rsquo;t separate disciplines, they&rsquo;re parts of one integrated challenge.
               </p>
               <p>
-                In Ethiopia, those threads deepened further. I developed the UNICEF Information Management Strategy, deployed geospatial tools mapping drought response coverage and community vulnerabilities across conflict-affected regions, and served as data consultant for the Ethiopia Cash Working Group — leading the first-ever inter-agency post-distribution monitoring meta-analysis, designing financial services provider assessments across Tigray, and building the operational dashboards that tracked $3.2M in CERF-funded cash allocations reaching 185,000 beneficiaries.
+                In Ethiopia, those threads deepened further. I developed the UNICEF Information Management Strategy, deployed geospatial tools mapping drought response coverage and community vulnerabilities across conflict-affected regions, and served as data consultant for the Ethiopia Cash Working Group, leading the first-ever inter-agency post-distribution monitoring meta-analysis, designing financial services provider assessments across Tigray, and building the operational dashboards that tracked $3.2M in CERF-funded cash allocations reaching 185,000 beneficiaries.
               </p>
               <p>
-                Afghanistan became the culmination of all four pillars. Leading a $9.7M USAID-funded program, I led and managed the development and deployment of ReportHub for multi-cluster humanitarian reporting across 200+ organizations, the Humanitarian Spatial Data Center (HSDC) for multi-hazard geospatial analysis integrating earthquake, flood, and drought data, while developing data, evidence generation, and information management strategies for UN agencies and interagency coordination groups — including climate early warning platforms, anticipatory action frameworks, and Cash &amp; Voucher Working Group analytics — all while navigating one of the world&rsquo;s most complex operating environments under Taliban governance.
+                Afghanistan became the culmination of all four pillars. Leading a $9.7M USAID-funded program, I led and managed the development and deployment of ReportHub for multi-cluster humanitarian reporting across 200+ organizations, the Humanitarian Spatial Data Center (HSDC) for multi-hazard geospatial analysis integrating earthquake, flood, and drought data, while developing data, evidence generation, and information management strategies for UN agencies and interagency coordination groups, including climate early warning platforms, anticipatory action frameworks, and Cash &amp; Voucher Working Group analytics, all while navigating one of the world&rsquo;s most complex operating environments under Taliban governance.
               </p>
               <p>
-                I&rsquo;m not done building. The humanitarian sector is at an inflection point where AI, geospatial intelligence, climate science, and real-time data can fundamentally change how we prepare for and respond to crises — if we build the right systems and put them in the right hands. That&rsquo;s what I do.
+                I&rsquo;m not done building. The humanitarian sector is at an inflection point where AI, geospatial intelligence, climate science, and real-time data can fundamentally change how we prepare for and respond to crises, if we build the right systems and put them in the right hands. That&rsquo;s what I do.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonial — iMMAP HQ */}
+      {/* Testimonial, iMMAP HQ */}
       <Testimonial
         quote="His ethical, risk-informed, and forward-thinking approach makes him an invaluable leader in humanitarian geospatial information technologies and emergency response coordination."
         name="Abdon Trowonou"
@@ -218,7 +218,7 @@ export default function AboutPage() {
               <div className={`ml-8 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? 'md:text-right md:pr-8' : 'md:pl-8'}`}>
                 <span className="text-xs font-semibold text-coffee-muted uppercase tracking-wider">{entry.year}</span>
                 <h3 className="font-serif text-lg text-coffee mt-1">{entry.role}</h3>
-                <p className="text-sm text-dusty-orange font-medium">{entry.org} — {entry.location}</p>
+                <p className="text-sm text-dusty-orange font-medium">{entry.org}, {entry.location}</p>
                 <p className="text-sm text-coffee-muted mt-2 leading-relaxed">{entry.desc}</p>
               </div>
             </div>
@@ -336,13 +336,13 @@ export default function AboutPage() {
         variant="accent"
       />
 
-      {/* ═══ THOUGHT LEADERSHIP — Full-width authority section ═══ */}
+      {/* ═══ THOUGHT LEADERSHIP, Full-width authority section ═══ */}
       <section className="bg-coffee text-white py-20 mb-20">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-3">Thought Leadership</p>
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">Shaping the Practice of Humanitarian Data Systems</h2>
           <p className="text-beige-400 max-w-3xl mb-12 leading-relaxed">
-            Beyond building systems, I contribute to the global discourse on how data, geospatial intelligence, and disaster risk science should be integrated into humanitarian decision-making — through academic presentations, university speaking engagements, and published analytical work used by UN agencies and humanitarian coordination bodies.
+            Beyond building systems, I contribute to the global discourse on how data, geospatial intelligence, and disaster risk science should be integrated into humanitarian decision-making, through academic presentations, university speaking engagements, and published analytical work used by UN agencies and humanitarian coordination bodies.
           </p>
 
           {/* Authority Metrics */}
@@ -365,7 +365,7 @@ export default function AboutPage() {
             <div className="aspect-video">
               <iframe
                 src="https://www.youtube.com/embed/OUV3tvQB5ZM"
-                title="Information Management in Humanitarian Response Sector — Alex Nwoko"
+                title="Information Management in Humanitarian Response Sector, Alex Nwoko"
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -375,7 +375,7 @@ export default function AboutPage() {
               <span className="text-[10px] uppercase tracking-widest text-dusty-orange font-semibold mb-2 block">Featured Presentation</span>
               <h3 className="font-serif text-xl text-white mb-2">Information Management in Humanitarian Response Sector</h3>
               <p className="text-sm text-beige-400 leading-relaxed">
-                Academic presentation on how information management systems underpin effective humanitarian coordination — from data architecture and interoperability to evidence-driven decision-making in complex emergencies.
+                Academic presentation on how information management systems underpin effective humanitarian coordination, from data architecture and interoperability to evidence-driven decision-making in complex emergencies.
               </p>
             </div>
           </div>
@@ -425,7 +425,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ═══ PUBLISHED WORK — Evidence of impact ═══ */}
+      {/* ═══ PUBLISHED WORK, Evidence of impact ═══ */}
       <section className="max-w-5xl mx-auto px-6 mb-20">
         <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Published Work</p>
         <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-4">Reports, Dashboards &amp; Platforms</h2>
@@ -434,8 +434,8 @@ export default function AboutPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { label: 'COVID-19 Situation Analysis Series', sub: '7 analytical reports — ReliefWeb', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-01-december-31-december-2020', type: 'link', color: '#009EDB' },
-            { label: 'Afghanistan Multi-Sectoral Dashboard', sub: 'HRP response monitoring — ReliefWeb', url: 'https://reliefweb.int/report/afghanistan/afghanistan-multi-sectoral-dashboard-humanitarian-response-services-december-2024', type: 'link', color: '#009EDB' },
+            { label: 'COVID-19 Situation Analysis Series', sub: '7 analytical reports, ReliefWeb', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-01-december-31-december-2020', type: 'link', color: '#009EDB' },
+            { label: 'Afghanistan Multi-Sectoral Dashboard', sub: 'HRP response monitoring, ReliefWeb', url: 'https://reliefweb.int/report/afghanistan/afghanistan-multi-sectoral-dashboard-humanitarian-response-services-december-2024', type: 'link', color: '#009EDB' },
             { label: 'HSDC Platform', sub: 'Live geospatial intelligence platform', url: 'https://hsdc.immap.org/', type: 'link', color: '#7B4B94' },
             { label: 'Climate Outlook Mapping Methodologies', sub: 'iMMAP-OCHA methodology document', url: '/evidence/immap-ocha-climate-outlook-methodologies.pdf', type: 'pdf', color: '#C4703F' },
             { label: 'Risk Landscape: Hazards & Exposure', sub: 'Afghanistan population exposure analysis', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf', color: '#C4703F' },

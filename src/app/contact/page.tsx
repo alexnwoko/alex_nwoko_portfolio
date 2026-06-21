@@ -6,7 +6,7 @@ import ContactClient from './ContactClient'
  * /contact. The interactive form lives in ContactClient.tsx.
  */
 export const metadata: Metadata = {
-  title: 'Contact — Alex Nwoko',
+  title: 'Contact, Alex Nwoko',
   description:
     'Get in touch about consulting on humanitarian data systems, disaster risk reduction, climate analytics, GIS, or cash transfer programming.',
   alternates: { canonical: 'https://alexnwoko.com/contact' },

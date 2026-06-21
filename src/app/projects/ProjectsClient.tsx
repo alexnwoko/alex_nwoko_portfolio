@@ -57,7 +57,7 @@ const projects = [
     liveUrl: 'https://immap.org/afghanistan/',
     evidence: [
       { label: 'HSDC Platform', url: 'https://hsdc.immap.org/', type: 'link' as const },
-      { label: 'iMMAP: From Data to Action — HSDC Launch', url: 'https://immap.org/news/from-data-to-action-immap-inc-unveils-powerful-tool-for-disaster-response-in-afghanistan/', type: 'link' as const },
+      { label: 'iMMAP: From Data to Action, HSDC Launch', url: 'https://immap.org/news/from-data-to-action-immap-inc-unveils-powerful-tool-for-disaster-response-in-afghanistan/', type: 'link' as const },
       { label: 'Risk Landscape: Hazards & Population Exposure', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf' as const },
     ],
   },
@@ -69,7 +69,7 @@ const projects = [
     location: 'Ethiopia',
     org: 'UNICEF / Ethiopia Cash Working Group',
     summary:
-      'First-ever inter-agency cash impact assessment — a 9-pillar analytical system that unified 1,559 household surveys from five organizations into a single analytical framework.',
+      'First-ever inter-agency cash impact assessment, a 9-pillar analytical system that unified 1,559 household surveys from five organizations into a single analytical framework.',
     challenge:
       'Five humanitarian organizations were conducting post-distribution monitoring independently, each with different tools, questions, and definitions of "success." The Ethiopia Cash Working Group couldn\'t answer: "Is our cash programming working?"',
     solution:
@@ -90,7 +90,7 @@ const projects = [
     ],
   },
   {
-    title: 'CBIIMS — Cash-Based Intervention IM System',
+    title: 'CBIIMS, Cash-Based Intervention IM System',
     pillar: 'Cash Programming',
     pillarColor: '#8B3A2F',
     period: '2019–2020',
@@ -101,7 +101,7 @@ const projects = [
     challenge:
       'IOM Bangladesh needed a structured IM system to support process-based CBI delivery ensuring timeliness, accountability, and fraud prevention across Cash-for-Work and MPCG programmes in the Cox\'s Bazar refugee response.',
     solution:
-      'Designed the CBIIMS — a 5-stage workflow (Profiling → Targeting → Attendance → Payment Automation → Beneficiary Payment) with governance layers for risk assessment and M&E/AAP.',
+      'Designed the CBIIMS, a 5-stage workflow (Profiling → Targeting → Attendance → Payment Automation → Beneficiary Payment) with governance layers for risk assessment and M&E/AAP.',
     impact: [
       '5-stage CBI workflow designed',
       'Automated payment sheet preparation',
@@ -112,12 +112,12 @@ const projects = [
     type: 'Report',
     liveUrl: 'https://response.reliefweb.int/ethiopia/ethiopia-cash-working-group',
     evidence: [
-      { label: 'CBI Annual Dashboard — Cox\'s Bazar', url: '/evidence/iom-bangladesh-cbi-dashboard.pdf', type: 'pdf' as const },
+      { label: 'CBI Annual Dashboard, Cox\'s Bazar', url: '/evidence/iom-bangladesh-cbi-dashboard.pdf', type: 'pdf' as const },
       { label: 'CwC Working Group Dashboard', url: '/evidence/iom-bangladesh-cwc-dashboard.pdf', type: 'pdf' as const },
     ],
   },
   {
-    title: 'AISA — Agentic Intersectoral Situational Analysis',
+    title: 'AISA, Agentic Intersectoral Situational Analysis',
     pillar: 'Data Analytics & IM',
     pillarColor: '#009EDB',
     period: '2024–Present',
@@ -128,7 +128,7 @@ const projects = [
     challenge:
       'Humanitarian situation analysis is slow, labor-intensive, and often outdated by the time it reaches decision-makers.',
     solution:
-      'Designing an agentic AI architecture where specialized agents handle data ingestion, classification, cross-source synthesis, and automated report generation — producing near-real-time analytical outputs.',
+      'Designing an agentic AI architecture where specialized agents handle data ingestion, classification, cross-source synthesis, and automated report generation, producing near-real-time analytical outputs.',
     impact: [
       'AI agent architecture designed',
       'Multi-framework classification',
@@ -146,7 +146,7 @@ const projects = [
     location: 'Afghanistan',
     org: 'iMMAP',
     summary:
-      'Framework for operationalizing early warning into anticipatory action — developing climate trigger thresholds and pre-positioning data systems for forecast-based response.',
+      'Framework for operationalizing early warning into anticipatory action, developing climate trigger thresholds and pre-positioning data systems for forecast-based response.',
     challenge:
       "Despite advances in climate forecasting, most humanitarian response in Afghanistan remained reactive. Early warnings weren't linked to pre-agreed response protocols.",
     solution:
@@ -160,7 +160,7 @@ const projects = [
     tags: ['Climate Analytics', 'DRR', 'Anticipatory Action', 'Google Earth Engine', 'Python'],
     type: 'Map',
     evidence: [
-      { label: 'HSDC Platform — Climate & Hazard Layers', url: 'https://hsdc.immap.org/', type: 'link' as const },
+      { label: 'HSDC Platform, Climate & Hazard Layers', url: 'https://hsdc.immap.org/', type: 'link' as const },
       { label: 'iMMAP-OCHA Climate Outlook Mapping Methodologies', url: '/evidence/immap-ocha-climate-outlook-methodologies.pdf', type: 'pdf' as const },
       { label: 'Risk Landscape: Hazards & Population Exposure', url: '/evidence/afg-risk-landscape-hazards-exposure-2024.pdf', type: 'pdf' as const },
     ],
@@ -187,7 +187,7 @@ const projects = [
     tags: ['DEEP Platform', 'Secondary Data Analysis', 'AI Classification', 'Report Writing'],
     type: 'Report',
     evidence: [
-      { label: 'COVID-19 Situation Analysis — Sept 2020 (Sample)', url: '/evidence/bangladesh-covid19-sept2020.pdf', type: 'pdf' as const },
+      { label: 'COVID-19 Situation Analysis, Sept 2020 (Sample)', url: '/evidence/bangladesh-covid19-sept2020.pdf', type: 'pdf' as const },
       { label: 'Full Report Series on ReliefWeb', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-01-december-31-december-2020', type: 'link' as const },
       { label: 'Sectoral Analysis (May 2020–July 2021)', url: 'https://reliefweb.int/report/bangladesh/bangladesh-immapdfs-covid-19-situation-analysis-part-one-sectoral-analysis-may', type: 'link' as const },
     ],
@@ -215,7 +215,7 @@ const projects = [
     type: 'Dashboard',
   },
   {
-    title: 'Flood Vulnerability Mapping — NE Nigeria',
+    title: 'Flood Vulnerability Mapping, NE Nigeria',
     pillar: 'GIS & Remote Sensing',
     pillarColor: '#7B4B94',
     period: '2018',
@@ -236,7 +236,7 @@ const projects = [
     tags: ['ArcGIS', 'Flood Analysis', 'Vulnerability Mapping', 'Cartography'],
     type: 'Map',
     evidence: [
-      { label: 'Flood Vulnerability Map — NE Nigeria', url: '/evidence/nigeria-flood-vulnerability-mapping-2018.pdf', type: 'pdf' as const },
+      { label: 'Flood Vulnerability Map, NE Nigeria', url: '/evidence/nigeria-flood-vulnerability-mapping-2018.pdf', type: 'pdf' as const },
       { label: 'Shelter/NFI Sector Dashboard', url: '/evidence/iom-nigeria-shelter-dashboard-2018.pdf', type: 'pdf' as const },
       { label: 'FAO Food Security Sector Dashboard', url: '/evidence/fao-nigeria-sector-dashboard-2018.pdf', type: 'pdf' as const },
     ],
@@ -302,7 +302,7 @@ export default function ProjectsPage() {
           Systems Built for Impact
         </h1>
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
-          Every project here was built in an active humanitarian response — designed under
+          Every project here was built in an active humanitarian response, designed under
           pressure, tested by real users, and measured by whether it actually changed how
           organizations make decisions.
         </p>
@@ -499,7 +499,7 @@ export default function ProjectsPage() {
                               allowFullScreen
                             />
                             <div className="px-4 py-2 bg-beige-100 text-xs text-coffee-muted">
-                              {e.label} — <a href={e.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-dusty-orange">Open full screen</a>
+                              {e.label}, <a href={e.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-dusty-orange">Open full screen</a>
                             </div>
                           </div>
                         ))}

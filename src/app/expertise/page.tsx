@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
-  title: 'Expertise — Alex Nwoko',
+  title: 'Expertise, Alex Nwoko',
   description: 'Four pillars of humanitarian practice: Data Analytics, GIS, Climate Analytics & DRR, and Cash Transfer Programming.',
   alternates: { canonical: 'https://alexnwoko.com/expertise' },
 }
@@ -14,7 +14,7 @@ const pillars = [
     color: '#009EDB',
     title: 'Data Analytics & Information Management',
     subtitle: 'The backbone of every humanitarian response',
-    overview: 'I design and build the information management systems that humanitarian organizations depend on to coordinate their response. This isn\'t about dashboards — it\'s about complete data ecosystems that transform raw partner reporting into actionable intelligence for decision-makers at every level.',
+    overview: 'I design and build the information management systems that humanitarian organizations depend on to coordinate their response. This isn\'t about dashboards, it\'s about complete data ecosystems that transform raw partner reporting into actionable intelligence for decision-makers at every level.',
     capabilities: [
       'Humanitarian reporting platforms (ReportHub)',
       'Multi-cluster data architecture and pipeline design',
@@ -33,7 +33,7 @@ const pillars = [
     color: '#7B4B94',
     title: 'GIS & Remote Sensing',
     subtitle: 'Mapping risk, tracking change, guiding response',
-    overview: 'Geospatial analysis is the connective tissue of humanitarian operations — it turns abstract data into spatial intelligence that shows where people are, where risks are concentrated, and where resources need to go. I build platforms that make this intelligence accessible to non-technical decision-makers.',
+    overview: 'Geospatial analysis is the connective tissue of humanitarian operations, it turns abstract data into spatial intelligence that shows where people are, where risks are concentrated, and where resources need to go. I build platforms that make this intelligence accessible to non-technical decision-makers.',
     capabilities: [
       'Multi-hazard geospatial platforms (HSDC)',
       'Satellite imagery analysis and change detection',
@@ -44,7 +44,7 @@ const pillars = [
       'Web-based interactive mapping platforms',
     ],
     tools: ['ArcGIS Pro', 'QGIS', 'Google Earth Engine', 'Python/GeoPandas', 'Leaflet.js', 'Mapbox GL JS', 'PostGIS'],
-    impact: 'Led the development and deployment of HSDC — Afghanistan\'s first integrated multi-hazard geospatial analysis and forecasting system.',
+    impact: 'Led the development and deployment of HSDC, Afghanistan\'s first integrated multi-hazard geospatial analysis and forecasting system.',
   },
   {
     id: 'climate',
@@ -52,7 +52,7 @@ const pillars = [
     color: '#C4703F',
     title: 'Climate Analytics & DRR / Anticipatory Action',
     subtitle: 'Shifting from reactive response to predictive action',
-    overview: 'The humanitarian sector spends billions responding to disasters after they strike. I\'m focused on building the systems that enable anticipatory action — using climate data, early warning indicators, and pre-agreed triggers to initiate response before crises escalate.',
+    overview: 'The humanitarian sector spends billions responding to disasters after they strike. I\'m focused on building the systems that enable anticipatory action, using climate data, early warning indicators, and pre-agreed triggers to initiate response before crises escalate.',
     capabilities: [
       'Climate trigger threshold development',
       'Early warning system integration',
@@ -71,7 +71,7 @@ const pillars = [
     color: '#8B3A2F',
     title: 'Humanitarian Cash Transfer Programming',
     subtitle: 'Measuring what matters in cash-based response',
-    overview: 'Cash is the fastest-growing modality in humanitarian response, but measuring its impact remains a challenge. I build the data systems — post-distribution monitoring frameworks, delivery tracking dashboards, and inter-agency analytical tools — that ensure cash programs reach the most vulnerable and achieve their intended outcomes.',
+    overview: 'Cash is the fastest-growing modality in humanitarian response, but measuring its impact remains a challenge. I build the data systems, post-distribution monitoring frameworks, delivery tracking dashboards, and inter-agency analytical tools, that ensure cash programs reach the most vulnerable and achieve their intended outcomes.',
     capabilities: [
       'Post-distribution monitoring framework design',
       'Inter-agency cash impact meta-analysis',
@@ -96,11 +96,11 @@ export default function ExpertisePage() {
           Four Pillars of Practice
         </h1>
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
-          A decade of humanitarian work distilled into four interconnected domains. Each pillar reinforces the others — data analytics powers GIS platforms, climate analysis drives anticipatory cash, and cash monitoring feeds back into data systems.
+          A decade of humanitarian work distilled into four interconnected domains. Each pillar reinforces the others, data analytics powers GIS platforms, climate analysis drives anticipatory cash, and cash monitoring feeds back into data systems.
         </p>
       </section>
 
-      {/* Testimonial — top */}
+      {/* Testimonial, top */}
       <Testimonial
         quote="His ethical, risk-informed, and forward-thinking approach makes him an invaluable leader in humanitarian geospatial information technologies and emergency response coordination."
         name="Abdon Trowonou"

@@ -56,7 +56,7 @@ const featuredProjects = [
     tags: ['Platform Design', 'Data Architecture', 'Partner Coordination'],
   },
   {
-    title: 'HSDC — Humanitarian Spatial Data Center',
+    title: 'HSDC, Humanitarian Spatial Data Center',
     pillar: 'gis',
     pillarColor: '#7B4B94',
     desc: 'Multi-hazard geospatial analysis and forecasting system integrating earthquake, flood, drought, and conflict data for Afghanistan.',
@@ -163,7 +163,7 @@ export default function Home() {
             <span className="gradient-text">disaster risk reduction, development programmes, and humanitarian action</span>
           </h1>
           <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up delay-200">
-            I design and coordinate the data platforms, geospatial intelligence, disaster risk tools, information management and cash programming frameworks that UN agencies, national governments, and humanitarian partners depend on to make decisions that change lives — across six countries, multi-million-dollar portfolios, and a decade at the intersection of disaster risk, development, and humanitarian action.
+            I design and coordinate the data platforms, geospatial intelligence, disaster risk tools, information management and cash programming frameworks that UN agencies, national governments, and humanitarian partners depend on to make decisions that change lives, across six countries, multi-million-dollar portfolios, and a decade at the intersection of disaster risk, development, and humanitarian action.
           </p>
 
           {/* Core Skill Tags */}
@@ -248,7 +248,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Expertise</p>
           <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-4">Four Pillars of Practice</h2>
           <p className="text-coffee-muted max-w-2xl mb-12">
-            A decade of humanitarian work distilled into four interconnected domains — each reinforcing the others, together forming a complete approach to crisis information architecture.
+            A decade of humanitarian work distilled into four interconnected domains, each reinforcing the others, together forming a complete approach to crisis information architecture.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -270,7 +270,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ TESTIMONIAL — iMMAP HQ ═══ */}
+      {/* ═══ TESTIMONIAL, iMMAP HQ ═══ */}
       <Testimonial
         quote="His ability to synthesize complex data into actionable insights enhanced iMMAP's visibility and credibility among senior stakeholders. He consistently rated as 'exceeding expectations' in formal evaluations."
         name="Abdon Trowonou"
@@ -353,7 +353,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Selected Work</p>
           <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-4">Featured Projects</h2>
           <p className="text-coffee-muted max-w-2xl mb-12">
-            Systems and platforms designed for real operational impact — built in active humanitarian responses and used by hundreds of organizations.
+            Systems and platforms designed for real operational impact, built in active humanitarian responses and used by hundreds of organizations.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -398,7 +398,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ TESTIMONIAL — UNICEF ═══ */}
+      {/* ═══ TESTIMONIAL, UNICEF ═══ */}
       <Testimonial
         quote="His performance consistently demonstrated extraordinary technical ability, leadership, and innovation in support of data-driven cash programming. Alex's work reflects not just technical skill but strategic impact at the highest level."
         name="Samson Muradzikwa"
@@ -414,7 +414,7 @@ export default function Home() {
             Let&rsquo;s Build Something That Matters
           </h2>
           <p className="text-beige-400 mb-10 leading-relaxed">
-            Whether you need a disaster risk and humanitarian data systems architect, a GIS and remote sensing specialist, a climate risk and anticipatory action advisor, or a technical lead for cash transfer programming — I&rsquo;d love to connect.
+            Whether you need a disaster risk and humanitarian data systems architect, a GIS and remote sensing specialist, a climate risk and anticipatory action advisor, or a technical lead for cash transfer programming, I&rsquo;d love to connect.
           </p>
           <Link
             href="/contact"

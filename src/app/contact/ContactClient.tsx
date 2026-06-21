@@ -42,7 +42,7 @@ export default function ContactPage() {
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
           Whether you need a disaster risk and humanitarian data systems architect, a GIS and remote sensing
           specialist, a climate risk and anticipatory action advisor, or a technical lead
-          for cash transfer programming — I&rsquo;d love to hear from you.
+          for cash transfer programming, I&rsquo;d love to hear from you.
         </p>
       </section>
 

@@ -5,7 +5,7 @@ import { POSTS_META } from '@/lib/blog-posts-meta'
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: 'Topics — COP31, DRR Data, Early Warning, Humanitarian Data, IM',
+  title: 'Topics, COP31, DRR Data, Early Warning, Humanitarian Data, IM',
   description:
     'Topic hubs curating the blog corpus by theme: COP31 and climate finance, disaster risk data, early warning and anticipatory action, humanitarian data equity, and information management.',
   keywords: [
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://alexnwoko.com/topics' },
   openGraph: {
-    title: 'Topics — Alex Nwoko',
+    title: 'Topics, Alex Nwoko',
     description:
-      'COP31, disaster risk data, early warning, humanitarian data and information management — curated essays.',
+      'COP31, disaster risk data, early warning, humanitarian data and information management, curated essays.',
     url: 'https://alexnwoko.com/topics',
     siteName: 'Alex Nwoko Portfolio',
     type: 'website',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Topics — Alex Nwoko',
+    title: 'Topics, Alex Nwoko',
     description:
       'Curated topic hubs across COP31, disaster risk data, early warning, humanitarian data and IM.',
   },
@@ -56,7 +56,7 @@ export default function TopicsIndexPage() {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     '@id': 'https://alexnwoko.com/topics',
-    name: 'Topics — Alex Nwoko',
+    name: 'Topics, Alex Nwoko',
     description:
       'Topic hubs covering COP31, disaster risk data, early warning, humanitarian data, and information management.',
     url: 'https://alexnwoko.com/topics',

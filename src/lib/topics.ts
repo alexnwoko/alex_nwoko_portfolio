@@ -2,7 +2,7 @@
  * Topic clusters.
  *
  * A topic is a thematic hub that aggregates blog posts from across the
- * pillars. Membership is intentionally non-exclusive — a single post can
+ * pillars. Membership is intentionally non-exclusive, a single post can
  * (and often should) live in multiple topics. The topic pillar pages at
  * /topics/[slug] read from this catalogue.
  *

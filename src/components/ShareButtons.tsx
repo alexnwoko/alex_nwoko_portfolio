@@ -14,11 +14,11 @@ interface ShareButtonsProps {
  *   - X / Twitter (intent URL)
  *   - LinkedIn (share-offsite URL)
  *   - Facebook (sharer URL)
- *   - WhatsApp (wa.me URL — works on mobile + desktop web)
+ *   - WhatsApp (wa.me URL, works on mobile + desktop web)
  *   - Email (mailto)
  *   - Copy link (clipboard, works for Instagram / Threads / DMs anywhere)
  *
- * Instagram doesn't expose a public web share URL — sharing happens inside
+ * Instagram doesn't expose a public web share URL, sharing happens inside
  * the app via the device share sheet. The Copy-Link button is the right
  * primitive: paste into a Story, bio, or DM.
  */
@@ -28,7 +28,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
   // Pre-encode once. Twitter/LinkedIn limits keep the message short.
   const encodedUrl = encodeURIComponent(url)
   const encodedTitle = encodeURIComponent(title)
-  const encodedShareText = encodeURIComponent(`${title} — by Alex Nwoko`)
+  const encodedShareText = encodeURIComponent(`${title}, by Alex Nwoko`)
 
   const platforms = [
     {
@@ -122,7 +122,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
           </a>
         ))}
 
-        {/* Copy-link button — works for Instagram, Threads, DMs, anywhere */}
+        {/* Copy-link button, works for Instagram, Threads, DMs, anywhere */}
         <button
           type="button"
           onClick={handleCopyLink}

@@ -8,7 +8,7 @@ import JsonLd from '@/components/JsonLd'
 export const metadata: Metadata = {
   metadataBase: new URL('https://alexnwoko.com'),
   title: {
-    default: 'Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect',
+    default: 'Alex Nwoko, Disaster Risk and Humanitarian Data Systems Architect',
     template: '%s | Alex Nwoko',
   },
   description:
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Alex Nwoko' }],
   openGraph: {
-    title: 'Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect',
+    title: 'Alex Nwoko, Disaster Risk and Humanitarian Data Systems Architect',
     description:
       'Building the data systems behind disaster risk reduction and humanitarian response across six countries.',
     url: 'https://alexnwoko.com',
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
         url: 'https://alexnwoko.com/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect',
+        alt: 'Alex Nwoko, Disaster Risk and Humanitarian Data Systems Architect',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect',
+    title: 'Alex Nwoko, Disaster Risk and Humanitarian Data Systems Architect',
     description:
       'Building the data systems behind disaster risk reduction and humanitarian response across six countries.',
     images: ['https://alexnwoko.com/opengraph-image'],
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
  * to the Person entity (Alex Nwoko). Feeds Google's Knowledge Graph
  * attribution and improves brand SERP appearance.
  *
- * Content is fully internal — defined as a static literal at build time,
+ * Content is fully internal, defined as a static literal at build time,
  * no user input flows in. The dangerouslySetInnerHTML usage is safe; we
  * additionally escape `</` to defence-in-depth against script-tag breakout.
  */
@@ -94,7 +94,7 @@ const SITE_JSON_LD = {
       url: 'https://alexnwoko.com',
       name: 'Alex Nwoko',
       description:
-        'Portfolio of Alex Nwoko — Disaster Risk and Humanitarian Data Systems Architect.',
+        'Portfolio of Alex Nwoko, Disaster Risk and Humanitarian Data Systems Architect.',
       inLanguage: 'en',
       publisher: { '@id': 'https://alexnwoko.com/#person' },
     },
