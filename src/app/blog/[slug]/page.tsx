@@ -3165,7 +3165,7 @@ Fragility accelerates every stage of this loop. In conflict-affected and fragile
       },
       {
         heading: "The Part We Don't Like to Admit",
-        content: `Here is the uncomfortable turn, and the reason I wanted to write this. Some of the invisibility of people in our development and humanitarian data is the unintended consequence of our own caution and data protection.
+        content: `Here is the uncomfortable turn, and the reason I wanted to write this. Some of the invisibility of people in our development and humanitarian data are the unintended and sometime accepted consequence of our own caution and data protection.
 
 The humanitarian and development sectors have spent the last decade, rightly, building a serious ethic of [data responsibility](https://interagencystandingcommittee.org/operational-response/iasc-operational-guidance-data-responsibility-humanitarian-action): do no harm, minimise what you collect, protect what you hold, never let a dataset become a weapon against the people it describes. I believe in all of it. I have made the protective call myself, choosing to collect less in dangerous contexts precisely because data you do not hold cannot be stolen or coerced from you. That instinct has prevented real harm, and I would defend it again tomorrow.
 
