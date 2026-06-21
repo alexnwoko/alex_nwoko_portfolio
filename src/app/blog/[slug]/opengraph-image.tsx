@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { getPostMeta } from '@/lib/blog-posts-meta'
 
 export const runtime = 'edge'
-export const alt = 'Alex Nwoko — Blog Post'
+export const alt = 'Alex Nwoko: Blog Post'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
