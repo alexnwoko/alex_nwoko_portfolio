@@ -3242,6 +3242,196 @@ And here is the revelation in that, the part I wish we said aloud more often. Th
       'building-systems-governments-can-own',
     ],
   },
+  'el-nino-cascading-hazards-anticipatory-action': {
+    slug: 'el-nino-cascading-hazards-anticipatory-action',
+    title: 'El Niño 2026–2027 and the Cascading Hazards: A Once-in-a-Cycle Opening for Anticipatory Action',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'June 2026',
+    excerpt:
+      "A strong El Niño is a forecast we can already read. It is also a test of whether we are willing to act on what we know, in the closing months before what we know becomes what we are too late to prevent. The 2026–2027 cycle is the one in which the system either uses what it built, or does not.",
+    keywords: [
+      'El Niño', 'El Niño 2026', 'El Niño 2027', 'anticipatory action',
+      'anticipatory finance', 'cascading hazards', 'compound shocks',
+      'humanitarian forecasting', 'CERF', 'IFRC DREF', 'Start Fund',
+      'WFP Anticipatory Action Fund', 'FAO SFERA', 'COP31', 'climate finance',
+      'Anticipation Hub',
+    ],
+    sections: [
+      {
+        content: `*A strong El Niño is a forecast we can already read. It is also a test of whether we are willing to act on what we know, in the closing months before what we know becomes what we are too late to prevent.*
+
+The [June 2026 Anticipation Hub assessment](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment) confirms what climate scientists have been signalling since the boreal spring. El Niño conditions are developing now and are expected to persist into early 2027, with significant probability of becoming strong or very strong. That is not a prediction in the loose sense. It is a forecast on which an entire architecture of anticipatory response now rests. The question is no longer whether the next twelve months will see a major El Niño-driven shock. The question is whether the system that has been built to act before the shock arrives will actually do so this time, or whether we will once again let the window close and respond at twice the cost to half the people.
+
+I have spent the last decade building the data infrastructure that makes anticipatory action operational across six countries. I have watched the field move from a posture of "we cannot see this coming" to one of "we can see it coming, and we have an operational answer." The technology has arrived. The financing instruments exist. The frameworks are in place. What remains, with a strong El Niño now developing, is the decision.`,
+      },
+      {
+        heading: 'The Hazard Map We Already Have',
+        content: `El Niño is one of the few climate phenomena that does not require a leap of inference. The geographies it tends to hit, and the directions in which it tends to pull them, are well understood and stable across cycles. The current forecast, [synthesised by the Anticipation Hub](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment), points to elevated drought risk across southern Africa, parts of Central America, and parts of Asia, the Pacific and eastern Africa, alongside elevated flood and storm risk in eastern Africa and parts of Asia.
+
+The scale of what this can do is no longer hypothetical. The [2015–2016 El Niño affected more than 60 million people globally](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment). The 2023–2024 event, smaller in name, affected 68 million people in southern Africa alone. That is not a regional curiosity. It is a country-by-country, district-by-district humanitarian and developmental load that an unprepared response system absorbs as crisis spending two years after the trigger fires.
+
+What is different now, and what the rest of this argument turns on, is that the forecast is reaching us at a moment when we already have the instruments to translate it into protection. The map exists. The triggers exist. The funding instruments exist. What is being tested is institutional speed.`,
+      },
+      {
+        heading: 'Why a Climate Shock Is Always a Development Shock',
+        content: `El Niño never acts in isolation. It interacts with existing conflict, debt distress, agricultural fragility, public-health systems and the climate trajectory it is itself layered onto. In every cycle, the same pattern repeats. Rainfall anomalies drive crop failures and livestock losses. Crop failures and livestock losses drive food insecurity, distress sales of productive assets, and migration. Migration drives protection risks. Public-health pressure follows the disrupted water, sanitation and nutrition pathway. By the time the formal humanitarian appeal is launched, what started as a meteorological deviation has become a multi-sectoral, multi-year erosion of the household and institutional capacity the country needs to absorb the next shock.
+
+The [Anticipation Hub's June 2026 assessment](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment) puts a development-finance figure on what most practitioners have only described qualitatively. In vulnerable countries, an El Niño event can reduce GDP by up to 1.7 percentage points and lift public debt, weakening the fiscal capacity of the very governments expected to lead the response. Read carefully, that statistic decides the framing of the whole conversation. If El Niño is a development shock as much as a climate shock, then anticipatory action is not a humanitarian nice-to-have. It is the cheapest available form of fiscal protection for low-income states already running thin.
+
+The cascading nature of the impact also means there is no single window for action. The agricultural window opens first, before planting decisions are made for the affected season. The food-security and protection windows open as those decisions take effect. The health window opens as floods or drought interact with disease vectors. Each sector has its own trigger window, and each window forfeits its highest-return action if missed. I have written before about why building [systems governments can actually own](/blog/building-systems-governments-can-own) is the precondition for any of this to work at scale, and the cascading geography of El Niño impacts is exactly the test case that argument was built for.`,
+      },
+      {
+        heading: 'The Evidence Has Caught Up to the Argument',
+        content: `For most of the last decade, the operational case for anticipatory action rested on logic. It was obvious that preventing a livestock loss should cost less than replacing the herd, that a cash transfer arriving before a price spike should reach further than one arriving after. The argument was intuitive, but the evidence base was thin.
+
+That has changed. The pattern is now visible across geographies and methodologies, and it is unusually consistent.
+
+In the Horn of Africa, [modelling published on the economics of resilience and early action across Ethiopia, Kenya and Somalia](https://reliefweb.int/report/somalia/economics-resilience-drought-ethiopia-kenya-and-somalia) finds that every US$1 invested in resilience and anticipatory action generates between US$2.3 and US$3.3 in net benefits once avoided losses are counted. That is not an outlier. The 2023–2024 El Niño drought response in southern Africa, [evaluated by CGIAR](https://cgspace.cgiar.org/items/cf9261e1-d625-416f-9c0f-ce94a9b8b5ef), yielded a 30 percent net benefit on anticipatory investment. The same dollar, delivered early, carried the impact of US$1.30 delivered after the worst of the drought had landed.
+
+[Multi-country analysis from FAO](https://openknowledge.fao.org/items/4aef7f11-07ce-487e-bfd3-cb9540cfd213) on anticipatory action ahead of drought finds avoided losses worth up to US$3 for every US$1 invested. The [Anticipation Hub's "An approach that works" briefing](https://www.anticipation-hub.org/Documents/Briefing/An_approach_that_works_FINAL.pdf) consolidates this into the most defensible operational claim the sector currently has. The [FAO/OCHA/WFP evidence base](https://openknowledge.fao.org/items/1e8372a0-97e7-4284-b2e3-5ecf2f773265) reinforces the same finding. Anticipatory action, evaluated on its own terms, produces multiples of post-event response in both cost-efficiency and outcome quality.
+
+When evidence converges this consistently across institutions, methodologies and contexts, the appropriate response is no longer to ask whether it is true. It is to ask why the system still defaults to post-event response.`,
+      },
+      {
+        heading: 'Why This Time Is Different',
+        content: `The case for acting on the 2026–2027 El Niño is not only an evidence case. It is an infrastructure case. We have never entered an El Niño cycle as well-prepared as this one.
+
+The [Anticipation Hub's 2025 Global Overview Report](https://www.anticipation-hub.org/global-overview/global-snapshot/overview-reports/overview-report-2025) records anticipatory action frameworks in 75 countries, backed by improving impact-based forecasting, stronger inter-agency coordination, pre-arranged financing instruments, and a growing community of operational practice. As of June 2026, partners have already activated frameworks for El Niño-driven hazards in Central America, East Africa and the Sahel, [disbursing over US$35 million to support almost 2 million people](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment). That is not a sign that the system has solved the problem. It is a sign that the system, finally, can act at scale before the worst of the impact lands.
+
+What makes this moment unusual is the alignment of three things at once. A clear forecast on a well-understood hazard. A convergent evidence base on the returns of acting early. And an operational architecture that has reached the point where activation is the binding decision, not the binding capability.
+
+Regional preparedness is moving in step. In Latin America and the Caribbean, the [IFRC has set out how the region is preparing](https://www.ifrc.org/article/2026-el-nino-how-are-we-preparing-its-impact-latin-america-and-caribbean) for the 2026 El Niño impact, and the Anticipation Hub has separately characterised the LAC situation as [a closing window for anticipatory action](https://www.anticipation-hub.org/news/el-nino-2026-a-closing-window-for-anticipatory-action-in-latin-america-and-the-caribbean) over the coming months. In other words, the constraint is no longer technical. It is whether the institutions that hold the trigger are willing to pull it.`,
+      },
+      {
+        heading: 'The Window Is Already Closing',
+        content: `The most important thing to understand about anticipatory action is that its effectiveness is not constant across the timeline of a hazard. It is highest in the narrow window when the forecast is reliable enough to justify confident action and the lead time is long enough for the action to matter. Outside that window, every week of delay erodes the return.
+
+Once impacts begin to materialise, the calculus inverts. The cheapest interventions, the early water-system maintenance, the pre-positioned livestock fodder, the cash transferred before food prices spike, are no longer available. What replaces them is more expensive, less effective, and reaches fewer people. The argument that "we should wait until we are sure" sounds prudent in a conference room. In an operational sense, it forfeits the most cost-effective chance to protect lives and livelihoods.
+
+For the 2026–2027 cycle, the window is narrowing now. The agricultural decisions for the affected season in southern Africa are being made in the coming weeks. The pre-positioning decisions for eastern Africa flood-prone districts have a lead time of months, not seasons. The window is not closing dramatically. It is closing by attrition, one missed agricultural cycle and one delayed pre-positioning decision at a time.
+
+The binding constraint, in other words, is speed of decision and flexibility of funding. Not capability.`,
+      },
+      {
+        heading: 'What Different Actors Have to Do Now',
+        content: `The audience for this argument is not a single institution. It is a set of actors with different levers, and the call to action looks different from each desk.
+
+For humanitarian practitioners, the immediate task is to read the forecasts for location-specific risk, unlock the flexible and pooled financing that can move on a calendar a hazard sets, coordinate under humanitarian leadership and the AA Working Groups already in place, and treat trigger readiness, threshold settings, pre-positioning and simulation as live operational priorities for the next quarter. The single most important shift is to fund local actors to lead the response, not merely to implement an externally designed one. Local responders hold the operational knowledge the trigger architecture needs to land usefully, and the experience of the last two cycles is that the responses that worked best are the ones that local institutions owned.
+
+For the wider humanitarian community, the call is to design for compounding drivers. An anticipatory response that addresses drought but not the conflict context it interacts with, or the price-shock economy it lands in, or the public-health vulnerability it amplifies, will run into the same wall the sector keeps hitting. El Niño 2026–2027 is multi-sectoral by design. Single-sector responses, however well executed, will under-perform what a coordinated one could deliver.
+
+For donors, the lever is the one that decides whether any of the above is actually possible. Disbursements need to accelerate. No-regrets investments need backing. Reprogramming flexibility needs to be available where existing portfolios can be repurposed. Existing pooled instruments, [CERF](https://cerf.un.org/), [IFRC DREF](https://www.ifrc.org/happening-now/emergency-appeals/ifrc-disaster-response-emergency-fund), the [Start Fund](https://startnetwork.org/funds/global-start-fund) and [Start Ready](https://startnetwork.org/funds/start-ready), [FAO SFERA](https://www.fao.org/emergencies/partners/sfera/en), and the [WFP Anticipatory Action Fund](https://www.wfp.org/anticipatory-actions), need to be scaled and crisis modifiers fast-tracked. Anticipatory action does not lack institutional homes. It lacks the speed at which money moves through them.`,
+      },
+      {
+        content: `A strong El Niño is one of the only major shocks the modern climate system gives us with this much notice. The forecast is in. The evidence is in. The operational architecture is in. The tools, the instruments and the lessons of the last cycle are all on the table. What remains is the decision to act inside a window that will not stay open.
+
+We have spent a decade building the capacity to read this kind of forecast and act on it. The 2026–2027 cycle is the test of whether we will let what we built do its job.
+
+*Tags: Anticipatory Action · Early Warning · Climate Finance*`,
+      },
+    ],
+    relatedSlugs: [
+      'anticipatory-action-data-evidence',
+      'from-early-warning-to-early-money',
+      'delta-resilience-early-warning-anticipatory-action',
+    ],
+  },
+  'anticipatory-action-data-evidence': {
+    slug: 'anticipatory-action-data-evidence',
+    title: 'Anticipatory Action and the Data Evidence: Why Waiting Is No Longer Caution',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '9 min',
+    date: 'June 2026',
+    excerpt:
+      "The 2023–2024 El Niño response delivered a 30 percent efficiency gain on every dollar spent early. Horn of Africa modelling shows US$2.3 to US$3.3 in net benefit per dollar. Multi-country analysis puts avoided losses at up to US$3 per US$1. The evidence has converged. The only barriers left are the speed of decisions and the flexibility of funding.",
+    keywords: [
+      'anticipatory action', 'anticipatory cash', 'anticipatory finance',
+      'El Niño 2026', 'evidence-based humanitarian action', 'return on investment',
+      'CERF', 'IFRC DREF', 'Start Fund', 'WFP Anticipatory Action Fund',
+      'FAO SFERA', 'impact-based forecasting', 'resilience compounding',
+      'cash transfer programming', 'AA frameworks',
+    ],
+    sections: [
+      {
+        content: `*The 2023–2024 El Niño drought response in southern Africa is the cleanest piece of evidence the anticipatory action field has produced. The lesson is not theory. It is what happened the last time the system tried to act early, and it worked.*
+
+A few years ago I was in my office attempting a pilot design for drought anticipatory action triggers for a humanitarian response in Afghanistan. The forecast layers were good. The food-security data was current. The pre-positioning logistics were in place. What was missing was the institutional permission to release the funding against a forecast rather than against an observed impact. The conversation that day was about evidence. We had no recent, attribution-clean case study showing that anticipatory disbursement actually outperformed reactive disbursement at the same scale. So the decision was deferred. The drought arrived. The response happened later, at higher cost, to fewer people.
+
+Two years on, the evidence the field then lacked is on the table. The argument for acting early is no longer an appeal to logic. It is a citation. And with a [strong El Niño now developing through 2026 and into 2027](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment), the question is whether the data has finally outpaced the institutional caution that used to be its only counterweight.`,
+      },
+      {
+        heading: 'The Evidence Is Unambiguous',
+        content: `The cleanest case study the field has is the 2023–2024 southern Africa El Niño drought response, [evaluated by CGIAR](https://cgspace.cgiar.org/items/cf9261e1-d625-416f-9c0f-ce94a9b8b5ef). Every dollar of anticipatory investment delivered early carried the humanitarian impact of US$1.30 delivered later. A 30 percent efficiency gain on the identical dollar.
+
+Translate that operationally. For a cash transfer coordinator, that means the same transfer envelope reaches further. For a food-security programme, that means the same food basket prevents more acute malnutrition. For a multi-cluster response, that means the same overall financing covers more households at the same level of protection. Thirty percent is not a marginal improvement. In an environment of stagnant humanitarian funding and rising needs, it is the difference between meeting the appeal and falling short.
+
+The southern Africa finding is not an outlier. It sits inside a convergent body of evidence. [Modelling on the economics of resilience and early action across Ethiopia, Kenya and Somalia](https://reliefweb.int/report/somalia/economics-resilience-drought-ethiopia-kenya-and-somalia) finds US$2.3 to US$3.3 in net benefits per US$1 invested. [Multi-country analysis from FAO](https://openknowledge.fao.org/items/4aef7f11-07ce-487e-bfd3-cb9540cfd213) puts avoided losses at up to US$3 for every US$1 spent ahead of drought. The [Anticipation Hub's "An approach that works" briefing](https://www.anticipation-hub.org/Documents/Briefing/An_approach_that_works_FINAL.pdf) and the [FAO/OCHA/WFP evidence base](https://openknowledge.fao.org/items/1e8372a0-97e7-4284-b2e3-5ecf2f773265) consolidate the case. Tufts and colleagues have separately mapped the [landscape of anticipatory action for health](https://fic.tufts.edu/wp-content/uploads/Landscape-of-AA-for-Health.pdf), with parallel findings on the value of acting before the disease pathway opens.
+
+Three things are worth noting about this evidence. It is recent enough that the institutional and operational conditions still hold. It is methodologically diverse enough that the result is not an artefact of one evaluation framework. And it is geographically distributed enough that it cannot be dismissed as a single-context success. This is not theory. This is what the system did when it tried.`,
+      },
+      {
+        heading: 'The Lives-Saved Argument the Data Underweights',
+        content: `The ROI figures are the easy part of the argument. They are quantifiable, defensible and powerful in budget conversations. But they sit on top of a deeper set of outcomes that no dollar figure can fully represent, and those outcomes are the actual case for acting early.
+
+The [2023–2024 southern Africa anticipatory response reached almost 2 million people](https://cgspace.cgiar.org/items/cf9261e1-d625-416f-9c0f-ce94a9b8b5ef) before the worst drought impacts hit. That number, read in operational detail, describes households that did not have to sell their livestock at distress prices. Children who did not slip into acute malnutrition because the cash transfer reached the household before food prices spiked. Families who did not split because the income source held. Communities that did not fragment into migration because the productive assets the local economy depends on were preserved.
+
+Early cash means food bought before prices spike. Early water-system maintenance and pre-positioning means disease outbreaks contained before they spread. Early livestock support means herds not decimated. Early protection programming means protection risks that never become protection crises. None of those outcomes turn up clearly in a cost-benefit ratio. All of them are the actual purpose of the response.
+
+The quantitative case is necessary because it gets the conversation through the budget meeting. The qualitative reality is suffering prevented at a scale a dollar figure cannot hold. We should make both arguments, in that order, and resist the temptation to let the easier metric crowd out the harder one.`,
+      },
+      {
+        heading: 'The Compounding Effect of Acting Early',
+        content: `Beyond the immediate efficiency and humanitarian arguments lies the most under-appreciated case for early action. Anticipatory response preserves the foundations of resilience that future shocks will land on.
+
+The mechanism is straightforward and visible across every protracted-crisis context I have worked in. When a household is forced to liquidate productive assets to survive a shock, the household enters the next shock weaker. When farmers abandon fields, the social capital and local agricultural knowledge that the next season depends on is partly lost. When children are pulled from school during a drought, their lifetime earnings trajectory bends in ways the household will not recover from. When families fragment under migration pressure, the support networks that absorb the next shock are no longer in place.
+
+Each shock that hits a household at depleted capacity erodes the base from which it absorbs the next. The trajectory is downward. Anticipatory action interrupts that trajectory. By preserving livestock, productive assets, family structures, school enrolment and local knowledge, it allows households to enter the next shock with their base intact. Resilience compounds. So does its erosion. The choice between early and late action is, in part, a choice between which of those compounding effects we put under way.
+
+This logic is decisive in the Horn of Africa contexts I know best, in Ethiopia and Somalia, where conflict is ongoing, the climate trajectory is worsening, and shocks land before recovery from the previous one has completed. In those settings, the difference between acting early and acting late is the difference between communities that absorb shocks repeatedly and communities that fragment permanently. That is not a technical preference. It is a policy choice about which institutions and which households still exist a decade from now.`,
+      },
+      {
+        heading: 'The Forecasting and Financing Have Caught Up',
+        content: `The standard objection to acting on a forecast used to be that the forecast was not reliable enough, the financing was not flexible enough, or the operational architecture was not in place to translate a trigger into a response at scale. None of those objections still survives the current state of the field.
+
+Forecasting has matured beyond the threshold the early debate set. Multi-model ensembles produced by national meteorological agencies and regional climate services are now reliable enough to trigger action with operational confidence on a range of slow-onset hazards. Impact-based forecasting, the discipline of moving from "drought is coming" to "drought will cut forage by 40 percent in this pastoral zone" or "flooding will block access to these health facilities for these days," has moved from research into operational use. It enables specificity. Specificity enables precise targeting. Targeting is the difference between cash that reaches the right household and cash that does not.
+
+The financing architecture is operational. [CERF](https://cerf.un.org/), [IFRC DREF](https://www.ifrc.org/happening-now/emergency-appeals/ifrc-disaster-response-emergency-fund), the [Start Fund](https://startnetwork.org/funds/global-start-fund) and [Start Ready](https://startnetwork.org/funds/start-ready), [FAO SFERA](https://www.fao.org/emergencies/partners/sfera/en) and the [WFP Anticipatory Action Fund](https://www.wfp.org/anticipatory-actions) collectively form a financing layer that did not exist a decade ago. Pre-arranged agreements can disburse in days. The [Anticipation Hub's 2025 Overview Report](https://www.anticipation-hub.org/global-overview/global-snapshot/overview-reports/overview-report-2025) documents anticipatory action frameworks in 75 countries.
+
+The data and delivery infrastructure is in place. Mobile money allows cash to reach a household in minutes once the trigger fires. Pre-positioned supplier networks shorten the delivery chain. SMS-based early warning bridges the last mile to affected populations. Satellite monitoring produces the impact data the trigger architecture depends on. And, as I have argued in my work on [DELTA Resilience as the data backbone for anticipatory action](/blog/delta-resilience-early-warning-anticipatory-action), the loss-data infrastructure that lets a trigger fire on the right threshold is finally being treated as essential infrastructure rather than optional reporting.
+
+There is one further enabler that deserves naming. Locally-led anticipatory action, with community knowledge recognised as essential rather than peripheral, is finally beginning to receive its own funding lines. The evidence base from the last two cycles is unambiguous that the responses that worked best were the ones that local institutions and local actors led. The architecture is starting to align with that finding.`,
+      },
+      {
+        heading: 'The Argument, Stated Plainly',
+        content: `In June 2026, with a [strong El Niño developing](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment), three facts stack in favour of acting now.
+
+The recent evidence on anticipatory investment is unambiguous. The 2023–2024 southern Africa response delivered a 30 percent efficiency gain. Horn of Africa modelling delivered US$2.3 to US$3.3 in net benefit per dollar. Multi-country analysis delivered up to US$3 in avoided losses per dollar. The pattern across geographies and methodologies is consistent enough that the burden of proof has shifted onto the case for delay.
+
+Acting early preserves the foundations of resilience in contexts that have lost the slack to absorb compounding shocks. The downstream effects of a single avoided distress sale, or a single livestock herd preserved, or a single school year not abandoned, propagate forward into the household's capacity to survive the next event.
+
+We have the forecasting, the financing, the data infrastructure and the operational frameworks to act at scale, now. The 75 countries with active frameworks, the [over US$35 million already disbursed for almost 2 million people](https://www.anticipation-hub.org/news/el-nino-2026-2027-seizing-the-moment) across Central America, East Africa and the Sahel, are the visible evidence that activation is possible. The constraint is no longer capability.
+
+The only barriers left are the speed of decision-making and the flexibility of funding. Both are choices, made by institutions, on a timeline they can change.`,
+      },
+      {
+        content: `Waiting for impacts to materialise before acting is no longer caution. The evidence is too strong. The operational architecture is too mature. The cost of delay, in fiscal terms and in human terms, is too well-documented to be defensible by a precautionary framing. Inaction in the face of this much converging evidence is a choice the field can no longer claim it did not have.
+
+I designed drought triggers in an office where the case for acting early was a strong intuition. It is now a citation. The data has caught up to the argument. The argument is the policy. The policy is the trigger we pull.
+
+*Tags: Anticipatory Action · Data & Evidence · Climate Finance*`,
+      },
+    ],
+    relatedSlugs: [
+      'el-nino-cascading-hazards-anticipatory-action',
+      'delta-resilience-early-warning-anticipatory-action',
+      'the-case-for-anticipatory-cash',
+    ],
+  },
 }
 
 export function generateStaticParams() {

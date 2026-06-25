@@ -65,6 +65,8 @@ export const TOPICS: Topic[] = [
       'Most of these arguments come from the same place: a decade of building the underlying disaster data systems in countries that are about to be measured by them.',
     ],
     postSlugs: [
+      'el-nino-cascading-hazards-anticipatory-action',
+      'anticipatory-action-data-evidence',
       'road-to-antalya-ncqg',
       'loss-and-damage-fund-make-or-break-year',
       'delta-grade-data-currency-of-climate-finance',
@@ -129,6 +131,7 @@ export const TOPICS: Topic[] = [
       'The posts in this topic come out of building those systems in practice: in Afghanistan, Bangladesh, Ethiopia, and Nigeria, and in the international architecture that connects them. They are about what disaster data is for, how it gets corrupted, and what governs whether it survives the agency that funded it.',
     ],
     postSlugs: [
+      'anticipatory-action-data-evidence',
       'desinventar-to-delta-resilience',
       'g-drsf-statisticians-disaster-managers',
       'delta-resilience-early-warning-anticipatory-action',
@@ -190,6 +193,8 @@ export const TOPICS: Topic[] = [
       'These posts gather what I have learned about why early warning so often fails to become early action for the people who need it most, and what the next generation of systems has to look like to change that.',
     ],
     postSlugs: [
+      'el-nino-cascading-hazards-anticipatory-action',
+      'anticipatory-action-data-evidence',
       'delta-resilience-early-warning-anticipatory-action',
       'from-early-warning-to-early-money',
       'the-case-for-anticipatory-cash',
@@ -312,6 +317,8 @@ export const TOPICS: Topic[] = [
     postSlugs: [
       'measuring-joint-response-for-cash-transfer',
       'the-case-for-anticipatory-cash',
+      'anticipatory-action-data-evidence',
+      'el-nino-cascading-hazards-anticipatory-action',
     ],
     faqs: [
       {

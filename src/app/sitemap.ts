@@ -53,6 +53,9 @@ const BLOG_SLUGS: string[] = [
   // Data poverty & equity (2-part series)
   'protected-into-invisibility-part-1',
   'data-poverty-fragility-data-equity-part-2',
+  // El Niño 2026–2027 + anticipatory action evidence (June 2026 batch)
+  'el-nino-cascading-hazards-anticipatory-action',
+  'anticipatory-action-data-evidence',
 ]
 
 /**
@@ -100,6 +103,9 @@ const POST_PUBLISHED_AT: Record<string, string> = {
   'disaster-data-diplomacy-in-fragility': '2026-05-28',
   'protected-into-invisibility-part-1': '2026-06-04',
   'data-poverty-fragility-data-equity-part-2': '2026-06-05',
+  // El Niño 2026–2027 + anticipatory action evidence (June 2026 batch)
+  'el-nino-cascading-hazards-anticipatory-action': '2026-06-23',
+  'anticipatory-action-data-evidence': '2026-06-24',
 }
 
 /**
