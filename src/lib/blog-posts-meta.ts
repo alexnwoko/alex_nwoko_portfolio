@@ -73,7 +73,7 @@ export const POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: 'el-nino-cascading-hazards-anticipatory-action',
-    title: 'El Niño 2026–2027 and the Cascading Hazards: A Once-in-a-Cycle Opening for Anticipatory Action',
+    title: 'El Niño in 2026, the Cascading Hazards and the Timely Opening for Early Action',
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
@@ -81,7 +81,7 @@ export const POSTS_META: BlogPostMeta[] = [
     excerpt:
       "A strong El Niño is a forecast we can already read. It is also a test of whether we are willing to act on what we know, in the closing months before what we know becomes what we are too late to prevent. The 2026–2027 cycle is the one in which the system either uses what it built, or does not.",
     featured: true,
-    published: true,
+    published: false,
   },
   {
     slug: 'anticipatory-action-data-evidence',
@@ -93,7 +93,7 @@ export const POSTS_META: BlogPostMeta[] = [
     excerpt:
       "The 2023–2024 El Niño response delivered a 30 percent efficiency gain on every dollar spent early. Horn of Africa modelling shows US$2.3 to US$3.3 in net benefit per dollar. Multi-country analysis puts avoided losses at up to US$3 per US$1. The evidence has converged. The only barriers left are the speed of decisions and the flexibility of funding.",
     featured: true,
-    published: true,
+    published: false,
   },
   {
     slug: 'invisible-disasters-invisible-funding',

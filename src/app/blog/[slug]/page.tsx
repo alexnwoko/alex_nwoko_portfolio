@@ -3244,7 +3244,7 @@ And here is the revelation in that, the part I wish we said aloud more often. Th
   },
   'el-nino-cascading-hazards-anticipatory-action': {
     slug: 'el-nino-cascading-hazards-anticipatory-action',
-    title: 'El Niño 2026–2027 and the Cascading Hazards: A Once-in-a-Cycle Opening for Anticipatory Action',
+    title: 'El Niño in 2026, the Cascading Hazards and the Timely Opening for Early Action',
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
