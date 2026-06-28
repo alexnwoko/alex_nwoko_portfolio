@@ -5,14 +5,14 @@ import { POSTS_META } from '@/lib/blog-posts-meta'
 export const metadata: Metadata = {
   title: 'My Blog, Alex Nwoko',
   description:
-    'Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, humanitarian action, climate risk monitoring, data systems, Geospatial Information Management, and cash transfer programming.',
+    'Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, humanitarian action, climate risk monitoring, data systems, geospatial information management, and cash transfer programming.',
   keywords: [
     'disaster risk reduction',
     'development programmes',
     'humanitarian action',
-    'climate risk',
+    'climate risk monitoring',
     'humanitarian data systems',
-    'Geospatial Information Management',
+    'geospatial information management',
     'GIS',
     'cash transfer programming',
     'DELTA Resilience',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'My Blog, Alex Nwoko',
     description:
-      'A decade at the intersection of disaster risk reduction, development, humanitarian action, climate risk monitoring, data systems, Geospatial Information Management, and cash transfer programming.',
+      'A decade at the intersection of disaster risk reduction, development, humanitarian action, climate risk monitoring, data systems, geospatial information management, and cash transfer programming.',
     url: 'https://alexnwoko.com/blog',
     siteName: 'Alex Nwoko Portfolio',
     type: 'website',
@@ -55,7 +55,7 @@ export default function BlogPage() {
           Reflections from My Journey
         </h1>
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
-          Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, humanitarian action, climate risk monitoring, data systems, Geospatial Information Management, and cash transfer programming.
+          Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, humanitarian action, climate risk monitoring, data systems, geospatial information management, and cash transfer programming.
         </p>
       </section>
 
