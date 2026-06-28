@@ -65,6 +65,8 @@ export const TOPICS: Topic[] = [
       'Most of these arguments come from the same place: a decade of building the underlying disaster data systems in countries that are about to be measured by them.',
     ],
     postSlugs: [
+      'localising-anticipatory-action',
+      'from-trigger-to-coordinated-early-action',
       'el-nino-cascading-hazards-anticipatory-action',
       'anticipatory-action-data-evidence',
       'road-to-antalya-ncqg',
@@ -131,6 +133,7 @@ export const TOPICS: Topic[] = [
       'The posts in this topic come out of building those systems in practice: in Afghanistan, Bangladesh, Ethiopia, and Nigeria, and in the international architecture that connects them. They are about what disaster data is for, how it gets corrupted, and what governs whether it survives the agency that funded it.',
     ],
     postSlugs: [
+      'localising-anticipatory-action',
       'anticipatory-action-data-evidence',
       'desinventar-to-delta-resilience',
       'g-drsf-statisticians-disaster-managers',
@@ -193,6 +196,8 @@ export const TOPICS: Topic[] = [
       'These posts gather what I have learned about why early warning so often fails to become early action for the people who need it most, and what the next generation of systems has to look like to change that.',
     ],
     postSlugs: [
+      'from-trigger-to-coordinated-early-action',
+      'localising-anticipatory-action',
       'el-nino-cascading-hazards-anticipatory-action',
       'anticipatory-action-data-evidence',
       'delta-resilience-early-warning-anticipatory-action',
@@ -379,6 +384,8 @@ export const TOPICS: Topic[] = [
       'These essays come out of the IM Working Groups I have sat in, the platforms I have built and then watched survive (or not), and the slow shift toward agentic AI that is starting to change what an IM officer is actually for.',
     ],
     postSlugs: [
+      'from-trigger-to-coordinated-early-action',
+      'localising-anticipatory-action',
       'the-im-coordination-trap',
       'future-of-humanitarian-im-is-agentic',
       'politics-of-humanitarian-data-infrastructure',

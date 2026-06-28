@@ -56,6 +56,9 @@ const BLOG_SLUGS: string[] = [
   // El Niño 2026–2027 + anticipatory action evidence (June 2026 batch)
   'el-nino-cascading-hazards-anticipatory-action',
   'anticipatory-action-data-evidence',
+  // AA protocols + localisation (late-June 2026 batch)
+  'from-trigger-to-coordinated-early-action',
+  'localising-anticipatory-action',
 ]
 
 /**
@@ -106,6 +109,9 @@ const POST_PUBLISHED_AT: Record<string, string> = {
   // El Niño 2026–2027 + anticipatory action evidence (June 2026 batch)
   'el-nino-cascading-hazards-anticipatory-action': '2026-06-23',
   'anticipatory-action-data-evidence': '2026-06-24',
+  // AA protocols + localisation (late-June 2026 batch)
+  'from-trigger-to-coordinated-early-action': '2026-06-27',
+  'localising-anticipatory-action': '2026-06-28',
 }
 
 /**

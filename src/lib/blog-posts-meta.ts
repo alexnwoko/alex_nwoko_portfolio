@@ -72,6 +72,30 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
+    slug: 'localising-anticipatory-action',
+    title: 'Localising Anticipatory Action: Why It Has to Empower Governments, Not Work Around Them',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    excerpt:
+      "Most localisation conversations in anticipatory action have focused on local NGOs and community organisations. The primary responsibility holder for disaster management in every country is the government's lead disaster management authority. If our anticipatory action investments do not also build that authority, the architecture we are scaling will struggle to align with the Sendai Framework over the long run.",
+    featured: true,
+    published: true,
+  },
+  {
+    slug: 'from-trigger-to-coordinated-early-action',
+    title: 'From Trigger to Coordinated Early Action: Designing Multi-Sector Anticipatory Action Protocols',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    excerpt:
+      "The implementation and operationalisation of anticipatory action, the phase that sits between the trigger being initiated and assistance reaching targeted households, is the part the literature most often skips. It is also where most of the operational work and most of the failure modes live.",
+    featured: true,
+    published: true,
+  },
+  {
     slug: 'el-nino-cascading-hazards-anticipatory-action',
     title: 'El Niño in 2026, the Cascading Hazards and the Timely Opening for Early Action',
     category: 'Opinion / Cornerstone',

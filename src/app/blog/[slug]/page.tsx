@@ -3432,6 +3432,216 @@ I designed drought triggers in an office where the case for acting early was a s
       'the-case-for-anticipatory-cash',
     ],
   },
+  'from-trigger-to-coordinated-early-action': {
+    slug: 'from-trigger-to-coordinated-early-action',
+    title: 'From Trigger to Coordinated Early Action: Designing Multi-Sector Anticipatory Action Protocols',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'June 2026',
+    excerpt:
+      "The implementation and operationalisation of anticipatory action, the phase that sits between the trigger being initiated and assistance reaching targeted households, is the part the literature most often skips. It is also where most of the operational work and most of the failure modes live.",
+    keywords: [
+      'anticipatory action protocols', 'AA protocols', 'Early Action Protocols', 'EAP',
+      'IFRC DREF', 'Start Fund', 'Start Ready', 'CERF', 'FAO SFERA',
+      'WFP Anticipatory Action Fund', 'impact-based forecasting',
+      'multi-sector activation', 'sectoral playbooks', 'lead time window',
+      'CALP Network', 'locally-led AA', 'coordination protocols',
+    ],
+    sections: [
+      {
+        content: `*The implementation and operationalisation of anticipatory action, the phase that sits between the trigger being initiated and assistance reaching targeted households, is the part the literature most often skips. It is also where most of the operational work and most of the failure modes live. This piece is about the design of that phase.*
+
+*An anticipatory action trigger has been initiated. The forecast was reliable, the financing was pre-arranged, the protocol was on the shelf. The hardest twelve to ninety days of the operational response start now, and most of the literature is about to stop watching.*
+
+Most of the anticipatory action discourse describes either the front of the chain or the back. At the front: the forecast architecture, the impact-based modelling, the trigger thresholds. At the back: the cost-benefit evidence on whether early action actually outperforms reactive action. Both have moved a long way in the last five years. The middle, the operational sequence that runs from the moment a trigger is initiated to the moment assistance reaches a household, gets far less attention.
+
+That middle is where the protocols live. It is also where the failure modes live. A trigger that nobody is positioned to act on is a trigger initiated without a response architecture ready to receive it.
+
+This piece is about the design of that middle.`,
+      },
+      {
+        heading: 'The Data State at the Trigger Moment',
+        content: `Three things have to be true on the day an anticipatory action trigger is initiated.
+
+The forecast must be specific to a hazard, a geography, and a lead time the response can actually use. A useful trigger requires more than a seasonal outlook. It needs an [impact-based forecast produced under the WMO multi-hazard framework](https://wmo.int/topics/multi-hazard-early-warning-system), accelerated by the [Early Warnings for All initiative](https://earlywarningsforall.org/), that names the hazard, the geography, and a lead time the response can actually use. A forecast that says "drought conditions developing in southern Africa over the next two seasons" is policy material. A forecast that says "forage availability in the eastern pastoral zones of country X is expected to fall below the historical fifth percentile within 60 days" is operational. The protocol activates against the second.
+
+The impact data behind the trigger must be current enough to convert the forecast into a sectoral picture: who is at risk, what they stand to lose, what assistance can change the outcome. This is where national disaster loss systems carry weight that is rarely credited. A [DELTA Resilience](/blog/delta-resilience-early-warning-anticipatory-action)-grade loss database that tracks historical impact at administrative-unit resolution, aligned with the [UNDRR Sendai Framework Monitor](https://sendaimonitor.undrr.org/), is what allows the trigger to be initiated against a specific district rather than a generic region. Without it, the protocol activates blind.
+
+The targeting and delivery infrastructure must be operationally ready before the trigger is initiated, not assembled after. Beneficiary registers, ID systems, mobile-money rails, supplier framework agreements, pre-positioned stock locations, last-mile access maps. All of it has to exist on day zero. The failure mode here is the most common one in the entire anticipatory action chain: the trigger is initiated, the financing unlocks, and then a delivery system has to be built from scratch inside the lead-time window that the anticipatory action was supposed to use for the actual response.
+
+The first discipline of a working protocol is making sure all three of these conditions are met before the forecast ever arrives.`,
+      },
+      {
+        heading: 'Activating the Financing Layer',
+        content: `The trigger does not move money on its own. Pre-arranged financing does, and the protocols that work are the ones that identify which instrument fits which trigger before the forecast arrives.
+
+The fastest layer is the [IFRC Disaster Response Emergency Fund (DREF)](https://www.ifrc.org/happening-now/emergency-appeals/ifrc-disaster-response-emergency-fund) and its Forecast-based Action window. National Red Cross and Red Crescent societies can request anticipatory disbursements against pre-agreed [Early Action Protocols (EAPs)](https://www.forecast-based-financing.org/early-action-protocols/), with decisions in hours and disbursements in days. The [Start Fund](https://startnetwork.org/funds/global-start-fund) operates on a 72-hour decision cycle for rapid-onset crises, and the [Start Ready](https://startnetwork.org/funds/start-ready) facility runs pre-positioned, parametric anticipatory disbursements against named triggers.
+
+The [CERF](https://cerf.un.org/) Rapid Response and Underfunded Emergencies windows do not operate on the same speed as DREF or Start, but the CERF Anticipatory Action allocations have grown into one of the largest single-source funding lines for AA in the UN system. The [FAO Special Fund for Emergency and Rehabilitation Activities (SFERA)](https://www.fao.org/emergencies/partners/sfera/en) holds an Anticipatory Action component dedicated to agricultural and livelihood-protection actions. The [WFP Anticipatory Action Fund](https://www.wfp.org/anticipatory-actions) operates on a similar logic on the food-security side.
+
+What unites the working examples across these instruments is sequencing. The protocol names, in advance, which instrument disburses first, which provides the surge layer, and which underwrites the longer-tail recovery actions. Sequencing is what makes the financing layer actually deliver inside the lead-time window.`,
+      },
+      {
+        heading: 'The Multi-Sector Activation Sequence by Hazard Type',
+        content: `Different hazards have different lead-time windows, and the multi-sector activation sequence has to match the lead-time geometry, not a generic template.
+
+Drought is the longest lead-time hazard and the most permissive to AA design. With a useful trigger window of 60 to 180 days, food security and livelihoods carry the lead role. Livestock support (commercial destocking, fodder and water tankering, vaccination surges) activates early because pastoral asset loss compounds fastest. Anticipatory cash transfers move in parallel, allowing households to buy ahead of price spikes. WASH and nutrition activate as secondary tracks. Health surveillance scales up against the disease pathways that follow nutrition stress and water-system stress.
+
+Riverine flood compresses everything. With a 3 to 10 day lead time, the response cannot stage its sectors sequentially. Evacuation, shelter, WASH pre-positioning of treatment chemicals and hygiene supplies, protection for displaced populations and at-risk groups, and logistics activate near-simultaneously. The decision sequence is concurrent rather than serial.
+
+Cyclone and typhoon protocols run on the tightest window: 3 to 7 days from confident forecast to landfall. Pre-positioning, shelter reinforcement, evacuation routing, logistics surge contracts and protection mechanisms compress into the same operational hour-by-hour schedule. The most mature examples (Bangladesh's cyclone protocols, the Philippines' typhoon AA, [IFRC's regional Early Action Protocols](https://www.forecast-based-financing.org/early-action-protocols/)) work because the activation sequence was rehearsed by simulation long before the forecast arrived.
+
+The protocol has to match the hazard. A drought protocol applied to a cyclone window will leave half the assistance arriving after the impact. A cyclone-style compressed activation applied to a drought window wastes the long lead-time the slow-onset hazard actually offers.`,
+      },
+      {
+        heading: 'Sectoral Playbooks in the Lead-Time Window',
+        content: `What each cluster actually does between trigger and impact is the part that protocol libraries codify. Six sectors are usually in scope.
+
+Food security and livelihoods is the most operationally developed sector. The [FAO Anticipatory Action portfolio](https://www.fao.org/in-action/anticipatory-action/en) covers commercial destocking support for pastoralists facing forage collapse, anticipatory cash transfers calibrated to local Minimum Expenditure Basket levels, early-planting seed and tool pre-positioning, and livestock fodder and water tankering. The [CALP Network](https://www.calpnetwork.org/) anticipatory cash guidance covers the operational rails: transfer values, delivery mechanisms, post-distribution monitoring designs. Most working protocols in this sector are FAO- or WFP-led with national-government counterpart agencies.
+
+Water, sanitation and hygiene activates against both drought and flood triggers, with different actions in each. Drought-driven WASH actions centre on borehole maintenance and rehabilitation, water-trucking contingency contracts, and household water-treatment chemical pre-positioning. Flood-driven WASH centres on hygiene kit pre-positioning, latrine reinforcement in flood-prone sites, and treatment supplies for the disease outbreaks that follow disrupted water systems. The [UNICEF guidance on WASH in emergencies](https://www.unicef.org/wash) anchors the sector's operational standards.
+
+Health activates against the disease pathways that follow drought, flood and displacement. The actions are familiar: vaccine and essential-medicine pre-positioning, disease-surveillance scaling, surge-staffing agreements with national health authorities, and mobile-clinic deployment-plan confirmation. The discipline is operational readiness. The protocol pre-agrees which districts get which medicines, which staff are on which deployment lists, and which laboratories handle which testing surges.
+
+Shelter and Camp Coordination and Camp Management (CCCM) is the sector whose lead-time window varies most by hazard. For floods and cyclones, shelter-reinforcement materials pre-position to identified at-risk households, evacuation sites get readiness checks, NFI (non-food item) kits stage at district level, and site-management staff agreements activate. For drought, shelter is rarely a lead-time sector at all. It activates downstream when displacement starts.
+
+Protection is the sector that requires the most relational pre-positioning. The actions are not material in the same way as the others. Gender-based violence (GBV) referral pathways have to be active and known to community focal points. Child-protection coordination structures have to be briefed. Evacuation prioritisation for older people, people with disabilities, pregnant and lactating women, and unaccompanied children has to be agreed in advance. The [IASC accountability and protection mainstreaming guidance](https://interagencystandingcommittee.org/accountability-affected-people-and-protection-mainstreaming) anchors the standards. The work that makes this sector functional in the lead-time window is the work that happened months before the trigger.
+
+Logistics is the silent enabler. Transport-contract surge clauses, fuel reserves, supplier framework agreements, customs clearance pre-agreements, last-mile access mapping. None of these are sectoral assistance in the conventional sense, but if any of them fail, every other sectoral activation stalls. The most mature protocols treat logistics as the spine of the lead-time window, not as a support function.`,
+      },
+      {
+        heading: 'The Localisation Principle',
+        content: `Locally-led anticipatory action gets repeated as a slogan in donor documents. Inside the lead-time window of an actual response, it is the only design that works.
+
+The international system cannot deploy fast enough on a 7-day cyclone trigger. The decision chain alone, from forecast confirmation through inter-agency consultation through donor sign-off, eats more than half the window. The actions that have to happen in those days are local: who gets evacuated first, which boreholes get repaired before the floods hit, which households get the anticipatory cash transfer, which protection focal points are activated. Community knowledge of micro-geographies, household vulnerability, market dynamics and social networks is what converts a generic protocol into a targeted response.
+
+The architecture is starting to align with this finding. The [IASC Grand Bargain](https://interagencystandingcommittee.org/grand-bargain) commitments on locally-led response are now reflected in dedicated funding lines for locally-led anticipatory action at IFRC, the [Start Network](https://startnetwork.org/), and several CERF allocations. The discipline these lines impose goes beyond funding flow. It requires the trigger design, the threshold setting, the sectoral activation plan and the targeting criteria to be co-developed with local responders before the protocol is signed. A protocol that arrives in a district as a delivery instruction rather than a co-designed plan will under-perform inside the lead-time window.`,
+      },
+      {
+        heading: 'The Coordination Problem',
+        content: `When six clusters activate simultaneously inside a tight lead-time window, who has the floor?
+
+Anticipatory coordination is structurally different from post-event coordination. Post-event coordination is reactive: needs assessments come in, gaps are mapped, response plans are revised. Anticipatory coordination is pre-emptive and compressed. Decisions have to be made before impacts are visible, in a window where every sector wants to activate first, and the financing reconciliation logic has to be agreed in advance.
+
+The questions a working protocol answers in writing are the ones an unsuccessful protocol leaves to be improvised. Who owns the trigger? Who has the authority to escalate to the next financing tier? In what order do the sectoral activations sequence, and who decides when sequencing has to compress under a faster-than-expected onset? When two clusters need the same logistics pathway in the same 48-hour window, who gets it? How are pre-positioned stocks released and replenished?
+
+These are decision-rights questions, not abstract coordination ones, and they have to be answered in writing before the trigger is initiated. [OCHA's inter-cluster coordination mechanisms](https://www.unocha.org/) and the equivalent inter-agency structures at regional and country level have started to develop anticipatory-mode coordination protocols, but the discipline is still being built. Most of the failures I have watched in anticipatory responses live here. The financing was in place, the data was current, the sectoral plans existed. The coordination layer was the part that had not been designed for the compressed lead-time window.`,
+      },
+      {
+        content: `From trigger to action is not automatic. It is a designed sequence, and the protocols that work are the ones written before the forecast arrives.
+
+The discourse about anticipatory action has been generous to the forecasting layer and the cost-benefit evidence. It has been quieter about the operational middle, which is where the institutions that hold the trigger either deliver on the promise or quietly fail to. Designing that middle well is the work the next decade of AA has to take seriously. The forecast layer is mature. The evidence is in. The protocols are what now decide whether either of those translates into assistance that reaches the household before the impact does.
+
+The trigger is initiated. The protocol activates. The middle holds.
+
+*Tags: Anticipatory Action · Sectoral Coordination · Humanitarian Data*`,
+      },
+    ],
+    relatedSlugs: [
+      'anticipatory-action-data-evidence',
+      'el-nino-cascading-hazards-anticipatory-action',
+      'delta-resilience-early-warning-anticipatory-action',
+    ],
+  },
+  'localising-anticipatory-action': {
+    slug: 'localising-anticipatory-action',
+    title: 'Localising Anticipatory Action: Why It Has to Empower Governments, Not Work Around Them',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '10 min',
+    date: 'June 2026',
+    excerpt:
+      "Most localisation conversations in anticipatory action have focused on local NGOs and community organisations. The primary responsibility holder for disaster management in every country is the government's lead disaster management authority. If our anticipatory action investments do not also build that authority, the architecture we are scaling will struggle to align with the Sendai Framework over the long run.",
+    keywords: [
+      'localisation', 'locally-led anticipatory action', 'NDMA', 'Sendai Framework',
+      'Grand Bargain', 'African Risk Capacity', 'ARC', 'CCRIF',
+      'World Bank DRFI', 'sovereign risk pools', 'public financial management',
+      'government-led DRR', 'IFRC', 'Start Network', 'IGAD ICPAC',
+      'ASEAN AHA Centre', 'SADC DRR', 'ECOWAS', 'Sendai Target E',
+      'national disaster management authority',
+    ],
+    sections: [
+      {
+        content: `*Most localisation conversations in anticipatory action have focused on local NGOs and community organisations. That is part of the picture. The primary responsibility holder for disaster management in every country is the government's lead disaster management authority, and if our anticipatory action investments do not also build that authority, the architecture we are scaling will struggle to align with the Sendai Framework over the long run.*
+
+*An anticipatory action trigger is initiated in a country whose National Disaster Management Authority holds the legal mandate, the institutional history, the relationships with sectoral ministries, and the constitutional responsibility to lead the response. Within hours, an inter-agency coordination meeting convenes. The international architecture is in the room. The NDMA is at the table. The conversation moves quickly. Decisions get shaped around the authority that is supposed to be at the centre of them.*
+
+I have been in that meeting more than once. Everyone in the room is trying to act in good faith inside structures that did not anticipate this question. The argument I want to make in this piece is that the next stage of localisation in anticipatory action will need to do something the first stage did not quite do, which is build the authority of the institution constitutionally responsible for the response alongside the local actors who deliver on its behalf.
+
+This is the longer-term argument I have been making across my work on [national disaster data systems governments can own](/blog/building-systems-governments-can-own), on [the politics of who owns continuity when the funding cycle ends](/blog/politics-of-humanitarian-data-infrastructure), and on the [evolution from DesInventar to DELTA Resilience](/blog/desinventar-to-delta-resilience) as a sovereignty question. This piece applies the same logic to AA.`,
+      },
+      {
+        heading: 'Where Localisation Has Landed So Far',
+        content: `The [Grand Bargain](https://interagencystandingcommittee.org/grand-bargain) and the decade of localisation discourse that followed shifted funding and decision-making toward "local and national responders." In practice, "local and national" has most often translated into local and national NGOs and community-based organisations. The lead government disaster management authority has typically been engaged as a coordination stakeholder rather than as the institution with primary statutory responsibility for the response.
+
+That has produced real progress on bringing implementation closer to communities, which is one of the goals localisation was designed to achieve. The next stage of the work is to bring the same commitment to building the authority that has the long-run responsibility to integrate anticipatory action into the country's broader disaster management vision. Without that, the implementation gains stay episodic and do not consolidate into a national capability that survives the funding cycle.
+
+I have written related arguments before, in [Building Disaster Data Systems That Governments Can Own](/blog/building-systems-governments-can-own) and in the [lessons from six countries](/blog/lessons-six-countries). The pattern repeats in AA, and there is room to take it further.`,
+      },
+      {
+        heading: 'The Concerns Shaping How AA Funding Flows',
+        content: `It is worth pausing on why most anticipatory action financing flows the way it currently does. The choices are not arbitrary. Donors carry fiduciary obligations to the publics that fund them. Public financial management capacity in many disaster-prone countries is genuinely uneven, and routing fast-disbursing AA funds through systems that cannot guarantee timely use is a real risk for everyone involved, including the affected communities. Pooled instruments operated by UN agencies and INGOs can disburse in days, where treasury-routed flows often need longer cycles to clear. The current architecture is the considered answer to those constraints, and the people who designed it have been trying to make AA work in conditions where it could otherwise stall.
+
+The constraint set is real, and any honest conversation about localisation has to start there. The structural consequence, however, is that the financing rails we have built largely bypass the institution that has the long-run responsibility for disaster management. If treasury never handles AA money, the government never builds the capacity to handle it at scale, and the next cycle of AA programmes has to route around government again. The pattern is self-perpetuating, and the longer it continues, the more we entrench the very capacity gap we keep using as a reason to route around government in the first place.
+
+The good news is that the constraints and the long-run goal can be addressed at the same time. The next section is about how.`,
+      },
+      {
+        heading: 'Building Balance: What the Architecture Can Still Do Differently',
+        content: `The answer to this structural challenge is not to abandon the funding pathways that currently make AA work at speed. It is to add a layer of investment, alongside the existing rails, that builds the lead disaster management authority's ability to play the convening and integrating role only it can play. Several practical steps would change the trajectory.
+
+The first is dedicated investment in coordination capacity at the NDMA. Most AA programmes hold detailed coordination structures with their UN cluster co-leads and INGO partners but do not allocate budget for the government convenor's coordination function itself. Embedded technical staff inside the NDMA secretariat, multi-year staffing support for the agency's AA focal points, secondment arrangements that strengthen rather than substitute for civil-service positions, and protected operating budgets for the NDMA's own coordination role would meaningfully change the picture.
+
+The second is a reporting architecture that goes in both directions. AA programmes report to their donors regularly and in detail. Reporting to the lead government disaster management authority, by the same partners, on the same operational events, in the same time frames, is far less common. A protocol-level requirement that AA programmes report into the NDMA as a core compliance condition would shift the information flow without disrupting the donor accountability layer. The NDMA in turn would need the technical capacity to receive, store, analyse and act on those reports, which is the second investment area and one that AA plans rarely budget for explicitly.
+
+The third is making NDMA staffing and operating costs an eligible line in AA financing. Most current AA plans do not provision the government staff who have to coordinate, supervise and report on activations. Without that line, the agency's involvement gets squeezed between the activities of better-resourced partners, and the institution that should be at the centre stays under-staffed. A small allocation per activation, paid through arrangements that do not disrupt civil-service salary structures, would unlock far more than its size suggests.
+
+The fourth is treasury-adjacent financing models that build government public financial management capacity over time without exposing donors to the fiduciary risks they are right to be cautious about. National contingency reserves topped up with multi-year predictable donor contributions. Trust funds where government holds a meaningful share of the governance. Sovereign risk pools where the architecture already routes through government. [African Risk Capacity](https://www.africanriskcapacity.org/) for Africa and [CCRIF](https://www.ccrif.org/) for the Caribbean are examples of financing rails that built sovereign capacity instead of routing around it. The [World Bank's Disaster Risk Financing and Insurance Program](https://www.worldbank.org/en/programs/disaster-risk-financing-and-insurance-program) has been building this stack for over a decade, and the AA community could integrate with it more deliberately than we currently do.
+
+None of these steps require dismantling the architectures that currently make AA work. They add a layer of investment alongside the existing flows that builds the authority every downstream actor relies on.`,
+      },
+      {
+        heading: 'Why This Is a Sendai Framework Question',
+        content: `The [Sendai Framework for Disaster Risk Reduction 2015 to 2030](https://www.undrr.org/implementing-sendai-framework/what-sendai-framework) is built around national ownership. Priority 2 is governance. Target E commits every country to having a national and locally adopted disaster risk reduction strategy by 2030, owned by government. The whole architecture of the framework assumes that risk knowledge, investment, preparedness and recovery are state functions, with the international community in a supporting role.
+
+Anticipatory action that operates outside this architecture, even when it operates well within its own terms, does not build into Sendai progress at country level the way it could. Two systems develop in parallel: a Sendai-aligned national DRR architecture led by government, and an AA system led by UN agencies and INGOs, with partial integration. When the international system funds the second more readily than the first, the country ends up with faster short-term response capability and a slower long-term institutional foundation.
+
+The same logic comes through in the [G-DRSF argument](/blog/g-drsf-statisticians-disaster-managers) about disaster managers and national statistical offices needing to become one operational community, and in the broader [case for disaster loss data as the evidentiary backbone of climate adaptation](/blog/disaster-loss-data-climate-adaptation). [Sendai Monitor](https://sendaimonitor.undrr.org/) reporting, National Adaptation Plan indicators, NDC adaptation tracking and climate finance applications all run through the lead disaster management authority. Strengthening it strengthens every downstream commitment.`,
+      },
+      {
+        heading: 'Government-Led, Multi-Actor',
+        content: `The strongest AA operations are government-led and multi-actor. The lead disaster management authority owns the overall plan. Sectoral ministries lead their respective clusters, with cluster co-lead arrangements with UN agencies where appropriate. INGOs and local NGOs run implementation against government-issued operational plans. CBOs hold the community-level intelligence and the last-mile delivery. International donors fund the overall envelope and align their accountability frameworks to the government strategy.
+
+This model strengthens local civil society too. Local NGOs and CBOs are most effective when their work feeds back into government systems rather than running parallel to them. The data they collect, the trust they hold, the access they have, all become more valuable when integrated upward into the national disaster management architecture.
+
+The [IFRC's locally-led anticipatory action funding lines](https://www.ifrc.org/) and the [Start Network's locally-led work](https://startnetwork.org/) are starting to support this architecture explicitly. As that discipline spreads further into the wider donor community, the gap between localisation in principle and localisation in practice will close.`,
+      },
+      {
+        heading: 'Regional Architectures Are Part of the Picture',
+        content: `Most strong national AA systems sit inside regional architectures that no individual government can host alone. The [SADC](https://www.sadc.int/) Disaster Risk Reduction Unit, [ECOWAS](https://www.ecowas.int/) emergency coordination, the [IGAD Climate Prediction and Applications Centre (ICPAC)](https://www.icpac.net/), the [ASEAN AHA Centre](https://ahacentre.org/), [African Risk Capacity](https://www.africanriskcapacity.org/) and the [Caribbean Catastrophe Risk Insurance Facility](https://www.ccrif.org/) all carry technical, financial and coordination capacity that smaller national disaster management authorities cannot maintain on their own.
+
+The regional layer carries transboundary hazards (drought belts, cyclone basins, locust corridors), shared early warning systems and sovereign risk pooling. Government-led AA design has to include the regional layer explicitly, both because it adds capacity to the national level and because some hazards do not respect national borders.
+
+The implication for AA implementers is that the architecture has three vertical layers (national authority, decentralised government, civil society) and a fourth horizontal layer (regional intergovernmental bodies). All four belong in the design. International humanitarian agencies are a support function across that architecture.`,
+      },
+      {
+        content: `Building anticipatory action with government at the centre, alongside the local actors who deliver on its behalf, is the next stage of localisation. It is the design that links AA to Sendai, to National Adaptation Plans, to NDC commitments, to the broader DRR and resilience picture, and to the institution-building that survives the funding cycle.
+
+The lead disaster management authority of a country is the institution that will still be there ten years after the current AA programme ends. The question every AA designer can usefully ask, before the protocol is signed, is whether the work being done is also building that institution's capacity to lead the next response. The answer is the test of whether the design is contributing to the long-run vision the country itself has set for disaster management.
+
+*Tags: Anticipatory Action · Localisation · Sendai Framework*`,
+      },
+    ],
+    relatedSlugs: [
+      'building-systems-governments-can-own',
+      'politics-of-humanitarian-data-infrastructure',
+      'from-trigger-to-coordinated-early-action',
+      'anticipatory-action-data-evidence',
+    ],
+  },
 }
 
 export function generateStaticParams() {
