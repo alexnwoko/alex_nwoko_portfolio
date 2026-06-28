@@ -141,6 +141,13 @@ interface BlogPost {
    * post's pillar via PILLAR_KEYWORDS.
    */
   keywords?: string[]
+  /**
+   * Optional FAQ Q&A pairs. When present, the post page emits a FAQPage
+   * JSON-LD node alongside BlogPosting + BreadcrumbList, and renders a
+   * visible "Frequently asked" section above Continue Reading. Major AEO
+   * win for cornerstone posts: answer engines extract these verbatim.
+   */
+  faqs?: { question: string; answer: string }[]
 }
 
 /**
@@ -3544,6 +3551,38 @@ The trigger is initiated. The protocol activates. The middle holds.
       'el-nino-cascading-hazards-anticipatory-action',
       'delta-resilience-early-warning-anticipatory-action',
     ],
+    faqs: [
+      {
+        question: 'What is an anticipatory action protocol?',
+        answer:
+          'An anticipatory action protocol is a pre-agreed operational plan that defines what humanitarian and government partners will do, in what order, with what financing, the moment a forecast-based trigger is initiated. The protocol specifies the trigger thresholds, the sectoral activation sequence, the financing instruments to be drawn down, and the coordination decision rights, all settled in advance of the forecast arriving.',
+      },
+      {
+        question: 'What financing instruments support anticipatory action?',
+        answer:
+          'The operational financing layer includes the IFRC Disaster Response Emergency Fund (DREF) and its Forecast-based Action window, the Start Fund and Start Ready facility, the CERF Rapid Response and Anticipatory Action allocations, the FAO Special Fund for Emergency and Rehabilitation Activities (SFERA), and the WFP Anticipatory Action Fund. Each has different lead-time profiles, eligibility rules and ceilings; working protocols name in advance which instrument disburses first for a given trigger.',
+      },
+      {
+        question: 'What is an Early Action Protocol (EAP)?',
+        answer:
+          'An Early Action Protocol is the IFRC framework that defines, in writing, the trigger thresholds, the actions to be taken, and the pre-agreed financing release from the DREF Forecast-based Action window for a specific hazard in a specific country. National Red Cross and Red Crescent Societies develop EAPs in advance so that when the trigger condition is met, anticipatory action can move within hours.',
+      },
+      {
+        question: 'How does the lead time of a hazard affect anticipatory action design?',
+        answer:
+          'Different hazards have different lead-time windows and require different sectoral sequencing. Drought offers 60 to 180 days of useful lead time, allowing food security, livelihoods, livestock, anticipatory cash and WASH to activate in sequence. Riverine flood compresses everything into a 3 to 10 day window with concurrent sectoral activation. Cyclone and typhoon protocols run on a 3 to 7 day window where pre-positioning, shelter, evacuation, logistics and protection compress into the same hour-by-hour schedule.',
+      },
+      {
+        question: 'Which sectors are typically activated during an anticipatory action response?',
+        answer:
+          'Six sectors are usually in scope: food security and livelihoods (FAO and WFP-led), water sanitation and hygiene (anchored on UNICEF standards), health, shelter and Camp Coordination and Camp Management, protection (anchored on IASC accountability and protection mainstreaming guidance), and logistics. The specific combination and sequencing depends on the hazard type and lead-time window.',
+      },
+      {
+        question: 'Why is locally-led anticipatory action important?',
+        answer:
+          'The international system cannot deploy fast enough on a tight lead-time trigger; the decision chain from forecast confirmation through inter-agency consultation through donor sign-off eats more than half the window. Locally-led action draws on community knowledge of micro-geographies, household vulnerability, market dynamics and social networks, which is what converts a generic protocol into a targeted response that reaches the right households before the impact lands.',
+      },
+    ],
   },
   'localising-anticipatory-action': {
     slug: 'localising-anticipatory-action',
@@ -3640,6 +3679,38 @@ The lead disaster management authority of a country is the institution that will
       'politics-of-humanitarian-data-infrastructure',
       'from-trigger-to-coordinated-early-action',
       'anticipatory-action-data-evidence',
+    ],
+    faqs: [
+      {
+        question: 'What does localisation mean in anticipatory action?',
+        answer:
+          'Localisation in anticipatory action means shifting funding, decision-making and operational authority toward national and sub-national actors who lead the response. In its first stage, the discourse has focused on local NGOs and community-based organisations. The next stage is building the authority of the government\'s lead disaster management agency, which holds the legal mandate and long-run responsibility for disaster management in the country.',
+      },
+      {
+        question: 'What role does the National Disaster Management Authority play in anticipatory action?',
+        answer:
+          'The National Disaster Management Authority (or equivalent lead disaster management agency) holds the statutory mandate for disaster management in most countries. It is the institution constitutionally responsible for declaring disasters, coordinating inter-ministerial response, and integrating anticipatory action into the country\'s broader disaster risk reduction strategy. Anticipatory action programmes that operate in parallel to this authority build a system that is harder to sustain once the funding cycle ends.',
+      },
+      {
+        question: 'How does the Sendai Framework relate to anticipatory action?',
+        answer:
+          'The Sendai Framework for Disaster Risk Reduction 2015 to 2030 is built around national ownership. Priority 2 is governance, and Target E commits every country to a national and locally adopted disaster risk reduction strategy by 2030, owned by government. Anticipatory action that operates outside this architecture does not build into Sendai progress at country level the way it could. Aligning AA programmes with the national DRR strategy strengthens both.',
+      },
+      {
+        question: 'Why do donors and UN agencies often route anticipatory action financing around government?',
+        answer:
+          'The reasons are real: donor fiduciary obligations, uneven public financial management capacity in many disaster-prone countries, and the speed at which pooled instruments operated by UN agencies and INGOs can disburse compared with treasury-routed flows. These constraints are legitimate. The structural consequence, however, is that financing rails that bypass government do not build the government\'s capacity to handle anticipatory action over time, which entrenches the very capacity gap used to justify routing around government.',
+      },
+      {
+        question: 'What are sovereign risk pools and how do they support anticipatory action?',
+        answer:
+          'Sovereign risk pools are regional or multi-country financial instruments where governments hold a meaningful share of the governance and parametric insurance arrangements pay out against pre-agreed triggers. The African Risk Capacity (ARC) for Africa and the Caribbean Catastrophe Risk Insurance Facility (CCRIF) are leading examples. The World Bank\'s Disaster Risk Financing and Insurance Program has been building this stack for over a decade. These pools route through government and build sovereign capacity rather than bypassing it.',
+      },
+      {
+        question: 'How can anticipatory action financing strengthen government disaster management capacity?',
+        answer:
+          'Four practical steps: dedicated investment in coordination capacity at the National Disaster Management Authority, a two-way reporting architecture so AA programmes report to government as well as to donors, making NDMA staffing and operating costs an eligible line in AA financing, and treasury-adjacent financing models such as sovereign risk pools and national contingency reserves. None of these require dismantling existing AA financing pathways; they add a layer of investment that builds the authority every downstream actor relies on.',
+      },
     ],
   },
 }
@@ -3860,9 +3931,29 @@ export default async function BlogPostPage({
     itemListElement: breadcrumbItems,
   }
 
+  // FAQPage node — only emitted when the post defines an faqs array.
+  // Material AEO win: answer engines (Google AI Overviews, Perplexity,
+  // ChatGPT Search) extract Q&A pairs verbatim when they appear both
+  // visibly on the page and in this schema.
+  const faqNode = post.faqs && post.faqs.length > 0 ? {
+    '@type': 'FAQPage',
+    '@id': `${url}#faq`,
+    mainEntity: post.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  } : null
+
+  const graph: Record<string, unknown>[] = [blogPostingNode, breadcrumbNode]
+  if (faqNode) graph.push(faqNode)
+
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@graph': [blogPostingNode, breadcrumbNode],
+    '@graph': graph,
   }
 
   // Replace `</` with `<\/` to prevent any chance of breaking out of the
@@ -3953,6 +4044,29 @@ export default async function BlogPostPage({
             ))}
           </div>
         </div>
+      )}
+
+      {/* Frequently asked — visible FAQ block. Mirrors the FAQPage
+          JSON-LD emitted in @graph above. Answer engines (Google AI
+          Overviews, Perplexity, ChatGPT Search) prefer FAQ content
+          that exists both visibly AND in schema. */}
+      {post.faqs && post.faqs.length > 0 && (
+        <section className="max-w-3xl mx-auto px-6 mb-16">
+          <div className="border-t border-beige-300 pt-12">
+            <h2 className="font-serif text-2xl text-coffee mb-2">Frequently asked</h2>
+            <p className="text-sm text-coffee-muted mb-8">
+              Short, sourceable answers to the questions that come up most around this topic.
+            </p>
+            <div className="space-y-6">
+              {post.faqs.map((faq, i) => (
+                <div key={i} className="bg-white rounded-xl border border-beige-300 p-6">
+                  <h3 className="font-semibold text-coffee mb-2 text-base">{faq.question}</h3>
+                  <p className="text-sm text-coffee-light/85 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       )}
 
       {/* Share buttons — sit just below the article body and above Continue Reading */}
