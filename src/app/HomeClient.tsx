@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
+import WorkSamplesMarquee from '@/components/WorkSamplesMarquee'
 
 /* ───────── Data ───────── */
 const pillars = [
@@ -216,26 +217,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ ABOUT PREVIEW ═══ */}
-      <section className="py-14 bg-beige-200/50">
+      {/* ═══ WORK SAMPLES MARQUEE ═══ */}
+      <section className="py-14 bg-beige-100">
         <div
           ref={aboutFade.ref}
-          className={`max-w-4xl mx-auto px-6 transition-all duration-700 ${aboutFade.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`transition-all duration-700 ${aboutFade.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">About</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-8">The Journey</h2>
-          <p className="text-lg text-coffee-light/80 leading-relaxed mb-6">
-            There&rsquo;s a particular kind of urgency that drives you when you&rsquo;ve seen what happens when decisions are made without evidence. Early in my career, I watched communities suffer not because help wasn&rsquo;t available, but because the information to direct that help simply didn&rsquo;t exist, because no one had mapped where the flood risk was highest, because cash transfers reached the wrong households, because satellite data sat in silos while responders worked blind.
-          </p>
-          <p className="text-lg text-coffee-light/80 leading-relaxed mb-6">
-            That question, <em>how do you turn fragmented data into systems that save lives?</em>, has taken me from mapping disaster risk in northeast Nigeria to designing cash-based intervention systems in Cox&rsquo;s Bazar, from building geospatial drought monitoring platforms in Ethiopia to leading a $9.7M USAID-funded program in Afghanistan where satellite imagery, humanitarian reporting, climate early warning, and cash transfer coordination all had to work as one integrated system.
-          </p>
-          <p className="text-lg text-coffee-light/80 leading-relaxed mb-8">
-            Across six countries and a decade of complex emergencies, the thread has always been the same: <em>bridging data analytics, geospatial intelligence, disaster risk science, and humanitarian cash programming into systems that put actionable evidence in front of decision-makers before a crisis becomes a catastrophe.</em>
-          </p>
-          <Link href="/about" className="text-dusty-orange font-medium text-sm hover:underline">
-            Read the full story &rarr;
-          </Link>
+          <div className="max-w-6xl mx-auto px-6 mb-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Work Samples</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-3">A Decade of Dashboards, Maps and Analyses</h2>
+            <p className="text-base text-coffee-light/80 leading-relaxed max-w-3xl">
+              Selected front pages from operational dashboards, vulnerability maps, situation analyses, post-distribution monitoring reports and cash-programming assessments produced across Afghanistan, Bangladesh, Ethiopia, Nigeria, and the global humanitarian architecture. Hover to pause, click to enlarge.
+            </p>
+          </div>
+          <WorkSamplesMarquee />
         </div>
       </section>
 
