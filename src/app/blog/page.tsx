@@ -5,25 +5,26 @@ import { POSTS_META } from '@/lib/blog-posts-meta'
 export const metadata: Metadata = {
   title: 'My Blog, Alex Nwoko',
   description:
-    'Reflections, technical deep dives, and opinion pieces on disaster risk reduction, DELTA Resilience, Sendai Framework, humanitarian data systems, GIS, climate analytics, anticipatory action, and cash programming, drawn from a decade of building data infrastructure across six countries.',
+    'Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, and humanitarian action, climate risk, data systems, Geospatial Information Management, and cash transfer programming.',
   keywords: [
-    'disaster risk reduction blog',
-    'humanitarian data blog',
+    'disaster risk reduction',
+    'development programmes',
+    'humanitarian action',
+    'climate risk',
+    'humanitarian data systems',
+    'Geospatial Information Management',
+    'GIS',
+    'cash transfer programming',
     'DELTA Resilience',
     'Sendai Framework',
-    'G-DRSF',
     'anticipatory action',
-    'voice AI humanitarian',
-    'climate adaptation',
-    'cash transfer programming',
-    'data ecosystem maturity',
     'Alex Nwoko',
   ],
   alternates: { canonical: 'https://alexnwoko.com/blog' },
   openGraph: {
     title: 'My Blog, Alex Nwoko',
     description:
-      'Reflections, technical deep dives, and opinions on DRR, humanitarian data systems, climate, and cash programming.',
+      'A decade at the intersection of disaster risk reduction, development, humanitarian action, climate risk, data systems, Geospatial Information Management, and cash transfer programming.',
     url: 'https://alexnwoko.com/blog',
     siteName: 'Alex Nwoko Portfolio',
     type: 'website',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'My Blog, Alex Nwoko',
     description:
-      'Reflections on DRR, humanitarian data systems, climate, and cash programming.',
+      'A decade at the intersection of disaster risk reduction, development, humanitarian action, climate risk, data systems, GIS, and cash transfer programming.',
   },
 }
 // Hide posts with published: false from the public listing. The data
@@ -54,7 +55,7 @@ export default function BlogPage() {
           Reflections from My Journey
         </h1>
         <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed">
-          Reflections, technical deep dives, and opinions from a decade at the intersection of humanitarian data, GIS, climate risk, and cash programming.
+          Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, and humanitarian action, climate risk, data systems, Geospatial Information Management, and cash transfer programming.
         </p>
       </section>
 
