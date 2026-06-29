@@ -224,10 +224,10 @@ export default function Home() {
           className={`transition-all duration-700 ${aboutFade.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
           <div className="max-w-6xl mx-auto px-6 mb-8">
-            <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Work Samples</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-3">A Decade of Dashboards, Maps and Analyses</h2>
+            <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Portfolio Insight</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-3">A Decade of Leading Disaster and Humanitarian Analytics, Data Systems, Field Coordination and Information Management</h2>
             <p className="text-base text-coffee-light/80 leading-relaxed max-w-3xl">
-              Selected front pages from operational dashboards, vulnerability maps, situation analyses, post-distribution monitoring reports and cash-programming assessments produced across Afghanistan, Bangladesh, Ethiopia, Nigeria, and the global humanitarian architecture. Hover to pause, click to enlarge.
+              A snapshot of work I have led across a decade of practice, the operational dashboards, sectoral analytics, vulnerability maps, situation analyses, post-distribution monitoring frameworks and inter-agency coordination products that have supported response and decision-making across Afghanistan, Bangladesh, Ethiopia, Nigeria, and the global humanitarian architecture. The <Link href="/about" className="text-dusty-orange underline underline-offset-2 hover:text-darkred transition-colors">guiding principles behind my vision of a data-enabled world</Link> sit on the About page, and my ongoing <Link href="/blog" className="text-dusty-orange underline underline-offset-2 hover:text-darkred transition-colors">thought leadership in disaster risk reduction, development and humanitarian data, climate action and innovation</Link> lives on the blog. Hover to pause, click to enlarge.
             </p>
           </div>
           <WorkSamplesMarquee />
