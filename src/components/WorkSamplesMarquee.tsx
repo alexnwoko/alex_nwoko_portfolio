@@ -36,6 +36,20 @@ const SAMPLES: { src: string; title: string }[] = [
   { src: '/work-samples/tigray-financial-services-general-population.png',   title: 'Tigray Financial Services, General Population Survey' },
   { src: '/work-samples/tigray-financial-services-humanitarian-partners.png', title: 'Tigray Financial Services, Humanitarian Partners Survey' },
   { src: '/work-samples/cash-working-group-programmatic-snapshot.png',       title: 'Cash Working Group, General Programmatic Snapshot' },
+  // Nigeria IOM Shelter / CCCM Sector IM samples (2018)
+  { src: '/work-samples/nga-multisectoral-camp-gap-analysis-2018.png',       title: 'Nigeria Multi-Sector Camp Gap Analysis, Northeast (April 2018)' },
+  { src: '/work-samples/nga-shelter-nfi-cccm-monthly-factsheet-jul2018.png', title: 'Nigeria Shelter / NFI / CCCM Monthly Factsheet (July 2018)' },
+  { src: '/work-samples/nga-cccm-camp-management-coverage-jul2018.png',      title: 'Nigeria CCCM Camp Management Coverage Gap and Partners Presence (July 2018)' },
+  // Nigeria FAO Food Security Sector IM samples (Dec 2018)
+  { src: '/work-samples/nga-fss-cash-dashboard-dec2018.png',                 title: 'Nigeria Food Security Sector Cash Dashboard (December 2018)' },
+  { src: '/work-samples/nga-fss-sector-dashboard-dec2018.png',               title: 'Nigeria Food Security Sector Dashboard (December 2018)' },
+  // Ethiopia FAO Agriculture Sector IM
+  { src: '/work-samples/eth-agriculture-sector-dashboard-apr2020.png',       title: 'Ethiopia Agriculture Sector Dashboard (April 2020)' },
+  // Bangladesh (Cox\'s Bazar) IOM CwC / CVA IM samples
+  { src: '/work-samples/bgd-radio-listening-group-activity-mapping-2019.png', title: 'IOM Bangladesh Radio Listening Group Activity Mapping (August 2019)' },
+  { src: '/work-samples/bgd-cwcwg-dashboard.png',                            title: 'IOM Bangladesh Communication with Communities Working Group Dashboard' },
+  { src: '/work-samples/bgd-cwc-july-dashboard.png',                         title: 'IOM Bangladesh CwC July Dashboard' },
+  { src: '/work-samples/bgd-cwc-partners-presence.png',                      title: 'IOM Bangladesh CwC Partners Operational Presence' },
 ]
 
 export default function WorkSamplesMarquee() {
