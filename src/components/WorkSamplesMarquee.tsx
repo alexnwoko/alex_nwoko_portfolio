@@ -101,7 +101,7 @@ export default function WorkSamplesMarquee() {
                 type="button"
                 onClick={() => setLightbox(realIndex)}
                 aria-label={`Open ${sample.title} full-size preview`}
-                className="group relative shrink-0 h-[220px] md:h-[260px] rounded-xl overflow-hidden border border-beige-300 bg-white shadow-sm transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-dusty-orange focus:ring-offset-2 focus:ring-offset-beige-100"
+                className="group relative shrink-0 h-[264px] md:h-[312px] rounded-xl overflow-hidden border border-beige-300 bg-white shadow-sm transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-dusty-orange focus:ring-offset-2 focus:ring-offset-beige-100"
               >
                 {/* Img with native browser sizing — fixed height, auto width via inline style on parent button */}
                 <img

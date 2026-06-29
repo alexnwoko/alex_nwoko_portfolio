@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* ═══ WORK SAMPLES MARQUEE ═══ */}
-      <section className="py-14 bg-beige-100">
+      <section className="pt-14 pb-7 bg-beige-100">
         <div
           ref={aboutFade.ref}
           className={`transition-all duration-700 ${aboutFade.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
@@ -235,7 +235,7 @@ export default function Home() {
       </section>
 
       {/* ═══ EXPERTISE PILLARS ═══ */}
-      <section className="py-24">
+      <section className="pt-12 pb-24">
         <div
           ref={pillarsFade.ref}
           className={`max-w-6xl mx-auto px-6 transition-all duration-700 ${pillarsFade.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
