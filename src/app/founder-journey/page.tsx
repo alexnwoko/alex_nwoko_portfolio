@@ -105,7 +105,7 @@ export default function FounderJourneyPage() {
           <div className="bg-white rounded-2xl border border-beige-300 p-8 flex flex-col h-full" style={{ borderTopWidth: '4px', borderTopColor: '#2A9D8F' }}>
             <div className="mb-6">
               <a href="https://www.makket.io/" target="_blank" rel="noopener noreferrer">
-                <Image src="/logos/makket-logo.png" alt="MAKKET" width={160} height={52} className="object-contain" />
+                <Image src="/logos/makket-logo.png" alt="MAKKET" width={240} height={41} className="object-contain" />
               </a>
             </div>
             <h3 className="font-serif text-2xl text-coffee mb-1"><a href="https://www.makket.io/" target="_blank" rel="noopener noreferrer" className="hover:text-dusty-orange transition-colors">MAKKET</a></h3>
