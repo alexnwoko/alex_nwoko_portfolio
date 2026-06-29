@@ -226,11 +226,38 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6 mb-8">
             <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Portfolio Insight</p>
             <h2 className="font-serif text-3xl md:text-4xl text-coffee mb-3">A Decade of Leading Disaster and Humanitarian Analytics, Data Systems, Field Coordination and Information Management</h2>
-            <p className="text-base text-coffee-light/80 leading-relaxed max-w-3xl">
-              A snapshot of work I have led across a decade of practice, the operational dashboards, sectoral analytics, vulnerability maps, situation analyses, post-distribution monitoring frameworks and inter-agency coordination products that have supported response and decision-making across Afghanistan, Bangladesh, Ethiopia, Nigeria, and the global humanitarian architecture. The <Link href="/about" className="text-dusty-orange underline underline-offset-2 hover:text-darkred transition-colors">guiding principles behind my vision of a data-enabled world</Link> sit on the About page, and my ongoing <Link href="/blog" className="text-dusty-orange underline underline-offset-2 hover:text-darkred transition-colors">thought leadership in disaster risk reduction, development and humanitarian data, climate action and innovation</Link> lives on the blog. Hover to pause, click to enlarge.
+            <p className="text-base text-coffee-light/80 leading-relaxed max-w-3xl mb-6">
+              A snapshot of work I have led across a decade of practice, the operational dashboards, sectoral analytics, vulnerability maps, situation analyses, post-distribution monitoring frameworks and inter-agency coordination products that have supported response and decision-making across Afghanistan, Bangladesh, Ethiopia, Nigeria, and the global humanitarian architecture.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-3xl">
+              <Link
+                href="/about"
+                className="group block p-4 rounded-lg border border-beige-300 bg-white hover:border-dusty-orange hover:shadow-sm transition-all"
+              >
+                <p className="text-sm font-semibold text-coffee group-hover:text-dusty-orange transition-colors">
+                  About <span aria-hidden="true">→</span>
+                </p>
+                <p className="text-xs text-coffee-muted mt-1 leading-relaxed">
+                  The guiding principles behind my vision of a data-enabled world.
+                </p>
+              </Link>
+              <Link
+                href="/blog"
+                className="group block p-4 rounded-lg border border-beige-300 bg-white hover:border-dusty-orange hover:shadow-sm transition-all"
+              >
+                <p className="text-sm font-semibold text-coffee group-hover:text-dusty-orange transition-colors">
+                  Blog <span aria-hidden="true">→</span>
+                </p>
+                <p className="text-xs text-coffee-muted mt-1 leading-relaxed">
+                  Thought leadership in disaster risk reduction, development and humanitarian data, climate action and innovation.
+                </p>
+              </Link>
+            </div>
           </div>
           <WorkSamplesMarquee />
+          <p className="text-xs text-coffee-muted/70 italic text-center mt-4 px-6">
+            Hover to pause. Click to enlarge.
+          </p>
         </div>
       </section>
 
