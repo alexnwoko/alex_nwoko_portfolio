@@ -157,7 +157,7 @@ export default function Home() {
             <span className="text-xs text-green-700 font-medium">Open to Opportunities</span>
           </div>
           <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-6 animate-fade-in-up">
-            Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming &middot; Program Leadership
+            Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming &middot; Innovation &middot; Program Leadership
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-coffee leading-[1.15] mb-8 animate-fade-in-up delay-100">
             Building the data systems behind{' '}
