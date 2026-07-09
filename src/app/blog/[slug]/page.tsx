@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 import ShareButtons from '@/components/ShareButtons'
+import { POSTS_META } from '@/lib/blog-posts-meta'
 import { getTopicsForPost } from '@/lib/topics'
 
 interface BlogSection {
@@ -3715,10 +3716,16 @@ The lead disaster management authority of a country is the institution that will
   },
 }
 
+const ARCHIVED_SLUGS = new Set(
+  POSTS_META.filter((p) => p.published === false).map((p) => p.slug),
+)
+
 export function generateStaticParams() {
-  return Object.keys(blogPosts).map((slug) => ({
-    slug,
-  }))
+  return Object.keys(blogPosts)
+    .filter((slug) => !ARCHIVED_SLUGS.has(slug))
+    .map((slug) => ({
+      slug,
+    }))
 }
 
 /**
@@ -3743,7 +3750,7 @@ export async function generateMetadata({
   const { slug } = await params
   const post = blogPosts[slug]
 
-  if (!post) {
+  if (!post || ARCHIVED_SLUGS.has(slug)) {
     return {
       title: 'Post Not Found',
     }
@@ -3817,13 +3824,14 @@ export default async function BlogPostPage({
   const { slug } = await params
   const post = blogPosts[slug]
 
-  if (!post) {
+  if (!post || ARCHIVED_SLUGS.has(slug)) {
     notFound()
   }
 
-  // Get related posts
+  // Get related posts — hide any that point at archived slugs
   const relatedPosts = post.relatedSlugs
-    .map((slug) => blogPosts[slug])
+    .filter((s) => !ARCHIVED_SLUGS.has(s))
+    .map((s) => blogPosts[s])
     .filter(Boolean)
 
   // Build JSON-LD structured data so Google understands this is an article

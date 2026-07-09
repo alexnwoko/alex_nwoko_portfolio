@@ -69,7 +69,7 @@ export const POSTS_META: BlogPostMeta[] = [
     excerpt:
       'A meteorological forecast tells you what is coming. Historical loss data tells you what it will do when it arrives. DELTA Resilience is the first national disaster data system designed to provide that missing link at scale, turning early warnings into impact-based, evidence-driven anticipatory action.',
     featured: true,
-    published: true,
+    published: false,
   },
   {
     slug: 'localising-anticipatory-action',
@@ -161,7 +161,7 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '10 min',
     excerpt:
       "Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere, because data sovereignty has become climate sovereignty.",
-    published: true,
+    published: false,
   },
   {
     slug: 'from-early-warning-to-early-money',
@@ -348,7 +348,7 @@ export const POSTS_META: BlogPostMeta[] = [
     readTime: '8 min',
     excerpt:
       'Not a software upgrade, an architectural shift from a standalone record-keeping tool to a sovereign, interoperable, AI-ready data ecosystem. Why and how the world outgrew DesInventar.',
-    published: true,
+    published: false,
   },
   {
     slug: 'g-drsf-statisticians-disaster-managers',

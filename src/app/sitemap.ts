@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { POSTS_META } from '@/lib/blog-posts-meta'
 
 /**
  * Sitemap.
@@ -170,7 +171,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  const blogEntries: MetadataRoute.Sitemap = BLOG_SLUGS.map((slug) => {
+  const archivedSlugs = new Set(
+    POSTS_META.filter((p) => p.published === false).map((p) => p.slug),
+  )
+  const blogEntries: MetadataRoute.Sitemap = BLOG_SLUGS.filter(
+    (slug) => !archivedSlugs.has(slug),
+  ).map((slug) => {
     const isoDate = POST_PUBLISHED_AT[slug]
     return {
       url: `${BASE_URL}/blog/${slug}`,
