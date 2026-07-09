@@ -41,27 +41,35 @@ function parseInline(text: string): ReactNode[] {
       const linkText = match[2]
       const href = match[3]
       const isExternal = /^https?:\/\//i.test(href)
-      nodes.push(
-        isExternal ? (
-          <a
-            key={key++}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-dusty-orange hover:text-darkred underline underline-offset-2 transition-colors"
-          >
-            {linkText}
-          </a>
-        ) : (
-          <Link
-            key={key++}
-            href={href}
-            className="text-dusty-orange hover:text-darkred underline underline-offset-2 transition-colors"
-          >
-            {linkText}
-          </Link>
+      // If this is an inline link to an archived blog post, drop the link
+      // and render the anchor text as plain prose so readers do not click
+      // through to a 404.
+      const internalBlog = !isExternal && href.match(/^\/blog\/([^/#?]+)/)
+      if (internalBlog && ARCHIVED_SLUGS.has(internalBlog[1])) {
+        nodes.push(<span key={key++}>{linkText}</span>)
+      } else {
+        nodes.push(
+          isExternal ? (
+            <a
+              key={key++}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-dusty-orange hover:text-darkred underline underline-offset-2 transition-colors"
+            >
+              {linkText}
+            </a>
+          ) : (
+            <Link
+              key={key++}
+              href={href}
+              className="text-dusty-orange hover:text-darkred underline underline-offset-2 transition-colors"
+            >
+              {linkText}
+            </Link>
+          )
         )
-      )
+      }
     } else if (match[4]) {
       // `code`
       nodes.push(
