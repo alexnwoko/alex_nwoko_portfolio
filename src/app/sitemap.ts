@@ -148,7 +148,7 @@ const STATIC_PAGES: { path: string; priority: number; changeFrequency: MetadataR
   { path: '/founder-journey', priority: 1.0, changeFrequency: 'weekly' },
   { path: '/blog', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/topics', priority: 0.9, changeFrequency: 'weekly' },
-  { path: '/credentials', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/credentials', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'yearly' },
 ]
 

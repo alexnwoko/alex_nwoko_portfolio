@@ -380,8 +380,39 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Speaking Engagements */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          {/* Speaking Engagements & Features */}
+          {/* Newest feature — full-width prominent card with image */}
+          <a
+            href="https://www.durham.ac.uk/media/durham-university/departments-/geography/alumni/newsletter/Alumni-newsletter-Summer-2026-new.pdf#page=9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-colors mb-6"
+          >
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              <div className="shrink-0 w-32 md:w-40 rounded-lg overflow-hidden border border-white/10 bg-white/5">
+                <img
+                  src="/featured-in/durham-alumni-summer-2026-thumb.jpg"
+                  alt="Alumni interview featuring Alex Nwoko, Durham University Geography Department Alumni Newsletter, Summer 2026, page 9."
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-[#7B4B94]" />
+                  <span className="text-[10px] uppercase tracking-widest text-[#7B4B94] font-semibold">Featured Alumni · Summer 2026</span>
+                </div>
+                <h3 className="font-serif text-lg text-white mb-1">Durham University Geography Department Alumni Newsletter</h3>
+                <p className="text-sm text-beige-400 mb-1">Department of Geography</p>
+                <p className="text-xs text-beige-400/60 mb-4">Summer 2026 · p. 9</p>
+                <p className="text-sm text-beige-400 leading-relaxed">
+                  Alumni interview on the arc from Durham geography and the Institute of Hazard, Risk and Resilience into a decade of humanitarian data systems architecture across Afghanistan, Bangladesh, Ethiopia, and Nigeria.
+                </p>
+                <p className="text-[11px] text-[#7B4B94] mt-4">Read the newsletter (page 9) ↗</p>
+              </div>
+            </div>
+          </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {/* Durham Invited Speaker */}
             <div className="rounded-2xl bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-colors">
               <div className="flex items-center gap-2 mb-3">
@@ -421,6 +452,11 @@ export default function AboutPage() {
                 View on Durham University
               </a>
             </div>
+          </div>
+          <div className="mb-10 text-right">
+            <a href="/credentials#featured-in" className="text-xs text-[#C4703F] hover:text-white transition-colors">
+              See all Featured In on Credentials →
+            </a>
           </div>
         </div>
       </section>
