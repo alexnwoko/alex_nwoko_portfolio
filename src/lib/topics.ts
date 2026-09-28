@@ -133,6 +133,7 @@ export const TOPICS: Topic[] = [
       'The posts in this topic come out of building those systems in practice: in Afghanistan, Bangladesh, Ethiopia, and Nigeria, and in the international architecture that connects them. They are about what disaster data is for, how it gets corrupted, and what governs whether it survives the agency that funded it.',
     ],
     postSlugs: [
+      'understanding-disaster-cascades-early-action',
       'localising-anticipatory-action',
       'anticipatory-action-data-evidence',
       'desinventar-to-delta-resilience',
@@ -196,6 +197,7 @@ export const TOPICS: Topic[] = [
       'These posts gather what I have learned about why early warning so often fails to become early action for the people who need it most, and what the next generation of systems has to look like to change that.',
     ],
     postSlugs: [
+      'understanding-disaster-cascades-early-action',
       'from-trigger-to-coordinated-early-action',
       'localising-anticipatory-action',
       'el-nino-cascading-hazards-anticipatory-action',

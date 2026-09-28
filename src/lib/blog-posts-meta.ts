@@ -84,6 +84,18 @@ export const POSTS_META: BlogPostMeta[] = [
     published: true,
   },
   {
+    slug: 'understanding-disaster-cascades-early-action',
+    title: 'From Understanding Disaster Cascades to Coordinated Early Action',
+    category: 'Opinion / Cornerstone',
+    pillar: 'Climate Analytics & DRR',
+    pillarColor: '#2E7D32',
+    readTime: '9 min',
+    excerpt:
+      "A hazard is not a disaster. A disaster is the chain of physical, infrastructural, health, and livelihood transitions the hazard sets in motion. Coordinated early action begins with treating each link in that chain as its own intervention window, not as a downstream footnote to the initiating event.",
+    featured: true,
+    published: true,
+  },
+  {
     slug: 'from-trigger-to-coordinated-early-action',
     title: 'From Trigger to Coordinated Early Action: Designing Multi-Sector Anticipatory Action Protocols',
     category: 'Opinion / Cornerstone',

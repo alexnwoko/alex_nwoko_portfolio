@@ -5,13 +5,71 @@ import Link from 'next/link'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 import WorkSamplesMarquee from '@/components/WorkSamplesMarquee'
 
+/* ───────── Pillar icons (inline SVG, stroke follows pillar color) ───────── */
+type PillarIconName = 'chart' | 'map' | 'globe' | 'coins'
+function PillarIcon({ name, color }: { name: PillarIconName; color: string }) {
+  const shared = {
+    width: 40,
+    height: 40,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: color,
+    strokeWidth: 1.75,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+    'aria-hidden': true,
+  }
+  switch (name) {
+    case 'chart':
+      return (
+        <svg {...shared}>
+          <path d="M3 3v18h18" />
+          <rect x="7" y="12" width="3" height="6" fill={color} fillOpacity="0.15" />
+          <rect x="12" y="7" width="3" height="11" fill={color} fillOpacity="0.15" />
+          <rect x="17" y="14" width="3" height="4" fill={color} fillOpacity="0.15" />
+        </svg>
+      )
+    case 'map':
+      return (
+        <svg {...shared}>
+          <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+          <line x1="9" y1="3" x2="9" y2="18" />
+          <line x1="15" y1="6" x2="15" y2="21" />
+        </svg>
+      )
+    case 'globe':
+      return (
+        <svg {...shared}>
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <path d="M12 3a13 13 0 0 1 4 9 13 13 0 0 1-4 9 13 13 0 0 1-4-9 13 13 0 0 1 4-9z" />
+        </svg>
+      )
+    case 'coins':
+      return (
+        <svg {...shared}>
+          <circle cx="9" cy="10" r="6" />
+          <path d="M14.5 10.5a6 6 0 0 1 5.5 5.9 6 6 0 0 1-9.5 4.7" />
+          <path d="M7.5 8v4h3" />
+        </svg>
+      )
+  }
+}
+
 /* ───────── Data ───────── */
-const pillars = [
+const pillars: {
+  id: string
+  title: string
+  color: string
+  icon: PillarIconName
+  desc: string
+  href: string
+}[] = [
   {
     id: 'data',
     title: 'Data Analytics & Information Management',
     color: '#009EDB',
-    icon: '📊',
+    icon: 'chart',
     desc: 'Designing reporting platforms, analytical frameworks, and data pipelines that transform raw humanitarian data into actionable intelligence for decision-makers.',
     href: '/expertise#data-analytics',
   },
@@ -19,7 +77,7 @@ const pillars = [
     id: 'gis',
     title: 'GIS & Remote Sensing',
     color: '#7B4B94',
-    icon: '🗺️',
+    icon: 'map',
     desc: 'Building geospatial analysis tools and multi-hazard platforms that map risk, track displacement, and guide resource allocation across complex emergencies.',
     href: '/expertise#gis',
   },
@@ -27,7 +85,7 @@ const pillars = [
     id: 'climate',
     title: 'Climate Analytics & DRR',
     color: '#C4703F',
-    icon: '🌍',
+    icon: 'globe',
     desc: 'Developing early warning systems, climate trigger thresholds, and anticipatory action frameworks that shift humanitarian response from reactive to predictive.',
     href: '/expertise#climate',
   },
@@ -35,7 +93,7 @@ const pillars = [
     id: 'cash',
     title: 'Humanitarian Cash Programming',
     color: '#8B3A2F',
-    icon: '💰',
+    icon: 'coins',
     desc: 'Creating post-distribution monitoring frameworks, cash delivery dashboards, and inter-agency impact assessments that ensure cash reaches the most vulnerable.',
     href: '/expertise#cash',
   },
@@ -281,7 +339,7 @@ export default function Home() {
                 className="card-hover bg-white rounded-2xl p-8 border border-beige-300 group"
                 style={{ borderTopColor: pillar.color, borderTopWidth: '3px' }}
               >
-                <span className="text-3xl mb-4 block">{pillar.icon}</span>
+                <span className="mb-4 block"><PillarIcon name={pillar.icon} color={pillar.color} /></span>
                 <h3 className="font-serif text-xl text-coffee mb-3 group-hover:text-dusty-orange transition-colors">
                   {pillar.title}
                 </h3>

@@ -60,6 +60,8 @@ const BLOG_SLUGS: string[] = [
   // AA protocols + localisation (late-June 2026 batch)
   'from-trigger-to-coordinated-early-action',
   'localising-anticipatory-action',
+  // Disaster cascades + intervention windows (September 2026)
+  'understanding-disaster-cascades-early-action',
 ]
 
 /**
@@ -113,6 +115,8 @@ const POST_PUBLISHED_AT: Record<string, string> = {
   // AA protocols + localisation (late-June 2026 batch)
   'from-trigger-to-coordinated-early-action': '2026-06-27',
   'localising-anticipatory-action': '2026-06-28',
+  // Disaster cascades + intervention windows (September 2026)
+  'understanding-disaster-cascades-early-action': '2026-09-28',
 }
 
 /**
