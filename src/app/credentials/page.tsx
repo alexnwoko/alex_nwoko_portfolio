@@ -68,21 +68,16 @@ export const metadata: Metadata = {
       'Education, memberships, certifications, and third-party features including the Durham University Geography Department alumni interview, Summer 2026.',
     url: 'https://alexnwoko.com/credentials',
     type: 'profile',
-    images: [
-      {
-        url: 'https://alexnwoko.com/featured-in/durham-alumni-summer-2026-thumb.jpg',
-        width: 1190,
-        height: 1683,
-        alt: 'Alumni interview featuring Alex Nwoko, Durham University Geography Department Alumni Newsletter, Summer 2026, page 9.',
-      },
-    ],
+    // og:image is emitted automatically by Next.js from the co-located
+    // opengraph-image.tsx (1200x630 landscape PNG featuring the current
+    // Durham newsletter highlight). No manual override needed here.
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Credentials & Featured In, Alex Nwoko',
     description:
       'Education, memberships, certifications, and third-party features including the Durham University alumni interview (Summer 2026).',
-    images: ['https://alexnwoko.com/featured-in/durham-alumni-summer-2026-thumb.jpg'],
+    // twitter:image mirrors og:image via the same auto-generated route.
   },
 }
 
