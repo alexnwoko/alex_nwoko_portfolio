@@ -25,7 +25,12 @@ function parseInline(text: string): ReactNode[] {
   // Strip mid-paragraph **bold** markers — keep the inner text as plain prose.
   const stripped = text.replace(/\*\*([^*]+)\*\*/g, '$1')
 
-  const pattern = /(\[([^\]]+)\]\(([^)]+)\))|(`([^`]+)`)/g
+  // Match (in order): [text](url) markdown link, `code`, or single-asterisk
+  // *italic* emphasis. The italic branch runs AFTER **bold** has been
+  // stripped above, so any surviving `*…*` is unambiguously single-asterisk
+  // italic (short emphasised phrases in body prose, scene-setting narrative
+  // paragraphs, etc.).
+  const pattern = /(\[([^\]]+)\]\(([^)]+)\))|(`([^`]+)`)|(\*([^*\n]+)\*)/g
   const nodes: ReactNode[] = []
   let lastIndex = 0
   let match: RegExpExecArray | null
@@ -76,6 +81,13 @@ function parseInline(text: string): ReactNode[] {
         <code key={key++} className="bg-beige-200 text-coffee px-1.5 py-0.5 rounded text-sm font-mono">
           {match[5]}
         </code>
+      )
+    } else if (match[6]) {
+      // *italic*
+      nodes.push(
+        <em key={key++} className="italic">
+          {match[7]}
+        </em>
       )
     }
 
@@ -143,6 +155,15 @@ interface BlogPost {
   readTime: string
   date: string
   excerpt: string
+  /**
+   * Optional deck (standfirst / lede). A short 1-3 sentence opener that
+   * sits above the first section, rendered as a distinct typographic
+   * element — larger size, muted colour, bottom border — not italics.
+   * Introduces the piece without asking the reader to parse body prose
+   * for the summary. Follows mainstream longform technical publishing
+   * practice (NYT, Smashing Magazine, Nieman Lab).
+   */
+  deck?: string
   sections: BlogSection[]
   relatedSlugs: string[]
   /**
@@ -2518,11 +2539,10 @@ What gets counted gets funded. What gets missed stays vulnerable. Our job now is
       'grant-equivalent', 'mobilisation', 'adaptation finance', 'transparency',
       'MRV', 'recipient-country data systems', 'climate diplomacy',
     ],
+    deck: 'A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test.',
     sections: [
       {
-        content: `*A finance goal is only as honest as the data that tracks it. On the road to COP31, the New Collective Quantified Goal is about to meet that test.*
-
-When the gavel came down in Baku in November 2024, the headline number was USD 300 billion a year by 2035. It was hailed as a tripling of the old USD 100 billion goal and dismissed, almost in the same breath, as a fraction of what developing countries had asked for. Both readings were correct. But the number was never the hard part. The hard part is what the word "mobilise" hides. Who pays, in what form, on what terms, and how anyone will know whether it actually arrived in a household in Cox's Bazar or the Sahel.
+        content: `When the gavel came down in Baku in November 2024, the headline number was USD 300 billion a year by 2035. It was hailed as a tripling of the old USD 100 billion goal and dismissed, almost in the same breath, as a fraction of what developing countries had asked for. Both readings were correct. But the number was never the hard part. The hard part is what the word "mobilise" hides. Who pays, in what form, on what terms, and how anyone will know whether it actually arrived in a household in Cox's Bazar or the Sahel.
 
 That is the question the [New Collective Quantified Goal (NCQG)](https://unfccc.int/NCQG) now carries onto the road to Antalya. [COP30 in Belém](https://www.carbonbrief.org/cop30-key-outcomes-agreed-at-the-un-climate-talks-in-belem/) handed COP31 a goal that has been agreed but not operationalised. A destination, in other words, with no agreed map. The credibility of the NCQG will not be settled by the size of the headline figure. It will be settled by the boring, technical, deeply political business of measurement. And measurement is where I have spent my career.`,
       },
@@ -2608,11 +2628,10 @@ What gets counted gets funded. On the NCQG, we have finally agreed how much. We 
       'Barbados Implementation Modalities', 'World Bank', 'direct access',
       'DELTA Resilience', 'G-DRSF', 'replenishment', 'climate justice',
     ],
+    deck: 'A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real, and the road to Antalya is where it either does or doesn\'t.',
     sections: [
       {
-        content: `*A fund exists when money reaches the people it was built for. By that test, the Loss and Damage Fund is still becoming real, and the road to Antalya is where it either does or doesn't.*
-
-In 2022, when the world finally agreed to create a fund for loss and damage, I watched the reaction ripple through the humanitarian data community with a wariness that surprised people outside it. We had seen this film before. A mechanism is announced. The announcement is the achievement. Then the slow years begin: the board seats, the hosting arrangements, the eligibility criteria. And somewhere in that machinery the original promise, that money would reach a fishing community whose coastline has already gone, quietly recedes.
+        content: `In 2022, when the world finally agreed to create a fund for loss and damage, I watched the reaction ripple through the humanitarian data community with a wariness that surprised people outside it. We had seen this film before. A mechanism is announced. The announcement is the achievement. Then the slow years begin: the board seats, the hosting arrangements, the eligibility criteria. And somewhere in that machinery the original promise, that money would reach a fishing community whose coastline has already gone, quietly recedes.
 
 Three years on, the [Fund for Responding to Loss and Damage (FRLD)](https://unfccc.int/fund-for-responding-to-loss-and-damage) is no longer an announcement. It has a board, a trustee, a host country, and, as of COP30, an open call for its first funding requests. That is real progress, and I want to give it its due. But the FRLD is now entering the phase where good intentions meet operational reality, and that phase is unforgiving. The road from Belém to [Antalya](https://unfccc.int/cop31/the-road-to-antalya) is the year the Fund stops being an architecture and starts being a payout, or doesn't.`,
       },
@@ -2694,11 +2713,10 @@ A pledge is the beginning of a promise. A payout is that promise kept, reaching 
       'data sovereignty', 'risk knowledge', 'disaster loss data',
       'maturity assessment', 'UNDRR Strategic Framework',
     ],
+    deck: 'Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can\'t will watch it flow elsewhere.',
     sections: [
       {
-        content: `*Every climate fund on the road to Antalya disburses against evidence. The countries that can produce DELTA-grade loss data will compete for it. The ones that can't will watch it flow elsewhere.*
-
-A few years ago I sat across from a national disaster manager who had just been asked, by a major climate fund, to substantiate his country's flood losses over the previous decade. He had the losses. His communities had lived them. What he did not have was a record that could survive an international reviewer. No sub-national disaggregation, no consistent hazard classification, no continuous baseline. The events were real. The evidence was not fundable. He was, in the most literal sense, asset-rich and data-poor, and in the emerging climate-finance economy that combination is fatal.
+        content: `A few years ago I sat across from a national disaster manager who had just been asked, by a major climate fund, to substantiate his country's flood losses over the previous decade. He had the losses. His communities had lived them. What he did not have was a record that could survive an international reviewer. No sub-national disaggregation, no consistent hazard classification, no continuous baseline. The events were real. The evidence was not fundable. He was, in the most literal sense, asset-rich and data-poor, and in the emerging climate-finance economy that combination is fatal.
 
 I have thought about that meeting often as the COP cycle has turned finance from aspiration into machinery. The [NCQG](https://unfccc.int/NCQG), the [Loss and Damage Fund](https://unfccc.int/fund-for-responding-to-loss-and-damage), the Green Climate Fund, the Adaptation Fund. Every one of them allocates against risk and loss evidence. Much of the conversation, understandably, centres on the *supply* of climate finance: the pledges, the trillions, the donor base. I want to draw attention to something discussed less often: the *demand-side capability* a country needs to absorb it well. On the road to Antalya, I want to make an argument that sounds technical and is actually about justice. High-fidelity disaster data has become the hard currency of climate finance, and the transition to [DELTA Resilience](https://www.undrr.org/building-risk-knowledge/disaster-losses-and-damages-tracking-system-delta-resilience) is how vulnerable countries mint it.`,
       },
@@ -2772,11 +2790,10 @@ What gets counted gets funded. The countries learning to count themselves, to th
       'CHIRPS', 'NDVI', 'CERF', 'Anticipation Hub', 'climate finance',
       'GloFAS', 'humanitarian finance', 'pre-arranged finance',
     ],
+    deck: 'We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive, and whether the trigger fires for the communities the forecast keeps missing.',
     sections: [
       {
-        content: `*We can see most climate disasters coming. The question COP31 has to answer is whether the money can move before they arrive, and whether the trigger fires for the communities the forecast keeps missing.*
-
-In the 2024 winterisation season in Afghanistan, my team produced a set of maps that, on their face, looked unremarkable: snow cover, snow depth, precipitation and temperature, each compared against prior years. To a casual reader they were just shaded rasters. To the clusters preparing for a hard winter, they were a decision: where to pre-position, before the first households were cut off. That is the entire logic of anticipatory action in one product. You act on the forecast, not on the funeral. The hazard had not happened yet. The point was to move while it still hadn't.
+        content: `In the 2024 winterisation season in Afghanistan, my team produced a set of maps that, on their face, looked unremarkable: snow cover, snow depth, precipitation and temperature, each compared against prior years. To a casual reader they were just shaded rasters. To the clusters preparing for a hard winter, they were a decision: where to pre-position, before the first households were cut off. That is the entire logic of anticipatory action in one product. You act on the forecast, not on the funeral. The hazard had not happened yet. The point was to move while it still hadn't.
 
 As attention turns to [Antalya](https://unfccc.int/cop31/the-road-to-antalya), much of the climate-finance conversation understandably centres on the *volume* of finance. I would gently add a second question that tends to get less airtime: its *timing*. In disasters, when money arrives can matter as much as how much, because acting early often changes the entire course of a crisis.`,
       },
@@ -2848,11 +2865,10 @@ A forecast tells you what is coming. Anticipatory finance decides whether knowin
       'G-DRSF', 'disaggregation', 'national data systems',
       'data ecosystem maturity', 'NCQG', 'one report two purposes',
     ],
+    deck: 'COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers, or the indicators become one more standard the vulnerable are judged against and cannot meet.',
     sections: [
       {
-        content: `*COP30 finally gave the world a way to measure adaptation. COP31 has to prove that most countries can actually produce the numbers, or the indicators become one more standard the vulnerable are judged against and cannot meet.*
-
-For most of my career, adaptation has had a measurement problem that mitigation does not. A tonne of carbon avoided is a tonne, anywhere on Earth. But "a community made more resilient" resists that kind of clean accounting. Resilience is local, multi-dimensional, and slow. You can build a seawall and still lose the village to a hazard you didn't model. You can run a flawless early warning system and still measure your success only by the disaster that didn't happen, the hardest thing in the world to count. For years, this is why adaptation lost the funding argument to mitigation. It could not put a defensible number on the board.
+        content: `For most of my career, adaptation has had a measurement problem that mitigation does not. A tonne of carbon avoided is a tonne, anywhere on Earth. But "a community made more resilient" resists that kind of clean accounting. Resilience is local, multi-dimensional, and slow. You can build a seawall and still lose the village to a hazard you didn't model. You can run a flawless early warning system and still measure your success only by the disaster that didn't happen, the hardest thing in the world to count. For years, this is why adaptation lost the funding argument to mitigation. It could not put a defensible number on the board.
 
 [COP30 in Belém](https://www.carbonbrief.org/cop30-key-outcomes-agreed-at-the-un-climate-talks-in-belem/) tried to fix that. After two years of the UAE-Belém work programme, parties adopted a set of indicators, roughly sixty, now widely called the [Belém Adaptation Indicators](https://www.cities-and-regions.org/cop30-outcomes-on-climate-finance-and-loss-damage/), to track progress toward the Global Goal on Adaptation (GGA). On paper this is a genuine milestone. For the first time, the world has an agreed way to ask whether adaptation is actually happening. But I read it through the lens of a decade spent inside national data systems, and what I see is less a finish line than a starting gun. Because an indicator is only as real as a country's ability to report it, and on that, most of the conversation has been silent.`,
       },
@@ -2920,11 +2936,10 @@ What gets counted gets funded. We have decided what to count. Now we have to mak
       'Afghanistan HSDC', 'Ethiopia cash', 'extensive risk',
       'data sovereignty', 'data infrastructure', 'climate justice',
     ],
+    deck: 'The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down.',
     sections: [
       {
-        content: `*The most important climate finance argument at Antalya will not be made by a negotiator. It was already made, years ago, by communities whose losses no one wrote down. This is what I learned trying to write them down.*
-
-In Cox's Bazar, in the footprint of the world's largest refugee settlement, I helped run a cash-for-work programme that paid people to plant trees and stabilise slopes. The Rohingya influx had stripped the surrounding hills for fuel and shelter, and the host communities, Bangladeshi villages that had absorbed nearly a million people almost overnight, were living with the consequences. Eroding slopes, failing land, monsoon and cyclone risk pressing in from the Bay of Bengal. We partnered with local disaster management committees, set up the beneficiary targeting and the payment cycles, and wired the field monitoring back to the seasonal contingency planning for the camps.
+        content: `In Cox's Bazar, in the footprint of the world's largest refugee settlement, I helped run a cash-for-work programme that paid people to plant trees and stabilise slopes. The Rohingya influx had stripped the surrounding hills for fuel and shelter, and the host communities, Bangladeshi villages that had absorbed nearly a million people almost overnight, were living with the consequences. Eroding slopes, failing land, monsoon and cyclone risk pressing in from the Bay of Bengal. We partnered with local disaster management committees, set up the beneficiary targeting and the payment cycles, and wired the field monitoring back to the seasonal contingency planning for the camps.
 
 The programme worked. But the conversation that stayed with me was about something we were *not* funding. The host communities had their own climate losses. Coastal erosion, salinity, storm damage accumulating year after year. Those losses were, in the language of the global system, undocumented. No threshold crossed, no international appeal triggered, no line in any database that a climate fund would recognise. The damage was real. The people were real. The evidence, by the standards of the architecture that moves money, did not exist. And so neither did the funding.
 
@@ -2988,11 +3003,10 @@ What gets counted gets funded. What gets missed stays vulnerable. Making the cas
       'host government relations', 'attention economy', 'mosaic effect',
       'data protection', 'OCHA', 'ICRC', 'CDA Collaborative',
     ],
+    deck: 'In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean is often the harder, and more consequential, work.',
     sections: [
       {
-        content: `*In disaster and humanitarian data diplomacy, the numbers are the easy part. Deciding what they are allowed to mean is often the harder, and more consequential, work.*
-
-Some of the most consequential decisions I have made in a decade of humanitarian data work were never about data at all. They were about a sentence. Whether a needs figure should be published this week or held. Whether a map should show a settlement at village resolution or stop at the district line. Whether a dataset disaggregated by group would help target assistance or quietly hand someone a targeting list of a different kind. These are not technical questions. They are diplomatic ones, and they are decided in rooms where the spreadsheet is the least important thing present.
+        content: `Some of the most consequential decisions I have made in a decade of humanitarian data work were never about data at all. They were about a sentence. Whether a needs figure should be published this week or held. Whether a map should show a settlement at village resolution or stop at the district line. Whether a dataset disaggregated by group would help target assistance or quietly hand someone a targeting list of a different kind. These are not technical questions. They are diplomatic ones, and they are decided in rooms where the spreadsheet is the least important thing present.
 
 We talk about humanitarian data as though it were a thermometer. You take the reading, you report the number, the number is the truth. In reality, every figure that leaves a crisis has passed through a series of negotiations. With the host government, over what the data implies about its competence and control. With affected communities, over whether being counted will protect them or expose them. And with the wider world, over how much attention the numbers should attract and at what cost. I have come to think of this as disaster data diplomacy, and it is the part of the job that almost never appears in a methodology note.`,
       },
@@ -3075,11 +3089,10 @@ The numbers, in the end, are the easy part. Anyone with the right tools can coun
       'Afghanistan', 'displacement classification',
       'humanitarian principles', 'access', 'neutrality',
     ],
+    deck: 'In a stable country, negotiating disaster data is hard. In a fragile one, where the government may be unrecognised, the conflict still live, and the population itself a contested fact, the same negotiation can decide who is reached, who is exposed, and who is simply erased. This is the version of the job that keeps me up at night.',
     sections: [
       {
-        content: `*In a stable country, negotiating disaster data is hard. In a fragile one, where the government may be unrecognised, the conflict still live, and the population itself a contested fact, the same negotiation can decide who is reached, who is exposed, and who is simply erased. This is the version of the job that keeps me up at night.*
-
-There is a version of humanitarian data work that looks like a profession. Clean intake forms, validated pipelines, a dashboard that updates on schedule. Then there is the version I have spent most of my career doing, where the government holding the data is one the world has chosen not to recognise, where the conflict that caused the disaster has not ended, and where the simple act of recording who was harmed can place them in further danger. The methods are the same. The stakes are not even in the same universe.
+        content: `There is a version of humanitarian data work that looks like a profession. Clean intake forms, validated pipelines, a dashboard that updates on schedule. Then there is the version I have spent most of my career doing, where the government holding the data is one the world has chosen not to recognise, where the conflict that caused the disaster has not ended, and where the simple act of recording who was harmed can place them in further danger. The methods are the same. The stakes are not even in the same universe.
 
 I have [written before about disaster data diplomacy](/blog/the-im-coordination-trap), the constant negotiation over what to count, who to call "in need," and what can safely be said out loud. But that framing assumes a baseline of stability, a recognised authority, a functioning settlement between state and citizen, that simply does not exist in the places where humanitarian need is most acute. In fragile and conflict-affected contexts, every one of those negotiations gets harder, sharper, and more dangerous. The data has nowhere safe to land. And the practitioner in the middle is no longer balancing competing interests so much as trying to keep a fragile structure from collapsing onto the people it was meant to shelter.`,
       },
@@ -3155,11 +3168,10 @@ The numbers are still the easy part. In fragility, knowing what a number might d
       'surveillance gap', 'data marginalisation', 'CARE Principles',
       'displacement', 'invisible populations', 'data equity',
     ],
+    deck: 'We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data, some of it the unintended cost of our own caution, have quietly turned a promise of inclusion into a machinery of exclusion. This is part one: the trap, how it compounds, and the uncomfortable role our own protective instincts play in it.',
     sections: [
       {
-        content: `*We promised to leave no one behind. But you cannot reach a person your systems cannot see, and decades of missing data, some of it the unintended cost of our own caution, have quietly turned a promise of inclusion into a machinery of exclusion. This is part one: the trap, how it compounds, and the uncomfortable role our own protective instincts play in it.*
-
-In Afghanistan, my team built a "drought severity map" to support the response to a deepening agricultural crisis. It did its job well. District by district, it showed where conditions had tipped toward famine, where harvests had failed, where the need for agricultural, nutrition, food, WASH, and health support was most acute. We could point to the worst-hit areas with real confidence. What we could not do, beneath those shaded polygons, was see the affected families as one population. Every partner who managed to collect any semblance of individual-level needs or beneficiary data was holding it inside a silo of its own. Health, Food Security, WASH, Nutrition, Protection. Each partner, though never thorough on its own terms due to known access constraints, yet none could be safely combined with any other. The cost of that fragmentation was not abstract. In this scenario, what usually happens is that some families would end up registering two or three times across sectors and quietly receiving two or three overlapping rounds of assistance, while millions of other families, never picked up by any single partner's pipeline, received nothing at all. Inter-agency synchronisation was the obvious answer, and inter-agency synchronisation was exactly the thing the system had decided it could not afford to do. Each organisation cited reasons that were defensible on their own: data breach risk, donor compliance terms, the IASC's [data responsibility guidance](https://interagencystandingcommittee.org/operational-response/iasc-operational-guidance-data-responsibility-humanitarian-action), the lived memory of registries that had been weaponised in other crises. The collective result was that double counting, the very thing every actor wanted to avoid, became the price we had quietly accepted for protecting the people inside the data. And it was a price no one was prepared to commit any real action to change, even inside the UN. When a cholera outbreak hit, the two organisations holding most of the field-level case data spent more than a month debating whether to share a joint database that could give the response a single, coherent picture. Drought, cholera, food security, health, WASH, shelter, every sector ran into the same wall. A system that allocates assistance against evidence cannot help the person whose evidence cannot be safely combined with anyone else's. A family registered in four silos and a family registered in none start to look uncomfortably similar from where the response has to be coordinated.
+        content: `In Afghanistan, my team built a "drought severity map" to support the response to a deepening agricultural crisis. It did its job well. District by district, it showed where conditions had tipped toward famine, where harvests had failed, where the need for agricultural, nutrition, food, WASH, and health support was most acute. We could point to the worst-hit areas with real confidence. What we could not do, beneath those shaded polygons, was see the affected families as one population. Every partner who managed to collect any semblance of individual-level needs or beneficiary data was holding it inside a silo of its own. Health, Food Security, WASH, Nutrition, Protection. Each partner, though never thorough on its own terms due to known access constraints, yet none could be safely combined with any other. The cost of that fragmentation was not abstract. In this scenario, what usually happens is that some families would end up registering two or three times across sectors and quietly receiving two or three overlapping rounds of assistance, while millions of other families, never picked up by any single partner's pipeline, received nothing at all. Inter-agency synchronisation was the obvious answer, and inter-agency synchronisation was exactly the thing the system had decided it could not afford to do. Each organisation cited reasons that were defensible on their own: data breach risk, donor compliance terms, the IASC's [data responsibility guidance](https://interagencystandingcommittee.org/operational-response/iasc-operational-guidance-data-responsibility-humanitarian-action), the lived memory of registries that had been weaponised in other crises. The collective result was that double counting, the very thing every actor wanted to avoid, became the price we had quietly accepted for protecting the people inside the data. And it was a price no one was prepared to commit any real action to change, even inside the UN. When a cholera outbreak hit, the two organisations holding most of the field-level case data spent more than a month debating whether to share a joint database that could give the response a single, coherent picture. Drought, cholera, food security, health, WASH, shelter, every sector ran into the same wall. A system that allocates assistance against evidence cannot help the person whose evidence cannot be safely combined with anyone else's. A family registered in four silos and a family registered in none start to look uncomfortably similar from where the response has to be coordinated.
 
 That gap has stayed with me because it exposes a paradox at the centre of modern humanitarian and development work. The global community has made "[leave no one behind](https://www.data4sdgs.org/initiatives/inclusive-data-charter)" the moral spine of the 2030 Agenda. And yet leaving no one behind begins with a precondition we have not yet met. Everyone has to be visible to the response, not merely recorded somewhere by someone. The people most at risk of being left behind are, with bitter regularity, the people who are either uncounted in the first place or known only inside a silo no one is permitted to combine with another. We built a promise of inclusion on top of an evidence base structured around exclusion in both forms, and then expressed surprise when the same people kept getting missed.`,
       },
@@ -3221,11 +3233,10 @@ What gets counted gets funded. What gets missed stays vulnerable. In part one I 
       'civil registration', 'data responsibility', 'leave no one behind',
       'data minimisation', 'inclusive statistics', 'fragility',
     ],
+    deck: 'In part one I argued that the people we pledge hardest to reach are the ones our data systems are built to miss, and that some of that invisibility is the unintended cost of our own protective caution. This is the answer I promised: data equity, why it is not the opposite of data protection, and what pushing for it actually requires.',
     sections: [
       {
-        content: `*In part one I argued that the people we pledge hardest to reach are the ones our data systems are built to miss, and that some of that invisibility is the unintended cost of our own protective caution. This is the answer I promised: data equity, why it is not the opposite of data protection, and what pushing for it actually requires.*
-
-In [part one](/blog/protected-into-invisibility-part-1), I described a [drought severity map](/projects) my team built in Afghanistan that could show, district by district, where famine-like conditions and the need for agricultural, nutrition, food, WASH, and health assistance were most acute, but could not name a single one of the people inside those locations who were meant to receive it. I used that gap to trace a wider trap. A compounding cycle in which the under-counted become the under-served become the more-invisible, accelerated by fragility, and deepened, uncomfortably, by the very data-protection instincts we adopted to keep people safe. I closed by proposing data equity as the way to address those unintended consequences. This is what I meant.`,
+        content: `In [part one](/blog/protected-into-invisibility-part-1), I described a [drought severity map](/projects) my team built in Afghanistan that could show, district by district, where famine-like conditions and the need for agricultural, nutrition, food, WASH, and health assistance were most acute, but could not name a single one of the people inside those locations who were meant to receive it. I used that gap to trace a wider trap. A compounding cycle in which the under-counted become the under-served become the more-invisible, accelerated by fragility, and deepened, uncomfortably, by the very data-protection instincts we adopted to keep people safe. I closed by proposing data equity as the way to address those unintended consequences. This is what I meant.`,
       },
       {
         heading: 'Data Equity Is Not the Opposite of Data Protection',
@@ -3275,11 +3286,10 @@ And here is the revelation in that, the part I wish we said aloud more often. Th
       'WFP Anticipatory Action Fund', 'FAO SFERA', 'COP31', 'climate finance',
       'Anticipation Hub',
     ],
+    deck: 'A strong El Niño is a forecast we can already read. It is also a test of whether we are willing to act on what we know, in the closing months before what we know becomes what we are too late to prevent.',
     sections: [
       {
-        content: `*A strong El Niño is a forecast we can already read. It is also a test of whether we are willing to act on what we know, in the closing months before what we know becomes what we are too late to prevent.*
-
-The [World Meteorological Organization, in its early-June 2026 update](https://wmo.int/news/media-centre/wmo-prepare-el-nino), confirms that El Niño conditions are developing. WMO puts the likelihood of an El Niño event during June to August 2026 at around 80 percent, with probabilities near or above 90 percent that the event will continue at least into November. Most forecast models suggest the event will be at least moderate, with the possibility of reaching strong intensity, and El Niño cycles typically last nine to twelve months once established. That is not a prediction in the loose sense. It is a forecast on which an entire architecture of anticipatory response now rests. The question is no longer whether the next twelve months will see a major El Niño-driven shock. The question is whether the system that has been built to act before the shock arrives will actually do so this time, or whether we will once again let the window close and respond at twice the cost to half the people.
+        content: `The [World Meteorological Organization, in its early-June 2026 update](https://wmo.int/news/media-centre/wmo-prepare-el-nino), confirms that El Niño conditions are developing. WMO puts the likelihood of an El Niño event during June to August 2026 at around 80 percent, with probabilities near or above 90 percent that the event will continue at least into November. Most forecast models suggest the event will be at least moderate, with the possibility of reaching strong intensity, and El Niño cycles typically last nine to twelve months once established. That is not a prediction in the loose sense. It is a forecast on which an entire architecture of anticipatory response now rests. The question is no longer whether the next twelve months will see a major El Niño-driven shock. The question is whether the system that has been built to act before the shock arrives will actually do so this time, or whether we will once again let the window close and respond at twice the cost to half the people.
 
 I have watched the field move from a posture of "we cannot see this coming" to one of "we can see it coming, and we have an operational answer." The technology has arrived. The financing instruments exist. The frameworks are in place. What remains, with a strong El Niño now developing, is the decision.`,
       },
@@ -3372,11 +3382,10 @@ We have spent a decade building the capacity to read this kind of forecast and a
       'FAO SFERA', 'impact-based forecasting', 'resilience compounding',
       'cash transfer programming', 'AA frameworks',
     ],
+    deck: 'The 2023–2024 El Niño drought response in southern Africa is the cleanest piece of evidence the anticipatory action field has produced. The lesson is not theory. It is what happened the last time the system tried to act early, and it worked.',
     sections: [
       {
-        content: `*The 2023–2024 El Niño drought response in southern Africa is the cleanest piece of evidence the anticipatory action field has produced. The lesson is not theory. It is what happened the last time the system tried to act early, and it worked.*
-
-A few years ago I was in my office attempting a pilot design for drought anticipatory action triggers for a humanitarian response in Afghanistan. The forecast layers were good. The food-security, agricultural and livelihood needs and gaps data was current. The pre-positioning priorities were well understood by the actors. What was missing was the institutional permission to release the funding against a forecast rather than against an observed impact. The conversation that day was about evidence. The older argument, anchored in widely cited figures like the [Global Commission on Adaptation's "Adapt Now" report](https://gca.org/reports/adapt-now-a-global-call-for-leadership-on-climate-resilience/) finding that US$1.8 trillion invested in five resilience areas could generate roughly US$7.1 trillion in net benefits, was credible but largely anecdotal in the way the donor side experienced it. There was no recent, attribution-clean case study showing that an anticipatory disbursement, at scale, actually outperformed reactive disbursement against the same hazard. So the conversation moved sideways. Some agencies restructured existing financing to do what preparedness they could within the rules they already had. Others quietly relabelled already-planned activities as "anticipatory," which many practitioners doubted at the time. Around the trigger discussion itself, there was real skepticism that the cost-benefit case would hold once the dollars were on the table. The decision on a fresh anticipatory release was deferred. The drought arrived. The response that did happen happened later, at higher cost, and reached fewer households than an early activation would have.
+        content: `A few years ago I was in my office attempting a pilot design for drought anticipatory action triggers for a humanitarian response in Afghanistan. The forecast layers were good. The food-security, agricultural and livelihood needs and gaps data was current. The pre-positioning priorities were well understood by the actors. What was missing was the institutional permission to release the funding against a forecast rather than against an observed impact. The conversation that day was about evidence. The older argument, anchored in widely cited figures like the [Global Commission on Adaptation's "Adapt Now" report](https://gca.org/reports/adapt-now-a-global-call-for-leadership-on-climate-resilience/) finding that US$1.8 trillion invested in five resilience areas could generate roughly US$7.1 trillion in net benefits, was credible but largely anecdotal in the way the donor side experienced it. There was no recent, attribution-clean case study showing that an anticipatory disbursement, at scale, actually outperformed reactive disbursement against the same hazard. So the conversation moved sideways. Some agencies restructured existing financing to do what preparedness they could within the rules they already had. Others quietly relabelled already-planned activities as "anticipatory," which many practitioners doubted at the time. Around the trigger discussion itself, there was real skepticism that the cost-benefit case would hold once the dollars were on the table. The decision on a fresh anticipatory release was deferred. The drought arrived. The response that did happen happened later, at higher cost, and reached fewer households than an early activation would have.
 
 Two years on, the evidence the field then lacked is on the table. The argument for acting early is no longer an appeal to logic. It is a citation. And with [a strong El Niño now developing through 2026, per WMO](https://wmo.int/news/media-centre/wmo-prepare-el-nino), the question is whether the data has finally outpaced the institutional caution that used to be its only counterweight.`,
       },
@@ -3465,11 +3474,10 @@ I designed drought triggers in an office where the case for acting early was a s
       'multi-sector activation', 'sectoral playbooks', 'lead time window',
       'CALP Network', 'locally-led AA', 'coordination protocols',
     ],
+    deck: 'The implementation and operationalisation of anticipatory action, the phase that sits between the trigger being initiated and assistance reaching targeted households, is the part the literature most often skips. It is also where most of the operational work and most of the failure modes live. This piece is about the design of that phase.',
     sections: [
       {
-        content: `*The implementation and operationalisation of anticipatory action, the phase that sits between the trigger being initiated and assistance reaching targeted households, is the part the literature most often skips. It is also where most of the operational work and most of the failure modes live. This piece is about the design of that phase.*
-
-*An anticipatory action trigger has been initiated. The forecast was reliable, the financing was pre-arranged, the protocol was on the shelf. The hardest twelve to ninety days of the operational response start now, and most of the literature is about to stop watching.*
+        content: `*An anticipatory action trigger has been initiated. The forecast was reliable, the financing was pre-arranged, the protocol was on the shelf. The hardest twelve to ninety days of the operational response start now, and most of the literature is about to stop watching.*
 
 Most of the anticipatory action discourse describes either the front of the chain or the back. At the front: the forecast architecture, the impact-based modelling, the trigger thresholds. At the back: the cost-benefit evidence on whether early action actually outperforms reactive action. Both have moved a long way in the last five years. The middle, the operational sequence that runs from the moment a trigger is initiated to the moment assistance reaches a household, gets far less attention.
 
@@ -3611,11 +3619,10 @@ The trigger is initiated. The protocol activates. The middle holds.
       'ASEAN AHA Centre', 'SADC DRR', 'ECOWAS', 'Sendai Target E',
       'national disaster management authority',
     ],
+    deck: 'Most localisation conversations in anticipatory action have focused on local NGOs and community organisations. That is part of the picture. The primary responsibility holder for disaster management in every country is the government\'s lead disaster management authority, and if our anticipatory action investments do not also build that authority, the architecture we are scaling will struggle to align with the Sendai Framework over the long run.',
     sections: [
       {
-        content: `*Most localisation conversations in anticipatory action have focused on local NGOs and community organisations. That is part of the picture. The primary responsibility holder for disaster management in every country is the government's lead disaster management authority, and if our anticipatory action investments do not also build that authority, the architecture we are scaling will struggle to align with the Sendai Framework over the long run.*
-
-*An anticipatory action trigger is initiated in a country whose National Disaster Management Authority holds the legal mandate, the institutional history, the relationships with sectoral ministries, and the constitutional responsibility to lead the response. Within hours, an inter-agency coordination meeting convenes. The international architecture is in the room. The NDMA is at the table. The conversation moves quickly. Decisions get shaped around the authority that is supposed to be at the centre of them.*
+        content: `*An anticipatory action trigger is initiated in a country whose National Disaster Management Authority holds the legal mandate, the institutional history, the relationships with sectoral ministries, and the constitutional responsibility to lead the response. Within hours, an inter-agency coordination meeting convenes. The international architecture is in the room. The NDMA is at the table. The conversation moves quickly. Decisions get shaped around the authority that is supposed to be at the centre of them.*
 
 I have been in that meeting more than once. Everyone in the room is trying to act in good faith inside structures that did not anticipate this question. The argument I want to make in this piece is that the next stage of localisation in anticipatory action will need to do something the first stage did not quite do, which is build the authority of the institution constitutionally responsible for the response alongside the local actors who deliver on its behalf.
 
@@ -3740,11 +3747,10 @@ The lead disaster management authority of a country is the institution that will
       'Sendai Framework', 'WMO multi-hazard early warning system',
       'Early Warnings for All', 'Natech',
     ],
+    deck: 'A hazard is not a disaster. A disaster is the chain of physical, infrastructural, health, and livelihood transitions the hazard sets in motion. Coordinated early action begins with treating each link in that chain as its own intervention window, not as a downstream footnote to the initiating event.',
     sections: [
       {
-        content: `*A hazard is not a disaster. A disaster is the chain of physical, infrastructural, health, and livelihood transitions the hazard sets in motion. Coordinated early action begins with treating each link in that chain as its own intervention window, not as a downstream footnote to the initiating event.*
-
-The familiar disaster story begins with a trigger: a storm, an earthquake, a drought, a heatwave, a flood. The operational story is longer. The trigger changes the condition of a landscape, an infrastructure network, a health system, a market, or a household. That changed condition makes a second event more likely, increases the severity of what follows, or removes the capacity needed to cope. Losses then accumulate across time and across institutional boundaries the initiating alert was never designed to cross.
+        content: `The familiar disaster story begins with a trigger: a storm, an earthquake, a drought, a heatwave, a flood. The operational story is longer. The trigger changes the condition of a landscape, an infrastructure network, a health system, a market, or a household. That changed condition makes a second event more likely, increases the severity of what follows, or removes the capacity needed to cope. Losses then accumulate across time and across institutional boundaries the initiating alert was never designed to cross.
 
 I have written elsewhere about the design gap between [forecast triggers and coordinated multi-sector response](/blog/from-trigger-to-coordinated-early-action), and about anticipatory action as a system that only delivers when the middle of the chain is treated as seriously as the front end. This piece goes upstream of that argument. It looks at what a disaster cascade actually is, how the timing along it should be read, where each intervention window opens and closes, and what has to change in signal architecture, protocol design, and financing so that early action can travel with the chain rather than stall at the first alert.`,
       },
@@ -4157,6 +4163,18 @@ export default async function BlogPostPage({
           </p>
         </div>
       </header>
+
+      {/* Deck (standfirst / lede). Rendered above the body as a distinct
+          typographic element — larger, muted-coffee, bottom border — so
+          the opener reads as a summary paragraph rather than a confused
+          first body line. See BlogPost.deck for the authoring convention. */}
+      {post.deck && (
+        <div className="max-w-3xl mx-auto px-6 mb-10">
+          <p className="font-reading text-xl md:text-2xl text-coffee leading-snug pb-6 border-b border-beige-300">
+            {parseInline(post.deck)}
+          </p>
+        </div>
+      )}
 
       {/* Article Body */}
       <div className="max-w-3xl mx-auto px-6 mb-8">
