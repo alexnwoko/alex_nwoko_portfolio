@@ -3724,7 +3724,7 @@ The lead disaster management authority of a country is the institution that will
   },
   'understanding-disaster-cascades-early-action': {
     slug: 'understanding-disaster-cascades-early-action',
-    title: 'From Understanding Disaster Cascades to Coordinated Early Action',
+    title: 'Disasters as Multiple Event Chains: Rethinking the Early Action Window for Preventable Losses and Damages',
     category: 'Opinion / Cornerstone',
     pillar: 'Climate Analytics & DRR',
     pillarColor: '#2E7D32',
