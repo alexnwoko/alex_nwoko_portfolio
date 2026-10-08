@@ -4,8 +4,9 @@ import Link from 'next/link'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
-  title: 'About, Alex Nwoko',
-  description: 'A decade of building humanitarian data, geospatial, climate, and cash programming systems across six countries.',
+  title: { absolute: 'About Alex Nwoko · A Decade in DRR, Humanitarian Data & Climate Analytics' },
+  description:
+    'A decade of building disaster risk reduction and humanitarian data systems across Afghanistan, Bangladesh, Ethiopia, Nigeria, Switzerland, and Germany.',
   alternates: { canonical: 'https://alexnwoko.com/about' },
 }
 

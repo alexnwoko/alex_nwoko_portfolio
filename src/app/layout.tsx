@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: '%s | Alex Nwoko',
   },
   description:
-    'Building the data systems behind disaster risk reduction and humanitarian response across six countries. Expertise in disaster loss data, DELTA Resilience, Sendai Framework reporting, GIS, climate analytics, anticipatory action, and cash transfer programming.',
+    'Disaster risk reduction and humanitarian data systems architect. Disaster loss data, DELTA Resilience, Sendai Framework, GIS, anticipatory action, cash programming.',
   keywords: [
     'disaster risk reduction',
     'DRR',

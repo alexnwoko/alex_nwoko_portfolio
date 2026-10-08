@@ -3,8 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Founder Journey, Alex Nwoko',
-  description: 'From humanitarian systems architect to tech founder building platforms that digitize Africa\'s informal economies. The story of Vendoh and MAKKET.',
+  title: { absolute: 'Founder Journey · Humanitarian Data to Africa\'s Markets — Alex Nwoko' },
+  description:
+    'From humanitarian systems architect to tech founder building platforms that digitise Africa\'s informal economies. The story of Vendoh and MAKKET.',
   alternates: { canonical: 'https://alexnwoko.com/founder-journey' },
 }
 

@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
-  title: 'Expertise, Alex Nwoko',
-  description: 'Four pillars of humanitarian practice: Data Analytics, GIS, Climate Analytics & DRR, and Cash Transfer Programming.',
+  title: { absolute: 'Expertise · Data Analytics, GIS, Climate & DRR, Cash — Alex Nwoko' },
+  description:
+    'Four pillars of humanitarian practice: Data Analytics and Information Management, GIS and Remote Sensing, Climate Analytics and DRR, Cash Programming.',
   alternates: { canonical: 'https://alexnwoko.com/expertise' },
 }
 

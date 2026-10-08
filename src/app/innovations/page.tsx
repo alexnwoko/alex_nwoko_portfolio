@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Innovative Projects, Alex Nwoko',
+  title: { absolute: 'Innovations · AI Agents for Humanitarian Data — Alex Nwoko' },
   description:
-    'Systems and platforms I am actively designing to advance humanitarian data, coordination, and efficiency, AISA, Climate Anticipation Centre, ReportCentre, ReliefCash.',
+    'AISA, Climate Anticipation Centre, ReportCentre, ReliefCash: systems I am designing to advance humanitarian data, coordination, and anticipatory action.',
   alternates: { canonical: 'https://alexnwoko.com/innovations' },
 }
 

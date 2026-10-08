@@ -58,9 +58,9 @@ function renderInline(text: string): ReactNode[] {
 }
 
 export const metadata: Metadata = {
-  title: 'Credentials & Featured In, Alex Nwoko',
+  title: { absolute: 'Credentials & Featured In · Durham, iMMAP, UNDRR — Alex Nwoko' },
   description:
-    'Education, memberships, certifications, and third-party features. Durham University Geography Department alumni interview (Summer 2026), iMMAP Afghanistan and Bangladesh programme references.',
+    'Education, certifications, and third-party features: Durham University Geography Department alumni interview (Summer 2026), iMMAP, UNDRR.',
   alternates: { canonical: 'https://alexnwoko.com/credentials' },
   openGraph: {
     title: 'Credentials & Featured In, Alex Nwoko',

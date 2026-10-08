@@ -6,9 +6,9 @@ import ProjectsClient from './ProjectsClient'
  * /projects. The interactive page lives in ProjectsClient.tsx.
  */
 export const metadata: Metadata = {
-  title: 'Projects, Alex Nwoko',
+  title: { absolute: 'Projects · DRR Data Systems & Multi-Hazard Platforms — Alex Nwoko' },
   description:
-    'Selected projects: ReportHub, HSDC, ReliefCash, DELTA Resilience contributions, and other data systems built across six countries of humanitarian operation.',
+    'Selected projects: ReportHub, HSDC, ReliefCash, DELTA Resilience, disaster data systems and multi-hazard platforms built across six countries.',
   alternates: { canonical: 'https://alexnwoko.com/projects' },
 }
 

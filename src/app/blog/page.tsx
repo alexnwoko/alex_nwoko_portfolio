@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { POSTS_META } from '@/lib/blog-posts-meta'
 
 export const metadata: Metadata = {
-  title: 'My Blog, Alex Nwoko',
+  title: { absolute: 'Blog · Disaster Risk Data, Anticipatory Action & Climate Finance — Alex Nwoko' },
   description:
-    'Reflections, technical deep dives, and opinions from a decade working at the intersection of disaster risk reduction, development programmes, humanitarian action, climate risk monitoring, data systems, geospatial information management, and cash transfer programming.',
+    'Essays on disaster risk reduction, anticipatory action, climate finance, humanitarian data systems, and cash transfer programming. By Alex Nwoko.',
   keywords: [
     'disaster risk reduction',
     'development programmes',
