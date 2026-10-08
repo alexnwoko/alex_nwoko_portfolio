@@ -3364,6 +3364,33 @@ We have spent a decade building the capacity to read this kind of forecast and a
       'from-early-warning-to-early-money',
       'delta-resilience-early-warning-anticipatory-action',
     ],
+    faqs: [
+      {
+        question: 'What is the 2026-2027 El Niño event, and when did it start?',
+        answer:
+          'The World Meteorological Organization\'s early-June 2026 update put the likelihood of El Niño conditions during June to August 2026 at around 80 percent, with probabilities near or above 90 percent that the event would continue at least into November. Most forecast models suggest the event will be at least moderate, with the possibility of reaching strong intensity, and El Niño cycles typically last nine to twelve months once established.',
+      },
+      {
+        question: 'Which regions face the highest risk during the 2026-2027 El Niño?',
+        answer:
+          'FAO\'s June 2026 agricultural risk assessment put the current cycle at greater than 50 percent probability of agricultural drought across large parts of southern Africa, including Namibia, Botswana, Angola, Zambia, Zimbabwe, South Africa and parts of Mozambique and Madagascar. Central America and the Caribbean face 70 percent probability of below-normal rainfall, with the highest risk concentrated along the Dry Corridor, in Colombia and Venezuela.',
+      },
+      {
+        question: 'How does anticipatory action apply to an El Niño cycle?',
+        answer:
+          'El Niño is one of the few climate phenomena that offers reliable forecast lead time, usually several months before impacts materialise. That window makes it one of the clearest use cases for anticipatory action: unlocking pre-arranged financing, pre-positioning supplies, releasing anticipatory cash transfers, and activating sectoral protocols before livestock loss, crop failure, water-system stress and health impacts take hold.',
+      },
+      {
+        question: 'What is the evidence that early action pays?',
+        answer:
+          'Modelling across the Horn of Africa finds that every US$1 invested in resilience and anticipatory action generates between US$2.3 and US$3.3 in net benefits once avoided losses are counted. The 2023-2024 El Niño drought response in southern Africa, evaluated by CGIAR, yielded a 30 percent net benefit on anticipatory investment. The evidence base is now consistent across geographies and methodologies.',
+      },
+      {
+        question: 'Why is the 2026-2027 El Niño cycle a critical window for anticipatory action?',
+        answer:
+          'Anticipatory action frameworks are now operational across dozens of countries through FAO\'s anticipatory action portfolio, the WFP Anticipatory Action Fund, IFRC\'s DREF, and the Start Network\'s Start Fund and Start Ready, backed by improving impact-based forecasting and stronger inter-agency coordination. The 2026-2027 cycle is the first strong El Niño to arrive with this architecture in place at scale, making it the operational test of what the sector has built.',
+      },
+    ],
   },
   'anticipatory-action-data-evidence': {
     slug: 'anticipatory-action-data-evidence',
