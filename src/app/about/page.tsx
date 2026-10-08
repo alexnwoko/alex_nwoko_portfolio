@@ -16,7 +16,7 @@ const timeline = [
     role: 'Global Disaster Data Expert',
     org: 'UNDRR',
     location: 'Bonn, Germany',
-    desc: 'Supporting the global rollout of DELTA Resilience as a country-owned national disaster tracking system; coordinating country-level data ecosystem maturity, readiness, and quality assessments; supporting accelerated Member State reporting on the Sendai Framework Monitor and related SDG indicators; and designing training-of-trainers, webinars, etc.',
+    desc: 'Supporting the global rollout of DELTA Resilience as a country-owned national disaster tracking system. Supporting the DELTA product development, and subject matter methodological implementation, and data interoperability in the DELTA system. Coordinating country-level data ecosystem maturity, readiness, and quality assessments; supporting accelerated Member State reporting on the Sendai Framework Monitor and related SDG indicators; and designing training-of-trainers, webinars, etc.',
     pillar: 'climate',
   },
   {
