@@ -191,9 +191,9 @@ export default function ServicesInfographic({
           <h2 className="font-serif text-3xl md:text-4xl text-white">{heading}</h2>
           <div className="flex-1 h-px bg-white/30" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
-          {/* Services grid — 3 columns on md+, spans 3 of the 5 columns in the outer grid */}
-          <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
+          {/* Services grid — 2 columns × 3 rows, spans 2 of the 5 outer columns */}
+          <div className="md:col-span-2 grid grid-cols-2 gap-x-6 gap-y-10">
             {SERVICES.map((s, i) => (
               <Reveal key={s.label} index={i}>
                 <div className="flex flex-col items-center text-center">
@@ -205,9 +205,9 @@ export default function ServicesInfographic({
               </Reveal>
             ))}
           </div>
-          {/* Intro copy — spans 2 of the 5 columns */}
+          {/* Intro copy — spans 3 of the 5 outer columns for a wider text block */}
           <Reveal index={6}>
-            <div className="md:col-span-2 text-sm md:text-base text-white/80 leading-relaxed border-l border-white/20 pl-8">
+            <div className="md:col-span-3 text-sm md:text-base text-white/80 leading-relaxed border-l border-white/20 pl-8">
               <p className="mb-4">{intro}</p>
               <p className="text-white/60">
                 Every engagement combines methodology (hazard information profiles, data standards, cascade logic), tooling (Python, GIS, Power BI, interoperability pipelines) and capacity transfer so the system outlives the engagement that funded it.
