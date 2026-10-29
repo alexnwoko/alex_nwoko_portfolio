@@ -219,12 +219,15 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-6 animate-fade-in-up">
             Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming &middot; Innovation &middot; Program Leadership
           </p>
+          <p className="text-xs uppercase tracking-[0.2em] text-coffee-muted font-medium mb-4 animate-fade-in-up delay-75">
+            Global Disaster Data Expert, UNDRR Bonn &middot; DELTA Resilience product team
+          </p>
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-coffee leading-[1.15] mb-8 animate-fade-in-up delay-100">
             Building the data systems behind{' '}
             <span className="gradient-text">disaster risk reduction, development programmes, and humanitarian action</span>
           </h1>
           <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up delay-200">
-            I design and coordinate the data platforms, geospatial intelligence, disaster risk tools, information management and cash programming frameworks that UN agencies, national governments, and humanitarian partners depend on to make decisions that change lives, across six countries, multi-million-dollar portfolios, and a decade at the intersection of disaster risk, development, and humanitarian action.
+            I design and coordinate the data platforms, geospatial intelligence, disaster risk tools, information management and cash programming frameworks that UN agencies, national governments, and humanitarian partners depend on to make decisions that change lives, across six countries, multi-million-dollar portfolios, and a decade at the intersection of disaster risk, development, and humanitarian action. Currently in Bonn, bringing the disaster-risk perspective to DELTA Resilience, UNDRR&rsquo;s system for tracking disaster losses and damages across 85 countries, and framing how its loss record is enriched for anticipatory action.
           </p>
 
           {/* Core Skill Tags */}

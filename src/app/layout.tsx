@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: '%s | Alex Nwoko',
   },
   description:
-    'Disaster risk reduction and humanitarian data systems architect. Disaster loss data, DELTA Resilience, Sendai Framework, GIS, anticipatory action, cash programming.',
+    "Disaster risk and humanitarian data systems architect. Global Disaster Data Expert at UNDRR in Bonn, bringing the disaster-risk perspective to DELTA Resilience, UNDRR's system for tracking disaster losses and damages across 85 countries, and framing how its loss record is enriched for anticipatory action.",
   keywords: [
     'disaster risk reduction',
     'DRR',
@@ -104,8 +104,13 @@ const SITE_JSON_LD = {
       name: 'Alex Nwoko',
       url: 'https://alexnwoko.com',
       jobTitle: 'Disaster Risk and Humanitarian Data Systems Architect',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'United Nations Office for Disaster Risk Reduction (UNDRR)',
+        url: 'https://www.undrr.org/',
+      },
       description:
-        'Disaster risk and humanitarian data systems architect with a decade of experience building data infrastructure across Afghanistan, Bangladesh, Ethiopia, Nigeria, and Switzerland.',
+        "Global Disaster Data Expert in the Risk Knowledge Branch of UNDRR's Bonn office, and disaster-data subject-matter expert in the DELTA Resilience product team. A decade building disaster risk reduction and humanitarian data infrastructure across Afghanistan, Bangladesh, Ethiopia, Nigeria, Switzerland and Germany.",
       knowsAbout: [
         'Disaster Risk Reduction',
         'DELTA Resilience',
