@@ -30,11 +30,6 @@ export const PARTNER_LOGOS: LogoEntry[] = [
   { name: 'USAID', wordmark: 'USAID', subtitle: 'FROM THE AMERICAN PEOPLE', color: '#002F6C', href: 'https://www.usaid.gov' },
   { name: 'UK AID', wordmark: 'UK AID', subtitle: 'FROM THE BRITISH PEOPLE', color: '#C8102E', href: 'https://www.gov.uk/government/organisations/foreign-commonwealth-development-office' },
   { name: 'ECHO', wordmark: 'ECHO', subtitle: 'European Civil Protection and Humanitarian Aid', color: '#003399', href: 'https://civil-protection-humanitarian-aid.ec.europa.eu/' },
-  { name: 'UNDRR', wordmark: 'UNDRR', subtitle: 'UN Office for Disaster Risk Reduction', color: '#009EDB', href: 'https://www.undrr.org' },
-  { name: 'UNICEF', wordmark: 'unicef', subtitle: 'for every child', color: '#1CABE2', href: 'https://www.unicef.org' },
-  { name: 'IOM', wordmark: 'IOM', subtitle: 'UN Migration', color: '#009EDB', href: 'https://www.iom.int' },
-  { name: 'FAO', wordmark: 'FAO', subtitle: 'Food & Agriculture Organization', color: '#003876', href: 'https://www.fao.org' },
-  { name: 'iMMAP', wordmark: 'iMMAP', subtitle: 'Humanitarian Data for Decisions', color: '#2E7D32', href: 'https://immap.org' },
 ]
 
 export const CLUSTER_LOGOS: LogoEntry[] = [

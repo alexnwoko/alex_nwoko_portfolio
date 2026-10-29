@@ -219,7 +219,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.3em] text-dusty-orange font-semibold mb-6 animate-fade-in-up">
             Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming &middot; Innovation &middot; Program Leadership
           </p>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-coffee leading-[1.15] mb-8 animate-fade-in-up delay-100">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-coffee leading-[1.15] mb-8 animate-fade-in-up delay-100">
             Building the data systems behind{' '}
             <span className="gradient-text">disaster risk reduction, development programmes, and humanitarian action</span>
           </h1>
@@ -357,8 +357,8 @@ export default function Home() {
 
       {/* ═══ PARTNERS & DONORS logo strip ═══ */}
       <LogoStrip
-        heading="Partners & Donors"
-        intro="A decade of commissions and employments across UN agencies, humanitarian organisations, and the donors funding country-level disaster risk reduction and humanitarian response."
+        heading="Donors"
+        intro="The donors whose funding has underwritten country-level disaster risk reduction and humanitarian response across a decade of this work."
         logos={PARTNER_LOGOS}
         backgroundClassName="bg-beige-100"
       />

@@ -185,7 +185,7 @@ export default function ServicesInfographic({
   accent?: string
 }) {
   return (
-    <section className="relative py-20 bg-gradient-to-b from-coffee-dark to-[#4a1f1f] text-beige-100 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-[#1F140A] via-[#3D2B1F] to-[#7A3410] text-beige-100 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center gap-6 mb-14">
           <h2 className="font-serif text-3xl md:text-4xl text-white">{heading}</h2>

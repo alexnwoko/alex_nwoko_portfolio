@@ -253,8 +253,8 @@ export default function AboutPage() {
 
       {/* Partners & Donors logo strip */}
       <LogoStrip
-        heading="Partners & Donors"
-        intro="Agencies and donors across whose portfolios this work has sat."
+        heading="Donors"
+        intro="The donors whose portfolios this work has sat under across the past decade."
         logos={PARTNER_LOGOS}
         backgroundClassName="bg-beige-100"
       />
