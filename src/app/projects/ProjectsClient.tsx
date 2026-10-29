@@ -6,6 +6,28 @@ import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 const projects = [
   {
+    title: 'DELTA Resilience',
+    pillar: 'Climate & DRR',
+    pillarColor: '#C4703F',
+    period: '2026–Present',
+    location: 'Bonn, Germany · Global',
+    org: 'UNDRR, Risk Knowledge Branch',
+    summary:
+      "UNDRR's system for tracking disaster losses and damages, designed to receive the DesInventar records of 85 countries. As disaster-data subject-matter expert in the DELTA product team, I bring the disaster-risk perspective to its design and functionality.",
+    challenge:
+      "Country-owned disaster loss and damage records are fragmented across legacy DesInventar instances and inconsistent hazard classifications; translating that record into evidence countries can act on, and into impact thresholds anticipatory action partners can trigger against, needs methodology before it needs software.",
+    solution:
+      "Shaping product definition and the national, regional and global instance model, the Analysis page and the Geoportal. Developed the methodology linking hazardous events, disaster events and disaster records against the Hazard Information Profiles 2025, including a cascade chain of 79 hazards and 1,193 directed links. Framing how DELTA is enriched with exposure, vulnerability, population and climate data from free and open sources, while keeping every external value outside official national totals. Contributing to the disaster data ecosystem assessment methodologies and the technical readiness assessments that review how countries produce, manage and share disaster and climate data as part of the DELTA roll-out.",
+    impact: [
+      '85 countries in the roll-out scope',
+      'Cascade chain: 79 hazards, 1,193 directed links',
+      'HIPs 2025 methodology linking hazardous events, disaster events and records',
+      'Open-data anticipatory action pilot (Mozambique)',
+    ],
+    tags: ['Disaster Loss Data', 'DELTA Resilience', 'Sendai Framework', 'HIPs 2025', 'Anticipatory Action', 'DEMA'],
+    type: 'Platform',
+  },
+  {
     title: 'ReportHub',
     pillar: 'Data Analytics & IM',
     pillarColor: '#009EDB',

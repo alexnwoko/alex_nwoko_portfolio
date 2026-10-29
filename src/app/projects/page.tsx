@@ -8,7 +8,7 @@ import ProjectsClient from './ProjectsClient'
 export const metadata: Metadata = {
   title: { absolute: 'Projects · DRR Data Systems & Multi-Hazard Platforms — Alex Nwoko' },
   description:
-    'Selected projects: ReportHub, HSDC, ReliefCash, DELTA Resilience, disaster data systems and multi-hazard platforms built across six countries.',
+    'Selected projects: DELTA Resilience at UNDRR, ReportHub, HSDC, PDM Meta-Analysis, CBIIMS and ReliefCash, disaster data systems and multi-hazard platforms built across six countries.',
   alternates: { canonical: 'https://alexnwoko.com/projects' },
 }
 

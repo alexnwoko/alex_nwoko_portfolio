@@ -53,8 +53,10 @@ const pillars = [
     color: '#C4703F',
     title: 'Climate Analytics & DRR / Anticipatory Action',
     subtitle: 'Shifting from reactive response to predictive action',
-    overview: 'The humanitarian sector spends billions responding to disasters after they strike. I\'m focused on building the systems that enable anticipatory action, using climate data, early warning indicators, and pre-agreed triggers to initiate response before crises escalate.',
+    overview: "The humanitarian sector spends billions responding to disasters after they strike. I build the systems that enable anticipatory action, using climate data, early warning indicators and pre-agreed triggers to initiate response before crises escalate. This work now sits at a global scale: as Global Disaster Data Expert at UNDRR Bonn, I bring the disaster-risk perspective to DELTA Resilience, UNDRR's system for tracking disaster losses and damages, and frame how its loss record is enriched for anticipatory action, so climate and forecast triggers can be calibrated against validated local impacts.",
     capabilities: [
+      'Cascade-aware anticipatory action windows, impact thresholds, recurrence profiles and backtest data derived from validated loss records against hazard cascade chains',
+      'Hazard Information Profiles (HIPs 2025) methodology, linking hazardous events, disaster events and disaster records',
       'Climate trigger threshold development',
       'Early warning system integration',
       'Drought, flood, and earthquake risk modeling',
@@ -64,7 +66,7 @@ const pillars = [
       'Climate vulnerability mapping',
     ],
     tools: ['Python', 'Google Earth Engine', 'Climate Data Store', 'IPC Tools', 'CHIRPS/FEWS NET', 'HDX'],
-    impact: 'Developed climate trigger thresholds for anticipatory action and multi-hazard risk assessment frameworks in Afghanistan.',
+    impact: 'Currently bringing the disaster-risk perspective to DELTA Resilience at UNDRR Bonn, including the methodology linking hazardous events, disaster events and disaster records against the Hazard Information Profiles 2025, with a cascade chain of 79 hazards and 1,193 directed links.',
   },
   {
     id: 'cash',

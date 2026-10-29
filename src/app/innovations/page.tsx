@@ -191,6 +191,9 @@ export default function InnovationsPage() {
           organisations collect, analyse, and act on data. Each project builds on a decade
           of operational experience to solve problems I&rsquo;ve encountered firsthand.
         </p>
+        <p className="text-lg text-coffee-light/80 max-w-2xl leading-relaxed mt-4">
+          The next horizon is coordinated AI integration into DELTA Resilience at UNDRR: AI agents, chatbots, GeoAI and retrieval-augmented generation for disaster event reporting, built and reviewed across work lanes under one protocol in which every critical design choice starts with research and every document passes an expert panel review.
+        </p>
       </section>
 
       {/* Innovation Cards */}
