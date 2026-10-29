@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import LogoStrip, { CLUSTER_LOGOS, PARTNER_LOGOS } from '@/components/LogoStrip'
+import ServicesInfographic from '@/components/ServicesInfographic'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
@@ -242,6 +244,28 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
+      {/* Services infographic — 6 capability cells, scroll-reveal entrance */}
+      <ServicesInfographic
+        heading="Services I Deliver"
+        intro="Across a decade of commissions, the deliverables that have mattered most come from the same six capability areas. Each one is designed to be country-owned, decision-ready, and interoperable with the systems around it."
+      />
+
+      {/* Partners & Donors logo strip */}
+      <LogoStrip
+        heading="Partners & Donors"
+        intro="Agencies and donors across whose portfolios this work has sat."
+        logos={PARTNER_LOGOS}
+        backgroundClassName="bg-beige-100"
+      />
+
+      {/* Humanitarian Clusters logo strip */}
+      <LogoStrip
+        heading="Humanitarian Clusters"
+        intro="Inter-agency clusters and working groups supported with information management and analysis."
+        logos={CLUSTER_LOGOS}
+        backgroundClassName="bg-beige-200/60"
+      />
 
       {/* Testimonials from supervisors */}
       <section className="mb-16">

@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import LogoStrip, { CLUSTER_LOGOS, PARTNER_LOGOS } from '@/components/LogoStrip'
+import ServicesInfographic from '@/components/ServicesInfographic'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 import WorkSamplesMarquee from '@/components/WorkSamplesMarquee'
 
@@ -349,6 +351,25 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ═══ SERVICES INFOGRAPHIC — 6 capability cells, iMMAP-pattern orb icons ═══ */}
+      <ServicesInfographic />
+
+      {/* ═══ PARTNERS & DONORS logo strip ═══ */}
+      <LogoStrip
+        heading="Partners & Donors"
+        intro="A decade of commissions and employments across UN agencies, humanitarian organisations, and the donors funding country-level disaster risk reduction and humanitarian response."
+        logos={PARTNER_LOGOS}
+        backgroundClassName="bg-beige-100"
+      />
+
+      {/* ═══ GLOBAL CLUSTERS logo strip — the inter-agency clusters I have supported ═══ */}
+      <LogoStrip
+        heading="Humanitarian Clusters"
+        intro="Information management and analysis support across the global cluster system and country-level Cash Working Groups."
+        logos={CLUSTER_LOGOS}
+        backgroundClassName="bg-beige-200/60"
+      />
 
       {/* ═══ TESTIMONIAL, iMMAP HQ ═══ */}
       <Testimonial
