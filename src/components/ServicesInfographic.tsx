@@ -205,9 +205,11 @@ export default function ServicesInfographic({
               </Reveal>
             ))}
           </div>
-          {/* Intro copy — spans 3 of the 5 outer columns for a wider text block */}
-          <Reveal index={6}>
-            <div className="md:col-span-3 text-sm md:text-base text-white/80 leading-relaxed border-l border-white/20 pl-8">
+          {/* Intro copy — spans 3 of the 5 outer columns for a wider text block.
+              col-span MUST live on the Reveal (the direct grid child), not on
+              the inner div, or grid falls back to a 1-col slot. */}
+          <Reveal index={6} className="md:col-span-3">
+            <div className="text-sm md:text-base text-white/80 leading-relaxed border-l border-white/20 pl-8">
               <p className="mb-4">{intro}</p>
               <p className="text-white/60">
                 Every engagement combines methodology (hazard information profiles, data standards, cascade logic), tooling (Python, GIS, Power BI, interoperability pipelines) and capacity transfer so the system outlives the engagement that funded it.
