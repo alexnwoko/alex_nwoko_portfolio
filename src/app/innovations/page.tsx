@@ -1,11 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
   title: { absolute: 'Innovations · AI Agents for Humanitarian Data — Alex Nwoko' },
   description:
     'AISA, Climate Anticipation Centre, ReportCentre, ReliefCash: systems I am designing to advance humanitarian data, coordination, and anticipatory action.',
   alternates: { canonical: 'https://alexnwoko.com/innovations' },
+}
+
+const BREADCRUMB_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://alexnwoko.com' },
+    { '@type': 'ListItem', position: 2, name: 'Innovations', item: 'https://alexnwoko.com/innovations' },
+  ],
 }
 
 const innovations = [
@@ -178,6 +188,7 @@ const innovations = [
 export default function InnovationsPage() {
   return (
     <div className="pt-24 pb-16">
+      <JsonLd data={BREADCRUMB_JSON_LD} />
       {/* Header */}
       <section className="max-w-4xl mx-auto px-6 mb-16">
         <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">

@@ -1,9 +1,20 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import DeltaAtUNDRR from '@/components/DeltaAtUNDRR'
+import JsonLd from '@/components/JsonLd'
 import LogoStrip, { CLUSTER_LOGOS, PARTNER_LOGOS } from '@/components/LogoStrip'
 import ServicesInfographic from '@/components/ServicesInfographic'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
+
+const BREADCRUMB_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://alexnwoko.com' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://alexnwoko.com/about' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: { absolute: 'About Alex Nwoko · A Decade in DRR, Humanitarian Data & Climate Analytics' },
@@ -97,6 +108,7 @@ const pillarColors: Record<string, string> = {
 export default function AboutPage() {
   return (
     <div className="pt-24 pb-16">
+      <JsonLd data={BREADCRUMB_JSON_LD} />
       {/* Meet Alex Nwoko, intro card paired with long-form narrative */}
       <section className="max-w-6xl mx-auto px-6 mb-12 text-center">
         <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Meet Alex Nwoko</p>
@@ -203,6 +215,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* DELTA Resilience at UNDRR, current-role panel */}
+      <DeltaAtUNDRR />
 
       {/* Testimonial, iMMAP HQ */}
       <Testimonial

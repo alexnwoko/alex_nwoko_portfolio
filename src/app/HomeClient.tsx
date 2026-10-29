@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import DeltaAtUNDRR from '@/components/DeltaAtUNDRR'
 import LogoStrip, { CLUSTER_LOGOS, PARTNER_LOGOS } from '@/components/LogoStrip'
 import ServicesInfographic from '@/components/ServicesInfographic'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
@@ -279,6 +280,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ═══ DELTA RESILIENCE AT UNDRR — current-role panel ═══ */}
+      <DeltaAtUNDRR />
 
       {/* ═══ WORK SAMPLES MARQUEE ═══ */}
       <section className="pt-14 pb-7 bg-beige-100">

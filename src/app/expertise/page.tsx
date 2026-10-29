@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
 import Testimonial, { TestimonialRow } from '@/components/Testimonial'
 
 export const metadata: Metadata = {
@@ -6,6 +7,15 @@ export const metadata: Metadata = {
   description:
     'Four pillars of humanitarian practice: Data Analytics and Information Management, GIS and Remote Sensing, Climate Analytics and DRR, Cash Programming.',
   alternates: { canonical: 'https://alexnwoko.com/expertise' },
+}
+
+const BREADCRUMB_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://alexnwoko.com' },
+    { '@type': 'ListItem', position: 2, name: 'Expertise', item: 'https://alexnwoko.com/expertise' },
+  ],
 }
 
 const pillars = [
@@ -92,6 +102,7 @@ const pillars = [
 export default function ExpertisePage() {
   return (
     <div className="pt-24 pb-16">
+      <JsonLd data={BREADCRUMB_JSON_LD} />
       {/* Header */}
       <section className="max-w-4xl mx-auto px-6 mb-16">
         <p className="text-xs uppercase tracking-[0.2em] text-dusty-orange font-semibold mb-3">Expertise</p>

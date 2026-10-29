@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
 import ContactClient from './ContactClient'
 
 /**
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://alexnwoko.com/contact' },
 }
 
+const BREADCRUMB_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://alexnwoko.com' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://alexnwoko.com/contact' },
+  ],
+}
+
 export default function ContactPage() {
-  return <ContactClient />
+  return (
+    <>
+      <JsonLd data={BREADCRUMB_JSON_LD} />
+      <ContactClient />
+    </>
+  )
 }
