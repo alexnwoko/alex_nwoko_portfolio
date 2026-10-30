@@ -13,7 +13,7 @@ export default function ContactPage() {
     const data = new FormData(form)
 
     try {
-      const res = await fetch('https://formspree.io/f/xovdkrgb', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
@@ -66,6 +66,25 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
+              {/* Honeypot — hidden from humans, bots fill it, server rejects. */}
+              <input
+                type="text"
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  width: 1,
+                  height: 1,
+                  padding: 0,
+                  margin: -1,
+                  overflow: 'hidden',
+                  clip: 'rect(0,0,0,0)',
+                  whiteSpace: 'nowrap',
+                  border: 0,
+                }}
+              />
               <div>
                 <label
                   htmlFor="name"

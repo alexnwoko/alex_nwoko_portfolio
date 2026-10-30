@@ -18,11 +18,6 @@ const METRICS: {
     label: 'hazards',
     sub: 'in the Hazard Information Profiles 2025 cascade chain',
   },
-  {
-    value: 1193,
-    label: 'directed links',
-    sub: 'between hazards, mapping disaster event cascades',
-  },
 ]
 
 function useCountOnView(target: number, duration = 1800) {
@@ -112,7 +107,7 @@ export default function DeltaAtUNDRR() {
               <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
-          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {METRICS.map((m) => (
               <MetricCard key={m.label} metric={m} />
             ))}
