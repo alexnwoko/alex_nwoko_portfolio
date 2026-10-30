@@ -100,8 +100,9 @@ export default function DeltaAtUNDRR() {
               Knowledge Branch, I bring the disaster-risk perspective to its
               design and roll-out: the national, regional and global instance
               model, the Analysis page, the Geoportal, and the methodology
-              that makes the loss record readable as evidence for anticipatory
-              action.
+              that makes the losses and damages record readable as evidence
+              to drive predictable climate action, early warning, emergency
+              response, and long-term resilience and recovery.
             </p>
             <Link
               href="/projects"

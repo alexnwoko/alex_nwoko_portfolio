@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: '%s | Alex Nwoko',
   },
   description:
-    "Disaster risk and humanitarian data systems architect. Global Disaster Data Expert at UNDRR in Bonn, bringing the disaster-risk perspective to DELTA Resilience, UNDRR's system for tracking disaster losses and damages across 85 countries, and framing how its loss record is enriched for anticipatory action.",
+    "Disaster risk and humanitarian data systems architect. Global Disaster Data Expert at UNDRR in Bonn, bringing the disaster-risk perspective to DELTA Resilience, UNDRR's system for tracking disaster losses and damages across 85 countries, and framing how its losses and damages record is enriched to drive predictable climate action, early warning, emergency response, and long-term resilience and recovery.",
   keywords: [
     'disaster risk reduction',
     'DRR',

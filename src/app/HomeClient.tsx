@@ -228,7 +228,7 @@ export default function Home() {
             <span className="gradient-text">disaster risk reduction, development programmes, and humanitarian action</span>
           </h1>
           <p className="text-lg md:text-xl text-coffee-light/80 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up delay-200">
-            I design and coordinate the data platforms, geospatial intelligence, disaster risk tools, information management and cash programming frameworks that UN agencies, national governments, and humanitarian partners depend on to make decisions that change lives, across six countries, multi-million-dollar portfolios, and a decade at the intersection of disaster risk, development, and humanitarian action. Currently in Bonn, bringing the disaster-risk perspective to DELTA Resilience, UNDRR&rsquo;s system for tracking disaster losses and damages across 85 countries, and framing how its loss record is enriched for anticipatory action.
+            I design and coordinate the data platforms, geospatial intelligence, disaster risk tools, information management and cash programming frameworks that UN agencies, national governments, and humanitarian partners depend on to make decisions that change lives, across six countries, multi-million-dollar portfolios, and a decade at the intersection of disaster risk, development, and humanitarian action. Currently in Bonn, bringing the disaster-risk perspective to DELTA Resilience, UNDRR&rsquo;s system for tracking disaster losses and damages across 85 countries, and framing how its losses and damages record is enriched to drive predictable climate action, early warning, emergency response, and long-term resilience and recovery.
           </p>
 
           {/* Core Skill Tags */}
