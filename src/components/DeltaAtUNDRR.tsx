@@ -79,7 +79,7 @@ export default function DeltaAtUNDRR() {
           backgroundSize: '32px 32px',
         }}
       />
-      <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-24">
+      <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-start">
           <div className="lg:col-span-2">
             <p className="text-xs uppercase tracking-[0.25em] text-dusty-orange font-semibold mb-4">
