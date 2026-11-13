@@ -13,7 +13,7 @@ const projects = [
     location: 'Bonn, Germany · Global',
     org: 'UNDRR, Risk Knowledge Branch',
     summary:
-      "UNDRR's system for tracking disaster losses and damages, designed to receive the DesInventar records of 85 countries. As Global Disaster Data Expert in the DELTA Resilience product team, I bring the disaster-risk perspective to its design and functionality.",
+      "UNDRR's system for tracking disaster losses and damages, designed to receive the DesInventar records of 85 countries. As Global Disaster Data Expert working on the DELTA Resilience platform in the data team, I bring the disaster-risk perspective to its design and functionality.",
     challenge:
       "Country-owned disaster loss and damage records are fragmented across legacy DesInventar instances and inconsistent hazard classifications; translating that record into evidence countries can act on, and into impact thresholds anticipatory action partners can trigger against, needs methodology before it needs software.",
     solution:

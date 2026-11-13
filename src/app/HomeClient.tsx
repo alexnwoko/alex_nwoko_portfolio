@@ -221,7 +221,7 @@ export default function Home() {
             Data Analytics &middot; GIS &amp; Remote Sensing &middot; Climate &amp; DRR &middot; Cash Programming &middot; Innovation &middot; Program Leadership
           </p>
           <p className="text-xs uppercase tracking-[0.2em] text-coffee-muted font-medium mb-4 animate-fade-in-up delay-75">
-            Global Disaster Data Expert, UNDRR Bonn &middot; DELTA Resilience product team
+            Global Disaster Data Expert, UNDRR Bonn &middot; DELTA Resilience data team
           </p>
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-coffee leading-[1.15] mb-8 animate-fade-in-up delay-100">
             Building the data systems behind{' '}

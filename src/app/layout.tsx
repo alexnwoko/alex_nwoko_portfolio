@@ -110,7 +110,7 @@ const SITE_JSON_LD = {
         url: 'https://www.undrr.org/',
       },
       description:
-        "Global Disaster Data Expert in the DELTA Resilience product team in UNDRR's Bonn office. A decade building disaster risk reduction and humanitarian data infrastructure across Afghanistan, Bangladesh, Ethiopia, Nigeria, Switzerland and Germany.",
+        "Global Disaster Data Expert working on the DELTA Resilience platform in the data team in UNDRR's Bonn office. A decade building disaster risk reduction and humanitarian data infrastructure across Afghanistan, Bangladesh, Ethiopia, Nigeria, Switzerland and Germany.",
       knowsAbout: [
         'Disaster Risk Reduction',
         'DELTA Resilience',
